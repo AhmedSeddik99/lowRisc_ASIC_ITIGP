@@ -1,0 +1,197 @@
+1- Remove `include "prim_assert.sv"
+
+ibex_branch_predict:-
+Lines: 18, 91
+
+ibex_compressed_decoder:-
+Lines: 14, 286, 290->301
+
+ibex_controller:-
+Lines: 10, 207, 295, 898, 921, 924, 934 
+
+ibex_core:-
+Lines: 10, 522, 523, 969->1036, 1162, 1168, 1872, 1875
+
+ibex_cs_registers:-
+Lines: 10, 1212, 1678
+
+ibex_csr:-
+Lines: 9, 55
+
+ibex_decoder:- 
+Lines: 14, 1211
+
+ibex_ex_block:-
+Lines: 199->215
+
+ibex_fetch_fifo:-
+Lines: 13, 262, 266
+
+ibex_icache:-
+Lines: 11, 1176->1184
+
+ibex_id_stage:-
+Lines: 17, 359, 387, 748, 749, 875, 886, 958, 960, 963,
+       976, 1031, 1106->1154  
+
+----Removing assert from ibex_top.sv----
+- [650 : 678] , [1129 : 1376]
+
+----Removing assert from ibex_wb_stage.sv----
+- 14 , 251
+
+----Removing assert from ibex_multdiv_slow.sv----
+- 12 , [368 : 382]
+- Check ln.384 for useless and harmless `ifdef
+
+----Removing assert from ibex_multdiv_fast.sv----
+- 15 , [117 : 119] , 258 , 378 , 532 , 533 , [535 : 548]
+- Check ln.550 for useless and harmless `ifdef
+
+----Removing assert from ibex_load_store_unit.sv----
+- 14 , [609 : 622]
+
+----Removing assert from ibex_if_stage.sv----
+- 13 , 262 , 671 , 672 , [701 : 712] , 714 , [732 : 812]
+
+prim_lfsr:-
+Lines: 27, 261, 268, 291, 292, 302, 316, 317, 327, 337, 
+       428, 440, 452, 499, 546, 559, 565, 566, 569, 572,
+       573, 578, 581, 591, 597, 627, 629
+
+prim_ram_1p_adv:-
+Lines: 16, 65, 171, 174, 231, 232  
+
+prim_ram_1p_scr:-
+Lines: 24, 111->113
+
+prim_util_pkg:-
+Lines: 89->96
+
+----Removing assert from prim_badbit_ram_1p.sv----
+- 11 , 60 , 61
+
+----Removing assert from prim_flop_macros.sv----
+- 59
+
+----Removing assert from prim_generic_and2.sv----
+- 5
+
+----Removing assert from prim_generic_buf.sv----
+- 5
+
+----Removing assert from prim_generic_clock_mux2.sv----
+- 5 , 22 , 23
+
+----Removing assert from prim_generic_flop.sv----
+- 5
+
+----Removing assert from prim_generic_ram_1p.sv----
+- 7 , 39 , 55
+
+----Removing assert from prim_mubi_pkg.sv----
+- 13 , 28 , 160 , 292 , 424 , 556 , 688 , 820 , 952
+
+----Removing assert from prim_onehot_check.sv----
+- 19 , [51 : 54] , 112 , 119 , 122 , 133 , [152 : 155]
+
+----Removing assert from prim_onehot_mux.sv----
+- 8 , 47
+
+----Removing assert from prim_prince.sv----
+- 25 , 237 , 239
+
+----Removing assert from prim_count.sv----
+- 26, 152 --> 298
+----Removing assert from prim_xillinx_and2.sv----
+- 5
+----Removing assert from prim_xillinx_clock_mux2.sv----
+- 5, 33, 34
+----Removing assert from prim_xillinx_flop.sv----
+5
+
+
+###############################################################
+
+2- Remove DV_FCOV
+
+ibex_controller:-
+Lines: 11, 905->915
+
+
+ibex_core:-
+Lines: 11, 1881->1946
+
+ibex_id_stage:-
+Lines: 18, 1094->1099
+
+----Removing dv_fcov from ibex_if_stage.sv----
+- 14 , [689 : 695]
+
+----Removing dv_fcov from ibex_load_store_unit.sv----
+- 15 , [561 : 604]
+
+----Removing dv_fcov from ibex_pmp.sv----
+- 5 , 255 , 256
+
+----Removing dv_fcov from ibex_wb_stage.sv----
+- 15 , 249
+<<<<<<< HEAD
+
+###############################################################
+
+2- Replacing prim_buf instances by assign
+ibex_core:-
+Lines: 397
+
+ibex_if_stage:-
+Lines: 229, 561
+
+ibex_load_store_unit:- 
+Lines: 339
+
+ibex_register_file_ff:-
+Lines: 67, 160, 169, 
+
+ibex_register_file_fpga:-
+Lines: 95, 104, 217
+
+----ibex_top.sv----
+- 257 , 264 , 271 , 753 , 981 , 992 , 999 , 1111 , 1118 , 1125
+
+----prim_ram_1p_adv.sv----
+- 140 , 151
+
+prim_ram_1p_scr:-
+Lines: 138, 149, 168, 183
+
+=======
+>>>>>>> fe37b480290d34259eb6823c0360614c5d9dcf92
+
+#####################################################
+
+4- Remove initial block in prim_util_memload.svh
+
+#####################################################
+
+5- Enforce 1'b0 on ibex_csr instances in ibex_cs_registers (I forgot the lines)
+
+#####################################################
+
+6- _clog2() in prim_util_package.sv ln. 85
+
+#####################################################
+
+7- Split assignment from declaration for a logic signal in ibex_top.sv ln 555
+
+#####################################################
+
+8- Comment `include "prim_util_memload.svh" in prim_generic_ram_1p.sv ln. 78
+
+#####################################################
+
+9- Comment `include "prim_util_get_scramble_params.svh" in prim_ram_1p_scr.sv ln. 514
+
+#####################################################
+
+10- Comment initial block in ibex_register_file_fpga.sv ln 189
