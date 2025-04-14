@@ -1,0 +1,426 @@
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.1 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 3098 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 33 instances of design 'prim_clock_gating'. (OPT-1056)
+Information: Uniquified 33 instances of design 'prim_generic_clock_gating_0_1'. (OPT-1056)
+Information: Uniquified 7 instances of design 'ibex_csr_32_0_0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'ibex_csr_7_0_0'. (OPT-1056)
+  Simplifying Design 'ibex_top'
+
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_0P5'. (OPT-914)
+  Loading target library 'saed14hvt_ss0p72vm40c'
+  Loading target library 'saed14hvt_ff0p88v125c'
+Loaded alib file './alib-52/saed14hvt_tt0p8v25c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ss0p72vm40c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ff0p88v125c.db.alib'
+Warning: Operating condition ss0p72vm40c set on design ibex_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14hvt_tt0p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_ibex_core before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy core_clock_gate_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/ex_block_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/load_store_unit_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/wb_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[31].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[30].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[29].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[28].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[27].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[26].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[25].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[24].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[23].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[22].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[21].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[20].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[19].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[18].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[17].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[16].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[15].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[14].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[13].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[12].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[11].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[10].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[9].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[8].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[7].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[6].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[5].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[4].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[3].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[2].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[1].cg_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/cg_we_global before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/compressed_decoder_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i/decoder_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i/controller_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/ex_block_i/alu_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstatus_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mepc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mie_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mcause_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mtvec_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dcsr_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/mcycle_counter_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/minstret_counter_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[31].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[30].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[29].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[28].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[27].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[26].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[25].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[24].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[23].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[22].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[21].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[20].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[19].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[18].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[17].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[16].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[15].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[14].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[13].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[12].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[11].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[10].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[9].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[8].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[7].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[6].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[5].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[4].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[3].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[2].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/gen_cg_word_iter[1].cg_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy gen_regfile_latch.register_file_i/cg_we_global/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_epc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dscratch1_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dscratch0_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_depc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mtval_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mscratch_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_cause_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i before Pass 1 (OPT-776)
+Information: Ungrouping 94 of 99 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'ibex_top'
+Information: Added key list 'DesignWare' to design 'ibex_top'. (DDB-72)
+Information: The register 'u_ibex_core/if_stage_i/pc_id_o_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/load_store_unit_i/pmp_err_q_reg' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'ibex_top'.
+  Processing 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0'
+Information: Added key list 'DesignWare' to design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0'. (DDB-72)
+Information: The register 'u_mtvec_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mcountinhibit_q_reg[1]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0'.
+  Processing 'ibex_register_file_latch_0_00000020_0_0_0_00000000'
+  Processing 'ibex_multdiv_fast_RV32M2'
+ Implement Synthetic for 'ibex_multdiv_fast_RV32M2'.
+Information: Added key list 'DesignWare' to design 'ibex_multdiv_fast_RV32M2'. (DDB-72)
+  Processing 'prim_clock_gating_32'
+Memory usage for J1 task 1304 Mbytes -- main task 1304 Mbytes.
+Memory usage for J2 task 1304 Mbytes -- main task 1304 Mbytes.
+Memory usage for J3 task 1304 Mbytes -- main task 1304 Mbytes.
+Memory usage for J4 task 1304 Mbytes -- main task 1304 Mbytes.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDHVT14_TIE1_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: Complementing port 'csr_restore_dret_i' in design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0'.
+	 The new name of the port is 'csr_restore_dret_i_BAR'. (OPT-319)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_depc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_mepc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_mstack_epc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy core_clock_gate_i 'prim_clock_gating_32' #insts = 3. (OPT-777)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' #insts = 2353. (OPT-777)
+Information: Ungrouping hierarchy u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i 'ibex_multdiv_fast_RV32M2' #insts = 1056. (OPT-777)
+  Mapping Optimization (Phase 1)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[30]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'ibex_top_DP_OP_71J4_122_6124_0'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:51    5902.8 2336034.00 33039658.0     641.7                           1814427.7500
+    0:01:51    5902.8 2336034.00 33039658.0     641.7                           1814427.7500
+    0:01:51    5902.8 2336034.00 33039658.0     641.7                           1814427.7500
+    0:01:54    5916.4 2335232.00 34202284.0     649.7                           1827184.6250
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:02:27    5797.8 2334454.00 35672736.0     645.2                           1771435.0000
+    0:02:27    5797.8 2334454.00 35672736.0     645.2                           1771435.0000
+    0:02:27    5797.8 2334454.00 35672736.0     645.2                           1771435.0000
+    0:02:27    5797.8 2334454.00 35672736.0     645.2                           1771435.0000
+    0:02:44    5758.6  17753.60 6487587.0     645.2                           1758916.0000
+    0:02:48    5746.8  17753.60 6481664.5     645.2                           1755172.0000
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+
+
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:02:55    5274.7  15212.14 4622054.0     644.2                           1539240.6250
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:03:00    5354.0   1626.35 2891092.2       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][30]/D 1559794.1250
+    0:03:03    5352.9   1626.21 2890997.5       0.0                           1560483.8750
+    0:03:03    5352.9   1626.21 2890997.5       0.0                           1560483.8750
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:03    5352.9   1626.21 2890997.5       0.0                           1560483.8750
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+Information: Complementing port 'rst_ni' in design 'ibex_register_file_latch_0_00000020_0_0_0_00000000'.
+	 The new name of the port is 'rst_ni_BAR'. (OPT-319)
+    0:03:14    5122.0    531.83  679593.5       0.0 u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][30]/D 1341767.0000
+    0:03:14    5122.2    531.77  679528.6       0.0                           1341775.2500
+    0:03:14    5122.2    531.77  679528.6       0.0                           1341775.2500
+    0:03:14    5122.2    531.77  679528.6       0.0                           1341775.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+    0:03:18    5095.5    749.42  576360.8       0.0                           1332761.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:18    5095.1    749.42  576360.8       0.0                           1332860.0000
+    0:03:23    4892.3   1424.19  218248.5       0.0                           1280242.2500
+    0:03:25    4898.2    190.00   67162.0      57.0                           1284492.7500
+    0:03:25    4898.2    190.00   67162.0      57.0                           1284492.7500
+    0:03:27    4903.8    190.00   76392.6      57.0                           1277345.8750
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:03:39    4903.8    190.00   76392.6      57.0                           1277345.8750
+    0:03:39    4903.8    190.00   76392.6      57.0                           1277345.8750
+    0:03:39    4903.8    190.00   76392.6      57.0                           1277345.8750
+    0:03:39    4903.8    190.00   76392.6      57.0                           1277345.8750
+    0:03:54    4912.3    189.97   73945.0      13.0 u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][23]/D 1275004.2500
+    0:03:55    4914.9    189.94   73559.6      16.0 u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][15]/D 1276015.6250
+    0:03:58    4922.6    189.93   73559.2       0.0                           1280776.8750
+    0:03:58    4922.6    189.93   73559.2       0.0                           1280776.8750
+    0:03:59    4923.6    189.93   73559.1       0.0                           1281100.0000
+    0:03:59    4923.6    189.93   73559.1       0.0                           1281100.0000
+    0:04:00    4919.8    189.93   71036.4       0.0                           1279428.0000
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'saed14hvt_ss0p72vm40c'
+  Loading target library 'saed14hvt_ff0p88v125c'
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_0P5'. (OPT-914)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
