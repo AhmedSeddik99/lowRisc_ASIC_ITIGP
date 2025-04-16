@@ -1,0 +1,120 @@
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db"
+Library analysis succeeded.
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+
+Information: There are 268 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'saed14hvt_ss0p72vm40c'
+  Loading target library 'saed14hvt_ff0p88v125c'
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_0P5'. (OPT-914)
+Loaded alib file './alib-52/saed14hvt_tt0p8v25c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ss0p72vm40c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ff0p88v125c.db.alib'
+Warning: Operating condition ss0p72vm40c set on design ibex_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14hvt_tt0p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDHVT14_TIE1_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:21    4911.0      0.00       0.0      39.0                           1306403.2500      0.00  
+    0:00:21    4911.0      0.00       0.0      39.0                           1306403.2500      0.00  
+
+  Beginning Mapping Optimizations  (Ultra High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:34    4911.0      0.00       0.0      39.0                           1306403.2500      0.00  
+    0:00:35    4911.0      0.00       0.0      39.0                           1306534.0000      0.00  
+    0:00:36    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:37    4909.8      0.00      -0.0      39.0                           1305660.0000      0.00  
+    0:00:41    4973.6      0.00      -0.0     746.0                           1252936.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (min_path)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:41    4973.6      0.00       0.0     746.0                           1252936.0000 -152463.98  
+    0:00:42    5012.5      0.00       0.0       0.0                           1264362.1250 -152463.98  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:00:44    5012.5      0.00      -0.0       0.0                           1264340.8750 -152447.03  
+    0:03:49    5023.6      0.00      15.3       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1263677.0000 -88733.60  
+    0:06:56    5034.1      0.00      15.4       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1268222.3750 -87578.12  
+    0:10:20    5043.7      0.00      15.1       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1269671.6250 -87158.89  
+    0:14:14    5054.5      0.00      15.2       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1272020.1250 -87126.72  
+    0:18:05    5060.0      0.00     265.3       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1273708.3750 -84438.42  
+    0:21:30    5064.8      0.00     264.9       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1275007.3750 -83921.58  
+    0:24:23    5087.8      0.00     264.9       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[30]/D 1285467.5000 -82017.38  
+    0:27:19    5109.6      0.00     265.7       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[1][13]/D 1295379.5000 -78387.40  
+    0:29:59    5118.7      0.00     267.9       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[1][13]/D 1299934.0000 -77835.09  
+    0:32:25    5127.5      0.00     267.6       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[1][13]/D 1303192.2500 -77291.52  
+    0:34:47    5151.2      0.00     268.9       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[1][13]/D 1317139.3750 -77153.55  
+    0:43:12    5158.3      0.00 4382811648.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[1][8]/D 1320260.8750 -77100.80  
+    0:45:26    5176.6      0.00 4174022144.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1330451.2500 -76834.43  
+    0:47:36    5186.6      0.00 4174022400.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1332579.6250 -76822.95  
+    0:49:34    5195.9      0.00 4174022400.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1334584.5000 -76818.38  
+    0:51:41    5204.3      0.00 4174022400.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1336407.7500 -76817.30  
+    0:53:59    5212.9      0.00 4174022400.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1338237.5000 -76816.79  
+    0:56:18    5229.1      0.00 4174022400.0       0.0 u_ibex_core/id_stage_i/imd_val_q_reg[0][2]/D 1348148.7500 -76811.19  
+    0:59:06    5242.9      0.00 4174022400.0       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[22]/D 1354006.2500 -76438.80  
+    1:01:48    5257.3      0.00 4174022400.0       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[22]/D 1361421.0000 -75199.05  
+    1:04:12    5272.7      0.00 1223616318406656.0       0.0 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[19]/D 1367995.2500 -74978.09  
