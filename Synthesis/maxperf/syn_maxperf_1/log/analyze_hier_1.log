@@ -1,0 +1,48 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_buf.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_clock_gating.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_prefetch_buffer.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_icache.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_dummy_instr.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_cs_registers.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_id_stage.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_ex_block.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_and2.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_flop.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_ram_1p.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_clock_mux2.sv
+Presto compilation completed successfully.
+1

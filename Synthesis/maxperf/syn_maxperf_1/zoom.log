@@ -1,0 +1,212 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Tue Apr 29 20:17:08 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72vm40c   Library: saed14hvt_ss0p72vm40c
+Wire Load Model Mode: top
+
+  Startpoint: u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[0]
+              (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: u_ibex_core/id_stage_i/imd_val_q_reg[0][23]
+            (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Path Group: cluster_clock_gating
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ibex_top           8000                  saed14hvt_tt0p8v25c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                                      0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[0]/CK (SAEDHVT14_FDPQB_V2LP_1)
+                                                                    0.05      0.00 #     0.00 r
+  u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[0]/QN (SAEDHVT14_FDPQB_V2LP_1)
+                                                                    0.02      0.04       0.04 r
+  n9875 (net)                                   3         0.80                0.00       0.04 r
+  U3841/A (SAEDHVT14_INV_0P5)                                       0.02      0.01       0.05 r
+  U3841/X (SAEDHVT14_INV_0P5)                                       0.01      0.02       0.06 f
+  rf_waddr_wb[0] (net)                         19         1.19                0.00       0.06 f
+  U6194/A2 (SAEDHVT14_EO2_V1_0P75)                                  0.01      0.05       0.11 f
+  U6194/X (SAEDHVT14_EO2_V1_0P75)                                   0.02      0.02       0.12 f
+  n3489 (net)                                   1         0.26                0.00       0.12 f
+  U5025/A2 (SAEDHVT14_NR2_MM_0P5)                                   0.02      0.01       0.13 f
+  U5025/X (SAEDHVT14_NR2_MM_0P5)                                    0.01      0.01       0.14 r
+  n3491 (net)                                   1         0.26                0.00       0.14 r
+  U5009/A2 (SAEDHVT14_ND2_CDC_1)                                    0.01      0.01       0.15 r
+  U5009/X (SAEDHVT14_ND2_CDC_1)                                     0.00      0.01       0.15 f
+  n3493 (net)                                   1         0.26                0.00       0.15 f
+  U4989/A2 (SAEDHVT14_NR2_MM_0P5)                                   0.00      0.01       0.16 f
+  U4989/X (SAEDHVT14_NR2_MM_0P5)                                    0.01      0.01       0.16 r
+  n4048 (net)                                   2         0.57                0.00       0.16 r
+  U4977/A1 (SAEDHVT14_ND2_CDC_1)                                    0.01      0.01       0.17 r
+  U4977/X (SAEDHVT14_ND2_CDC_1)                                     0.01      0.01       0.19 f
+  n3538 (net)                                   5         1.73                0.00       0.19 f
+  U3505/A (SAEDHVT14_BUF_S_0P5)                                     0.01      0.01       0.20 f
+  U3505/X (SAEDHVT14_BUF_S_0P5)                                     0.13      0.03       0.23 f
+  n3932 (net)                                  10         3.95                0.00       0.23 f
+  U6025/S (SAEDHVT14_MUX2_U_0P5)                                    0.13      0.02       0.25 f
+  U6025/X (SAEDHVT14_MUX2_U_0P5)                                    0.02      0.04       0.29 r
+  n9369 (net)                                   7         1.99                0.00       0.29 r
+  U4100/A1 (SAEDHVT14_ND2_CDC_1)                                    0.02      0.01       0.30 r
+  U4100/X (SAEDHVT14_ND2_CDC_1)                                     0.01      0.01       0.31 f
+  n3577 (net)                                   1         0.31                0.00       0.31 f
+  U4829/A1 (SAEDHVT14_ND2_CDC_1)                                    0.01      0.01       0.32 f
+  U4829/X (SAEDHVT14_ND2_CDC_1)                                     0.01      0.01       0.33 r
+  n3130 (net)                                  10         1.69                0.00       0.33 r
+  U3787/A2 (SAEDHVT14_AO22_0P5)                                     0.01      0.01       0.34 r
+  U3787/X (SAEDHVT14_AO22_0P5)                                      0.92      0.02       0.36 r
+  n3968 (net)                                   1         0.80                0.00       0.36 r
+  U4748/A (SAEDHVT14_ADDF_V1_0P5)                                   0.92      0.02       0.38 r
+  U4748/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.21       0.59 r
+  n3963 (net)                                   1         0.51                0.00       0.59 r
+  U4739/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.01       0.60 r
+  U4739/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.05       0.65 r
+  n3955 (net)                                   1         0.51                0.00       0.65 r
+  U3727/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.01       0.66 r
+  U3727/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.06      0.05       0.71 r
+  n4280 (net)                                   1         0.51                0.00       0.71 r
+  U3965/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.06      0.01       0.72 r
+  U3965/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.05      0.05       0.77 r
+  n3958 (net)                                   1         0.51                0.00       0.77 r
+  U3720/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.05      0.01       0.78 r
+  U3720/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.04       0.82 r
+  n3914 (net)                                   1         0.51                0.00       0.82 r
+  U3710/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.01       0.83 r
+  U3710/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.04       0.87 r
+  n3911 (net)                                   1         0.51                0.00       0.87 r
+  U3707/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.01       0.88 r
+  U3707/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.04       0.92 r
+  n3923 (net)                                   1         0.51                0.00       0.92 r
+  U3930/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.03      0.01       0.93 r
+  U3930/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.04       0.96 r
+  n3926 (net)                                   1         0.51                0.00       0.96 r
+  U3926/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.01       0.97 r
+  U3926/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.05       1.02 r
+  n3917 (net)                                   1         0.51                0.00       1.02 r
+  U3917/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.01       1.04 r
+  U3917/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.09 r
+  n3920 (net)                                   1         0.51                0.00       1.09 r
+  U3909/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.10 r
+  U3909/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.15 r
+  n4277 (net)                                   1         0.51                0.00       1.15 r
+  U3694/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.16 r
+  U3694/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.13      0.05       1.22 r
+  n4274 (net)                                   1         0.68                0.00       1.22 r
+  U3690/CI (SAEDHVT14_ADDF_V1_1)                                    0.13      0.02       1.23 r
+  U3690/CO (SAEDHVT14_ADDF_V1_1)                                    0.01      0.05       1.29 r
+  n4034 (net)                                   1         0.68                0.00       1.29 r
+  U3688/CI (SAEDHVT14_ADDF_V1_1)                                    0.01      0.02       1.30 r
+  U3688/CO (SAEDHVT14_ADDF_V1_1)                                    0.02      0.02       1.32 r
+  n3905 (net)                                   1         0.51                0.00       1.32 r
+  U3686/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.02      0.01       1.33 r
+  U3686/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.03       1.36 r
+  n3908 (net)                                   1         0.51                0.00       1.36 r
+  U3683/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.37 r
+  U3683/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.42 r
+  n3805 (net)                                   1         0.51                0.00       1.42 r
+  U3890/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.44 r
+  U3890/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.49 r
+  n3815 (net)                                   1         0.51                0.00       1.49 r
+  U3681/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.50 r
+  U3681/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.55 r
+  n3848 (net)                                   1         0.51                0.00       1.55 r
+  U3678/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.57 r
+  U3678/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.62 r
+  n3884 (net)                                   1         0.51                0.00       1.62 r
+  U3883/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.63 r
+  U3883/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.68 r
+  n4117 (net)                                   1         0.51                0.00       1.68 r
+  U3673/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.69 r
+  U3673/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.75 r
+  n3952 (net)                                   1         0.51                0.00       1.75 r
+  U3672/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.76 r
+  U3672/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.81 r
+  n3949 (net)                                   1         0.51                0.00       1.81 r
+  U3877/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.82 r
+  U3877/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.88 r
+  n3902 (net)                                   1         0.51                0.00       1.88 r
+  U3670/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.89 r
+  U3670/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       1.94 r
+  n3899 (net)                                   1         0.51                0.00       1.94 r
+  U3669/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       1.95 r
+  U3669/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.05       2.00 r
+  n3946 (net)                                   1         0.51                0.00       2.00 r
+  U3665/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       2.01 r
+  U3665/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.05       2.07 r
+  n4140 (net)                                   1         0.51                0.00       2.07 r
+  U3663/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.01       2.08 r
+  U3663/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.05       2.13 r
+  n4271 (net)                                   1         0.51                0.00       2.13 r
+  U3662/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.08      0.01       2.14 r
+  U3662/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.05       2.19 r
+  n4258 (net)                                   1         0.51                0.00       2.19 r
+  U3661/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.07      0.01       2.20 r
+  U3661/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.05      0.05       2.25 r
+  n4268 (net)                                   1         0.51                0.00       2.25 r
+  U3660/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.05      0.01       2.26 r
+  U3660/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.04       2.30 r
+  n4265 (net)                                   1         0.51                0.00       2.30 r
+  U3658/CI (SAEDHVT14_ADDF_V1_0P5)                                  0.09      0.01       2.31 r
+  U3658/CO (SAEDHVT14_ADDF_V1_0P5)                                  0.13      0.05       2.37 r
+  n4261 (net)                                   1         0.66                0.00       2.37 r
+  U6472/A2 (SAEDHVT14_EO2_V1_0P75)                                  0.13      0.01       2.38 r
+  U6472/X (SAEDHVT14_EO2_V1_0P75)                                   0.02      0.04       2.42 f
+  n4263 (net)                                   1         0.66                0.00       2.42 f
+  U3627/A2 (SAEDHVT14_EO2_V1_0P75)                                  0.02      0.01       2.44 f
+  U3627/X (SAEDHVT14_EO2_V1_0P75)                                   3.22      0.54       2.98 f
+  data_addr_o[31] (net)                         8        11.75                0.00       2.98 f
+  U8082/A1 (SAEDHVT14_AOI21_0P5)                                    3.22      0.01       2.99 f
+  U8082/X (SAEDHVT14_AOI21_0P5)                                     0.48      0.55       3.54 r
+  n6831 (net)                                   6         1.63                0.00       3.54 r
+  U8086/A (SAEDHVT14_INV_0P5)                                       0.48      0.01       3.54 r
+  U8086/X (SAEDHVT14_INV_0P5) <-                                   15.67     -0.05       3.49 f
+  n7360 (net)                                   3         0.78                0.00       3.49 f
+  U3518/A1 (SAEDHVT14_OAI22_1)                                     15.67      0.01       3.50 f
+  U3518/X (SAEDHVT14_OAI22_1)                                       2.09      1.16       4.66 r
+  n6779 (net)                                   1         0.34                0.00       4.66 r
+  U8088/A1 (SAEDHVT14_ND2_CDC_1)                                    2.09      0.01       4.67 r
+  U8088/X (SAEDHVT14_ND2_CDC_1)                                     0.36      0.50       5.17 f
+  n9432 (net)                                  10         2.94                0.00       5.17 f
+  U5908/A1 (SAEDHVT14_OAI21_0P5)                                    0.36      0.01       5.18 f
+  U5908/X (SAEDHVT14_OAI21_0P5)                                     3.27      0.04       5.23 r
+  n9257 (net)                                   1         0.33                0.00       5.23 r
+  U10149/A3 (SAEDHVT14_OA31_1)                                      3.27      0.01       5.23 r
+  U10149/X (SAEDHVT14_OA31_1)                                       0.05      0.50       5.74 r
+  n9260 (net)                                   1         0.20                0.00       5.74 r
+  U10150/B (SAEDHVT14_AO21_U_0P5)                                   0.05      0.00       5.74 r
+  U10150/X (SAEDHVT14_AO21_U_0P5)                                   0.01      0.02       5.76 r
+  n2706 (net)                                   1         0.24                0.00       5.76 r
+  u_ibex_core/id_stage_i/imd_val_q_reg[0][23]/D (SAEDHVT14_FDPRBQ_V2LP_0P5)
+                                                                    0.01      0.01       5.77 r
+  data arrival time                                                                      5.77
+
+  clock cluster_clock_gating (rise edge)                                      6.25       6.25
+  clock network delay (ideal)                                                 0.00       6.25
+  clock uncertainty                                                          -0.20       6.05
+  u_ibex_core/id_stage_i/imd_val_q_reg[0][23]/CK (SAEDHVT14_FDPRBQ_V2LP_0P5)
+                                                                              0.00       6.05 r
+  library setup time                                                          0.00       6.05
+  data required time                                                                     6.05
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                     6.05
+  data arrival time                                                                     -5.77
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.28
+
+
+1

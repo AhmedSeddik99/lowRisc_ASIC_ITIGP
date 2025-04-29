@@ -1,0 +1,4 @@
+Writing verilog file '/mnt/hgfs/0_GP/Synthesis/4_29/syn_maxperf_1/dft/dft_1/output/ibex_top.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 11 nets to module ibex_top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1

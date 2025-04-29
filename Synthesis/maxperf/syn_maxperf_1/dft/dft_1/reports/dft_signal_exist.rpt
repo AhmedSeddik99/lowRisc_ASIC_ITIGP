@@ -1,0 +1,148 @@
+ 
+****************************************
+Report : DFT signals
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Tue Apr 29 17:39:03 2025
+****************************************
+
+========================================
+TEST MODE: all_dft_user
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: all_dft_protocol
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Internal_scan_user
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Internal_scan_protocol
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+scramble_req_o     Constant            -         -
+instr_addr_o[1]    Constant            -         -
+instr_addr_o[0]    Constant            -         -
+data_wdata_intg_o[6] Constant          -         -
+data_wdata_intg_o[5] Constant          -         -
+data_wdata_intg_o[4] Constant          -         -
+data_wdata_intg_o[3] Constant          -         -
+data_wdata_intg_o[2] Constant          -         -
+data_wdata_intg_o[1] Constant          -         -
+data_wdata_intg_o[0] Constant          -         -
+data_addr_o[1]     Constant            -         -
+data_addr_o[0]     Constant            -         -
+crash_dump_o[next_pc][0] Constant      -         -
+crash_dump_o[exception_pc][0] Constant -         -
+crash_dump_o[current_pc][0] Constant   -         -
+alert_minor_o      Constant            -         -
+alert_major_internal_o Constant        -         -
+alert_major_bus_o  Constant            -         -
+scan_out_{0}       ScanDataOut         -         -
+scan_in_{0}        ScanDataIn          -         -
+scan_en            ScanEnable          1         -
+========================================
+TEST MODE: Mission_mode_user
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Mission_mode_protocol
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+clk_i              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clk_i              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+rst_ni             Reset               0         -         P 100.0 R 55.0 F 45.0
+scramble_req_o     Constant            -         -
+scramble_req_o     Functional          -         -
+instr_addr_o[1]    Constant            -         -
+instr_addr_o[1]    Functional          -         -
+instr_addr_o[0]    Constant            -         -
+instr_addr_o[0]    Functional          -         -
+data_wdata_intg_o[6] Constant          -         -
+data_wdata_intg_o[6] Functional        -         -
+data_wdata_intg_o[5] Constant          -         -
+data_wdata_intg_o[5] Functional        -         -
+data_wdata_intg_o[4] Constant          -         -
+data_wdata_intg_o[4] Functional        -         -
+data_wdata_intg_o[3] Constant          -         -
+data_wdata_intg_o[3] Functional        -         -
+data_wdata_intg_o[2] Constant          -         -
+data_wdata_intg_o[2] Functional        -         -
+data_wdata_intg_o[1] Constant          -         -
+data_wdata_intg_o[1] Functional        -         -
+data_wdata_intg_o[0] Constant          -         -
+data_wdata_intg_o[0] Functional        -         -
+data_addr_o[1]     Constant            -         -
+data_addr_o[1]     Functional          -         -
+data_addr_o[0]     Constant            -         -
+data_addr_o[0]     Functional          -         -
+crash_dump_o[next_pc][0] Constant      -         -
+crash_dump_o[next_pc][0] Functional    -         -
+crash_dump_o[exception_pc][0] Constant -         -
+crash_dump_o[exception_pc][0] Functional -       -
+crash_dump_o[current_pc][0] Constant   -         -
+crash_dump_o[current_pc][0] Functional -         -
+alert_minor_o      Constant            -         -
+alert_minor_o      Functional          -         -
+alert_major_internal_o Constant        -         -
+alert_major_internal_o Functional      -         -
+alert_major_bus_o  Constant            -         -
+alert_major_bus_o  Functional          -         -
+
+1

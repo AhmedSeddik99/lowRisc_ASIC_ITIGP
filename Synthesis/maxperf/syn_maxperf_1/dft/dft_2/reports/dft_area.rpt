@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Tue Apr 29 17:51:02 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'ibex_top' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed14hvt_tt0p8v25c (File: /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db)
+
+Number of ports:                         2791
+Number of nets:                         18693
+Number of cells:                        15902
+Number of combinational cells:          13820
+Number of sequential cells:              2061
+Number of macros/black boxes:               0
+Number of buf/inv:                       3170
+Number of references:                     190
+
+Combinational area:               5598.573574
+Buf/Inv area:                     1306.336789
+Noncombinational area:            2681.715666
+Macro/Black Box area:                0.000000
+Net Interconnect area:           14335.682477
+
+Total cell area:                  8280.289240
+Total area:                      22615.971717
+1

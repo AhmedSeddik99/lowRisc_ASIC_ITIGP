@@ -1,0 +1,24 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_if_stage.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_load_store_unit.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_onehot_mux.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_ram_1p_scr.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_ram_1p_adv.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_count.sv
+Presto compilation completed successfully.
+1

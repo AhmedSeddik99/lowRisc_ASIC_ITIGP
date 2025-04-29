@@ -1,0 +1,98 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : qor
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Tue Apr 29 16:16:07 2025
+****************************************
+
+
+  Timing Path Group 'clk_i'
+  -----------------------------------
+  Levels of Logic:               6.00
+  Critical Path Length:          0.16
+  Critical Path Slack:           2.76
+  Critical Path Clk Period:      6.25
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.04
+  Total Hold Violation:         -0.07
+  No. of Hold Violations:        2.00
+  -----------------------------------
+
+  Timing Path Group 'cluster_clock_gating'
+  -----------------------------------
+  Levels of Logic:              60.00
+  Critical Path Length:      11172.95
+  Critical Path Slack:      -11166.90
+  Critical Path Clk Period:      6.25
+  Total Negative Slack:   -9286379.00
+  No. of Violating Paths:     1061.00
+  Worst Hold Violation:     -43176.89
+  Total Hold Violation:  -11825058.00
+  No. of Hold Violations:     2057.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         21
+  Hierarchical Port Count:       2127
+  Leaf Cell Count:              16091
+  Buf/Inv Cell Count:            3381
+  Buf Cell Count:                 959
+  Inv Cell Count:                2807
+  CT Buf/Inv Cell Count:            2
+  Combinational Cell Count:     14032
+  Sequential Cell Count:         2059
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     5990.803158
+  Noncombinational Area:  2728.291269
+  Buf/Inv Area:           1722.364774
+  Total Buffer Area:           768.70
+  Total Inverter Area:        1550.49
+  Macro/Black Box Area:      0.000000
+  Net Area:              14472.316327
+  -----------------------------------
+  Cell Area:              8719.094427
+  Design Area:           23191.410753
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         17120
+  Nets With Violations:             7
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  Max Fanout Violations:            7
+  -----------------------------------
+
+
+  Hostname: IC_EDA
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    2.53
+  Logic Optimization:                  7.14
+  Mapping Optimization:              163.37
+  -----------------------------------------
+  Overall Compile Time:              200.10
+  Overall Compile Wall Clock Time:   217.57
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 11166.90  TNS: 9286379.00  Number of Violating Paths: 1061
+
+
+  Design (Hold)  WNS: 43176.89  TNS: 11825109.00  Number of Violating Paths: 2059
+
+  --------------------------------------------------------------------
+
+
+1
