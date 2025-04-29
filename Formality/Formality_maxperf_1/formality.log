@@ -1,0 +1,97 @@
+****************************************************
+
+Info:  Net Imp:/WORK/ibex_register_file_ff_0_00000020_0_0_0_00000000/err_o is undriven.
+Info:  Net Imp:/WORK/ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0/icache_enable_o is undriven.
+Info:  Net Imp:/WORK/ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0/n960 is undriven.
+Info:  Net Imp:/WORK/ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0/net80439 is undriven.
+Info:  Net Imp:/WORK/ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0/net80440 is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_6/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_18_0_0/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_5/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_7_0_0_1/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_4/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_40000003/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_3/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_2/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_1/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_3_0_4/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_32_0_0_0/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_csr_7_0_0_0/rd_error_o is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[63] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[62] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[61] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[60] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[59] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[58] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[57] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[56] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[55] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[54] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[53] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[52] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[51] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[50] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[49] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[48] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[47] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[46] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[45] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[44] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[43] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[42] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[41] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[40] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[39] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[38] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[37] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[36] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[35] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[34] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[33] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[32] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[31] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[30] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[29] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[28] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[27] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[26] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[25] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[24] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[23] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[22] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[21] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[20] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[19] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[18] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[17] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[16] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[15] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[14] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[13] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[12] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[11] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[10] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[9] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[8] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[7] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[6] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[5] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[4] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[3] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[2] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[1] is undriven.
+Info:  Net Imp:/WORK/ibex_counter_CounterWidth64/counter_val_upd_o[0] is undriven.
+Info:  SVF Operation 797 (Line: 4763) - ungroup.  Status: accepted
+Info:  SVF Operation 798 (Line: 4767) - ungroup.  Status: accepted
+Info:  SVF Operation 799 (Line: 4771) - ungroup.  Status: accepted
+Info:  SVF Operation 800 (Line: 4775) - ungroup.  Status: accepted
+Info:  SVF Operation 801 (Line: 4779) - ungroup.  Status: accepted
+Info:  SVF Operation 802 (Line: 4783) - ungroup.  Status: accepted
+Info:  SVF Operation 803 (Line: 4787) - ungroup.  Status: accepted
+Info:  SVF Operation 804 (Line: 4791) - ungroup.  Status: accepted
+Info:  SVF Operation 805 (Line: 4795) - ungroup.  Status: accepted
+Info:  SVF Operation 806 (Line: 4799) - ungroup.  Status: accepted
+Info:  Pre-verification of r:/WORK/ibex_multdiv_fast_RV32M3/DP_OP_75J4_122_1549 SUCCEEDED.
+Info:  SVF Operation 876 (Line: 5664) - ungroup.  Status: accepted
+****************************************************
+
