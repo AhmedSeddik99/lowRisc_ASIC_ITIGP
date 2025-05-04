@@ -1,0 +1,48 @@
+Warning: Design 'ibex_top' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Information: Using test design rule information from previous dft_drc run.
+  Architecting Scan Chains
+
+****************************************
+Preview_dft report
+For    : 'Insert_dft' command
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Thu May  1 09:04:29 2025
+****************************************
+
+Number of chains: 5
+Scan methodology: full_scan
+Scan style: multiplexed_flip_flop
+Clock domain: no_mix
+Scan enable: scan_en (no hookup pin)
+
+
+Scan chain '1' (scan_in_0 --> scan_out_0) contains 412 cells
+
+
+Scan chain '2' (scan_in_1 --> scan_out_1) contains 412 cells
+
+
+Scan chain '3' (scan_in_2 --> scan_out_2) contains 412 cells
+
+
+Scan chain '4' (scan_in_3 --> scan_out_3) contains 412 cells
+
+
+Scan chain '5' (test_si5 --> crash_dump_o[last_data_addr][31]) contains 411 cells
+
+
+
+************ Test Point Plan Report ************
+Total number of test points  : 0
+Number of Autofix test points: 0
+Number of Wrapper test points: 0
+Number of test modes         : 0
+Number of test point enables : 0
+Number of data sources       : 0
+Number of data sinks         : 0
+**************************************************
+
+Dft signals:
+ TestMode: test_en_i (no hookup pin)
+1

@@ -1,0 +1,49 @@
+Warning: Design 'ibex_top' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+
+Information: Starting test design rule checking. (TEST-222)
+Warning: Violations occurred during test design rule checking. (TEST-124)
+Information: Test design rule checking completed. (TEST-123)
+  Architecting Scan Chains
+  Routing Scan Chains
+  Routing Global Signals
+  Mapping New Logic
+Resetting current test mode
+Warning: Design 'ibex_top' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Beginning Mapping Optimizations
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+
+
+  Beginning Phase 1 Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.6      0.00       0.0    4621.6 u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/md_state_q[1]
+    0:01:49   19290.7      0.00       0.0    4620.6 scan_en                  
+    0:01:49   19290.7      0.00       0.0    4620.6 scan_en                  
+    0:01:49   19290.7      0.00       0.0    4620.6 scan_en                  
+
+
+  Beginning Phase 2 Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:50    6869.6      0.00       0.0    4620.7                          
+    0:01:50    6871.6      0.00       0.0    4620.9                          
+
+1

@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : resources
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Thu May  1 07:25:13 2025
+****************************************
+
+
+Resource Report for this hierarchy in file ./RTL/ibex_if_stage.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_57        | DW_cmp         | width=5    | u_ibex_core/id_stage_i/eq_979 (ibex_id_stage.sv:979) |
+| eq_x_58        | DW_cmp         | width=5    | u_ibex_core/id_stage_i/eq_980 (ibex_id_stage.sv:980) |
+| add_x_66       | DW01_add       | width=32   | u_ibex_core/ex_block_i/add_98 (ibex_ex_block.sv:98) |
+| add_x_115      | DW01_add       | width=32   | u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/add_170 (ibex_prefetch_buffer.sv:170) |
+| add_x_280      | DW01_add       | width=32   | u_ibex_core/id_stage_i/controller_i/add_760_aco (ibex_controller.sv:760) |
+| add_x_351      | DW01_add       | width=34   | u_ibex_core/ex_block_i/alu_i/add_105 (ibex_alu.sv:105) |
+| eq_x_353       | DW_cmp         | width=32   | u_ibex_core/ex_block_i/alu_i/eq_132 (ibex_alu.sv:132) |
+| sub_x_357      | DW01_sub       | width=5    | u_ibex_core/ex_block_i/alu_i/sub_280 (ibex_alu.sv:280) |
+| ashr_364       | DW_rightsh     | A_width=33 | u_ibex_core/ex_block_i/alu_i/sra_342 (ibex_alu.sv:342) |
+      | SH_width=5 |                            |
+| add_x_382      | DW01_add       | width=31   | u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/add_145 (ibex_fetch_fifo.sv:145) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_57            | DW_cmp           | apparch (area)     |                |
+| eq_x_58            | DW_cmp           | apparch (area)     |                |
+| add_x_66           | DW01_add         | apparch (area)     |                |
+| add_x_115          | DW01_add         | apparch (area)     |                |
+| add_x_280          | DW01_add         | apparch (area)     |                |
+| add_x_351          | DW01_add         | apparch (area)     |                |
+| eq_x_353           | DW_cmp           | apparch (area)     |                |
+| sub_x_357          | DW01_sub         | apparch (area)     |                |
+| ashr_364           | DW_rightsh       | astr (area)        |                |
+| add_x_382          | DW01_add         | apparch (area)     |                |
+===============================================================================
+
+1

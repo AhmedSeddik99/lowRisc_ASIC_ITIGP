@@ -1,0 +1,386 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version O-2018.06-SP1 for linux64 - Jul 19, 2018 
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/ICer/.synopsys_dv_prefs.tcl
+set DESIGN "ibex_top"
+ibex_top
+set CHAINS 4
+4
+set FFLIB "saed14rvt_ff0p88v125c.db"
+saed14rvt_ff0p88v125c.db
+set SSLIB "saed14rvt_ss0p72vm40c.db"
+saed14rvt_ss0p72vm40c.db
+set WORK "../../work"
+../../work
+set LOG "./log"
+./log
+set REPORT "./reports"
+./reports
+set OUTPUT "./output"
+./output
+#######################
+set_app_var search_path "/mnt/hgfs/stdcell_rvt/db_ccs/"
+/mnt/hgfs/stdcell_rvt/db_ccs/
+set_app_var target_library "$SSLIB $FFLIB"
+saed14rvt_ss0p72vm40c.db saed14rvt_ff0p88v125c.db
+set_app_var link_library "* $target_library"
+* saed14rvt_ss0p72vm40c.db saed14rvt_ff0p88v125c.db
+#####################
+define_design_lib work -path $WORK
+1
+#######################
+set_svf $DESIGN.svf
+1
+#######################
+sh rm -rf $LOG
+sh mkdir -p $LOG
+#######################
+read_ddc "../../output/$DESIGN.ddc" > "$LOG/read_ddc.log"
+# --Constraits 
+read_sdc "../../output/$DESIGN.sdc" > "$LOG/read_sdc.log"
+link > "$LOG/link.log"
+source ./dft_cons.tcl
+Warning: Can't find port 'scan_en' in design 'ibex_top'. (UID-95)
+Error: Value for list 'port_or_pin_list' must have 1 elements. (CMD-036)
+0
+set test_default_period 100
+100
+# 2019 FF in design
+set_scan_configuration -chain_count 4 -max_length 505 -clock_mixing no_mix  -style multiplexed_flip_flop -replace true > "$LOG/scan_configuration.log"
+compile -scan
+Information: Performing power optimization. (PWR-850)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 796 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'saed14rvt_ss0p72vm40c'
+  Loading target library 'saed14rvt_ff0p88v125c'
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_2'. (OPT-914)
+Warning: Operating condition ss0p72vm40c set on design ibex_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14rvt_ff0p88v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'ibex_multdiv_fast_RV32M3'
+  Processing 'ibex_csr_8_0_0'
+  Processing 'ibex_counter_CounterWidth64_ProvideValUpd1'
+  Processing 'ibex_counter_CounterWidth64'
+  Processing 'ibex_csr_7_0_0_0'
+  Processing 'ibex_csr_32_0_0_0'
+  Processing 'ibex_csr_3_0_4'
+  Processing 'ibex_csr_32_0_40000003'
+  Processing 'ibex_csr_32_0_00000001'
+  Processing 'ibex_csr_18_0_0'
+  Processing 'ibex_csr_6_0_10'
+  Processing 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0'
+Information: The register 'mcountinhibit_q_reg[1]' is a constant and will be removed. (OPT-1206)
+  Processing 'ibex_register_file_ff_0_00000020_0_0_0_00000000'
+  Processing 'prim_generic_clock_gating_0_1'
+  Processing 'prim_clock_gating'
+  Processing 'ibex_top'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_dec_0'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_ash_0'
+  Processing 'ibex_counter_CounterWidth64_ProvideValUpd1_DW01_inc_0'
+  Processing 'ibex_counter_CounterWidth64_DW01_inc_0'
+  Processing 'ibex_multdiv_fast_RV32M3_DW02_mult_0'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_add_0'
+  Processing 'ibex_multdiv_fast_RV32M3_DW02_mult_1'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_add_1'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_add_2'
+  Processing 'ibex_multdiv_fast_RV32M3_DW02_mult_2'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_add_3'
+  Processing 'ibex_multdiv_fast_RV32M3_DW01_add_4'
+Warning: No scan equivalent exists for cell core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg (SAEDRVT14_LDNQOR2_1). (TEST-120)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:26    9957.2      0.00       0.0   12586.7                           219127.4688
+    0:00:26    9957.2      0.00       0.0   12586.7                           219127.4688
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:31   10721.8      0.00       0.0    3622.7                           237847.5000
+    0:00:31   10721.8      0.00       0.0    3622.7                           237847.5000
+    0:00:35   12084.1      0.00       0.0    3598.7                           236286.2969
+    0:00:35   12084.1      0.00       0.0    3598.7                           236286.2969
+    0:00:35   12084.1      0.00       0.0    3598.7                           236286.2969
+    0:00:35   12084.1      0.00       0.0    3598.7                           236286.2969
+    0:00:36   12084.1      0.00       0.0    3598.7                           236286.2969
+    0:00:44    9721.6      0.00       0.0    3598.7                           137994.8750
+    0:00:44    9721.6      0.00       0.0    3598.7                           137994.8750
+    0:00:44    9721.6      0.00       0.0    3598.7                           137994.8750
+    0:00:44    9721.6      0.00       0.0    3598.7                           137994.8750
+    0:00:44    9721.6      0.00       0.0    3598.7                           137994.8750
+    0:00:46    9747.8      0.00       0.0    3270.7                           138045.6406
+    0:00:47    9766.7      0.00       0.0    2976.7                           138076.5469
+    0:00:48    9779.1      0.00       0.0    2805.7                           138101.2656
+    0:00:48    9788.4      0.00       0.0    2700.7                           138110.2656
+    0:00:48    9790.0      0.00       0.0    2685.7                           138113.4531
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:48    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:49    9789.6      0.00       0.0    2684.7                           138112.6562
+
+
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:49    9789.6      0.00       0.0    2684.7                           138112.6562
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:49    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:49    9789.6      0.00       0.0    2684.7                           138112.6562
+    0:00:51    9667.3      0.00       0.0    2684.7                           137847.0312
+    0:00:51    9615.0      0.00       0.0    2684.7                           137737.9688
+    0:00:51    9611.0      0.00       0.0    2684.7                           137730.0000
+    0:00:52    9610.6      0.00       0.0    2684.7                           137729.2031
+    0:00:52    9610.6      0.00       0.0    2684.7                           137729.2031
+    0:00:52    9610.6      0.00       0.0    2684.7                           137729.2031
+    0:00:52    9610.6      0.00       0.0    2684.7                           137729.2031
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9609.8      0.00       0.0    2684.7                           137716.5156
+    0:00:52    9605.1      0.00       0.0    2685.7                           137658.7656
+    0:00:52    9598.2      0.00       0.0    2685.7                           137543.3750
+    0:00:53    9591.2      0.00       0.0    2687.7                           137427.9688
+    0:00:53    9573.2      0.00       0.0    2687.7                           137135.5625
+    0:00:54    9561.8      0.00       0.0    2687.7                           136948.4375
+    0:00:54    9544.4      0.00       0.0    2687.7                           136642.8438
+    0:00:55    9525.6      0.00       0.0    2687.7                           136324.7344
+    0:00:55    9512.6      0.00       0.0    2687.7                           136134.4219
+    0:00:55    9509.5      0.00       0.0    2687.7                           136103.9531
+    0:00:55    9503.1      0.00       0.0    2687.7                           136004.1250
+    0:00:56    9495.9      0.00       0.0    2687.7                           135878.6094
+    0:00:57    9495.6      0.00       0.0    2687.7                           135873.1562
+    0:00:57    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:00:58    9495.3      0.00       0.0    2687.7                           135867.7031
+    0:01:00    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:00    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:00    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:00    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:00    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:01    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:01    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:01    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:01    9495.0      0.00       0.0    2687.7                           135862.2500
+    0:01:01    9495.0      0.00       0.0    2687.7                           135862.2500
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+    0:01:03    8281.1      0.00       0.0    2687.7                           128778.8203
+Loading db file '/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ibex_top' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'gen_regfile_ff.register_file_i/n992': 1984 load(s), 1 driver(s)
+     Net 'u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/net802': 1087 load(s), 1 driver(s)
+     Net 'u_ibex_core/cs_registers_i/u_mstack_cause_csr/clk_i': 2058 load(s), 1 driver(s)
+     Net 'u_ibex_core/cs_registers_i/u_mstack_cause_csr/rst_ni': 1697 load(s), 1 driver(s)
+1
+set_dft_signal -view exist -type ScanClock -port clk_i -timing {45 55}
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view exist -type Reset -port rst_ni -active 0
+Accepted dft signal specification for modes: all_dft
+1
+create_port -direction in scan_en
+Creating port 'scan_en' in design 'ibex_top'.
+1
+set_dft_signal -view spec -type ScanEnable -port scan_en -active 1
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -port [get_ports test_en_i] -type Constant   -view existing_dft  -active_state 1 
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -port [get_ports test_en_i] -type TestMode   -view spec  
+Accepted dft signal specification for modes: all_dft
+1
+create_port -direction in scan_in_0
+Creating port 'scan_in_0' in design 'ibex_top'.
+1
+create_port -direction out scan_out_0
+Creating port 'scan_out_0' in design 'ibex_top'.
+1
+set_dft_signal -view spec  -type ScanDataIn  -port scan_in_0
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view spec  -type ScanDataOut -port scan_out_0
+Accepted dft signal specification for modes: all_dft
+1
+create_port -direction in scan_in_1
+Creating port 'scan_in_1' in design 'ibex_top'.
+1
+create_port -direction out scan_out_1
+Creating port 'scan_out_1' in design 'ibex_top'.
+1
+set_dft_signal -view spec  -type ScanDataIn  -port scan_in_1
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view spec  -type ScanDataOut -port scan_out_1
+Accepted dft signal specification for modes: all_dft
+1
+create_port -direction in scan_in_2
+Creating port 'scan_in_2' in design 'ibex_top'.
+1
+create_port -direction out scan_out_2
+Creating port 'scan_out_2' in design 'ibex_top'.
+1
+set_dft_signal -view spec  -type ScanDataIn  -port scan_in_2
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view spec  -type ScanDataOut -port scan_out_2
+Accepted dft signal specification for modes: all_dft
+1
+create_port -direction in scan_in_3
+Creating port 'scan_in_3' in design 'ibex_top'.
+1
+create_port -direction out scan_out_3
+Creating port 'scan_out_3' in design 'ibex_top'.
+1
+set_dft_signal -view spec  -type ScanDataIn  -port scan_in_3
+Accepted dft signal specification for modes: all_dft
+1
+set_dft_signal -view spec  -type ScanDataOut -port scan_out_3
+Accepted dft signal specification for modes: all_dft
+1
+create_test_protocol > "$LOG/test_protocol.log"
+dft_drc -verbose > "$LOG/dft_drc_pre.log"
+preview_dft > "$LOG/preview_dft.log"
+set_dft_insertion_configuration -preserve_design_name true > "$LOG/insertion_configutaion.log"
+insert_dft > "$LOG/insert_dft.log"
+compile -scan -incremental > "$LOG/compile_scan.log"
+dft_drc -verbose -coverage_estimate > "$LOG/dft_drc_post.log"
+#######################
+set_svf -off
+1
+#######################
+sh rm -rf $REPORT
+sh mkdir -p $REPORT
+#####################
+report_dft_signal -view exist > "$REPORT/dft_signal_exist.rpt"
+report_dft_signal -view spec > "$REPORT/dft_signal_spec.rpt"
+report_area > "$REPORT/dft_area.rpt"
+report_timing -delay_type max -max_paths 500 > "$REPORT/dft_setup.rpt"
+report_timing -delay_type min -max_paths 500 > "$REPORT/dft_hold.rpt"
+report_qor > "$REPORT/dft_qor.rpt"
+report_net > "$REPORT/dft_net.rpt"
+report_constraint -all_violators -nosplit > reports/constraints.rpt
+##########################
+sh rm -rf $OUTPUT
+sh mkdir -p $OUTPUT
+#######################
+write -hierarchy -format verilog -output "$OUTPUT/$DESIGN.v" >> "$LOG/write_netlist.log"
+write -format ddc -output "$OUTPUT/$DESIGN.ddc"
+Writing ddc file './output/ibex_top.ddc'.
+1
+write_test_protocol -out "$OUTPUT/$DESIGN.spf"
+Writing test protocol file '/home/ICer/ITI_GP/Synthesis/syn_maxperf_3/dft/dft_1/output/ibex_top.spf' for mode 'Internal_scan'...
+1
+write_sdf  "$OUTPUT/$DESIGN.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ICer/ITI_GP/Synthesis/syn_maxperf_3/dft/dft_1/output/ibex_top.sdf'. (WT-3)
+1
+write_sdc  -nosplit "$OUTPUT/$DESIGN.sdc"
+1
+1
+dc_shell> 

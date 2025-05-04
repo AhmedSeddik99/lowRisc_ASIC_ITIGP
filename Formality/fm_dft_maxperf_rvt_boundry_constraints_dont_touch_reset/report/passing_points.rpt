@@ -1,0 +1,1122 @@
+**************************************************
+Report         : passing_points
+
+Reference      : r:/WORK/ibex_top
+Implementation : Imp:/WORK/ibex_top
+Version        : L-2016.03-SP1
+Date           : Thu May  1 19:17:37 2025
+**************************************************
+
+362 Passing compare points:
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[10]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[10]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[11]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[11]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[12]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[12]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[16]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[16]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[18]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[18]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[19]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[19]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[20]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[20]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[21]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[21]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[22]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[22]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[23]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[23]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[24]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[24]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[25]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[25]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[26]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[26]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[28]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[28]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[0]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[0]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[10]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[10]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[11]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[11]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[12]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[12]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[16]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[16]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mie_csr/rdata_q_reg[9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[10]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[10]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[11]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[11]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[12]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[12]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[16]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[16]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[18]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[18]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[19]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[19]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[20]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[20]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[21]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[21]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[22]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[22]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[23]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[23]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[24]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[24]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[25]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[25]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[28]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[28]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_by_zero_q_reg
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_by_zero_q_reg
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[20]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[20]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[21]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[21]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[22]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[22]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[23]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[23]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[24]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[24]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[25]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[25]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[26]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[26]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[28]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[28]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_quotient_q_reg[9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_cs_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_cs_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/do_single_step_q_reg
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/do_single_step_q_reg
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/enter_debug_mode_prio_q_reg
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/id_stage_i/controller_i/enter_debug_mode_prio_q_reg
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][28]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][28]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[0][9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][10]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][10]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][11]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][11]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][12]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][12]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][16]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][16]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][18]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][18]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][19]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][19]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_c_id_o_reg[9]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[0]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[0]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[10]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[10]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[11]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[11]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[12]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[12]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[13]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[13]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[14]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[14]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[15]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[15]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[16]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[16]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[18]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[18]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[19]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[19]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[21]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[21]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[22]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[22]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[23]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[23]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[24]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[24]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[25]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[25]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[26]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[26]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[17]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[17]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[18]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[18]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[19]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[19]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[1]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[1]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[20]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[20]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[21]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[21]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[22]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[22]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[23]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[23]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[24]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[24]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[25]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[25]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[26]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[26]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[27]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[27]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[28]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[28]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[29]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[29]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[2]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[2]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[30]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[30]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[31]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[31]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[3]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[3]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[4]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[4]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[5]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[5]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[6]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[6]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[7]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[7]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[8]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[8]
+
+  Ref  DFF        r:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[9]
+  Impl DFF        Imp:/WORK/ibex_top/u_ibex_core/if_stage_i/pc_id_o_reg[9]
+
+  Ref  Port       r:/WORK/ibex_top/alert_major_bus_o
+  Impl Port       Imp:/WORK/ibex_top/alert_major_bus_o
+
+  Ref  Port       r:/WORK/ibex_top/alert_major_internal_o
+  Impl Port       Imp:/WORK/ibex_top/alert_major_internal_o
+
+  Ref  Port       r:/WORK/ibex_top/alert_minor_o
+  Impl Port       Imp:/WORK/ibex_top/alert_minor_o
+
+  Ref  Port       r:/WORK/ibex_top/core_sleep_o
+  Impl Port       Imp:/WORK/ibex_top/core_sleep_o
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][10]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[138]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][11]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[139]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][12]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[140]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][13]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[141]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][14]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[142]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][15]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[143]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][16]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[144]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][17]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[145]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][18]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[146]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][19]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[147]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][1]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[129]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][20]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[148]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][21]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[149]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][22]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[150]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][23]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[151]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][24]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[152]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][25]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[153]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][26]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[154]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][27]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[155]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][28]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[156]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][29]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[157]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][2]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[130]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][30]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[158]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][31]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[159]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][3]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[131]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][4]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[132]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][5]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[133]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][6]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[134]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][7]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[135]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][8]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[136]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[current_pc][9]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[137]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][0]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[0]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][10]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[10]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][11]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[11]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][12]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[12]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][13]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[13]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][14]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[14]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][15]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[15]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][16]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[16]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][17]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[17]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][18]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[18]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][19]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[19]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][1]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[1]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][20]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[20]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][21]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[21]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][22]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[22]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][23]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[23]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][24]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[24]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][25]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[25]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][26]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[26]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][27]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[27]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][28]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[28]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][29]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[29]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][2]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[2]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][30]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[30]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][31]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[31]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][3]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[3]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][4]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[4]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][5]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[5]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][6]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[6]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][7]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[7]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][8]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[8]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_addr][9]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[9]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][0]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[32]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][10]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[42]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][11]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[43]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][12]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[44]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][13]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[45]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][14]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[46]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][15]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[47]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][16]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[48]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][17]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[49]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][18]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[50]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][19]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[51]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][1]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[33]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][20]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[52]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][21]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[53]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][22]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[54]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][23]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[55]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][24]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[56]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][25]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[57]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][26]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[58]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][27]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[59]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][28]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[60]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][29]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[61]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][2]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[34]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][30]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[62]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][31]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[63]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][3]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[35]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][4]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[36]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][5]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[37]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][6]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[38]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][7]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[39]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][8]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[40]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[exception_pc][9]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[41]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][0]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[64]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][10]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[74]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][11]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[75]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][12]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[76]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][13]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[77]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][14]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[78]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][15]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[79]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][16]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[80]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][17]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[81]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][18]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[82]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][19]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[83]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][1]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[65]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][20]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[84]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][21]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[85]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][22]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[86]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][23]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[87]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][24]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[88]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][25]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[89]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][26]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[90]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][27]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[91]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][28]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[92]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][29]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[93]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][2]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[66]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][30]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[94]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][31]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[95]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][3]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[67]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][4]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[68]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][5]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[69]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][6]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[70]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][7]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[71]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][8]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[72]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[last_data_addr][9]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[73]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][0]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[96]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][10]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[106]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][11]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[107]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][12]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[108]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][13]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[109]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][14]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[110]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][15]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[111]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][16]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[112]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][17]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[113]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][18]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[114]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][19]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[115]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][1]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[97]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][20]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[116]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][21]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[117]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][22]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[118]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][23]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[119]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][24]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[120]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][25]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[121]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][26]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[122]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][27]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[123]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][28]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[124]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][29]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[125]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][2]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[98]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][30]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[126]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][31]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[127]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][3]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[99]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][4]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[100]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][5]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[101]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][6]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[102]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][7]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[103]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][8]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[104]
+
+  Ref  Port       r:/WORK/ibex_top/crash_dump_o\[next_pc][9]
+  Impl Port       Imp:/WORK/ibex_top/crash_dump_o[105]
+
+  Ref  Port       r:/WORK/ibex_top/data_addr_o[0]
+  Impl Port       Imp:/WORK/ibex_top/data_addr_o[0]
+
+  Ref  Port       r:/WORK/ibex_top/data_addr_o[1]
+  Impl Port       Imp:/WORK/ibex_top/data_addr_o[1]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[0]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[0]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[1]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[1]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[2]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[2]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[3]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[3]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[4]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[4]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[5]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[5]
+
+  Ref  Port       r:/WORK/ibex_top/data_wdata_intg_o[6]
+  Impl Port       Imp:/WORK/ibex_top/data_wdata_intg_o[6]
+
+  Ref  Port       r:/WORK/ibex_top/instr_addr_o[0]
+  Impl Port       Imp:/WORK/ibex_top/instr_addr_o[0]
+
+  Ref  Port       r:/WORK/ibex_top/instr_addr_o[1]
+  Impl Port       Imp:/WORK/ibex_top/instr_addr_o[1]
+
+  Ref  Port       r:/WORK/ibex_top/scramble_req_o
+  Impl Port       Imp:/WORK/ibex_top/scramble_req_o
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

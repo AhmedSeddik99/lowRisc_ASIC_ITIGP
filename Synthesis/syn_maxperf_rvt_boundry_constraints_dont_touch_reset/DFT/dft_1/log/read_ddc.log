@@ -1,0 +1,13 @@
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_RVT_v_062020/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_RVT_v_062020/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ss0p72vm40c'
+  Loading link library 'saed14rvt_ff0p88v125c'
+  Loading link library 'gtech'
+Reading ddc file '/mnt/hgfs/0_GP/Synthesis/5_1/syn_maxperf_5_rvt/output/ibex_top.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 1 design.
+Current design is 'ibex_top'.
+ibex_top

@@ -1,0 +1,1606 @@
+STIL 1.0 {
+    Design 2005;
+}
+Header {
+    Title "Minimal STIL for design `ibex_top'";
+    Date "Thu May  1 08:39:08 2025";
+    Source "DFT Compiler O-2018.06-SP1";
+}
+Signals {
+    "boot_addr_i[0]" In;
+    "boot_addr_i[10]" In;
+    "boot_addr_i[11]" In;
+    "boot_addr_i[12]" In;
+    "boot_addr_i[13]" In;
+    "boot_addr_i[14]" In;
+    "boot_addr_i[15]" In;
+    "boot_addr_i[16]" In;
+    "boot_addr_i[17]" In;
+    "boot_addr_i[18]" In;
+    "boot_addr_i[19]" In;
+    "boot_addr_i[1]" In;
+    "boot_addr_i[20]" In;
+    "boot_addr_i[21]" In;
+    "boot_addr_i[22]" In;
+    "boot_addr_i[23]" In;
+    "boot_addr_i[24]" In;
+    "boot_addr_i[25]" In;
+    "boot_addr_i[26]" In;
+    "boot_addr_i[27]" In;
+    "boot_addr_i[28]" In;
+    "boot_addr_i[29]" In;
+    "boot_addr_i[2]" In;
+    "boot_addr_i[30]" In;
+    "boot_addr_i[31]" In;
+    "boot_addr_i[3]" In;
+    "boot_addr_i[4]" In;
+    "boot_addr_i[5]" In;
+    "boot_addr_i[6]" In;
+    "boot_addr_i[7]" In;
+    "boot_addr_i[8]" In;
+    "boot_addr_i[9]" In;
+    "clk_i" In;
+    "data_err_i" In;
+    "data_gnt_i" In;
+    "data_rdata_i[0]" In;
+    "data_rdata_i[10]" In;
+    "data_rdata_i[11]" In;
+    "data_rdata_i[12]" In;
+    "data_rdata_i[13]" In;
+    "data_rdata_i[14]" In;
+    "data_rdata_i[15]" In;
+    "data_rdata_i[16]" In;
+    "data_rdata_i[17]" In;
+    "data_rdata_i[18]" In;
+    "data_rdata_i[19]" In;
+    "data_rdata_i[1]" In;
+    "data_rdata_i[20]" In;
+    "data_rdata_i[21]" In;
+    "data_rdata_i[22]" In;
+    "data_rdata_i[23]" In;
+    "data_rdata_i[24]" In;
+    "data_rdata_i[25]" In;
+    "data_rdata_i[26]" In;
+    "data_rdata_i[27]" In;
+    "data_rdata_i[28]" In;
+    "data_rdata_i[29]" In;
+    "data_rdata_i[2]" In;
+    "data_rdata_i[30]" In;
+    "data_rdata_i[31]" In;
+    "data_rdata_i[3]" In;
+    "data_rdata_i[4]" In;
+    "data_rdata_i[5]" In;
+    "data_rdata_i[6]" In;
+    "data_rdata_i[7]" In;
+    "data_rdata_i[8]" In;
+    "data_rdata_i[9]" In;
+    "data_rdata_intg_i[0]" In;
+    "data_rdata_intg_i[1]" In;
+    "data_rdata_intg_i[2]" In;
+    "data_rdata_intg_i[3]" In;
+    "data_rdata_intg_i[4]" In;
+    "data_rdata_intg_i[5]" In;
+    "data_rdata_intg_i[6]" In;
+    "data_rvalid_i" In;
+    "debug_req_i" In;
+    "fetch_enable_i[0]" In;
+    "fetch_enable_i[1]" In;
+    "fetch_enable_i[2]" In;
+    "fetch_enable_i[3]" In;
+    "hart_id_i[0]" In;
+    "hart_id_i[10]" In;
+    "hart_id_i[11]" In;
+    "hart_id_i[12]" In;
+    "hart_id_i[13]" In;
+    "hart_id_i[14]" In;
+    "hart_id_i[15]" In;
+    "hart_id_i[16]" In;
+    "hart_id_i[17]" In;
+    "hart_id_i[18]" In;
+    "hart_id_i[19]" In;
+    "hart_id_i[1]" In;
+    "hart_id_i[20]" In;
+    "hart_id_i[21]" In;
+    "hart_id_i[22]" In;
+    "hart_id_i[23]" In;
+    "hart_id_i[24]" In;
+    "hart_id_i[25]" In;
+    "hart_id_i[26]" In;
+    "hart_id_i[27]" In;
+    "hart_id_i[28]" In;
+    "hart_id_i[29]" In;
+    "hart_id_i[2]" In;
+    "hart_id_i[30]" In;
+    "hart_id_i[31]" In;
+    "hart_id_i[3]" In;
+    "hart_id_i[4]" In;
+    "hart_id_i[5]" In;
+    "hart_id_i[6]" In;
+    "hart_id_i[7]" In;
+    "hart_id_i[8]" In;
+    "hart_id_i[9]" In;
+    "instr_err_i" In;
+    "instr_gnt_i" In;
+    "instr_rdata_i[0]" In;
+    "instr_rdata_i[10]" In;
+    "instr_rdata_i[11]" In;
+    "instr_rdata_i[12]" In;
+    "instr_rdata_i[13]" In;
+    "instr_rdata_i[14]" In;
+    "instr_rdata_i[15]" In;
+    "instr_rdata_i[16]" In;
+    "instr_rdata_i[17]" In;
+    "instr_rdata_i[18]" In;
+    "instr_rdata_i[19]" In;
+    "instr_rdata_i[1]" In;
+    "instr_rdata_i[20]" In;
+    "instr_rdata_i[21]" In;
+    "instr_rdata_i[22]" In;
+    "instr_rdata_i[23]" In;
+    "instr_rdata_i[24]" In;
+    "instr_rdata_i[25]" In;
+    "instr_rdata_i[26]" In;
+    "instr_rdata_i[27]" In;
+    "instr_rdata_i[28]" In;
+    "instr_rdata_i[29]" In;
+    "instr_rdata_i[2]" In;
+    "instr_rdata_i[30]" In;
+    "instr_rdata_i[31]" In;
+    "instr_rdata_i[3]" In;
+    "instr_rdata_i[4]" In;
+    "instr_rdata_i[5]" In;
+    "instr_rdata_i[6]" In;
+    "instr_rdata_i[7]" In;
+    "instr_rdata_i[8]" In;
+    "instr_rdata_i[9]" In;
+    "instr_rdata_intg_i[0]" In;
+    "instr_rdata_intg_i[1]" In;
+    "instr_rdata_intg_i[2]" In;
+    "instr_rdata_intg_i[3]" In;
+    "instr_rdata_intg_i[4]" In;
+    "instr_rdata_intg_i[5]" In;
+    "instr_rdata_intg_i[6]" In;
+    "instr_rvalid_i" In;
+    "irq_external_i" In;
+    "irq_fast_i[0]" In;
+    "irq_fast_i[10]" In;
+    "irq_fast_i[11]" In;
+    "irq_fast_i[12]" In;
+    "irq_fast_i[13]" In;
+    "irq_fast_i[14]" In;
+    "irq_fast_i[1]" In;
+    "irq_fast_i[2]" In;
+    "irq_fast_i[3]" In;
+    "irq_fast_i[4]" In;
+    "irq_fast_i[5]" In;
+    "irq_fast_i[6]" In;
+    "irq_fast_i[7]" In;
+    "irq_fast_i[8]" In;
+    "irq_fast_i[9]" In;
+    "irq_nm_i" In;
+    "irq_software_i" In;
+    "irq_timer_i" In;
+    "ram_cfg_i[ram_cfg][cfg][0]" In;
+    "ram_cfg_i[ram_cfg][cfg][1]" In;
+    "ram_cfg_i[ram_cfg][cfg][2]" In;
+    "ram_cfg_i[ram_cfg][cfg][3]" In;
+    "ram_cfg_i[ram_cfg][cfg_en]" In;
+    "ram_cfg_i[rf_cfg][cfg][0]" In;
+    "ram_cfg_i[rf_cfg][cfg][1]" In;
+    "ram_cfg_i[rf_cfg][cfg][2]" In;
+    "ram_cfg_i[rf_cfg][cfg][3]" In;
+    "ram_cfg_i[rf_cfg][cfg_en]" In;
+    "rst_ni" In;
+    "scan_rst_ni" In;
+    "scramble_key_i[0]" In;
+    "scramble_key_i[100]" In;
+    "scramble_key_i[101]" In;
+    "scramble_key_i[102]" In;
+    "scramble_key_i[103]" In;
+    "scramble_key_i[104]" In;
+    "scramble_key_i[105]" In;
+    "scramble_key_i[106]" In;
+    "scramble_key_i[107]" In;
+    "scramble_key_i[108]" In;
+    "scramble_key_i[109]" In;
+    "scramble_key_i[10]" In;
+    "scramble_key_i[110]" In;
+    "scramble_key_i[111]" In;
+    "scramble_key_i[112]" In;
+    "scramble_key_i[113]" In;
+    "scramble_key_i[114]" In;
+    "scramble_key_i[115]" In;
+    "scramble_key_i[116]" In;
+    "scramble_key_i[117]" In;
+    "scramble_key_i[118]" In;
+    "scramble_key_i[119]" In;
+    "scramble_key_i[11]" In;
+    "scramble_key_i[120]" In;
+    "scramble_key_i[121]" In;
+    "scramble_key_i[122]" In;
+    "scramble_key_i[123]" In;
+    "scramble_key_i[124]" In;
+    "scramble_key_i[125]" In;
+    "scramble_key_i[126]" In;
+    "scramble_key_i[127]" In;
+    "scramble_key_i[12]" In;
+    "scramble_key_i[13]" In;
+    "scramble_key_i[14]" In;
+    "scramble_key_i[15]" In;
+    "scramble_key_i[16]" In;
+    "scramble_key_i[17]" In;
+    "scramble_key_i[18]" In;
+    "scramble_key_i[19]" In;
+    "scramble_key_i[1]" In;
+    "scramble_key_i[20]" In;
+    "scramble_key_i[21]" In;
+    "scramble_key_i[22]" In;
+    "scramble_key_i[23]" In;
+    "scramble_key_i[24]" In;
+    "scramble_key_i[25]" In;
+    "scramble_key_i[26]" In;
+    "scramble_key_i[27]" In;
+    "scramble_key_i[28]" In;
+    "scramble_key_i[29]" In;
+    "scramble_key_i[2]" In;
+    "scramble_key_i[30]" In;
+    "scramble_key_i[31]" In;
+    "scramble_key_i[32]" In;
+    "scramble_key_i[33]" In;
+    "scramble_key_i[34]" In;
+    "scramble_key_i[35]" In;
+    "scramble_key_i[36]" In;
+    "scramble_key_i[37]" In;
+    "scramble_key_i[38]" In;
+    "scramble_key_i[39]" In;
+    "scramble_key_i[3]" In;
+    "scramble_key_i[40]" In;
+    "scramble_key_i[41]" In;
+    "scramble_key_i[42]" In;
+    "scramble_key_i[43]" In;
+    "scramble_key_i[44]" In;
+    "scramble_key_i[45]" In;
+    "scramble_key_i[46]" In;
+    "scramble_key_i[47]" In;
+    "scramble_key_i[48]" In;
+    "scramble_key_i[49]" In;
+    "scramble_key_i[4]" In;
+    "scramble_key_i[50]" In;
+    "scramble_key_i[51]" In;
+    "scramble_key_i[52]" In;
+    "scramble_key_i[53]" In;
+    "scramble_key_i[54]" In;
+    "scramble_key_i[55]" In;
+    "scramble_key_i[56]" In;
+    "scramble_key_i[57]" In;
+    "scramble_key_i[58]" In;
+    "scramble_key_i[59]" In;
+    "scramble_key_i[5]" In;
+    "scramble_key_i[60]" In;
+    "scramble_key_i[61]" In;
+    "scramble_key_i[62]" In;
+    "scramble_key_i[63]" In;
+    "scramble_key_i[64]" In;
+    "scramble_key_i[65]" In;
+    "scramble_key_i[66]" In;
+    "scramble_key_i[67]" In;
+    "scramble_key_i[68]" In;
+    "scramble_key_i[69]" In;
+    "scramble_key_i[6]" In;
+    "scramble_key_i[70]" In;
+    "scramble_key_i[71]" In;
+    "scramble_key_i[72]" In;
+    "scramble_key_i[73]" In;
+    "scramble_key_i[74]" In;
+    "scramble_key_i[75]" In;
+    "scramble_key_i[76]" In;
+    "scramble_key_i[77]" In;
+    "scramble_key_i[78]" In;
+    "scramble_key_i[79]" In;
+    "scramble_key_i[7]" In;
+    "scramble_key_i[80]" In;
+    "scramble_key_i[81]" In;
+    "scramble_key_i[82]" In;
+    "scramble_key_i[83]" In;
+    "scramble_key_i[84]" In;
+    "scramble_key_i[85]" In;
+    "scramble_key_i[86]" In;
+    "scramble_key_i[87]" In;
+    "scramble_key_i[88]" In;
+    "scramble_key_i[89]" In;
+    "scramble_key_i[8]" In;
+    "scramble_key_i[90]" In;
+    "scramble_key_i[91]" In;
+    "scramble_key_i[92]" In;
+    "scramble_key_i[93]" In;
+    "scramble_key_i[94]" In;
+    "scramble_key_i[95]" In;
+    "scramble_key_i[96]" In;
+    "scramble_key_i[97]" In;
+    "scramble_key_i[98]" In;
+    "scramble_key_i[99]" In;
+    "scramble_key_i[9]" In;
+    "scramble_key_valid_i" In;
+    "scramble_nonce_i[0]" In;
+    "scramble_nonce_i[10]" In;
+    "scramble_nonce_i[11]" In;
+    "scramble_nonce_i[12]" In;
+    "scramble_nonce_i[13]" In;
+    "scramble_nonce_i[14]" In;
+    "scramble_nonce_i[15]" In;
+    "scramble_nonce_i[16]" In;
+    "scramble_nonce_i[17]" In;
+    "scramble_nonce_i[18]" In;
+    "scramble_nonce_i[19]" In;
+    "scramble_nonce_i[1]" In;
+    "scramble_nonce_i[20]" In;
+    "scramble_nonce_i[21]" In;
+    "scramble_nonce_i[22]" In;
+    "scramble_nonce_i[23]" In;
+    "scramble_nonce_i[24]" In;
+    "scramble_nonce_i[25]" In;
+    "scramble_nonce_i[26]" In;
+    "scramble_nonce_i[27]" In;
+    "scramble_nonce_i[28]" In;
+    "scramble_nonce_i[29]" In;
+    "scramble_nonce_i[2]" In;
+    "scramble_nonce_i[30]" In;
+    "scramble_nonce_i[31]" In;
+    "scramble_nonce_i[32]" In;
+    "scramble_nonce_i[33]" In;
+    "scramble_nonce_i[34]" In;
+    "scramble_nonce_i[35]" In;
+    "scramble_nonce_i[36]" In;
+    "scramble_nonce_i[37]" In;
+    "scramble_nonce_i[38]" In;
+    "scramble_nonce_i[39]" In;
+    "scramble_nonce_i[3]" In;
+    "scramble_nonce_i[40]" In;
+    "scramble_nonce_i[41]" In;
+    "scramble_nonce_i[42]" In;
+    "scramble_nonce_i[43]" In;
+    "scramble_nonce_i[44]" In;
+    "scramble_nonce_i[45]" In;
+    "scramble_nonce_i[46]" In;
+    "scramble_nonce_i[47]" In;
+    "scramble_nonce_i[48]" In;
+    "scramble_nonce_i[49]" In;
+    "scramble_nonce_i[4]" In;
+    "scramble_nonce_i[50]" In;
+    "scramble_nonce_i[51]" In;
+    "scramble_nonce_i[52]" In;
+    "scramble_nonce_i[53]" In;
+    "scramble_nonce_i[54]" In;
+    "scramble_nonce_i[55]" In;
+    "scramble_nonce_i[56]" In;
+    "scramble_nonce_i[57]" In;
+    "scramble_nonce_i[58]" In;
+    "scramble_nonce_i[59]" In;
+    "scramble_nonce_i[5]" In;
+    "scramble_nonce_i[60]" In;
+    "scramble_nonce_i[61]" In;
+    "scramble_nonce_i[62]" In;
+    "scramble_nonce_i[63]" In;
+    "scramble_nonce_i[6]" In;
+    "scramble_nonce_i[7]" In;
+    "scramble_nonce_i[8]" In;
+    "scramble_nonce_i[9]" In;
+    "test_en_i" In;
+    "alert_major_bus_o" Out;
+    "alert_major_internal_o" Out;
+    "alert_minor_o" Out;
+    "core_sleep_o" Out;
+    "crash_dump_o[current_pc][0]" Out;
+    "crash_dump_o[current_pc][10]" Out;
+    "crash_dump_o[current_pc][11]" Out;
+    "crash_dump_o[current_pc][12]" Out;
+    "crash_dump_o[current_pc][13]" Out;
+    "crash_dump_o[current_pc][14]" Out;
+    "crash_dump_o[current_pc][15]" Out;
+    "crash_dump_o[current_pc][16]" Out;
+    "crash_dump_o[current_pc][17]" Out;
+    "crash_dump_o[current_pc][18]" Out;
+    "crash_dump_o[current_pc][19]" Out;
+    "crash_dump_o[current_pc][1]" Out;
+    "crash_dump_o[current_pc][20]" Out;
+    "crash_dump_o[current_pc][21]" Out;
+    "crash_dump_o[current_pc][22]" Out;
+    "crash_dump_o[current_pc][23]" Out;
+    "crash_dump_o[current_pc][24]" Out;
+    "crash_dump_o[current_pc][25]" Out;
+    "crash_dump_o[current_pc][26]" Out;
+    "crash_dump_o[current_pc][27]" Out;
+    "crash_dump_o[current_pc][28]" Out;
+    "crash_dump_o[current_pc][29]" Out;
+    "crash_dump_o[current_pc][2]" Out;
+    "crash_dump_o[current_pc][30]" Out;
+    "crash_dump_o[current_pc][31]" Out;
+    "crash_dump_o[current_pc][3]" Out;
+    "crash_dump_o[current_pc][4]" Out;
+    "crash_dump_o[current_pc][5]" Out;
+    "crash_dump_o[current_pc][6]" Out;
+    "crash_dump_o[current_pc][7]" Out;
+    "crash_dump_o[current_pc][8]" Out;
+    "crash_dump_o[current_pc][9]" Out;
+    "crash_dump_o[exception_addr][0]" Out;
+    "crash_dump_o[exception_addr][10]" Out;
+    "crash_dump_o[exception_addr][11]" Out;
+    "crash_dump_o[exception_addr][12]" Out;
+    "crash_dump_o[exception_addr][13]" Out;
+    "crash_dump_o[exception_addr][14]" Out;
+    "crash_dump_o[exception_addr][15]" Out;
+    "crash_dump_o[exception_addr][16]" Out;
+    "crash_dump_o[exception_addr][17]" Out;
+    "crash_dump_o[exception_addr][18]" Out;
+    "crash_dump_o[exception_addr][19]" Out;
+    "crash_dump_o[exception_addr][1]" Out;
+    "crash_dump_o[exception_addr][20]" Out;
+    "crash_dump_o[exception_addr][21]" Out;
+    "crash_dump_o[exception_addr][22]" Out;
+    "crash_dump_o[exception_addr][23]" Out;
+    "crash_dump_o[exception_addr][24]" Out;
+    "crash_dump_o[exception_addr][25]" Out;
+    "crash_dump_o[exception_addr][26]" Out;
+    "crash_dump_o[exception_addr][27]" Out;
+    "crash_dump_o[exception_addr][28]" Out;
+    "crash_dump_o[exception_addr][29]" Out;
+    "crash_dump_o[exception_addr][2]" Out;
+    "crash_dump_o[exception_addr][30]" Out;
+    "crash_dump_o[exception_addr][31]" Out;
+    "crash_dump_o[exception_addr][3]" Out;
+    "crash_dump_o[exception_addr][4]" Out;
+    "crash_dump_o[exception_addr][5]" Out;
+    "crash_dump_o[exception_addr][6]" Out;
+    "crash_dump_o[exception_addr][7]" Out;
+    "crash_dump_o[exception_addr][8]" Out;
+    "crash_dump_o[exception_addr][9]" Out;
+    "crash_dump_o[exception_pc][0]" Out;
+    "crash_dump_o[exception_pc][10]" Out;
+    "crash_dump_o[exception_pc][11]" Out;
+    "crash_dump_o[exception_pc][12]" Out;
+    "crash_dump_o[exception_pc][13]" Out;
+    "crash_dump_o[exception_pc][14]" Out;
+    "crash_dump_o[exception_pc][15]" Out;
+    "crash_dump_o[exception_pc][16]" Out;
+    "crash_dump_o[exception_pc][17]" Out;
+    "crash_dump_o[exception_pc][18]" Out;
+    "crash_dump_o[exception_pc][19]" Out;
+    "crash_dump_o[exception_pc][1]" Out;
+    "crash_dump_o[exception_pc][20]" Out;
+    "crash_dump_o[exception_pc][21]" Out;
+    "crash_dump_o[exception_pc][22]" Out;
+    "crash_dump_o[exception_pc][23]" Out;
+    "crash_dump_o[exception_pc][24]" Out;
+    "crash_dump_o[exception_pc][25]" Out;
+    "crash_dump_o[exception_pc][26]" Out;
+    "crash_dump_o[exception_pc][27]" Out;
+    "crash_dump_o[exception_pc][28]" Out;
+    "crash_dump_o[exception_pc][29]" Out;
+    "crash_dump_o[exception_pc][2]" Out;
+    "crash_dump_o[exception_pc][30]" Out;
+    "crash_dump_o[exception_pc][31]" Out;
+    "crash_dump_o[exception_pc][3]" Out;
+    "crash_dump_o[exception_pc][4]" Out;
+    "crash_dump_o[exception_pc][5]" Out;
+    "crash_dump_o[exception_pc][6]" Out;
+    "crash_dump_o[exception_pc][7]" Out;
+    "crash_dump_o[exception_pc][8]" Out;
+    "crash_dump_o[exception_pc][9]" Out;
+    "crash_dump_o[last_data_addr][0]" Out;
+    "crash_dump_o[last_data_addr][10]" Out;
+    "crash_dump_o[last_data_addr][11]" Out;
+    "crash_dump_o[last_data_addr][12]" Out;
+    "crash_dump_o[last_data_addr][13]" Out;
+    "crash_dump_o[last_data_addr][14]" Out;
+    "crash_dump_o[last_data_addr][15]" Out;
+    "crash_dump_o[last_data_addr][16]" Out;
+    "crash_dump_o[last_data_addr][17]" Out;
+    "crash_dump_o[last_data_addr][18]" Out;
+    "crash_dump_o[last_data_addr][19]" Out;
+    "crash_dump_o[last_data_addr][1]" Out;
+    "crash_dump_o[last_data_addr][20]" Out;
+    "crash_dump_o[last_data_addr][21]" Out;
+    "crash_dump_o[last_data_addr][22]" Out;
+    "crash_dump_o[last_data_addr][23]" Out;
+    "crash_dump_o[last_data_addr][24]" Out;
+    "crash_dump_o[last_data_addr][25]" Out;
+    "crash_dump_o[last_data_addr][26]" Out;
+    "crash_dump_o[last_data_addr][27]" Out;
+    "crash_dump_o[last_data_addr][28]" Out;
+    "crash_dump_o[last_data_addr][29]" Out;
+    "crash_dump_o[last_data_addr][2]" Out;
+    "crash_dump_o[last_data_addr][30]" Out;
+    "crash_dump_o[last_data_addr][31]" Out;
+    "crash_dump_o[last_data_addr][3]" Out;
+    "crash_dump_o[last_data_addr][4]" Out;
+    "crash_dump_o[last_data_addr][5]" Out;
+    "crash_dump_o[last_data_addr][6]" Out;
+    "crash_dump_o[last_data_addr][7]" Out;
+    "crash_dump_o[last_data_addr][8]" Out;
+    "crash_dump_o[last_data_addr][9]" Out;
+    "crash_dump_o[next_pc][0]" Out;
+    "crash_dump_o[next_pc][10]" Out;
+    "crash_dump_o[next_pc][11]" Out;
+    "crash_dump_o[next_pc][12]" Out;
+    "crash_dump_o[next_pc][13]" Out;
+    "crash_dump_o[next_pc][14]" Out;
+    "crash_dump_o[next_pc][15]" Out;
+    "crash_dump_o[next_pc][16]" Out;
+    "crash_dump_o[next_pc][17]" Out;
+    "crash_dump_o[next_pc][18]" Out;
+    "crash_dump_o[next_pc][19]" Out;
+    "crash_dump_o[next_pc][1]" Out;
+    "crash_dump_o[next_pc][20]" Out;
+    "crash_dump_o[next_pc][21]" Out;
+    "crash_dump_o[next_pc][22]" Out;
+    "crash_dump_o[next_pc][23]" Out;
+    "crash_dump_o[next_pc][24]" Out;
+    "crash_dump_o[next_pc][25]" Out;
+    "crash_dump_o[next_pc][26]" Out;
+    "crash_dump_o[next_pc][27]" Out;
+    "crash_dump_o[next_pc][28]" Out;
+    "crash_dump_o[next_pc][29]" Out;
+    "crash_dump_o[next_pc][2]" Out;
+    "crash_dump_o[next_pc][30]" Out;
+    "crash_dump_o[next_pc][31]" Out;
+    "crash_dump_o[next_pc][3]" Out;
+    "crash_dump_o[next_pc][4]" Out;
+    "crash_dump_o[next_pc][5]" Out;
+    "crash_dump_o[next_pc][6]" Out;
+    "crash_dump_o[next_pc][7]" Out;
+    "crash_dump_o[next_pc][8]" Out;
+    "crash_dump_o[next_pc][9]" Out;
+    "data_addr_o[0]" Out;
+    "data_addr_o[10]" Out;
+    "data_addr_o[11]" Out;
+    "data_addr_o[12]" Out;
+    "data_addr_o[13]" Out;
+    "data_addr_o[14]" Out;
+    "data_addr_o[15]" Out;
+    "data_addr_o[16]" Out;
+    "data_addr_o[17]" Out;
+    "data_addr_o[18]" Out;
+    "data_addr_o[19]" Out;
+    "data_addr_o[1]" Out;
+    "data_addr_o[20]" Out;
+    "data_addr_o[21]" Out;
+    "data_addr_o[22]" Out;
+    "data_addr_o[23]" Out;
+    "data_addr_o[24]" Out;
+    "data_addr_o[25]" Out;
+    "data_addr_o[26]" Out;
+    "data_addr_o[27]" Out;
+    "data_addr_o[28]" Out;
+    "data_addr_o[29]" Out;
+    "data_addr_o[2]" Out;
+    "data_addr_o[30]" Out;
+    "data_addr_o[31]" Out;
+    "data_addr_o[3]" Out;
+    "data_addr_o[4]" Out;
+    "data_addr_o[5]" Out;
+    "data_addr_o[6]" Out;
+    "data_addr_o[7]" Out;
+    "data_addr_o[8]" Out;
+    "data_addr_o[9]" Out;
+    "data_be_o[0]" Out;
+    "data_be_o[1]" Out;
+    "data_be_o[2]" Out;
+    "data_be_o[3]" Out;
+    "data_req_o" Out;
+    "data_wdata_intg_o[0]" Out;
+    "data_wdata_intg_o[1]" Out;
+    "data_wdata_intg_o[2]" Out;
+    "data_wdata_intg_o[3]" Out;
+    "data_wdata_intg_o[4]" Out;
+    "data_wdata_intg_o[5]" Out;
+    "data_wdata_intg_o[6]" Out;
+    "data_wdata_o[0]" Out;
+    "data_wdata_o[10]" Out;
+    "data_wdata_o[11]" Out;
+    "data_wdata_o[12]" Out;
+    "data_wdata_o[13]" Out;
+    "data_wdata_o[14]" Out;
+    "data_wdata_o[15]" Out;
+    "data_wdata_o[16]" Out;
+    "data_wdata_o[17]" Out;
+    "data_wdata_o[18]" Out;
+    "data_wdata_o[19]" Out;
+    "data_wdata_o[1]" Out;
+    "data_wdata_o[20]" Out;
+    "data_wdata_o[21]" Out;
+    "data_wdata_o[22]" Out;
+    "data_wdata_o[23]" Out;
+    "data_wdata_o[24]" Out;
+    "data_wdata_o[25]" Out;
+    "data_wdata_o[26]" Out;
+    "data_wdata_o[27]" Out;
+    "data_wdata_o[28]" Out;
+    "data_wdata_o[29]" Out;
+    "data_wdata_o[2]" Out;
+    "data_wdata_o[30]" Out;
+    "data_wdata_o[31]" Out;
+    "data_wdata_o[3]" Out;
+    "data_wdata_o[4]" Out;
+    "data_wdata_o[5]" Out;
+    "data_wdata_o[6]" Out;
+    "data_wdata_o[7]" Out;
+    "data_wdata_o[8]" Out;
+    "data_wdata_o[9]" Out;
+    "data_we_o" Out;
+    "double_fault_seen_o" Out;
+    "instr_addr_o[0]" Out;
+    "instr_addr_o[10]" Out;
+    "instr_addr_o[11]" Out;
+    "instr_addr_o[12]" Out;
+    "instr_addr_o[13]" Out;
+    "instr_addr_o[14]" Out;
+    "instr_addr_o[15]" Out;
+    "instr_addr_o[16]" Out;
+    "instr_addr_o[17]" Out;
+    "instr_addr_o[18]" Out;
+    "instr_addr_o[19]" Out;
+    "instr_addr_o[1]" Out;
+    "instr_addr_o[20]" Out;
+    "instr_addr_o[21]" Out;
+    "instr_addr_o[22]" Out;
+    "instr_addr_o[23]" Out;
+    "instr_addr_o[24]" Out;
+    "instr_addr_o[25]" Out;
+    "instr_addr_o[26]" Out;
+    "instr_addr_o[27]" Out;
+    "instr_addr_o[28]" Out;
+    "instr_addr_o[29]" Out;
+    "instr_addr_o[2]" Out;
+    "instr_addr_o[30]" Out;
+    "instr_addr_o[31]" Out;
+    "instr_addr_o[3]" Out;
+    "instr_addr_o[4]" Out;
+    "instr_addr_o[5]" Out;
+    "instr_addr_o[6]" Out;
+    "instr_addr_o[7]" Out;
+    "instr_addr_o[8]" Out;
+    "instr_addr_o[9]" Out;
+    "instr_req_o" Out;
+    "scramble_req_o" Out;
+    "scan_en" In;
+    "scan_in_0" In;
+    "scan_out_0" Out;
+    "scan_in_1" In;
+    "scan_out_1" Out;
+    "scan_in_2" In;
+    "scan_out_2" Out;
+    "scan_in_3" In;
+    "scan_out_3" Out;
+}
+SignalGroups {
+    "_si" = '"scan_in_0" + "scan_in_1" + "scan_in_2" + "scan_in_3"' {
+        ScanIn;
+    }
+    "_so" = '"scan_out_0" + "scan_out_1" + "scan_out_2" + "scan_out_3"' {
+        ScanOut;
+    }
+    "_clk" = '"clk_i" + "rst_ni"';
+    "all_inputs" = '"boot_addr_i[0]" + "boot_addr_i[10]" + "boot_addr_i[11]" + 
+    "boot_addr_i[12]" + "boot_addr_i[13]" + "boot_addr_i[14]" + 
+    "boot_addr_i[15]" + "boot_addr_i[16]" + "boot_addr_i[17]" + 
+    "boot_addr_i[18]" + "boot_addr_i[19]" + "boot_addr_i[1]" + "boot_addr_i[20]" 
+    + "boot_addr_i[21]" + "boot_addr_i[22]" + "boot_addr_i[23]" + 
+    "boot_addr_i[24]" + "boot_addr_i[25]" + "boot_addr_i[26]" + 
+    "boot_addr_i[27]" + "boot_addr_i[28]" + "boot_addr_i[29]" + "boot_addr_i[2]" 
+    + "boot_addr_i[30]" + "boot_addr_i[31]" + "boot_addr_i[3]" + 
+    "boot_addr_i[4]" + "boot_addr_i[5]" + "boot_addr_i[6]" + "boot_addr_i[7]" + 
+    "boot_addr_i[8]" + "boot_addr_i[9]" + "clk_i" + "data_err_i" + "data_gnt_i" 
+    + "data_rdata_i[0]" + "data_rdata_i[10]" + "data_rdata_i[11]" + 
+    "data_rdata_i[12]" + "data_rdata_i[13]" + "data_rdata_i[14]" + 
+    "data_rdata_i[15]" + "data_rdata_i[16]" + "data_rdata_i[17]" + 
+    "data_rdata_i[18]" + "data_rdata_i[19]" + "data_rdata_i[1]" + 
+    "data_rdata_i[20]" + "data_rdata_i[21]" + "data_rdata_i[22]" + 
+    "data_rdata_i[23]" + "data_rdata_i[24]" + "data_rdata_i[25]" + 
+    "data_rdata_i[26]" + "data_rdata_i[27]" + "data_rdata_i[28]" + 
+    "data_rdata_i[29]" + "data_rdata_i[2]" + "data_rdata_i[30]" + 
+    "data_rdata_i[31]" + "data_rdata_i[3]" + "data_rdata_i[4]" + 
+    "data_rdata_i[5]" + "data_rdata_i[6]" + "data_rdata_i[7]" + 
+    "data_rdata_i[8]" + "data_rdata_i[9]" + "data_rdata_intg_i[0]" + 
+    "data_rdata_intg_i[1]" + "data_rdata_intg_i[2]" + "data_rdata_intg_i[3]" + 
+    "data_rdata_intg_i[4]" + "data_rdata_intg_i[5]" + "data_rdata_intg_i[6]" + 
+    "data_rvalid_i" + "debug_req_i" + "fetch_enable_i[0]" + "fetch_enable_i[1]" 
+    + "fetch_enable_i[2]" + "fetch_enable_i[3]" + "hart_id_i[0]" + 
+    "hart_id_i[10]" + "hart_id_i[11]" + "hart_id_i[12]" + "hart_id_i[13]" + 
+    "hart_id_i[14]" + "hart_id_i[15]" + "hart_id_i[16]" + "hart_id_i[17]" + 
+    "hart_id_i[18]" + "hart_id_i[19]" + "hart_id_i[1]" + "hart_id_i[20]" + 
+    "hart_id_i[21]" + "hart_id_i[22]" + "hart_id_i[23]" + "hart_id_i[24]" + 
+    "hart_id_i[25]" + "hart_id_i[26]" + "hart_id_i[27]" + "hart_id_i[28]" + 
+    "hart_id_i[29]" + "hart_id_i[2]" + "hart_id_i[30]" + "hart_id_i[31]" + 
+    "hart_id_i[3]" + "hart_id_i[4]" + "hart_id_i[5]" + "hart_id_i[6]" + 
+    "hart_id_i[7]" + "hart_id_i[8]" + "hart_id_i[9]" + "instr_err_i" + 
+    "instr_gnt_i" + "instr_rdata_i[0]" + "instr_rdata_i[10]" + 
+    "instr_rdata_i[11]" + "instr_rdata_i[12]" + "instr_rdata_i[13]" + 
+    "instr_rdata_i[14]" + "instr_rdata_i[15]" + "instr_rdata_i[16]" + 
+    "instr_rdata_i[17]" + "instr_rdata_i[18]" + "instr_rdata_i[19]" + 
+    "instr_rdata_i[1]" + "instr_rdata_i[20]" + "instr_rdata_i[21]" + 
+    "instr_rdata_i[22]" + "instr_rdata_i[23]" + "instr_rdata_i[24]" + 
+    "instr_rdata_i[25]" + "instr_rdata_i[26]" + "instr_rdata_i[27]" + 
+    "instr_rdata_i[28]" + "instr_rdata_i[29]" + "instr_rdata_i[2]" + 
+    "instr_rdata_i[30]" + "instr_rdata_i[31]" + "instr_rdata_i[3]" + 
+    "instr_rdata_i[4]" + "instr_rdata_i[5]" + "instr_rdata_i[6]" + 
+    "instr_rdata_i[7]" + "instr_rdata_i[8]" + "instr_rdata_i[9]" + 
+    "instr_rdata_intg_i[0]" + "instr_rdata_intg_i[1]" + "instr_rdata_intg_i[2]" 
+    + "instr_rdata_intg_i[3]" + "instr_rdata_intg_i[4]" + 
+    "instr_rdata_intg_i[5]" + "instr_rdata_intg_i[6]" + "instr_rvalid_i" + 
+    "irq_external_i" + "irq_fast_i[0]" + "irq_fast_i[10]" + "irq_fast_i[11]" + 
+    "irq_fast_i[12]" + "irq_fast_i[13]" + "irq_fast_i[14]" + "irq_fast_i[1]" + 
+    "irq_fast_i[2]" + "irq_fast_i[3]" + "irq_fast_i[4]" + "irq_fast_i[5]" + 
+    "irq_fast_i[6]" + "irq_fast_i[7]" + "irq_fast_i[8]" + "irq_fast_i[9]" + 
+    "irq_nm_i" + "irq_software_i" + "irq_timer_i" + "ram_cfg_i[ram_cfg][cfg][0]" 
+    + "ram_cfg_i[ram_cfg][cfg][1]" + "ram_cfg_i[ram_cfg][cfg][2]" + 
+    "ram_cfg_i[ram_cfg][cfg][3]" + "ram_cfg_i[ram_cfg][cfg_en]" + 
+    "ram_cfg_i[rf_cfg][cfg][0]" + "ram_cfg_i[rf_cfg][cfg][1]" + 
+    "ram_cfg_i[rf_cfg][cfg][2]" + "ram_cfg_i[rf_cfg][cfg][3]" + 
+    "ram_cfg_i[rf_cfg][cfg_en]" + "rst_ni" + "scan_rst_ni" + "scramble_key_i[0]" 
+    + "scramble_key_i[100]" + "scramble_key_i[101]" + "scramble_key_i[102]" + 
+    "scramble_key_i[103]" + "scramble_key_i[104]" + "scramble_key_i[105]" + 
+    "scramble_key_i[106]" + "scramble_key_i[107]" + "scramble_key_i[108]" + 
+    "scramble_key_i[109]" + "scramble_key_i[10]" + "scramble_key_i[110]" + 
+    "scramble_key_i[111]" + "scramble_key_i[112]" + "scramble_key_i[113]" + 
+    "scramble_key_i[114]" + "scramble_key_i[115]" + "scramble_key_i[116]" + 
+    "scramble_key_i[117]" + "scramble_key_i[118]" + "scramble_key_i[119]" + 
+    "scramble_key_i[11]" + "scramble_key_i[120]" + "scramble_key_i[121]" + 
+    "scramble_key_i[122]" + "scramble_key_i[123]" + "scramble_key_i[124]" + 
+    "scramble_key_i[125]" + "scramble_key_i[126]" + "scramble_key_i[127]" + 
+    "scramble_key_i[12]" + "scramble_key_i[13]" + "scramble_key_i[14]" + 
+    "scramble_key_i[15]" + "scramble_key_i[16]" + "scramble_key_i[17]" + 
+    "scramble_key_i[18]" + "scramble_key_i[19]" + "scramble_key_i[1]" + 
+    "scramble_key_i[20]" + "scramble_key_i[21]" + "scramble_key_i[22]" + 
+    "scramble_key_i[23]" + "scramble_key_i[24]" + "scramble_key_i[25]" + 
+    "scramble_key_i[26]" + "scramble_key_i[27]" + "scramble_key_i[28]" + 
+    "scramble_key_i[29]" + "scramble_key_i[2]" + "scramble_key_i[30]" + 
+    "scramble_key_i[31]" + "scramble_key_i[32]" + "scramble_key_i[33]" + 
+    "scramble_key_i[34]" + "scramble_key_i[35]" + "scramble_key_i[36]" + 
+    "scramble_key_i[37]" + "scramble_key_i[38]" + "scramble_key_i[39]" + 
+    "scramble_key_i[3]" + "scramble_key_i[40]" + "scramble_key_i[41]" + 
+    "scramble_key_i[42]" + "scramble_key_i[43]" + "scramble_key_i[44]" + 
+    "scramble_key_i[45]" + "scramble_key_i[46]" + "scramble_key_i[47]" + 
+    "scramble_key_i[48]" + "scramble_key_i[49]" + "scramble_key_i[4]" + 
+    "scramble_key_i[50]" + "scramble_key_i[51]" + "scramble_key_i[52]" + 
+    "scramble_key_i[53]" + "scramble_key_i[54]" + "scramble_key_i[55]" + 
+    "scramble_key_i[56]" + "scramble_key_i[57]" + "scramble_key_i[58]" + 
+    "scramble_key_i[59]" + "scramble_key_i[5]" + "scramble_key_i[60]" + 
+    "scramble_key_i[61]" + "scramble_key_i[62]" + "scramble_key_i[63]" + 
+    "scramble_key_i[64]" + "scramble_key_i[65]" + "scramble_key_i[66]" + 
+    "scramble_key_i[67]" + "scramble_key_i[68]" + "scramble_key_i[69]" + 
+    "scramble_key_i[6]" + "scramble_key_i[70]" + "scramble_key_i[71]" + 
+    "scramble_key_i[72]" + "scramble_key_i[73]" + "scramble_key_i[74]" + 
+    "scramble_key_i[75]" + "scramble_key_i[76]" + "scramble_key_i[77]" + 
+    "scramble_key_i[78]" + "scramble_key_i[79]" + "scramble_key_i[7]" + 
+    "scramble_key_i[80]" + "scramble_key_i[81]" + "scramble_key_i[82]" + 
+    "scramble_key_i[83]" + "scramble_key_i[84]" + "scramble_key_i[85]" + 
+    "scramble_key_i[86]" + "scramble_key_i[87]" + "scramble_key_i[88]" + 
+    "scramble_key_i[89]" + "scramble_key_i[8]" + "scramble_key_i[90]" + 
+    "scramble_key_i[91]" + "scramble_key_i[92]" + "scramble_key_i[93]" + 
+    "scramble_key_i[94]" + "scramble_key_i[95]" + "scramble_key_i[96]" + 
+    "scramble_key_i[97]" + "scramble_key_i[98]" + "scramble_key_i[99]" + 
+    "scramble_key_i[9]" + "scramble_key_valid_i" + "scramble_nonce_i[0]" + 
+    "scramble_nonce_i[10]" + "scramble_nonce_i[11]" + "scramble_nonce_i[12]" + 
+    "scramble_nonce_i[13]" + "scramble_nonce_i[14]" + "scramble_nonce_i[15]" + 
+    "scramble_nonce_i[16]" + "scramble_nonce_i[17]" + "scramble_nonce_i[18]" + 
+    "scramble_nonce_i[19]" + "scramble_nonce_i[1]" + "scramble_nonce_i[20]" + 
+    "scramble_nonce_i[21]" + "scramble_nonce_i[22]" + "scramble_nonce_i[23]" + 
+    "scramble_nonce_i[24]" + "scramble_nonce_i[25]" + "scramble_nonce_i[26]" + 
+    "scramble_nonce_i[27]" + "scramble_nonce_i[28]" + "scramble_nonce_i[29]" + 
+    "scramble_nonce_i[2]" + "scramble_nonce_i[30]" + "scramble_nonce_i[31]" + 
+    "scramble_nonce_i[32]" + "scramble_nonce_i[33]" + "scramble_nonce_i[34]" + 
+    "scramble_nonce_i[35]" + "scramble_nonce_i[36]" + "scramble_nonce_i[37]" + 
+    "scramble_nonce_i[38]" + "scramble_nonce_i[39]" + "scramble_nonce_i[3]" + 
+    "scramble_nonce_i[40]" + "scramble_nonce_i[41]" + "scramble_nonce_i[42]" + 
+    "scramble_nonce_i[43]" + "scramble_nonce_i[44]" + "scramble_nonce_i[45]" + 
+    "scramble_nonce_i[46]" + "scramble_nonce_i[47]" + "scramble_nonce_i[48]" + 
+    "scramble_nonce_i[49]" + "scramble_nonce_i[4]" + "scramble_nonce_i[50]" + 
+    "scramble_nonce_i[51]" + "scramble_nonce_i[52]" + "scramble_nonce_i[53]" + 
+    "scramble_nonce_i[54]" + "scramble_nonce_i[55]" + "scramble_nonce_i[56]" + 
+    "scramble_nonce_i[57]" + "scramble_nonce_i[58]" + "scramble_nonce_i[59]" + 
+    "scramble_nonce_i[5]" + "scramble_nonce_i[60]" + "scramble_nonce_i[61]" + 
+    "scramble_nonce_i[62]" + "scramble_nonce_i[63]" + "scramble_nonce_i[6]" + 
+    "scramble_nonce_i[7]" + "scramble_nonce_i[8]" + "scramble_nonce_i[9]" + 
+    "test_en_i" + "scan_en" + "scan_in_0" + "scan_in_1" + "scan_in_2" + 
+    "scan_in_3"';
+    "all_outputs" = '"alert_major_bus_o" + "alert_major_internal_o" + 
+    "alert_minor_o" + "core_sleep_o" + "crash_dump_o[current_pc][0]" + 
+    "crash_dump_o[current_pc][10]" + "crash_dump_o[current_pc][11]" + 
+    "crash_dump_o[current_pc][12]" + "crash_dump_o[current_pc][13]" + 
+    "crash_dump_o[current_pc][14]" + "crash_dump_o[current_pc][15]" + 
+    "crash_dump_o[current_pc][16]" + "crash_dump_o[current_pc][17]" + 
+    "crash_dump_o[current_pc][18]" + "crash_dump_o[current_pc][19]" + 
+    "crash_dump_o[current_pc][1]" + "crash_dump_o[current_pc][20]" + 
+    "crash_dump_o[current_pc][21]" + "crash_dump_o[current_pc][22]" + 
+    "crash_dump_o[current_pc][23]" + "crash_dump_o[current_pc][24]" + 
+    "crash_dump_o[current_pc][25]" + "crash_dump_o[current_pc][26]" + 
+    "crash_dump_o[current_pc][27]" + "crash_dump_o[current_pc][28]" + 
+    "crash_dump_o[current_pc][29]" + "crash_dump_o[current_pc][2]" + 
+    "crash_dump_o[current_pc][30]" + "crash_dump_o[current_pc][31]" + 
+    "crash_dump_o[current_pc][3]" + "crash_dump_o[current_pc][4]" + 
+    "crash_dump_o[current_pc][5]" + "crash_dump_o[current_pc][6]" + 
+    "crash_dump_o[current_pc][7]" + "crash_dump_o[current_pc][8]" + 
+    "crash_dump_o[current_pc][9]" + "crash_dump_o[exception_addr][0]" + 
+    "crash_dump_o[exception_addr][10]" + "crash_dump_o[exception_addr][11]" + 
+    "crash_dump_o[exception_addr][12]" + "crash_dump_o[exception_addr][13]" + 
+    "crash_dump_o[exception_addr][14]" + "crash_dump_o[exception_addr][15]" + 
+    "crash_dump_o[exception_addr][16]" + "crash_dump_o[exception_addr][17]" + 
+    "crash_dump_o[exception_addr][18]" + "crash_dump_o[exception_addr][19]" + 
+    "crash_dump_o[exception_addr][1]" + "crash_dump_o[exception_addr][20]" + 
+    "crash_dump_o[exception_addr][21]" + "crash_dump_o[exception_addr][22]" + 
+    "crash_dump_o[exception_addr][23]" + "crash_dump_o[exception_addr][24]" + 
+    "crash_dump_o[exception_addr][25]" + "crash_dump_o[exception_addr][26]" + 
+    "crash_dump_o[exception_addr][27]" + "crash_dump_o[exception_addr][28]" + 
+    "crash_dump_o[exception_addr][29]" + "crash_dump_o[exception_addr][2]" + 
+    "crash_dump_o[exception_addr][30]" + "crash_dump_o[exception_addr][31]" + 
+    "crash_dump_o[exception_addr][3]" + "crash_dump_o[exception_addr][4]" + 
+    "crash_dump_o[exception_addr][5]" + "crash_dump_o[exception_addr][6]" + 
+    "crash_dump_o[exception_addr][7]" + "crash_dump_o[exception_addr][8]" + 
+    "crash_dump_o[exception_addr][9]" + "crash_dump_o[exception_pc][0]" + 
+    "crash_dump_o[exception_pc][10]" + "crash_dump_o[exception_pc][11]" + 
+    "crash_dump_o[exception_pc][12]" + "crash_dump_o[exception_pc][13]" + 
+    "crash_dump_o[exception_pc][14]" + "crash_dump_o[exception_pc][15]" + 
+    "crash_dump_o[exception_pc][16]" + "crash_dump_o[exception_pc][17]" + 
+    "crash_dump_o[exception_pc][18]" + "crash_dump_o[exception_pc][19]" + 
+    "crash_dump_o[exception_pc][1]" + "crash_dump_o[exception_pc][20]" + 
+    "crash_dump_o[exception_pc][21]" + "crash_dump_o[exception_pc][22]" + 
+    "crash_dump_o[exception_pc][23]" + "crash_dump_o[exception_pc][24]" + 
+    "crash_dump_o[exception_pc][25]" + "crash_dump_o[exception_pc][26]" + 
+    "crash_dump_o[exception_pc][27]" + "crash_dump_o[exception_pc][28]" + 
+    "crash_dump_o[exception_pc][29]" + "crash_dump_o[exception_pc][2]" + 
+    "crash_dump_o[exception_pc][30]" + "crash_dump_o[exception_pc][31]" + 
+    "crash_dump_o[exception_pc][3]" + "crash_dump_o[exception_pc][4]" + 
+    "crash_dump_o[exception_pc][5]" + "crash_dump_o[exception_pc][6]" + 
+    "crash_dump_o[exception_pc][7]" + "crash_dump_o[exception_pc][8]" + 
+    "crash_dump_o[exception_pc][9]" + "crash_dump_o[last_data_addr][0]" + 
+    "crash_dump_o[last_data_addr][10]" + "crash_dump_o[last_data_addr][11]" + 
+    "crash_dump_o[last_data_addr][12]" + "crash_dump_o[last_data_addr][13]" + 
+    "crash_dump_o[last_data_addr][14]" + "crash_dump_o[last_data_addr][15]" + 
+    "crash_dump_o[last_data_addr][16]" + "crash_dump_o[last_data_addr][17]" + 
+    "crash_dump_o[last_data_addr][18]" + "crash_dump_o[last_data_addr][19]" + 
+    "crash_dump_o[last_data_addr][1]" + "crash_dump_o[last_data_addr][20]" + 
+    "crash_dump_o[last_data_addr][21]" + "crash_dump_o[last_data_addr][22]" + 
+    "crash_dump_o[last_data_addr][23]" + "crash_dump_o[last_data_addr][24]" + 
+    "crash_dump_o[last_data_addr][25]" + "crash_dump_o[last_data_addr][26]" + 
+    "crash_dump_o[last_data_addr][27]" + "crash_dump_o[last_data_addr][28]" + 
+    "crash_dump_o[last_data_addr][29]" + "crash_dump_o[last_data_addr][2]" + 
+    "crash_dump_o[last_data_addr][30]" + "crash_dump_o[last_data_addr][31]" + 
+    "crash_dump_o[last_data_addr][3]" + "crash_dump_o[last_data_addr][4]" + 
+    "crash_dump_o[last_data_addr][5]" + "crash_dump_o[last_data_addr][6]" + 
+    "crash_dump_o[last_data_addr][7]" + "crash_dump_o[last_data_addr][8]" + 
+    "crash_dump_o[last_data_addr][9]" + "crash_dump_o[next_pc][0]" + 
+    "crash_dump_o[next_pc][10]" + "crash_dump_o[next_pc][11]" + 
+    "crash_dump_o[next_pc][12]" + "crash_dump_o[next_pc][13]" + 
+    "crash_dump_o[next_pc][14]" + "crash_dump_o[next_pc][15]" + 
+    "crash_dump_o[next_pc][16]" + "crash_dump_o[next_pc][17]" + 
+    "crash_dump_o[next_pc][18]" + "crash_dump_o[next_pc][19]" + 
+    "crash_dump_o[next_pc][1]" + "crash_dump_o[next_pc][20]" + 
+    "crash_dump_o[next_pc][21]" + "crash_dump_o[next_pc][22]" + 
+    "crash_dump_o[next_pc][23]" + "crash_dump_o[next_pc][24]" + 
+    "crash_dump_o[next_pc][25]" + "crash_dump_o[next_pc][26]" + 
+    "crash_dump_o[next_pc][27]" + "crash_dump_o[next_pc][28]" + 
+    "crash_dump_o[next_pc][29]" + "crash_dump_o[next_pc][2]" + 
+    "crash_dump_o[next_pc][30]" + "crash_dump_o[next_pc][31]" + 
+    "crash_dump_o[next_pc][3]" + "crash_dump_o[next_pc][4]" + 
+    "crash_dump_o[next_pc][5]" + "crash_dump_o[next_pc][6]" + 
+    "crash_dump_o[next_pc][7]" + "crash_dump_o[next_pc][8]" + 
+    "crash_dump_o[next_pc][9]" + "data_addr_o[0]" + "data_addr_o[10]" + 
+    "data_addr_o[11]" + "data_addr_o[12]" + "data_addr_o[13]" + 
+    "data_addr_o[14]" + "data_addr_o[15]" + "data_addr_o[16]" + 
+    "data_addr_o[17]" + "data_addr_o[18]" + "data_addr_o[19]" + "data_addr_o[1]" 
+    + "data_addr_o[20]" + "data_addr_o[21]" + "data_addr_o[22]" + 
+    "data_addr_o[23]" + "data_addr_o[24]" + "data_addr_o[25]" + 
+    "data_addr_o[26]" + "data_addr_o[27]" + "data_addr_o[28]" + 
+    "data_addr_o[29]" + "data_addr_o[2]" + "data_addr_o[30]" + "data_addr_o[31]" 
+    + "data_addr_o[3]" + "data_addr_o[4]" + "data_addr_o[5]" + "data_addr_o[6]" 
+    + "data_addr_o[7]" + "data_addr_o[8]" + "data_addr_o[9]" + "data_be_o[0]" + 
+    "data_be_o[1]" + "data_be_o[2]" + "data_be_o[3]" + "data_req_o" + 
+    "data_wdata_intg_o[0]" + "data_wdata_intg_o[1]" + "data_wdata_intg_o[2]" + 
+    "data_wdata_intg_o[3]" + "data_wdata_intg_o[4]" + "data_wdata_intg_o[5]" + 
+    "data_wdata_intg_o[6]" + "data_wdata_o[0]" + "data_wdata_o[10]" + 
+    "data_wdata_o[11]" + "data_wdata_o[12]" + "data_wdata_o[13]" + 
+    "data_wdata_o[14]" + "data_wdata_o[15]" + "data_wdata_o[16]" + 
+    "data_wdata_o[17]" + "data_wdata_o[18]" + "data_wdata_o[19]" + 
+    "data_wdata_o[1]" + "data_wdata_o[20]" + "data_wdata_o[21]" + 
+    "data_wdata_o[22]" + "data_wdata_o[23]" + "data_wdata_o[24]" + 
+    "data_wdata_o[25]" + "data_wdata_o[26]" + "data_wdata_o[27]" + 
+    "data_wdata_o[28]" + "data_wdata_o[29]" + "data_wdata_o[2]" + 
+    "data_wdata_o[30]" + "data_wdata_o[31]" + "data_wdata_o[3]" + 
+    "data_wdata_o[4]" + "data_wdata_o[5]" + "data_wdata_o[6]" + 
+    "data_wdata_o[7]" + "data_wdata_o[8]" + "data_wdata_o[9]" + "data_we_o" + 
+    "double_fault_seen_o" + "instr_addr_o[0]" + "instr_addr_o[10]" + 
+    "instr_addr_o[11]" + "instr_addr_o[12]" + "instr_addr_o[13]" + 
+    "instr_addr_o[14]" + "instr_addr_o[15]" + "instr_addr_o[16]" + 
+    "instr_addr_o[17]" + "instr_addr_o[18]" + "instr_addr_o[19]" + 
+    "instr_addr_o[1]" + "instr_addr_o[20]" + "instr_addr_o[21]" + 
+    "instr_addr_o[22]" + "instr_addr_o[23]" + "instr_addr_o[24]" + 
+    "instr_addr_o[25]" + "instr_addr_o[26]" + "instr_addr_o[27]" + 
+    "instr_addr_o[28]" + "instr_addr_o[29]" + "instr_addr_o[2]" + 
+    "instr_addr_o[30]" + "instr_addr_o[31]" + "instr_addr_o[3]" + 
+    "instr_addr_o[4]" + "instr_addr_o[5]" + "instr_addr_o[6]" + 
+    "instr_addr_o[7]" + "instr_addr_o[8]" + "instr_addr_o[9]" + "instr_req_o" + 
+    "scramble_req_o" + "scan_out_0" + "scan_out_1" + "scan_out_2" + "scan_out_3"
+    ';
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"boot_addr_i[0]" + "boot_addr_i[10]" + "boot_addr_i[11]" + 
+    "boot_addr_i[12]" + "boot_addr_i[13]" + "boot_addr_i[14]" + 
+    "boot_addr_i[15]" + "boot_addr_i[16]" + "boot_addr_i[17]" + 
+    "boot_addr_i[18]" + "boot_addr_i[19]" + "boot_addr_i[1]" + "boot_addr_i[20]" 
+    + "boot_addr_i[21]" + "boot_addr_i[22]" + "boot_addr_i[23]" + 
+    "boot_addr_i[24]" + "boot_addr_i[25]" + "boot_addr_i[26]" + 
+    "boot_addr_i[27]" + "boot_addr_i[28]" + "boot_addr_i[29]" + "boot_addr_i[2]" 
+    + "boot_addr_i[30]" + "boot_addr_i[31]" + "boot_addr_i[3]" + 
+    "boot_addr_i[4]" + "boot_addr_i[5]" + "boot_addr_i[6]" + "boot_addr_i[7]" + 
+    "boot_addr_i[8]" + "boot_addr_i[9]" + "clk_i" + "data_err_i" + "data_gnt_i" 
+    + "data_rdata_i[0]" + "data_rdata_i[10]" + "data_rdata_i[11]" + 
+    "data_rdata_i[12]" + "data_rdata_i[13]" + "data_rdata_i[14]" + 
+    "data_rdata_i[15]" + "data_rdata_i[16]" + "data_rdata_i[17]" + 
+    "data_rdata_i[18]" + "data_rdata_i[19]" + "data_rdata_i[1]" + 
+    "data_rdata_i[20]" + "data_rdata_i[21]" + "data_rdata_i[22]" + 
+    "data_rdata_i[23]" + "data_rdata_i[24]" + "data_rdata_i[25]" + 
+    "data_rdata_i[26]" + "data_rdata_i[27]" + "data_rdata_i[28]" + 
+    "data_rdata_i[29]" + "data_rdata_i[2]" + "data_rdata_i[30]" + 
+    "data_rdata_i[31]" + "data_rdata_i[3]" + "data_rdata_i[4]" + 
+    "data_rdata_i[5]" + "data_rdata_i[6]" + "data_rdata_i[7]" + 
+    "data_rdata_i[8]" + "data_rdata_i[9]" + "data_rdata_intg_i[0]" + 
+    "data_rdata_intg_i[1]" + "data_rdata_intg_i[2]" + "data_rdata_intg_i[3]" + 
+    "data_rdata_intg_i[4]" + "data_rdata_intg_i[5]" + "data_rdata_intg_i[6]" + 
+    "data_rvalid_i" + "debug_req_i" + "fetch_enable_i[0]" + "fetch_enable_i[1]" 
+    + "fetch_enable_i[2]" + "fetch_enable_i[3]" + "hart_id_i[0]" + 
+    "hart_id_i[10]" + "hart_id_i[11]" + "hart_id_i[12]" + "hart_id_i[13]" + 
+    "hart_id_i[14]" + "hart_id_i[15]" + "hart_id_i[16]" + "hart_id_i[17]" + 
+    "hart_id_i[18]" + "hart_id_i[19]" + "hart_id_i[1]" + "hart_id_i[20]" + 
+    "hart_id_i[21]" + "hart_id_i[22]" + "hart_id_i[23]" + "hart_id_i[24]" + 
+    "hart_id_i[25]" + "hart_id_i[26]" + "hart_id_i[27]" + "hart_id_i[28]" + 
+    "hart_id_i[29]" + "hart_id_i[2]" + "hart_id_i[30]" + "hart_id_i[31]" + 
+    "hart_id_i[3]" + "hart_id_i[4]" + "hart_id_i[5]" + "hart_id_i[6]" + 
+    "hart_id_i[7]" + "hart_id_i[8]" + "hart_id_i[9]" + "instr_err_i" + 
+    "instr_gnt_i" + "instr_rdata_i[0]" + "instr_rdata_i[10]" + 
+    "instr_rdata_i[11]" + "instr_rdata_i[12]" + "instr_rdata_i[13]" + 
+    "instr_rdata_i[14]" + "instr_rdata_i[15]" + "instr_rdata_i[16]" + 
+    "instr_rdata_i[17]" + "instr_rdata_i[18]" + "instr_rdata_i[19]" + 
+    "instr_rdata_i[1]" + "instr_rdata_i[20]" + "instr_rdata_i[21]" + 
+    "instr_rdata_i[22]" + "instr_rdata_i[23]" + "instr_rdata_i[24]" + 
+    "instr_rdata_i[25]" + "instr_rdata_i[26]" + "instr_rdata_i[27]" + 
+    "instr_rdata_i[28]" + "instr_rdata_i[29]" + "instr_rdata_i[2]" + 
+    "instr_rdata_i[30]" + "instr_rdata_i[31]" + "instr_rdata_i[3]" + 
+    "instr_rdata_i[4]" + "instr_rdata_i[5]" + "instr_rdata_i[6]" + 
+    "instr_rdata_i[7]" + "instr_rdata_i[8]" + "instr_rdata_i[9]" + 
+    "instr_rdata_intg_i[0]" + "instr_rdata_intg_i[1]" + "instr_rdata_intg_i[2]" 
+    + "instr_rdata_intg_i[3]" + "instr_rdata_intg_i[4]" + 
+    "instr_rdata_intg_i[5]" + "instr_rdata_intg_i[6]" + "instr_rvalid_i" + 
+    "irq_external_i" + "irq_fast_i[0]" + "irq_fast_i[10]" + "irq_fast_i[11]" + 
+    "irq_fast_i[12]" + "irq_fast_i[13]" + "irq_fast_i[14]" + "irq_fast_i[1]" + 
+    "irq_fast_i[2]" + "irq_fast_i[3]" + "irq_fast_i[4]" + "irq_fast_i[5]" + 
+    "irq_fast_i[6]" + "irq_fast_i[7]" + "irq_fast_i[8]" + "irq_fast_i[9]" + 
+    "irq_nm_i" + "irq_software_i" + "irq_timer_i" + "ram_cfg_i[ram_cfg][cfg][0]" 
+    + "ram_cfg_i[ram_cfg][cfg][1]" + "ram_cfg_i[ram_cfg][cfg][2]" + 
+    "ram_cfg_i[ram_cfg][cfg][3]" + "ram_cfg_i[ram_cfg][cfg_en]" + 
+    "ram_cfg_i[rf_cfg][cfg][0]" + "ram_cfg_i[rf_cfg][cfg][1]" + 
+    "ram_cfg_i[rf_cfg][cfg][2]" + "ram_cfg_i[rf_cfg][cfg][3]" + 
+    "ram_cfg_i[rf_cfg][cfg_en]" + "rst_ni" + "scan_rst_ni" + "scramble_key_i[0]" 
+    + "scramble_key_i[100]" + "scramble_key_i[101]" + "scramble_key_i[102]" + 
+    "scramble_key_i[103]" + "scramble_key_i[104]" + "scramble_key_i[105]" + 
+    "scramble_key_i[106]" + "scramble_key_i[107]" + "scramble_key_i[108]" + 
+    "scramble_key_i[109]" + "scramble_key_i[10]" + "scramble_key_i[110]" + 
+    "scramble_key_i[111]" + "scramble_key_i[112]" + "scramble_key_i[113]" + 
+    "scramble_key_i[114]" + "scramble_key_i[115]" + "scramble_key_i[116]" + 
+    "scramble_key_i[117]" + "scramble_key_i[118]" + "scramble_key_i[119]" + 
+    "scramble_key_i[11]" + "scramble_key_i[120]" + "scramble_key_i[121]" + 
+    "scramble_key_i[122]" + "scramble_key_i[123]" + "scramble_key_i[124]" + 
+    "scramble_key_i[125]" + "scramble_key_i[126]" + "scramble_key_i[127]" + 
+    "scramble_key_i[12]" + "scramble_key_i[13]" + "scramble_key_i[14]" + 
+    "scramble_key_i[15]" + "scramble_key_i[16]" + "scramble_key_i[17]" + 
+    "scramble_key_i[18]" + "scramble_key_i[19]" + "scramble_key_i[1]" + 
+    "scramble_key_i[20]" + "scramble_key_i[21]" + "scramble_key_i[22]" + 
+    "scramble_key_i[23]" + "scramble_key_i[24]" + "scramble_key_i[25]" + 
+    "scramble_key_i[26]" + "scramble_key_i[27]" + "scramble_key_i[28]" + 
+    "scramble_key_i[29]" + "scramble_key_i[2]" + "scramble_key_i[30]" + 
+    "scramble_key_i[31]" + "scramble_key_i[32]" + "scramble_key_i[33]" + 
+    "scramble_key_i[34]" + "scramble_key_i[35]" + "scramble_key_i[36]" + 
+    "scramble_key_i[37]" + "scramble_key_i[38]" + "scramble_key_i[39]" + 
+    "scramble_key_i[3]" + "scramble_key_i[40]" + "scramble_key_i[41]" + 
+    "scramble_key_i[42]" + "scramble_key_i[43]" + "scramble_key_i[44]" + 
+    "scramble_key_i[45]" + "scramble_key_i[46]" + "scramble_key_i[47]" + 
+    "scramble_key_i[48]" + "scramble_key_i[49]" + "scramble_key_i[4]" + 
+    "scramble_key_i[50]" + "scramble_key_i[51]" + "scramble_key_i[52]" + 
+    "scramble_key_i[53]" + "scramble_key_i[54]" + "scramble_key_i[55]" + 
+    "scramble_key_i[56]" + "scramble_key_i[57]" + "scramble_key_i[58]" + 
+    "scramble_key_i[59]" + "scramble_key_i[5]" + "scramble_key_i[60]" + 
+    "scramble_key_i[61]" + "scramble_key_i[62]" + "scramble_key_i[63]" + 
+    "scramble_key_i[64]" + "scramble_key_i[65]" + "scramble_key_i[66]" + 
+    "scramble_key_i[67]" + "scramble_key_i[68]" + "scramble_key_i[69]" + 
+    "scramble_key_i[6]" + "scramble_key_i[70]" + "scramble_key_i[71]" + 
+    "scramble_key_i[72]" + "scramble_key_i[73]" + "scramble_key_i[74]" + 
+    "scramble_key_i[75]" + "scramble_key_i[76]" + "scramble_key_i[77]" + 
+    "scramble_key_i[78]" + "scramble_key_i[79]" + "scramble_key_i[7]" + 
+    "scramble_key_i[80]" + "scramble_key_i[81]" + "scramble_key_i[82]" + 
+    "scramble_key_i[83]" + "scramble_key_i[84]" + "scramble_key_i[85]" + 
+    "scramble_key_i[86]" + "scramble_key_i[87]" + "scramble_key_i[88]" + 
+    "scramble_key_i[89]" + "scramble_key_i[8]" + "scramble_key_i[90]" + 
+    "scramble_key_i[91]" + "scramble_key_i[92]" + "scramble_key_i[93]" + 
+    "scramble_key_i[94]" + "scramble_key_i[95]" + "scramble_key_i[96]" + 
+    "scramble_key_i[97]" + "scramble_key_i[98]" + "scramble_key_i[99]" + 
+    "scramble_key_i[9]" + "scramble_key_valid_i" + "scramble_nonce_i[0]" + 
+    "scramble_nonce_i[10]" + "scramble_nonce_i[11]" + "scramble_nonce_i[12]" + 
+    "scramble_nonce_i[13]" + "scramble_nonce_i[14]" + "scramble_nonce_i[15]" + 
+    "scramble_nonce_i[16]" + "scramble_nonce_i[17]" + "scramble_nonce_i[18]" + 
+    "scramble_nonce_i[19]" + "scramble_nonce_i[1]" + "scramble_nonce_i[20]" + 
+    "scramble_nonce_i[21]" + "scramble_nonce_i[22]" + "scramble_nonce_i[23]" + 
+    "scramble_nonce_i[24]" + "scramble_nonce_i[25]" + "scramble_nonce_i[26]" + 
+    "scramble_nonce_i[27]" + "scramble_nonce_i[28]" + "scramble_nonce_i[29]" + 
+    "scramble_nonce_i[2]" + "scramble_nonce_i[30]" + "scramble_nonce_i[31]" + 
+    "scramble_nonce_i[32]" + "scramble_nonce_i[33]" + "scramble_nonce_i[34]" + 
+    "scramble_nonce_i[35]" + "scramble_nonce_i[36]" + "scramble_nonce_i[37]" + 
+    "scramble_nonce_i[38]" + "scramble_nonce_i[39]" + "scramble_nonce_i[3]" + 
+    "scramble_nonce_i[40]" + "scramble_nonce_i[41]" + "scramble_nonce_i[42]" + 
+    "scramble_nonce_i[43]" + "scramble_nonce_i[44]" + "scramble_nonce_i[45]" + 
+    "scramble_nonce_i[46]" + "scramble_nonce_i[47]" + "scramble_nonce_i[48]" + 
+    "scramble_nonce_i[49]" + "scramble_nonce_i[4]" + "scramble_nonce_i[50]" + 
+    "scramble_nonce_i[51]" + "scramble_nonce_i[52]" + "scramble_nonce_i[53]" + 
+    "scramble_nonce_i[54]" + "scramble_nonce_i[55]" + "scramble_nonce_i[56]" + 
+    "scramble_nonce_i[57]" + "scramble_nonce_i[58]" + "scramble_nonce_i[59]" + 
+    "scramble_nonce_i[5]" + "scramble_nonce_i[60]" + "scramble_nonce_i[61]" + 
+    "scramble_nonce_i[62]" + "scramble_nonce_i[63]" + "scramble_nonce_i[6]" + 
+    "scramble_nonce_i[7]" + "scramble_nonce_i[8]" + "scramble_nonce_i[9]" + 
+    "test_en_i" + "scan_en" + "scan_in_0" + "scan_in_1" + "scan_in_2" + 
+    "scan_in_3"';
+    "_po" = '"alert_major_bus_o" + "alert_major_internal_o" + "alert_minor_o" + 
+    "core_sleep_o" + "crash_dump_o[current_pc][0]" + 
+    "crash_dump_o[current_pc][10]" + "crash_dump_o[current_pc][11]" + 
+    "crash_dump_o[current_pc][12]" + "crash_dump_o[current_pc][13]" + 
+    "crash_dump_o[current_pc][14]" + "crash_dump_o[current_pc][15]" + 
+    "crash_dump_o[current_pc][16]" + "crash_dump_o[current_pc][17]" + 
+    "crash_dump_o[current_pc][18]" + "crash_dump_o[current_pc][19]" + 
+    "crash_dump_o[current_pc][1]" + "crash_dump_o[current_pc][20]" + 
+    "crash_dump_o[current_pc][21]" + "crash_dump_o[current_pc][22]" + 
+    "crash_dump_o[current_pc][23]" + "crash_dump_o[current_pc][24]" + 
+    "crash_dump_o[current_pc][25]" + "crash_dump_o[current_pc][26]" + 
+    "crash_dump_o[current_pc][27]" + "crash_dump_o[current_pc][28]" + 
+    "crash_dump_o[current_pc][29]" + "crash_dump_o[current_pc][2]" + 
+    "crash_dump_o[current_pc][30]" + "crash_dump_o[current_pc][31]" + 
+    "crash_dump_o[current_pc][3]" + "crash_dump_o[current_pc][4]" + 
+    "crash_dump_o[current_pc][5]" + "crash_dump_o[current_pc][6]" + 
+    "crash_dump_o[current_pc][7]" + "crash_dump_o[current_pc][8]" + 
+    "crash_dump_o[current_pc][9]" + "crash_dump_o[exception_addr][0]" + 
+    "crash_dump_o[exception_addr][10]" + "crash_dump_o[exception_addr][11]" + 
+    "crash_dump_o[exception_addr][12]" + "crash_dump_o[exception_addr][13]" + 
+    "crash_dump_o[exception_addr][14]" + "crash_dump_o[exception_addr][15]" + 
+    "crash_dump_o[exception_addr][16]" + "crash_dump_o[exception_addr][17]" + 
+    "crash_dump_o[exception_addr][18]" + "crash_dump_o[exception_addr][19]" + 
+    "crash_dump_o[exception_addr][1]" + "crash_dump_o[exception_addr][20]" + 
+    "crash_dump_o[exception_addr][21]" + "crash_dump_o[exception_addr][22]" + 
+    "crash_dump_o[exception_addr][23]" + "crash_dump_o[exception_addr][24]" + 
+    "crash_dump_o[exception_addr][25]" + "crash_dump_o[exception_addr][26]" + 
+    "crash_dump_o[exception_addr][27]" + "crash_dump_o[exception_addr][28]" + 
+    "crash_dump_o[exception_addr][29]" + "crash_dump_o[exception_addr][2]" + 
+    "crash_dump_o[exception_addr][30]" + "crash_dump_o[exception_addr][31]" + 
+    "crash_dump_o[exception_addr][3]" + "crash_dump_o[exception_addr][4]" + 
+    "crash_dump_o[exception_addr][5]" + "crash_dump_o[exception_addr][6]" + 
+    "crash_dump_o[exception_addr][7]" + "crash_dump_o[exception_addr][8]" + 
+    "crash_dump_o[exception_addr][9]" + "crash_dump_o[exception_pc][0]" + 
+    "crash_dump_o[exception_pc][10]" + "crash_dump_o[exception_pc][11]" + 
+    "crash_dump_o[exception_pc][12]" + "crash_dump_o[exception_pc][13]" + 
+    "crash_dump_o[exception_pc][14]" + "crash_dump_o[exception_pc][15]" + 
+    "crash_dump_o[exception_pc][16]" + "crash_dump_o[exception_pc][17]" + 
+    "crash_dump_o[exception_pc][18]" + "crash_dump_o[exception_pc][19]" + 
+    "crash_dump_o[exception_pc][1]" + "crash_dump_o[exception_pc][20]" + 
+    "crash_dump_o[exception_pc][21]" + "crash_dump_o[exception_pc][22]" + 
+    "crash_dump_o[exception_pc][23]" + "crash_dump_o[exception_pc][24]" + 
+    "crash_dump_o[exception_pc][25]" + "crash_dump_o[exception_pc][26]" + 
+    "crash_dump_o[exception_pc][27]" + "crash_dump_o[exception_pc][28]" + 
+    "crash_dump_o[exception_pc][29]" + "crash_dump_o[exception_pc][2]" + 
+    "crash_dump_o[exception_pc][30]" + "crash_dump_o[exception_pc][31]" + 
+    "crash_dump_o[exception_pc][3]" + "crash_dump_o[exception_pc][4]" + 
+    "crash_dump_o[exception_pc][5]" + "crash_dump_o[exception_pc][6]" + 
+    "crash_dump_o[exception_pc][7]" + "crash_dump_o[exception_pc][8]" + 
+    "crash_dump_o[exception_pc][9]" + "crash_dump_o[last_data_addr][0]" + 
+    "crash_dump_o[last_data_addr][10]" + "crash_dump_o[last_data_addr][11]" + 
+    "crash_dump_o[last_data_addr][12]" + "crash_dump_o[last_data_addr][13]" + 
+    "crash_dump_o[last_data_addr][14]" + "crash_dump_o[last_data_addr][15]" + 
+    "crash_dump_o[last_data_addr][16]" + "crash_dump_o[last_data_addr][17]" + 
+    "crash_dump_o[last_data_addr][18]" + "crash_dump_o[last_data_addr][19]" + 
+    "crash_dump_o[last_data_addr][1]" + "crash_dump_o[last_data_addr][20]" + 
+    "crash_dump_o[last_data_addr][21]" + "crash_dump_o[last_data_addr][22]" + 
+    "crash_dump_o[last_data_addr][23]" + "crash_dump_o[last_data_addr][24]" + 
+    "crash_dump_o[last_data_addr][25]" + "crash_dump_o[last_data_addr][26]" + 
+    "crash_dump_o[last_data_addr][27]" + "crash_dump_o[last_data_addr][28]" + 
+    "crash_dump_o[last_data_addr][29]" + "crash_dump_o[last_data_addr][2]" + 
+    "crash_dump_o[last_data_addr][30]" + "crash_dump_o[last_data_addr][31]" + 
+    "crash_dump_o[last_data_addr][3]" + "crash_dump_o[last_data_addr][4]" + 
+    "crash_dump_o[last_data_addr][5]" + "crash_dump_o[last_data_addr][6]" + 
+    "crash_dump_o[last_data_addr][7]" + "crash_dump_o[last_data_addr][8]" + 
+    "crash_dump_o[last_data_addr][9]" + "crash_dump_o[next_pc][0]" + 
+    "crash_dump_o[next_pc][10]" + "crash_dump_o[next_pc][11]" + 
+    "crash_dump_o[next_pc][12]" + "crash_dump_o[next_pc][13]" + 
+    "crash_dump_o[next_pc][14]" + "crash_dump_o[next_pc][15]" + 
+    "crash_dump_o[next_pc][16]" + "crash_dump_o[next_pc][17]" + 
+    "crash_dump_o[next_pc][18]" + "crash_dump_o[next_pc][19]" + 
+    "crash_dump_o[next_pc][1]" + "crash_dump_o[next_pc][20]" + 
+    "crash_dump_o[next_pc][21]" + "crash_dump_o[next_pc][22]" + 
+    "crash_dump_o[next_pc][23]" + "crash_dump_o[next_pc][24]" + 
+    "crash_dump_o[next_pc][25]" + "crash_dump_o[next_pc][26]" + 
+    "crash_dump_o[next_pc][27]" + "crash_dump_o[next_pc][28]" + 
+    "crash_dump_o[next_pc][29]" + "crash_dump_o[next_pc][2]" + 
+    "crash_dump_o[next_pc][30]" + "crash_dump_o[next_pc][31]" + 
+    "crash_dump_o[next_pc][3]" + "crash_dump_o[next_pc][4]" + 
+    "crash_dump_o[next_pc][5]" + "crash_dump_o[next_pc][6]" + 
+    "crash_dump_o[next_pc][7]" + "crash_dump_o[next_pc][8]" + 
+    "crash_dump_o[next_pc][9]" + "data_addr_o[0]" + "data_addr_o[10]" + 
+    "data_addr_o[11]" + "data_addr_o[12]" + "data_addr_o[13]" + 
+    "data_addr_o[14]" + "data_addr_o[15]" + "data_addr_o[16]" + 
+    "data_addr_o[17]" + "data_addr_o[18]" + "data_addr_o[19]" + "data_addr_o[1]" 
+    + "data_addr_o[20]" + "data_addr_o[21]" + "data_addr_o[22]" + 
+    "data_addr_o[23]" + "data_addr_o[24]" + "data_addr_o[25]" + 
+    "data_addr_o[26]" + "data_addr_o[27]" + "data_addr_o[28]" + 
+    "data_addr_o[29]" + "data_addr_o[2]" + "data_addr_o[30]" + "data_addr_o[31]" 
+    + "data_addr_o[3]" + "data_addr_o[4]" + "data_addr_o[5]" + "data_addr_o[6]" 
+    + "data_addr_o[7]" + "data_addr_o[8]" + "data_addr_o[9]" + "data_be_o[0]" + 
+    "data_be_o[1]" + "data_be_o[2]" + "data_be_o[3]" + "data_req_o" + 
+    "data_wdata_intg_o[0]" + "data_wdata_intg_o[1]" + "data_wdata_intg_o[2]" + 
+    "data_wdata_intg_o[3]" + "data_wdata_intg_o[4]" + "data_wdata_intg_o[5]" + 
+    "data_wdata_intg_o[6]" + "data_wdata_o[0]" + "data_wdata_o[10]" + 
+    "data_wdata_o[11]" + "data_wdata_o[12]" + "data_wdata_o[13]" + 
+    "data_wdata_o[14]" + "data_wdata_o[15]" + "data_wdata_o[16]" + 
+    "data_wdata_o[17]" + "data_wdata_o[18]" + "data_wdata_o[19]" + 
+    "data_wdata_o[1]" + "data_wdata_o[20]" + "data_wdata_o[21]" + 
+    "data_wdata_o[22]" + "data_wdata_o[23]" + "data_wdata_o[24]" + 
+    "data_wdata_o[25]" + "data_wdata_o[26]" + "data_wdata_o[27]" + 
+    "data_wdata_o[28]" + "data_wdata_o[29]" + "data_wdata_o[2]" + 
+    "data_wdata_o[30]" + "data_wdata_o[31]" + "data_wdata_o[3]" + 
+    "data_wdata_o[4]" + "data_wdata_o[5]" + "data_wdata_o[6]" + 
+    "data_wdata_o[7]" + "data_wdata_o[8]" + "data_wdata_o[9]" + "data_we_o" + 
+    "double_fault_seen_o" + "instr_addr_o[0]" + "instr_addr_o[10]" + 
+    "instr_addr_o[11]" + "instr_addr_o[12]" + "instr_addr_o[13]" + 
+    "instr_addr_o[14]" + "instr_addr_o[15]" + "instr_addr_o[16]" + 
+    "instr_addr_o[17]" + "instr_addr_o[18]" + "instr_addr_o[19]" + 
+    "instr_addr_o[1]" + "instr_addr_o[20]" + "instr_addr_o[21]" + 
+    "instr_addr_o[22]" + "instr_addr_o[23]" + "instr_addr_o[24]" + 
+    "instr_addr_o[25]" + "instr_addr_o[26]" + "instr_addr_o[27]" + 
+    "instr_addr_o[28]" + "instr_addr_o[29]" + "instr_addr_o[2]" + 
+    "instr_addr_o[30]" + "instr_addr_o[31]" + "instr_addr_o[3]" + 
+    "instr_addr_o[4]" + "instr_addr_o[5]" + "instr_addr_o[6]" + 
+    "instr_addr_o[7]" + "instr_addr_o[8]" + "instr_addr_o[9]" + "instr_req_o" + 
+    "scramble_req_o" + "scan_out_0" + "scan_out_1" + "scan_out_2" + "scan_out_3"
+    ';
+}
+ScanStructures {
+    ScanChain "1" {
+        ScanLength 505;
+        ScanIn "scan_in_0";
+        ScanOut "scan_out_0";
+        ScanEnable "scan_en";
+        ScanMasterClock "clk_i";
+    }
+    ScanChain "2" {
+        ScanLength 505;
+        ScanIn "scan_in_1";
+        ScanOut "scan_out_1";
+        ScanEnable "scan_en";
+        ScanMasterClock "clk_i";
+    }
+    ScanChain "3" {
+        ScanLength 505;
+        ScanIn "scan_in_2";
+        ScanOut "scan_out_2";
+        ScanEnable "scan_en";
+        ScanMasterClock "clk_i";
+    }
+    ScanChain "4" {
+        ScanLength 504;
+        ScanIn "scan_in_3";
+        ScanOut "scan_out_3";
+        ScanEnable "scan_en";
+        ScanMasterClock "clk_i";
+        ScanInversion 1;
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "clk_i" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst_ni" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+        }
+    }
+    WaveformTable "_multiclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk_i" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst_ni" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk_i" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst_ni" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk_i" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst_ni" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk_i" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '55ns' D;
+                }
+            }
+            "rst_ni" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '55ns' U;
+                }
+            }
+        }
+    }
+}
+Procedures {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = \r32 N 0 \r150 N 1 \r194 N 1 \r5 N;
+            "all_outputs" = \r280 X;
+        }
+        F {
+            "test_en_i" = 1;
+        }
+        V {
+            "_pi" = \r384 #;
+            "_po" = \r280 #;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = \r32 N 0 \r150 N 1 \r194 N 1 \r5 N;
+            "all_outputs" = \r280 X;
+        }
+        F {
+            "test_en_i" = 1;
+        }
+        V {
+            "_pi" = \r384 #;
+            "_po" = \r280 #;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = \r32 N 0 \r150 N 1 \r194 N 1 \r5 N;
+            "all_outputs" = \r280 X;
+        }
+        F {
+            "test_en_i" = 1;
+        }
+        V {
+            "_pi" = \r384 #;
+            "_po" = \r280 #;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = \r32 N 0 \r150 N 1 \r194 N 1 \r5 N;
+            "all_outputs" = \r280 X;
+        }
+        F {
+            "test_en_i" = 1;
+        }
+        V {
+            "_pi" = \r384 #;
+            "_po" = \r280 #;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r32 N 0 \r150 N 1 \r194 N 1 \r5 N;
+            "all_outputs" = \r280 X;
+        }
+        "Internal_scan_pre_shift" : V {
+            "scan_en" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P1;
+                "_si" = ####;
+                "_so" = ####;
+            }
+        }
+    }
+}
+MacroDefs {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r384 N;
+            "all_outputs" = \r280 X;
+        }
+        V {
+            "clk_i" = 0;
+            "rst_ni" = 1;
+            "test_en_i" = 1;
+        }
+        V {
+        }
+    }
+}
+

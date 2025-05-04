@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : qor
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Thu May  1 09:06:38 2025
+****************************************
+
+
+  Timing Path Group 'clk_i'
+  -----------------------------------
+  Levels of Logic:               8.00
+  Critical Path Length:          0.30
+  Critical Path Slack:           2.62
+  Critical Path Clk Period:      6.25
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.04
+  Total Hold Violation:         -0.04
+  No. of Hold Violations:        1.00
+  -----------------------------------
+
+  Timing Path Group 'cluster_clock_gating'
+  -----------------------------------
+  Levels of Logic:             128.00
+  Critical Path Length:          3.21
+  Critical Path Slack:           2.84
+  Critical Path Clk Period:      6.25
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:        -19.02
+  Total Hold Violation:     -17139.97
+  No. of Hold Violations:     4111.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         33
+  Hierarchical Port Count:       3346
+  Leaf Cell Count:              16421
+  Buf/Inv Cell Count:            3453
+  Buf Cell Count:                1077
+  Inv Cell Count:                2376
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     14361
+  Sequential Cell Count:         2060
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     5692.435177
+  Noncombinational Area:  2616.758458
+  Buf/Inv Area:           1236.362408
+  Total Buffer Area:           286.91
+  Total Inverter Area:         949.45
+  Macro/Black Box Area:      0.000000
+  Net Area:              14147.682670
+  -----------------------------------
+  Cell Area:              8309.193636
+  Design Area:           22456.876306
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         17810
+  Nets With Violations:             1
+  Max Trans Violations:             0
+  Max Cap Violations:               1
+  Max Fanout Violations:            1
+  -----------------------------------
+
+
+  Hostname: IC_EDA
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.17
+  Logic Optimization:                  0.64
+  Mapping Optimization:               19.68
+  -----------------------------------------
+  Overall Compile Time:               69.43
+  Overall Compile Wall Clock Time:   117.73
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 19.02  TNS: 17140.07  Number of Violating Paths: 4112
+
+  --------------------------------------------------------------------
+
+
+1

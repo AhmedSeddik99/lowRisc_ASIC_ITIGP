@@ -1,0 +1,331 @@
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db"
+Analyzing: "/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.1 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 2534 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+Information: Uniquified 7 instances of design 'ibex_csr_32_0_0'. (OPT-1056)
+Information: Uniquified 2 instances of design 'ibex_csr_7_0_0'. (OPT-1056)
+  Simplifying Design 'ibex_top'
+
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_0P5'. (OPT-914)
+  Loading target library 'saed14rvt_ff0p88v125c'
+Loaded alib file './alib-52/saed14rvt_ss0p72vm40c.db.alib'
+Loaded alib file './alib-52/saed14rvt_ff0p88v125c.db.alib'
+Warning: Operating condition ss0p72vm40c set on design ibex_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14rvt_ff0p88v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy u_ibex_core before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy core_clock_gate_i/gen_generic.u_impl_generic before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/ex_block_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/load_store_unit_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/wb_stage_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/compressed_decoder_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i/decoder_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/id_stage_i/controller_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/ex_block_i/alu_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstatus_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mepc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mie_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mcause_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mtvec_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dcsr_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/mcycle_counter_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/minstret_counter_i before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_epc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dscratch1_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_dscratch0_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_depc_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mtval_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mscratch_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/cs_registers_i/u_mstack_cause_csr before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i before Pass 1 (OPT-776)
+Information: Ungrouping 30 of 35 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'ibex_top'
+Information: Added key list 'DesignWare' to design 'ibex_top'. (DDB-72)
+Information: The register 'u_ibex_core/if_stage_i/pc_id_o_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/load_store_unit_i/pmp_err_q_reg' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'ibex_top'.
+  Processing 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0'
+Information: Added key list 'DesignWare' to design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0'. (DDB-72)
+Information: The register 'u_mtvec_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_mtvec_csr/rdata_q_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'mcountinhibit_q_reg[1]' is a constant and will be removed. (OPT-1206)
+ Implement Synthetic for 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0'.
+  Processing 'ibex_register_file_ff_0_00000020_0_0_0_00000000'
+  Processing 'ibex_multdiv_fast_RV32M3'
+ Implement Synthetic for 'ibex_multdiv_fast_RV32M3'.
+Information: Added key list 'DesignWare' to design 'ibex_multdiv_fast_RV32M3'. (DDB-72)
+  Processing 'prim_clock_gating'
+Memory usage for J1 task 1554 Mbytes -- main task 1554 Mbytes.
+Memory usage for J2 task 1554 Mbytes -- main task 1554 Mbytes.
+Memory usage for J3 task 1554 Mbytes -- main task 1554 Mbytes.
+Memory usage for J4 task 1554 Mbytes -- main task 1554 Mbytes.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDRVT14_TIE1_PV1ECO_1' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_PV1ECO_1' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1ECO_1' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_V1_2' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE1_4' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_V1_2' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDRVT14_TIE0_4' in the library 'saed14rvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_cpuctrlsts_part_csr/rdata_q_reg[1]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: There is no timing violation in design ibex_top. Delay-based auto_ungroup will not be performed. (OPT-780)
+  Mapping Optimization (Phase 1)
+Information: The register 'u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/wb_stage_i/g_writeback_stage.wb_count_q_reg' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_depc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_mepc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'u_ibex_core/cs_registers_i/u_mstack_epc_csr/rdata_q_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:57    6094.8      0.00       0.0    3864.1                           95179.2656
+    0:00:57    6094.8      0.00       0.0    3864.1                           95179.2656
+    0:00:57    6094.8      0.00       0.0    3864.1                           95179.2656
+    0:00:58    6091.1      0.00       0.0    3864.1                           94767.2422
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:03    6111.8      0.00       0.0    3863.1                           94276.2734
+    0:01:04    6110.1      0.00       0.0    3865.1                           94198.6562
+    0:01:07    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+
+
+  Beginning Design Rule Fixing  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:08    6093.2      0.00       0.0    3865.1                           90203.4688
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:01:11    6205.5      0.00       0.0    2757.6 u_ibex_core/cs_registers_i/net39880 91246.2969
+    0:01:11    6258.7      0.00       0.0    2611.6                           91995.6953
+    0:01:11    6258.7      0.00       0.0    2611.6                           91995.6953
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:11    6258.7      0.00       0.0    2611.6                           91995.6953
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:01:14    6164.9      0.00       0.0    2611.6                           91013.8516
+    0:01:14    6164.9      0.00       0.0    2611.6                           91013.8516
+    0:01:14    6164.9      0.00       0.0    2611.6                           91013.8516
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:15    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+    0:01:16    6164.1      0.00       0.0    2611.6                           91008.0156
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:16    6148.4      0.00       0.0    2611.6                           91029.4766
+    0:01:17    6139.8      0.00       0.0    2611.6                           91160.7031
+    0:01:18    6139.8      0.00       0.0    2611.6                           91160.7031
+    0:01:18    6139.8      0.00       0.0    2611.6                           91160.7031
+    0:01:19    6140.8      0.00       0.0    2611.6                           91052.8438
+    0:01:20    6140.2      0.00       0.0    2611.6                           91047.2734
+    0:01:21    6141.1      0.00       0.0    2611.6                           91015.6484
+    0:01:21    6141.1      0.00       0.0    2611.6                           91015.6484
+    0:01:21    6141.5      0.00       0.0    2611.6                           91015.6484
+    0:01:21    6141.5      0.00       0.0    2611.6                           91015.6484
+    0:01:22    6140.7      0.00       0.0    2611.6                           91037.3359
+Loading db file '/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ibex_top' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/clk_i': 2018 load(s), 1 driver(s)
+     Net 'u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/rst_ni': 1657 load(s), 1 driver(s)
+  Loading target library 'saed14rvt_ff0p88v125c'
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_0P5'. (OPT-914)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

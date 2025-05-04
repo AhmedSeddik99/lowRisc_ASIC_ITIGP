@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Thu May  1 20:52:23 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_ss0p72vm40c (File: /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_RVT_v_062020/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db)
+
+Number of ports:                         3413
+Number of nets:                         17003
+Number of cells:                        13940
+Number of combinational cells:          11895
+Number of sequential cells:              2020
+Number of macros/black boxes:               0
+Number of buf/inv:                       2659
+Number of references:                      62
+
+Combinational area:               4335.304789
+Buf/Inv area:                      531.023991
+Noncombinational area:            2536.305672
+Macro/Black Box area:                0.000000
+Net Interconnect area:           12423.715994
+
+Total cell area:                  6871.610461
+Total area:                      19295.326455
+1

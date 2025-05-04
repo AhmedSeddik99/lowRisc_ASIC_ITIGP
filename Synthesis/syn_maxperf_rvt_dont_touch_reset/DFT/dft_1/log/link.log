@@ -1,0 +1,10 @@
+
+  Linking design 'ibex_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  ibex_top                    /home/ICer/ITI_GP/Synthesis/syn_maxperf_3/output/ibex_top.ddc
+  saed14rvt_ss0p72vm40c (library) /mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ss0p72vm40c.db
+  saed14rvt_ff0p88v125c (library) /mnt/hgfs/stdcell_rvt/db_ccs/saed14rvt_ff0p88v125c.db
+  * (15 designs)              /home/ICer/ITI_GP/Synthesis/syn_maxperf_3/dft/dft_1/prim_clock_gating.db, etc
+
+1
