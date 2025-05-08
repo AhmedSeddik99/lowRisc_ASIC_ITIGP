@@ -8,4 +8,6 @@ Formality: contains the Formality check for different design snapshots. The name
 
 
 
+# State on May 8:
 
+We figured out that the -ve increments in the timing reports was because a poor extrapolation was done because of huge transition time on some nets and we managed to know that the set_max_transition constraint wasn't written properly. So, syn_maxperf_hvt is the run we are going to use in PnR. It's setup clean (narrow slack around 0.03) synthesized in ss and ff .dbs. 
