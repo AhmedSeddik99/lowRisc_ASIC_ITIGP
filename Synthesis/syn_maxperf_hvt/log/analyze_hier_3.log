@@ -1,0 +1,20 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_core.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_register_file_ff.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_register_file_fpga.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_register_file_latch.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_lockstep.sv
+Presto compilation completed successfully.
+1

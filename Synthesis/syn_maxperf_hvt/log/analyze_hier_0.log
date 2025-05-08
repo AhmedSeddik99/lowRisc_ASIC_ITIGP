@@ -1,0 +1,156 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_clock_gating.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_xilinx_clock_gating.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_compressed_decoder.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_fetch_fifo.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_39_32_dec.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_39_32_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_28_22_dec.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_28_22_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_lfsr.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_branch_predict.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_decoder.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_controller.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_alu.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_multdiv_fast.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_multdiv_slow.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_wb_stage.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_csr.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_counter.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_pmp.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_onehot_check.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_onehot_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_and2.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_flop.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_subst_perm.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_prince.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_ram_1p.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_22_16_dec.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_22_16_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_hamming_22_16_dec.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_hamming_22_16_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_hamming_39_32_dec.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_inv_hamming_39_32_enc.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_clock_mux2.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_badbit_ram_1p.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_xilinx_flop.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_xilinx_and2.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_xilinx_buf.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_generic_buf.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_xilinx_clock_mux2.sv
+Presto compilation completed successfully.
+1

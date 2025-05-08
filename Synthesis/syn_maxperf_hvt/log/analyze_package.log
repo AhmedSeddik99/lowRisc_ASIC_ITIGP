@@ -1,0 +1,35 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_pkg.sv
+Presto compilation completed successfully.
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_mubi_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_count_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_ram_1p_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_secded_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_cipher_pkg.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_util_pkg.sv
+Presto compilation completed successfully.
+1

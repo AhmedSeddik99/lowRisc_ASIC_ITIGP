@@ -1,0 +1,100 @@
+ 
+****************************************
+Report : resources
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Thu May  8 17:51:37 2025
+****************************************
+
+
+Resource Report for this hierarchy in file ./RTL/ibex_if_stage.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| eq_x_51        | DW_cmp         | width=5    | ibex_top_inst/u_ibex_core/id_stage_i/eq_979 (ibex_id_stage.sv:979) |
+| eq_x_52        | DW_cmp         | width=5    | ibex_top_inst/u_ibex_core/id_stage_i/eq_980 (ibex_id_stage.sv:980) |
+| add_x_60       | DW01_add       | width=32   | ibex_top_inst/u_ibex_core/ex_block_i/add_98 (ibex_ex_block.sv:98) |
+| add_x_109      | DW01_add       | width=32   | ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/add_170 (ibex_prefetch_buffer.sv:170) |
+| add_x_274      | DW01_add       | width=32   | ibex_top_inst/u_ibex_core/id_stage_i/controller_i/add_760_aco (ibex_controller.sv:760) |
+| add_x_345      | DW01_add       | width=34   | ibex_top_inst/u_ibex_core/ex_block_i/alu_i/add_105 (ibex_alu.sv:105) |
+| eq_x_347       | DW_cmp         | width=32   | ibex_top_inst/u_ibex_core/ex_block_i/alu_i/eq_132 (ibex_alu.sv:132) |
+| sub_x_351      | DW01_sub       | width=5    | ibex_top_inst/u_ibex_core/ex_block_i/alu_i/sub_280 (ibex_alu.sv:280) |
+| ashr_358       | DW_rightsh     | A_width=33 | ibex_top_inst/u_ibex_core/ex_block_i/alu_i/sra_342 (ibex_alu.sv:342) |
+| SH_width=5 |                    |
+| add_x_376      | DW01_add       | width=31   | ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/add_145 (ibex_fetch_fifo.sv:145) |
+=============================================================================
+
+
+Resource Report for Ungrouped Hierarchy
+        ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i in file
+        ./RTL/ibex_multdiv_fast.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| ash_14         | DW_leftsh      | A_width=32 | sll_393 (ibex_multdiv_fast.sv:393) |
+         |                | SH_width=5 |                            |
+| sub_x_16       | DW01_dec       | width=5    | sub_413 (ibex_multdiv_fast.sv:413) |
+| DP_OP_75J4_122_1549             |            |                            |
+|                | DP_OP_75J4_122_1549 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_75J4_122_1549
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_75J4_122_1549  | mult_158 (ibex_multdiv_fast.sv:158)                 |
+|                      | C1468 (ibex_multdiv_fast.sv:208)                    |
+|                      | add_162 (ibex_multdiv_fast.sv:162)                  |
+|                      | add_162_2 (ibex_multdiv_fast.sv:162)                |
+|                      | C1469 (ibex_multdiv_fast.sv:208)                    |
+|                      | mult_159 (ibex_multdiv_fast.sv:159)                 |
+|                      | mult_160 (ibex_multdiv_fast.sv:160)                 |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 16    |                                          |
+| I2    | PI   | Unsigned | 16    |                                          |
+| I3    | PI   | Unsigned | 1     |                                          |
+| I4    | PI   | Unsigned | 1     |                                          |
+| I5    | PI   | Unsigned | 34    |                                          |
+| I6    | PI   | Signed   | 17    |                                          |
+| I7    | PI   | Signed   | 17    |                                          |
+| I8    | PI   | Signed   | 17    |                                          |
+| T54   | IFO  | Unsigned | 16    | O1[31:16]                                |
+| T16   | IFO  | Unsigned | 16    | { I3, I4 } ? T54 : $unsigned(1'b0) (ibex_multdiv_fast.sv:208) |
+| T3    | IFO  | Signed   | 34    | I1 * I6 (ibex_multdiv_fast.sv:159)       |
+| T17   | IFO  | Unsigned | 34    | { I3, I4 } ? T3 : I5 (ibex_multdiv_fast.sv:208) |
+| T4    | IFO  | Signed   | 34    | I7 * I8 (ibex_multdiv_fast.sv:160)       |
+| O1    | PO   | Unsigned | 32    | I1 * I2 (ibex_multdiv_fast.sv:158)       |
+| O2    | PO   | Unsigned | 34    | T16 + T17 + T4 (ibex_multdiv_fast.sv:162) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| eq_x_51            | DW_cmp           | apparch (area)     |                |
+| eq_x_52            | DW_cmp           | apparch (area)     |                |
+| add_x_60           | DW01_add         | apparch (area)     |                |
+| add_x_109          | DW01_add         | apparch (area)     |                |
+| add_x_274          | DW01_add         | apparch (area)     |                |
+| add_x_345          | DW01_add         | apparch (area)     |                |
+| eq_x_347           | DW_cmp           | apparch (area)     |                |
+| sub_x_351          | DW01_sub         | apparch (area)     |                |
+| ashr_358           | DW_rightsh       | astr (area)        |                |
+| add_x_376          | DW01_add         | apparch (area)     |                |
+| ash_14             | DW_leftsh        | astr (area)        |                |
+| sub_x_16           | DW01_dec         | apparch (area)     |                |
+| DP_OP_75J4_122_1549                   |                    |                |
+|                    | DP_OP_75J4_122_1549 | str (area)      |                |
+|                    |                  | mult_arch: benc_radix8              |
+|                    |                  | mult_arch: and     |                |
+|                    |                  | mult_arch: benc_radix8              |
+===============================================================================
+
+1
