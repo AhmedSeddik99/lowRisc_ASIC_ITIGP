@@ -1,0 +1,14 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_lm_gui/preferences.tcl
+icc2_lm_shell> source ./create_stdcell_ndm.tcl
+############################
+##########  NDM  ###########
+############################
+############################
+######  End of NDM  ########
+############################
+Maximum memory usage for this session: 645.55 MB
+CPU usage for this session:     19 seconds (  0.01 hours)
+Elapsed time for this session:     49 seconds (  0.01 hours)
+Thank you for using IC Compiler II Library Manager.
+
