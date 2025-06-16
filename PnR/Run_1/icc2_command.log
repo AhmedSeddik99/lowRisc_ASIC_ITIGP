@@ -1,0 +1,9 @@
+#@ # 
+#@ # Running icc2_shell Version O-2018.06-SP1 for linux64 -- Jul 17, 2018
+#@ # Date:   Mon Jun 16 23:24:28 2025
+#@ # Run by: ICer@IC_EDA
+#@ 
+
+source ./Scripts/master_script.tcl
+source ./Scripts/master_script.tcl
+exit
