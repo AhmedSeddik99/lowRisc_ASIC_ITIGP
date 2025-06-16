@@ -1,0 +1,1590 @@
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.force_end_on_preferred_grid                      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/64 Partitions, Violations =	0
+Checked	2/64 Partitions, Violations =	64
+Checked	4/64 Partitions, Violations =	249
+Checked	6/64 Partitions, Violations =	335
+Checked	8/64 Partitions, Violations =	337
+Checked	10/64 Partitions, Violations =	711
+Checked	12/64 Partitions, Violations =	2187
+Checked	14/64 Partitions, Violations =	2563
+Checked	17/64 Partitions, Violations =	2671
+Checked	18/64 Partitions, Violations =	3357
+Checked	20/64 Partitions, Violations =	5077
+Checked	22/64 Partitions, Violations =	6291
+Checked	25/64 Partitions, Violations =	6451
+Checked	26/64 Partitions, Violations =	7200
+Checked	28/64 Partitions, Violations =	8978
+Checked	30/64 Partitions, Violations =	9817
+Checked	32/64 Partitions, Violations =	9906
+Checked	34/64 Partitions, Violations =	10692
+Checked	36/64 Partitions, Violations =	12559
+Checked	38/64 Partitions, Violations =	13750
+Checked	40/64 Partitions, Violations =	13815
+Checked	42/64 Partitions, Violations =	14892
+Checked	44/64 Partitions, Violations =	16455
+Checked	46/64 Partitions, Violations =	18187
+Checked	48/64 Partitions, Violations =	18196
+Checked	50/64 Partitions, Violations =	18615
+Checked	52/64 Partitions, Violations =	19471
+Checked	54/64 Partitions, Violations =	20481
+Checked	56/64 Partitions, Violations =	20481
+Checked	58/64 Partitions, Violations =	20481
+Checked	60/64 Partitions, Violations =	20481
+Checked	62/64 Partitions, Violations =	20481
+Checked	64/64 Partitions, Violations =	20481
+[DRC CHECK] Elapsed real time: 0:00:11 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:11 total=0:00:11
+[DRC CHECK] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[DRC CHECK] Total (MB): Used  168  Alloctr  176  Proc 2225 
+Loading parastics information to the router ...
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+parastics information loaded to the router.
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.force_end_on_preferred_grid                      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned on for this design. (ZRT-613)
+[Dr init] Elapsed real time: 0:00:16 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:16 total=0:00:16
+[Dr init] Stage (MB): Used  158  Alloctr  166  Proc    0 
+[Dr init] Total (MB): Used  159  Alloctr  167  Proc 2225 
+Total number of nets = 29245, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Routing in incremental mode, starting from iteration 15
+
+
+Switch to reduced partition bloat for speedup (DRC report is not accurate)
+Start DR iteration 15: non-uniform partition
+Routed	1/799 Partitions, Violations =	20488
+Routed	3/799 Partitions, Violations =	20470
+Routed	6/799 Partitions, Violations =	20443
+Routed	9/799 Partitions, Violations =	20399
+Routed	12/799 Partitions, Violations =	20409
+Routed	15/799 Partitions, Violations =	20397
+Routed	18/799 Partitions, Violations =	20436
+Routed	21/799 Partitions, Violations =	20413
+Routed	24/799 Partitions, Violations =	20435
+Routed	27/799 Partitions, Violations =	20447
+Routed	30/799 Partitions, Violations =	20483
+Routed	33/799 Partitions, Violations =	20496
+Routed	36/799 Partitions, Violations =	20506
+Routed	39/799 Partitions, Violations =	20451
+Routed	42/799 Partitions, Violations =	20514
+Routed	45/799 Partitions, Violations =	20515
+Routed	48/799 Partitions, Violations =	20518
+Routed	51/799 Partitions, Violations =	20524
+Routed	54/799 Partitions, Violations =	20520
+Routed	57/799 Partitions, Violations =	20532
+Routed	60/799 Partitions, Violations =	20496
+Routed	63/799 Partitions, Violations =	20462
+Routed	66/799 Partitions, Violations =	20426
+Routed	69/799 Partitions, Violations =	20379
+Routed	72/799 Partitions, Violations =	20394
+Routed	75/799 Partitions, Violations =	20379
+Routed	78/799 Partitions, Violations =	20374
+Routed	81/799 Partitions, Violations =	20371
+Routed	84/799 Partitions, Violations =	20427
+Routed	87/799 Partitions, Violations =	20477
+Routed	90/799 Partitions, Violations =	20460
+Routed	93/799 Partitions, Violations =	20482
+Routed	96/799 Partitions, Violations =	20531
+Routed	99/799 Partitions, Violations =	20529
+Routed	102/799 Partitions, Violations =	20543
+Routed	105/799 Partitions, Violations =	20591
+Routed	108/799 Partitions, Violations =	20600
+Routed	111/799 Partitions, Violations =	20623
+Routed	114/799 Partitions, Violations =	20617
+Routed	117/799 Partitions, Violations =	20624
+Routed	120/799 Partitions, Violations =	20599
+Routed	123/799 Partitions, Violations =	20551
+Routed	126/799 Partitions, Violations =	20511
+Routed	129/799 Partitions, Violations =	20519
+Routed	132/799 Partitions, Violations =	20533
+Routed	135/799 Partitions, Violations =	20473
+Routed	138/799 Partitions, Violations =	20480
+Routed	141/799 Partitions, Violations =	20489
+Routed	144/799 Partitions, Violations =	20478
+Routed	147/799 Partitions, Violations =	20485
+Routed	150/799 Partitions, Violations =	20451
+Routed	153/799 Partitions, Violations =	20472
+Routed	156/799 Partitions, Violations =	20489
+Routed	159/799 Partitions, Violations =	20484
+Routed	162/799 Partitions, Violations =	20477
+Routed	165/799 Partitions, Violations =	20476
+Routed	168/799 Partitions, Violations =	20486
+Routed	171/799 Partitions, Violations =	20482
+Routed	174/799 Partitions, Violations =	20496
+Routed	177/799 Partitions, Violations =	20476
+Routed	180/799 Partitions, Violations =	20500
+Routed	183/799 Partitions, Violations =	20493
+Routed	186/799 Partitions, Violations =	20492
+Routed	189/799 Partitions, Violations =	20504
+Routed	192/799 Partitions, Violations =	20515
+Routed	195/799 Partitions, Violations =	20506
+Routed	198/799 Partitions, Violations =	20524
+Routed	201/799 Partitions, Violations =	20553
+Routed	204/799 Partitions, Violations =	20572
+Routed	207/799 Partitions, Violations =	20559
+Routed	210/799 Partitions, Violations =	20547
+Routed	213/799 Partitions, Violations =	20530
+Routed	216/799 Partitions, Violations =	20559
+Routed	219/799 Partitions, Violations =	20586
+Routed	222/799 Partitions, Violations =	20577
+Routed	225/799 Partitions, Violations =	20610
+Routed	228/799 Partitions, Violations =	20609
+Routed	231/799 Partitions, Violations =	20605
+Routed	234/799 Partitions, Violations =	20608
+Routed	237/799 Partitions, Violations =	20606
+Routed	240/799 Partitions, Violations =	20604
+Routed	243/799 Partitions, Violations =	20611
+Routed	246/799 Partitions, Violations =	20611
+Routed	249/799 Partitions, Violations =	20625
+Routed	252/799 Partitions, Violations =	20624
+Routed	255/799 Partitions, Violations =	20640
+Routed	258/799 Partitions, Violations =	20645
+Routed	261/799 Partitions, Violations =	20631
+Routed	264/799 Partitions, Violations =	20643
+Routed	267/799 Partitions, Violations =	20626
+Routed	270/799 Partitions, Violations =	20645
+Routed	273/799 Partitions, Violations =	20642
+Routed	276/799 Partitions, Violations =	20650
+Routed	279/799 Partitions, Violations =	20647
+Routed	282/799 Partitions, Violations =	20644
+Routed	285/799 Partitions, Violations =	20666
+Routed	288/799 Partitions, Violations =	20675
+Routed	291/799 Partitions, Violations =	20682
+Routed	294/799 Partitions, Violations =	20664
+Routed	297/799 Partitions, Violations =	20665
+Routed	300/799 Partitions, Violations =	20655
+Routed	303/799 Partitions, Violations =	20686
+Routed	306/799 Partitions, Violations =	20680
+Routed	309/799 Partitions, Violations =	20705
+Routed	312/799 Partitions, Violations =	20704
+Routed	315/799 Partitions, Violations =	20685
+Routed	318/799 Partitions, Violations =	20695
+Routed	321/799 Partitions, Violations =	20686
+Routed	324/799 Partitions, Violations =	20702
+Routed	327/799 Partitions, Violations =	20692
+Routed	330/799 Partitions, Violations =	20691
+Routed	333/799 Partitions, Violations =	20695
+Routed	336/799 Partitions, Violations =	20665
+Routed	339/799 Partitions, Violations =	20688
+Routed	342/799 Partitions, Violations =	20692
+Routed	345/799 Partitions, Violations =	20703
+Routed	348/799 Partitions, Violations =	20702
+Routed	351/799 Partitions, Violations =	20720
+Routed	354/799 Partitions, Violations =	20729
+Routed	357/799 Partitions, Violations =	20751
+Routed	360/799 Partitions, Violations =	20738
+Routed	363/799 Partitions, Violations =	20779
+Routed	366/799 Partitions, Violations =	20789
+Routed	369/799 Partitions, Violations =	20779
+Routed	372/799 Partitions, Violations =	20803
+Routed	375/799 Partitions, Violations =	20786
+Routed	378/799 Partitions, Violations =	20801
+Routed	381/799 Partitions, Violations =	20779
+Routed	384/799 Partitions, Violations =	20791
+Routed	387/799 Partitions, Violations =	20786
+Routed	390/799 Partitions, Violations =	20795
+Routed	393/799 Partitions, Violations =	20781
+Routed	396/799 Partitions, Violations =	20787
+Routed	399/799 Partitions, Violations =	20763
+Routed	402/799 Partitions, Violations =	20766
+Routed	405/799 Partitions, Violations =	20786
+Routed	408/799 Partitions, Violations =	20789
+Routed	411/799 Partitions, Violations =	20786
+Routed	414/799 Partitions, Violations =	20777
+Routed	417/799 Partitions, Violations =	20800
+Routed	420/799 Partitions, Violations =	20805
+Routed	423/799 Partitions, Violations =	20820
+Routed	426/799 Partitions, Violations =	20815
+Routed	429/799 Partitions, Violations =	20834
+Routed	432/799 Partitions, Violations =	20872
+Routed	435/799 Partitions, Violations =	20871
+Routed	438/799 Partitions, Violations =	20874
+Routed	441/799 Partitions, Violations =	20868
+Routed	444/799 Partitions, Violations =	20877
+Routed	447/799 Partitions, Violations =	20913
+Routed	450/799 Partitions, Violations =	20916
+Routed	453/799 Partitions, Violations =	20898
+Routed	456/799 Partitions, Violations =	20938
+Routed	459/799 Partitions, Violations =	20951
+Routed	462/799 Partitions, Violations =	20954
+Routed	465/799 Partitions, Violations =	20950
+Routed	468/799 Partitions, Violations =	20927
+Routed	471/799 Partitions, Violations =	20935
+Routed	474/799 Partitions, Violations =	20925
+Routed	477/799 Partitions, Violations =	20917
+Routed	480/799 Partitions, Violations =	20926
+Routed	483/799 Partitions, Violations =	20937
+Routed	486/799 Partitions, Violations =	20948
+Routed	489/799 Partitions, Violations =	20941
+Routed	492/799 Partitions, Violations =	20959
+Routed	495/799 Partitions, Violations =	20965
+Routed	498/799 Partitions, Violations =	20966
+Routed	501/799 Partitions, Violations =	20969
+Routed	504/799 Partitions, Violations =	20968
+Routed	507/799 Partitions, Violations =	20992
+Routed	510/799 Partitions, Violations =	20997
+Routed	513/799 Partitions, Violations =	21008
+Routed	516/799 Partitions, Violations =	21024
+Routed	519/799 Partitions, Violations =	21023
+Routed	522/799 Partitions, Violations =	21000
+Routed	525/799 Partitions, Violations =	20996
+Routed	528/799 Partitions, Violations =	21001
+Routed	531/799 Partitions, Violations =	21001
+Routed	534/799 Partitions, Violations =	21019
+Routed	537/799 Partitions, Violations =	21030
+Routed	540/799 Partitions, Violations =	21029
+Routed	543/799 Partitions, Violations =	21015
+Routed	546/799 Partitions, Violations =	21063
+Routed	549/799 Partitions, Violations =	21065
+Routed	552/799 Partitions, Violations =	21073
+Routed	555/799 Partitions, Violations =	21071
+Routed	558/799 Partitions, Violations =	21050
+Routed	561/799 Partitions, Violations =	21047
+Routed	564/799 Partitions, Violations =	21055
+Routed	567/799 Partitions, Violations =	21073
+Routed	570/799 Partitions, Violations =	21081
+Routed	573/799 Partitions, Violations =	21076
+Routed	576/799 Partitions, Violations =	21087
+Routed	579/799 Partitions, Violations =	21060
+Routed	582/799 Partitions, Violations =	21068
+Routed	585/799 Partitions, Violations =	21078
+Routed	588/799 Partitions, Violations =	21088
+Routed	591/799 Partitions, Violations =	21132
+Routed	594/799 Partitions, Violations =	21148
+Routed	597/799 Partitions, Violations =	21156
+Routed	600/799 Partitions, Violations =	21155
+Routed	603/799 Partitions, Violations =	21176
+Routed	606/799 Partitions, Violations =	21200
+Routed	609/799 Partitions, Violations =	21209
+Routed	612/799 Partitions, Violations =	21208
+Routed	615/799 Partitions, Violations =	21206
+Routed	618/799 Partitions, Violations =	21197
+Routed	621/799 Partitions, Violations =	21192
+Routed	624/799 Partitions, Violations =	21190
+Routed	627/799 Partitions, Violations =	21197
+Routed	630/799 Partitions, Violations =	21164
+Routed	633/799 Partitions, Violations =	21165
+Routed	636/799 Partitions, Violations =	21166
+Routed	639/799 Partitions, Violations =	21167
+Routed	642/799 Partitions, Violations =	21165
+Routed	645/799 Partitions, Violations =	21173
+Routed	648/799 Partitions, Violations =	21197
+Routed	651/799 Partitions, Violations =	21211
+Routed	654/799 Partitions, Violations =	21253
+Routed	657/799 Partitions, Violations =	21238
+Routed	660/799 Partitions, Violations =	21248
+Routed	663/799 Partitions, Violations =	21295
+Routed	666/799 Partitions, Violations =	21299
+Routed	669/799 Partitions, Violations =	21299
+Routed	672/799 Partitions, Violations =	21298
+Routed	675/799 Partitions, Violations =	21313
+Routed	678/799 Partitions, Violations =	21345
+Routed	681/799 Partitions, Violations =	21356
+Routed	684/799 Partitions, Violations =	21389
+Routed	687/799 Partitions, Violations =	21406
+Routed	690/799 Partitions, Violations =	21418
+Routed	693/799 Partitions, Violations =	21416
+Routed	696/799 Partitions, Violations =	21434
+Routed	699/799 Partitions, Violations =	21437
+Routed	702/799 Partitions, Violations =	21433
+Routed	705/799 Partitions, Violations =	21432
+Routed	708/799 Partitions, Violations =	21437
+Routed	711/799 Partitions, Violations =	21464
+Routed	714/799 Partitions, Violations =	21465
+Routed	717/799 Partitions, Violations =	21459
+Routed	720/799 Partitions, Violations =	21470
+Routed	723/799 Partitions, Violations =	21482
+Routed	726/799 Partitions, Violations =	21473
+Routed	729/799 Partitions, Violations =	21475
+Routed	732/799 Partitions, Violations =	21440
+Routed	735/799 Partitions, Violations =	21416
+Routed	738/799 Partitions, Violations =	21403
+Routed	741/799 Partitions, Violations =	21396
+Routed	744/799 Partitions, Violations =	21383
+Routed	747/799 Partitions, Violations =	21379
+Routed	750/799 Partitions, Violations =	21363
+Routed	753/799 Partitions, Violations =	21371
+Routed	756/799 Partitions, Violations =	21378
+Routed	759/799 Partitions, Violations =	21360
+Routed	762/799 Partitions, Violations =	21375
+Routed	765/799 Partitions, Violations =	21364
+Routed	768/799 Partitions, Violations =	21367
+Routed	771/799 Partitions, Violations =	21368
+Routed	774/799 Partitions, Violations =	21394
+Routed	777/799 Partitions, Violations =	21390
+Routed	780/799 Partitions, Violations =	21384
+Routed	783/799 Partitions, Violations =	21390
+Routed	786/799 Partitions, Violations =	21380
+Routed	789/799 Partitions, Violations =	21387
+Routed	792/799 Partitions, Violations =	21373
+Routed	795/799 Partitions, Violations =	21386
+Routed	798/799 Partitions, Violations =	21384
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	21384
+	Diff net spacing : 3526
+	Diff net var rule spacing : 4
+	Diff net via-cut spacing : 514
+	Edge-line via spacing : 8
+	End of line enclosure : 365
+	Less than minimum area : 222
+	Less than minimum enclosed area : 1
+	Less than minimum width : 10
+	Less than NDR width : 1
+	Multiple pin connections : 4
+	Off-grid : 198
+	Same net spacing : 230
+	Same net via-cut spacing : 113
+	Short : 15210
+	Internal-only types : 978
+
+[Iter 15] Elapsed real time: 0:05:58 
+[Iter 15] Elapsed cpu  time: sys=0:00:00 usr=0:05:58 total=0:05:58
+[Iter 15] Stage (MB): Used  168  Alloctr  175  Proc    0 
+[Iter 15] Total (MB): Used  169  Alloctr  177  Proc 2225 
+
+End DR iteration 15 with 799 parts
+
+Start DR iteration 16: non-uniform partition
+Routed	1/667 Partitions, Violations =	21367
+Routed	3/667 Partitions, Violations =	21372
+Routed	6/667 Partitions, Violations =	21365
+Routed	9/667 Partitions, Violations =	21333
+Routed	12/667 Partitions, Violations =	21279
+Routed	15/667 Partitions, Violations =	21183
+Routed	18/667 Partitions, Violations =	21143
+Routed	21/667 Partitions, Violations =	21122
+Routed	24/667 Partitions, Violations =	21088
+Routed	27/667 Partitions, Violations =	21046
+Routed	30/667 Partitions, Violations =	21022
+Routed	33/667 Partitions, Violations =	21053
+Routed	36/667 Partitions, Violations =	21064
+Routed	39/667 Partitions, Violations =	21064
+Routed	42/667 Partitions, Violations =	21001
+Routed	45/667 Partitions, Violations =	20959
+Routed	48/667 Partitions, Violations =	20965
+Routed	51/667 Partitions, Violations =	20946
+Routed	54/667 Partitions, Violations =	20923
+Routed	57/667 Partitions, Violations =	20943
+Routed	60/667 Partitions, Violations =	20906
+Routed	63/667 Partitions, Violations =	20889
+Routed	66/667 Partitions, Violations =	20875
+Routed	69/667 Partitions, Violations =	20888
+Routed	72/667 Partitions, Violations =	20867
+Routed	75/667 Partitions, Violations =	20845
+Routed	78/667 Partitions, Violations =	20935
+Routed	81/667 Partitions, Violations =	20867
+Routed	84/667 Partitions, Violations =	20825
+Routed	87/667 Partitions, Violations =	20825
+Routed	90/667 Partitions, Violations =	20792
+Routed	93/667 Partitions, Violations =	20768
+Routed	96/667 Partitions, Violations =	20782
+Routed	99/667 Partitions, Violations =	20763
+Routed	102/667 Partitions, Violations =	20752
+Routed	105/667 Partitions, Violations =	20789
+Routed	108/667 Partitions, Violations =	20764
+Routed	111/667 Partitions, Violations =	20733
+Routed	114/667 Partitions, Violations =	20752
+Routed	117/667 Partitions, Violations =	20731
+Routed	120/667 Partitions, Violations =	20723
+Routed	123/667 Partitions, Violations =	20747
+Routed	126/667 Partitions, Violations =	20759
+Routed	129/667 Partitions, Violations =	20740
+Routed	132/667 Partitions, Violations =	20736
+Routed	135/667 Partitions, Violations =	20731
+Routed	138/667 Partitions, Violations =	20723
+Routed	141/667 Partitions, Violations =	20765
+Routed	144/667 Partitions, Violations =	20778
+Routed	147/667 Partitions, Violations =	20753
+Routed	150/667 Partitions, Violations =	20747
+Routed	153/667 Partitions, Violations =	20769
+Routed	156/667 Partitions, Violations =	20744
+Routed	159/667 Partitions, Violations =	20735
+Routed	162/667 Partitions, Violations =	20755
+Routed	165/667 Partitions, Violations =	20740
+Routed	168/667 Partitions, Violations =	20714
+Routed	171/667 Partitions, Violations =	20706
+Routed	174/667 Partitions, Violations =	20714
+Routed	177/667 Partitions, Violations =	20713
+Routed	180/667 Partitions, Violations =	20729
+Routed	183/667 Partitions, Violations =	20713
+Routed	186/667 Partitions, Violations =	20693
+Routed	189/667 Partitions, Violations =	20719
+Routed	192/667 Partitions, Violations =	20730
+Routed	195/667 Partitions, Violations =	20725
+Routed	198/667 Partitions, Violations =	20740
+Routed	201/667 Partitions, Violations =	20748
+Routed	204/667 Partitions, Violations =	20765
+Routed	207/667 Partitions, Violations =	20768
+Routed	210/667 Partitions, Violations =	20820
+Routed	213/667 Partitions, Violations =	20830
+Routed	216/667 Partitions, Violations =	20820
+Routed	219/667 Partitions, Violations =	20805
+Routed	222/667 Partitions, Violations =	20780
+Routed	225/667 Partitions, Violations =	20790
+Routed	228/667 Partitions, Violations =	20809
+Routed	231/667 Partitions, Violations =	20832
+Routed	234/667 Partitions, Violations =	20820
+Routed	237/667 Partitions, Violations =	20811
+Routed	240/667 Partitions, Violations =	20817
+Routed	243/667 Partitions, Violations =	20853
+Routed	246/667 Partitions, Violations =	20876
+Routed	249/667 Partitions, Violations =	20899
+Routed	252/667 Partitions, Violations =	20898
+Routed	255/667 Partitions, Violations =	20892
+Routed	258/667 Partitions, Violations =	20872
+Routed	261/667 Partitions, Violations =	20887
+Routed	264/667 Partitions, Violations =	20886
+Routed	267/667 Partitions, Violations =	20828
+Routed	270/667 Partitions, Violations =	20836
+Routed	273/667 Partitions, Violations =	20865
+Routed	276/667 Partitions, Violations =	20858
+Routed	279/667 Partitions, Violations =	20868
+Routed	282/667 Partitions, Violations =	20896
+Routed	285/667 Partitions, Violations =	20880
+Routed	288/667 Partitions, Violations =	20858
+Routed	291/667 Partitions, Violations =	20876
+Routed	294/667 Partitions, Violations =	20874
+Routed	297/667 Partitions, Violations =	20880
+Routed	300/667 Partitions, Violations =	20856
+Routed	303/667 Partitions, Violations =	20833
+Routed	306/667 Partitions, Violations =	20845
+Routed	309/667 Partitions, Violations =	20811
+Routed	312/667 Partitions, Violations =	20816
+Routed	315/667 Partitions, Violations =	20820
+Routed	318/667 Partitions, Violations =	20833
+Routed	321/667 Partitions, Violations =	20832
+Routed	324/667 Partitions, Violations =	20841
+Routed	327/667 Partitions, Violations =	20833
+Routed	330/667 Partitions, Violations =	20835
+Routed	333/667 Partitions, Violations =	20877
+Routed	336/667 Partitions, Violations =	20882
+Routed	339/667 Partitions, Violations =	20855
+Routed	342/667 Partitions, Violations =	20861
+Routed	345/667 Partitions, Violations =	20854
+Routed	348/667 Partitions, Violations =	20860
+Routed	351/667 Partitions, Violations =	20900
+Routed	354/667 Partitions, Violations =	20901
+Routed	357/667 Partitions, Violations =	20919
+Routed	360/667 Partitions, Violations =	20903
+Routed	363/667 Partitions, Violations =	20904
+Routed	366/667 Partitions, Violations =	20943
+Routed	369/667 Partitions, Violations =	20959
+Routed	372/667 Partitions, Violations =	20970
+Routed	375/667 Partitions, Violations =	20957
+Routed	378/667 Partitions, Violations =	20981
+Routed	381/667 Partitions, Violations =	20998
+Routed	384/667 Partitions, Violations =	20987
+Routed	387/667 Partitions, Violations =	20989
+Routed	390/667 Partitions, Violations =	20996
+Routed	393/667 Partitions, Violations =	20984
+Routed	396/667 Partitions, Violations =	20953
+Routed	399/667 Partitions, Violations =	20943
+Routed	402/667 Partitions, Violations =	20957
+Routed	405/667 Partitions, Violations =	20974
+Routed	408/667 Partitions, Violations =	20967
+Routed	411/667 Partitions, Violations =	20980
+Routed	414/667 Partitions, Violations =	20980
+Routed	417/667 Partitions, Violations =	20971
+Routed	420/667 Partitions, Violations =	20977
+Routed	423/667 Partitions, Violations =	20944
+Routed	426/667 Partitions, Violations =	20959
+Routed	429/667 Partitions, Violations =	20977
+Routed	432/667 Partitions, Violations =	20981
+Routed	435/667 Partitions, Violations =	20993
+Routed	438/667 Partitions, Violations =	20990
+Routed	441/667 Partitions, Violations =	20980
+Routed	444/667 Partitions, Violations =	20983
+Routed	447/667 Partitions, Violations =	21003
+Routed	450/667 Partitions, Violations =	20999
+Routed	453/667 Partitions, Violations =	21000
+Routed	456/667 Partitions, Violations =	21032
+Routed	459/667 Partitions, Violations =	21048
+Routed	462/667 Partitions, Violations =	21094
+Routed	465/667 Partitions, Violations =	21123
+Routed	468/667 Partitions, Violations =	21125
+Routed	471/667 Partitions, Violations =	21135
+Routed	474/667 Partitions, Violations =	21148
+Routed	477/667 Partitions, Violations =	21141
+Routed	480/667 Partitions, Violations =	21141
+Routed	483/667 Partitions, Violations =	21189
+Routed	486/667 Partitions, Violations =	21185
+Routed	489/667 Partitions, Violations =	21165
+Routed	492/667 Partitions, Violations =	21192
+Routed	495/667 Partitions, Violations =	21201
+Routed	498/667 Partitions, Violations =	21199
+Routed	501/667 Partitions, Violations =	21192
+Routed	504/667 Partitions, Violations =	21162
+Routed	507/667 Partitions, Violations =	21153
+Routed	510/667 Partitions, Violations =	21180
+Routed	513/667 Partitions, Violations =	21183
+Routed	516/667 Partitions, Violations =	21200
+Routed	519/667 Partitions, Violations =	21207
+Routed	522/667 Partitions, Violations =	21236
+Routed	525/667 Partitions, Violations =	21246
+Routed	528/667 Partitions, Violations =	21226
+Routed	531/667 Partitions, Violations =	21230
+Routed	534/667 Partitions, Violations =	21240
+Routed	537/667 Partitions, Violations =	21218
+Routed	540/667 Partitions, Violations =	21195
+Routed	543/667 Partitions, Violations =	21202
+Routed	546/667 Partitions, Violations =	21234
+Routed	549/667 Partitions, Violations =	21236
+Routed	552/667 Partitions, Violations =	21266
+Routed	555/667 Partitions, Violations =	21263
+Routed	558/667 Partitions, Violations =	21255
+Routed	561/667 Partitions, Violations =	21250
+Routed	564/667 Partitions, Violations =	21282
+Routed	567/667 Partitions, Violations =	21304
+Routed	570/667 Partitions, Violations =	21323
+Routed	573/667 Partitions, Violations =	21352
+Routed	576/667 Partitions, Violations =	21396
+Routed	579/667 Partitions, Violations =	21421
+Routed	582/667 Partitions, Violations =	21411
+Routed	585/667 Partitions, Violations =	21416
+Routed	588/667 Partitions, Violations =	21450
+Routed	591/667 Partitions, Violations =	21474
+Routed	594/667 Partitions, Violations =	21483
+Routed	597/667 Partitions, Violations =	21505
+Routed	600/667 Partitions, Violations =	21528
+Routed	603/667 Partitions, Violations =	21548
+Routed	606/667 Partitions, Violations =	21565
+Routed	609/667 Partitions, Violations =	21559
+Routed	612/667 Partitions, Violations =	21525
+Routed	615/667 Partitions, Violations =	21551
+Routed	618/667 Partitions, Violations =	21544
+Routed	621/667 Partitions, Violations =	21585
+Routed	624/667 Partitions, Violations =	21633
+Routed	627/667 Partitions, Violations =	21634
+Routed	630/667 Partitions, Violations =	21667
+Routed	633/667 Partitions, Violations =	21657
+Routed	636/667 Partitions, Violations =	21626
+Routed	639/667 Partitions, Violations =	21606
+Routed	642/667 Partitions, Violations =	21588
+Routed	645/667 Partitions, Violations =	21597
+Routed	648/667 Partitions, Violations =	21606
+Routed	651/667 Partitions, Violations =	21636
+Routed	654/667 Partitions, Violations =	21631
+Routed	657/667 Partitions, Violations =	21646
+Routed	660/667 Partitions, Violations =	21665
+Routed	663/667 Partitions, Violations =	21654
+Routed	666/667 Partitions, Violations =	21684
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	21670
+	Diff net spacing : 3753
+	Diff net var rule spacing : 6
+	Diff net via-cut spacing : 559
+	Edge-line via spacing : 21
+	End of line enclosure : 358
+	Less than minimum area : 234
+	Less than minimum enclosed area : 1
+	Less than minimum width : 6
+	Multiple pin connections : 4
+	Off-grid : 181
+	Same net spacing : 227
+	Same net via-cut spacing : 103
+	Short : 15459
+	Internal-only types : 758
+
+[Iter 16] Elapsed real time: 0:12:50 
+[Iter 16] Elapsed cpu  time: sys=0:00:00 usr=0:12:50 total=0:12:50
+[Iter 16] Stage (MB): Used  168  Alloctr  175  Proc    0 
+[Iter 16] Total (MB): Used  169  Alloctr  177  Proc 2225 
+
+End DR iteration 16 with 667 parts
+
+Start DR iteration 17: non-uniform partition
+Routed	1/634 Partitions, Violations =	21637
+Routed	3/634 Partitions, Violations =	21630
+Routed	6/634 Partitions, Violations =	21553
+Routed	9/634 Partitions, Violations =	21501
+Routed	12/634 Partitions, Violations =	21461
+Routed	15/634 Partitions, Violations =	21435
+Routed	18/634 Partitions, Violations =	21429
+Routed	21/634 Partitions, Violations =	21421
+Routed	24/634 Partitions, Violations =	21413
+Routed	27/634 Partitions, Violations =	21417
+Routed	30/634 Partitions, Violations =	21405
+Routed	33/634 Partitions, Violations =	21385
+Routed	36/634 Partitions, Violations =	21368
+Routed	39/634 Partitions, Violations =	21342
+Routed	42/634 Partitions, Violations =	21323
+Routed	45/634 Partitions, Violations =	21345
+Routed	48/634 Partitions, Violations =	21364
+Routed	51/634 Partitions, Violations =	21349
+Routed	54/634 Partitions, Violations =	21283
+Routed	57/634 Partitions, Violations =	21335
+Routed	60/634 Partitions, Violations =	21349
+Routed	63/634 Partitions, Violations =	21329
+Routed	66/634 Partitions, Violations =	21317
+Routed	69/634 Partitions, Violations =	21308
+Routed	72/634 Partitions, Violations =	21278
+Routed	75/634 Partitions, Violations =	21291
+Routed	78/634 Partitions, Violations =	21270
+Routed	81/634 Partitions, Violations =	21291
+Routed	84/634 Partitions, Violations =	21299
+Routed	87/634 Partitions, Violations =	21243
+Routed	90/634 Partitions, Violations =	21271
+Routed	93/634 Partitions, Violations =	21273
+Routed	96/634 Partitions, Violations =	21269
+Routed	99/634 Partitions, Violations =	21282
+Routed	102/634 Partitions, Violations =	21276
+Routed	105/634 Partitions, Violations =	21264
+Routed	108/634 Partitions, Violations =	21274
+Routed	111/634 Partitions, Violations =	21312
+Routed	114/634 Partitions, Violations =	21233
+Routed	117/634 Partitions, Violations =	21225
+Routed	120/634 Partitions, Violations =	21206
+Routed	123/634 Partitions, Violations =	21185
+Routed	126/634 Partitions, Violations =	21153
+Routed	129/634 Partitions, Violations =	21141
+Routed	132/634 Partitions, Violations =	21112
+Routed	135/634 Partitions, Violations =	21145
+Routed	138/634 Partitions, Violations =	21091
+Routed	141/634 Partitions, Violations =	21078
+Routed	144/634 Partitions, Violations =	21062
+Routed	147/634 Partitions, Violations =	21083
+Routed	150/634 Partitions, Violations =	21073
+Routed	153/634 Partitions, Violations =	21061
+Routed	156/634 Partitions, Violations =	21027
+Routed	159/634 Partitions, Violations =	20993
+Routed	162/634 Partitions, Violations =	20975
+Routed	165/634 Partitions, Violations =	20960
+Routed	168/634 Partitions, Violations =	20871
+Routed	171/634 Partitions, Violations =	20879
+Routed	174/634 Partitions, Violations =	20871
+Routed	177/634 Partitions, Violations =	20848
+Routed	180/634 Partitions, Violations =	20856
+Routed	183/634 Partitions, Violations =	20843
+Routed	186/634 Partitions, Violations =	20851
+Routed	189/634 Partitions, Violations =	20855
+Routed	192/634 Partitions, Violations =	20865
+Routed	195/634 Partitions, Violations =	20833
+Routed	198/634 Partitions, Violations =	20811
+Routed	201/634 Partitions, Violations =	20842
+Routed	204/634 Partitions, Violations =	20819
+Routed	207/634 Partitions, Violations =	20801
+Routed	210/634 Partitions, Violations =	20809
+Routed	213/634 Partitions, Violations =	20773
+Routed	216/634 Partitions, Violations =	20786
+Routed	219/634 Partitions, Violations =	20818
+Routed	222/634 Partitions, Violations =	20817
+Routed	225/634 Partitions, Violations =	20832
+Routed	228/634 Partitions, Violations =	20858
+Routed	231/634 Partitions, Violations =	20836
+Routed	234/634 Partitions, Violations =	20846
+Routed	237/634 Partitions, Violations =	20823
+Routed	240/634 Partitions, Violations =	20761
+Routed	243/634 Partitions, Violations =	20743
+Routed	246/634 Partitions, Violations =	20728
+Routed	249/634 Partitions, Violations =	20733
+Routed	252/634 Partitions, Violations =	20770
+Routed	255/634 Partitions, Violations =	20789
+Routed	258/634 Partitions, Violations =	20777
+Routed	261/634 Partitions, Violations =	20764
+Routed	264/634 Partitions, Violations =	20766
+Routed	267/634 Partitions, Violations =	20777
+Routed	270/634 Partitions, Violations =	20729
+Routed	273/634 Partitions, Violations =	20739
+Routed	276/634 Partitions, Violations =	20731
+Routed	279/634 Partitions, Violations =	20677
+Routed	282/634 Partitions, Violations =	20654
+Routed	285/634 Partitions, Violations =	20685
+Routed	288/634 Partitions, Violations =	20711
+Routed	291/634 Partitions, Violations =	20713
+Routed	294/634 Partitions, Violations =	20700
+Routed	297/634 Partitions, Violations =	20689
+Routed	300/634 Partitions, Violations =	20698
+Routed	303/634 Partitions, Violations =	20712
+Routed	306/634 Partitions, Violations =	20702
+Routed	309/634 Partitions, Violations =	20750
+Routed	312/634 Partitions, Violations =	20741
+Routed	315/634 Partitions, Violations =	20758
+Routed	318/634 Partitions, Violations =	20771
+Routed	321/634 Partitions, Violations =	20751
+Routed	324/634 Partitions, Violations =	20746
+Routed	327/634 Partitions, Violations =	20737
+Routed	330/634 Partitions, Violations =	20738
+Routed	333/634 Partitions, Violations =	20725
+Routed	336/634 Partitions, Violations =	20727
+Routed	339/634 Partitions, Violations =	20726
+Routed	342/634 Partitions, Violations =	20742
+Routed	345/634 Partitions, Violations =	20725
+Routed	348/634 Partitions, Violations =	20730
+Routed	351/634 Partitions, Violations =	20732
+Routed	354/634 Partitions, Violations =	20775
+Routed	357/634 Partitions, Violations =	20773
+Routed	360/634 Partitions, Violations =	20779
+Routed	363/634 Partitions, Violations =	20797
+Routed	366/634 Partitions, Violations =	20791
+Routed	369/634 Partitions, Violations =	20817
+Routed	372/634 Partitions, Violations =	20811
+Routed	375/634 Partitions, Violations =	20817
+Routed	378/634 Partitions, Violations =	20849
+Routed	381/634 Partitions, Violations =	20856
+Routed	384/634 Partitions, Violations =	20841
+Routed	387/634 Partitions, Violations =	20852
+Routed	390/634 Partitions, Violations =	20856
+Routed	393/634 Partitions, Violations =	20888
+Routed	396/634 Partitions, Violations =	20892
+Routed	399/634 Partitions, Violations =	20909
+Routed	402/634 Partitions, Violations =	20927
+Routed	405/634 Partitions, Violations =	20920
+Routed	408/634 Partitions, Violations =	20915
+Routed	411/634 Partitions, Violations =	20917
+Routed	414/634 Partitions, Violations =	20915
+Routed	417/634 Partitions, Violations =	20893
+Routed	420/634 Partitions, Violations =	20910
+Routed	423/634 Partitions, Violations =	20887
+Routed	426/634 Partitions, Violations =	20858
+Routed	429/634 Partitions, Violations =	20862
+Routed	432/634 Partitions, Violations =	20841
+Routed	435/634 Partitions, Violations =	20842
+Routed	438/634 Partitions, Violations =	20837
+Routed	441/634 Partitions, Violations =	20834
+Routed	444/634 Partitions, Violations =	20804
+Routed	447/634 Partitions, Violations =	20853
+Routed	450/634 Partitions, Violations =	20880
+Routed	453/634 Partitions, Violations =	20868
+Routed	456/634 Partitions, Violations =	20871
+Routed	459/634 Partitions, Violations =	20863
+Routed	462/634 Partitions, Violations =	20886
+Routed	465/634 Partitions, Violations =	20932
+Routed	468/634 Partitions, Violations =	20936
+Routed	471/634 Partitions, Violations =	20940
+Routed	474/634 Partitions, Violations =	20992
+Routed	477/634 Partitions, Violations =	21009
+Routed	480/634 Partitions, Violations =	21006
+Routed	483/634 Partitions, Violations =	21022
+Routed	486/634 Partitions, Violations =	21027
+Routed	489/634 Partitions, Violations =	21025
+Routed	492/634 Partitions, Violations =	21010
+Routed	495/634 Partitions, Violations =	21034
+Routed	498/634 Partitions, Violations =	21036
+Routed	501/634 Partitions, Violations =	21080
+Routed	504/634 Partitions, Violations =	21070
+Routed	507/634 Partitions, Violations =	21061
+Routed	510/634 Partitions, Violations =	21086
+Routed	513/634 Partitions, Violations =	21084
+Routed	516/634 Partitions, Violations =	21138
+Routed	519/634 Partitions, Violations =	21177
+Routed	522/634 Partitions, Violations =	21208
+Routed	525/634 Partitions, Violations =	21198
+Routed	528/634 Partitions, Violations =	21176
+Routed	531/634 Partitions, Violations =	21178
+Routed	534/634 Partitions, Violations =	21165
+Routed	537/634 Partitions, Violations =	21195
+Routed	540/634 Partitions, Violations =	21212
+Routed	543/634 Partitions, Violations =	21163
+Routed	546/634 Partitions, Violations =	21194
+Routed	549/634 Partitions, Violations =	21205
+Routed	552/634 Partitions, Violations =	21210
+Routed	555/634 Partitions, Violations =	21194
+Routed	558/634 Partitions, Violations =	21210
+Routed	561/634 Partitions, Violations =	21229
+Routed	564/634 Partitions, Violations =	21197
+Routed	567/634 Partitions, Violations =	21193
+Routed	570/634 Partitions, Violations =	21195
+Routed	573/634 Partitions, Violations =	21135
+Routed	576/634 Partitions, Violations =	21106
+Routed	579/634 Partitions, Violations =	21114
+Routed	582/634 Partitions, Violations =	21109
+Routed	585/634 Partitions, Violations =	21113
+Routed	588/634 Partitions, Violations =	21125
+Routed	591/634 Partitions, Violations =	21135
+Routed	594/634 Partitions, Violations =	21137
+Routed	597/634 Partitions, Violations =	21139
+Routed	600/634 Partitions, Violations =	21153
+Routed	603/634 Partitions, Violations =	21152
+Routed	606/634 Partitions, Violations =	21185
+Routed	609/634 Partitions, Violations =	21194
+Routed	612/634 Partitions, Violations =	21192
+Routed	615/634 Partitions, Violations =	21203
+Routed	618/634 Partitions, Violations =	21233
+Routed	621/634 Partitions, Violations =	21216
+Routed	624/634 Partitions, Violations =	21216
+Routed	627/634 Partitions, Violations =	21213
+Routed	630/634 Partitions, Violations =	21251
+Routed	633/634 Partitions, Violations =	21246
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	21247
+	Diff net spacing : 3607
+	Diff net var rule spacing : 7
+	Diff net via-cut spacing : 581
+	Edge-line via spacing : 7
+	End of line enclosure : 362
+	Less than minimum area : 239
+	Less than minimum enclosed area : 2
+	Less than minimum width : 9
+	Less than NDR width : 9
+	Multiple pin connections : 4
+	Off-grid : 164
+	Same net spacing : 216
+	Same net via-cut spacing : 90
+	Short : 15311
+	Internal-only types : 639
+
+[Iter 17] Elapsed real time: 0:21:06 
+[Iter 17] Elapsed cpu  time: sys=0:00:00 usr=0:21:03 total=0:21:03
+[Iter 17] Stage (MB): Used  168  Alloctr  175  Proc    0 
+[Iter 17] Total (MB): Used  169  Alloctr  177  Proc 2225 
+
+End DR iteration 17 with 634 parts
+
+
+Switch back to normal partition bloat and recalculate DRC:
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/64 Partitions, Violations =	21247
+Checked	2/64 Partitions, Violations =	21246
+Checked	4/64 Partitions, Violations =	21247
+Checked	6/64 Partitions, Violations =	21233
+Checked	8/64 Partitions, Violations =	21233
+Checked	10/64 Partitions, Violations =	21232
+Checked	12/64 Partitions, Violations =	21187
+Checked	14/64 Partitions, Violations =	21180
+Checked	17/64 Partitions, Violations =	21161
+Checked	18/64 Partitions, Violations =	21149
+Checked	20/64 Partitions, Violations =	21105
+Checked	22/64 Partitions, Violations =	20976
+Checked	25/64 Partitions, Violations =	20967
+Checked	26/64 Partitions, Violations =	20933
+Checked	28/64 Partitions, Violations =	20873
+Checked	30/64 Partitions, Violations =	20843
+Checked	32/64 Partitions, Violations =	20832
+Checked	34/64 Partitions, Violations =	20820
+Checked	36/64 Partitions, Violations =	20744
+Checked	38/64 Partitions, Violations =	20707
+Checked	40/64 Partitions, Violations =	20706
+Checked	42/64 Partitions, Violations =	20657
+Checked	44/64 Partitions, Violations =	20595
+Checked	46/64 Partitions, Violations =	20524
+Checked	48/64 Partitions, Violations =	20524
+Checked	50/64 Partitions, Violations =	20513
+Checked	52/64 Partitions, Violations =	20476
+Checked	54/64 Partitions, Violations =	20441
+Checked	56/64 Partitions, Violations =	20441
+Checked	58/64 Partitions, Violations =	20441
+Checked	60/64 Partitions, Violations =	20441
+Checked	62/64 Partitions, Violations =	20441
+Checked	64/64 Partitions, Violations =	20441
+[DRC CHECK] Elapsed real time: 0:21:11 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:21:08 total=0:21:08
+[DRC CHECK] Stage (MB): Used  168  Alloctr  176  Proc    0 
+[DRC CHECK] Total (MB): Used  169  Alloctr  177  Proc 2225 
+Start DR iteration 18: non-uniform partition
+Routed	1/582 Partitions, Violations =	20425
+Routed	2/582 Partitions, Violations =	20422
+Routed	4/582 Partitions, Violations =	20417
+Routed	6/582 Partitions, Violations =	20443
+Routed	8/582 Partitions, Violations =	20410
+Routed	10/582 Partitions, Violations =	20403
+Routed	12/582 Partitions, Violations =	20387
+Routed	14/582 Partitions, Violations =	20342
+Routed	16/582 Partitions, Violations =	20339
+Routed	18/582 Partitions, Violations =	20320
+Routed	20/582 Partitions, Violations =	20295
+Routed	22/582 Partitions, Violations =	20282
+Routed	24/582 Partitions, Violations =	20246
+Routed	26/582 Partitions, Violations =	20256
+Routed	28/582 Partitions, Violations =	20221
+Routed	30/582 Partitions, Violations =	20208
+Routed	32/582 Partitions, Violations =	20186
+Routed	34/582 Partitions, Violations =	20179
+Routed	36/582 Partitions, Violations =	20182
+Routed	38/582 Partitions, Violations =	20130
+Routed	40/582 Partitions, Violations =	20113
+Routed	42/582 Partitions, Violations =	20117
+Routed	44/582 Partitions, Violations =	20132
+Routed	46/582 Partitions, Violations =	20123
+Routed	48/582 Partitions, Violations =	20123
+Routed	50/582 Partitions, Violations =	20100
+Routed	52/582 Partitions, Violations =	20099
+Routed	54/582 Partitions, Violations =	20117
+Routed	56/582 Partitions, Violations =	20110
+Routed	58/582 Partitions, Violations =	20103
+Routed	60/582 Partitions, Violations =	20066
+Routed	62/582 Partitions, Violations =	20074
+Routed	64/582 Partitions, Violations =	20035
+Routed	66/582 Partitions, Violations =	20009
+Routed	68/582 Partitions, Violations =	20018
+Routed	70/582 Partitions, Violations =	19995
+Routed	72/582 Partitions, Violations =	19997
+Routed	74/582 Partitions, Violations =	20000
+Routed	76/582 Partitions, Violations =	19983
+Routed	78/582 Partitions, Violations =	19986
+Routed	80/582 Partitions, Violations =	19962
+Routed	82/582 Partitions, Violations =	19962
+Routed	84/582 Partitions, Violations =	19997
+Routed	86/582 Partitions, Violations =	19993
+Routed	88/582 Partitions, Violations =	19984
+Routed	90/582 Partitions, Violations =	19979
+Routed	92/582 Partitions, Violations =	20003
+Routed	94/582 Partitions, Violations =	20004
+Routed	96/582 Partitions, Violations =	20019
+Routed	98/582 Partitions, Violations =	20011
+Routed	100/582 Partitions, Violations =	19989
+Routed	102/582 Partitions, Violations =	20011
+Routed	104/582 Partitions, Violations =	20007
+Routed	106/582 Partitions, Violations =	19999
+Routed	108/582 Partitions, Violations =	19990
+Routed	110/582 Partitions, Violations =	19975
+Routed	112/582 Partitions, Violations =	19969
+Routed	114/582 Partitions, Violations =	19969
+Routed	116/582 Partitions, Violations =	20021
+Routed	118/582 Partitions, Violations =	19990
+Routed	120/582 Partitions, Violations =	19960
+Routed	122/582 Partitions, Violations =	19949
+Routed	124/582 Partitions, Violations =	19920
+Routed	126/582 Partitions, Violations =	19911
+Routed	128/582 Partitions, Violations =	19901
+Routed	130/582 Partitions, Violations =	19885
+Routed	132/582 Partitions, Violations =	19890
+Routed	134/582 Partitions, Violations =	19860
+Routed	136/582 Partitions, Violations =	19864
+Routed	138/582 Partitions, Violations =	19826
+Routed	140/582 Partitions, Violations =	19799
+Routed	142/582 Partitions, Violations =	19819
+Routed	144/582 Partitions, Violations =	19793
+Routed	146/582 Partitions, Violations =	19763
+Routed	148/582 Partitions, Violations =	19752
+Routed	150/582 Partitions, Violations =	19758
+Routed	152/582 Partitions, Violations =	19745
+Routed	154/582 Partitions, Violations =	19738
+Routed	156/582 Partitions, Violations =	19731
+Routed	158/582 Partitions, Violations =	19729
+Routed	160/582 Partitions, Violations =	19704
+Routed	162/582 Partitions, Violations =	19718
+Routed	164/582 Partitions, Violations =	19696
+Routed	166/582 Partitions, Violations =	19724
+Routed	168/582 Partitions, Violations =	19728
+Routed	170/582 Partitions, Violations =	19763
+Routed	172/582 Partitions, Violations =	19758
+Routed	174/582 Partitions, Violations =	19764
+Routed	176/582 Partitions, Violations =	19745
+Routed	178/582 Partitions, Violations =	19728
+Routed	180/582 Partitions, Violations =	19743
+Routed	182/582 Partitions, Violations =	19750
+Routed	184/582 Partitions, Violations =	19734
+Routed	186/582 Partitions, Violations =	19737
+Routed	188/582 Partitions, Violations =	19747
+Routed	190/582 Partitions, Violations =	19749
+Routed	192/582 Partitions, Violations =	19757
+Routed	194/582 Partitions, Violations =	19763
+Routed	196/582 Partitions, Violations =	19755
+Routed	198/582 Partitions, Violations =	19754
+Routed	200/582 Partitions, Violations =	19750
+Routed	202/582 Partitions, Violations =	19777
+Routed	204/582 Partitions, Violations =	19761
+Routed	206/582 Partitions, Violations =	19760
+Routed	208/582 Partitions, Violations =	19749
+Routed	210/582 Partitions, Violations =	19721
+Routed	212/582 Partitions, Violations =	19698
+Routed	214/582 Partitions, Violations =	19717
+Routed	216/582 Partitions, Violations =	19694
+Routed	218/582 Partitions, Violations =	19666
+Routed	220/582 Partitions, Violations =	19648
+Routed	222/582 Partitions, Violations =	19637
+Routed	224/582 Partitions, Violations =	19622
+Routed	226/582 Partitions, Violations =	19617
+Routed	228/582 Partitions, Violations =	19616
+Routed	230/582 Partitions, Violations =	19587
+Routed	232/582 Partitions, Violations =	19586
+Routed	234/582 Partitions, Violations =	19553
+Routed	236/582 Partitions, Violations =	19539
+Routed	238/582 Partitions, Violations =	19528
+Routed	240/582 Partitions, Violations =	19513
+Routed	242/582 Partitions, Violations =	19496
+Routed	244/582 Partitions, Violations =	19485
+Routed	246/582 Partitions, Violations =	19480
+Routed	248/582 Partitions, Violations =	19503
+Routed	250/582 Partitions, Violations =	19511
+Routed	252/582 Partitions, Violations =	19539
+Routed	254/582 Partitions, Violations =	19554
+Routed	256/582 Partitions, Violations =	19539
+Routed	258/582 Partitions, Violations =	19552
+Routed	260/582 Partitions, Violations =	19537
+Routed	262/582 Partitions, Violations =	19518
+Routed	264/582 Partitions, Violations =	19499
+Routed	266/582 Partitions, Violations =	19494
+Routed	268/582 Partitions, Violations =	19495
+Routed	270/582 Partitions, Violations =	19492
+Routed	272/582 Partitions, Violations =	19506
+Routed	274/582 Partitions, Violations =	19516
+Routed	276/582 Partitions, Violations =	19517
+Routed	278/582 Partitions, Violations =	19536
+Routed	280/582 Partitions, Violations =	19524
+Routed	282/582 Partitions, Violations =	19507
+Routed	284/582 Partitions, Violations =	19507
+Routed	286/582 Partitions, Violations =	19525
+Routed	288/582 Partitions, Violations =	19525
+Routed	290/582 Partitions, Violations =	19499
+Routed	292/582 Partitions, Violations =	19503
+Routed	294/582 Partitions, Violations =	19506
+Routed	296/582 Partitions, Violations =	19499
+Routed	298/582 Partitions, Violations =	19480
+Routed	300/582 Partitions, Violations =	19457
+Routed	302/582 Partitions, Violations =	19451
+Routed	304/582 Partitions, Violations =	19470
+Routed	306/582 Partitions, Violations =	19455
+Routed	308/582 Partitions, Violations =	19463
+Routed	310/582 Partitions, Violations =	19452
+Routed	312/582 Partitions, Violations =	19459
+Routed	314/582 Partitions, Violations =	19459
+Routed	316/582 Partitions, Violations =	19478
+Routed	318/582 Partitions, Violations =	19476
+Routed	320/582 Partitions, Violations =	19492
+Routed	322/582 Partitions, Violations =	19502
+Routed	324/582 Partitions, Violations =	19498
+Routed	326/582 Partitions, Violations =	19517
+Routed	328/582 Partitions, Violations =	19540
+Routed	330/582 Partitions, Violations =	19522
+Routed	332/582 Partitions, Violations =	19522
+Routed	334/582 Partitions, Violations =	19517
+Routed	336/582 Partitions, Violations =	19521
+Routed	338/582 Partitions, Violations =	19512
+Routed	340/582 Partitions, Violations =	19502
+Routed	342/582 Partitions, Violations =	19503
+Routed	344/582 Partitions, Violations =	19501
+Routed	346/582 Partitions, Violations =	19473
+Routed	348/582 Partitions, Violations =	19476
+Routed	350/582 Partitions, Violations =	19469
+Routed	352/582 Partitions, Violations =	19430
+Routed	354/582 Partitions, Violations =	19408
+Routed	356/582 Partitions, Violations =	19407
+Routed	358/582 Partitions, Violations =	19403
+Routed	360/582 Partitions, Violations =	19408
+Routed	362/582 Partitions, Violations =	19412
+Routed	364/582 Partitions, Violations =	19419
+Routed	366/582 Partitions, Violations =	19409
+Routed	368/582 Partitions, Violations =	19419
+Routed	370/582 Partitions, Violations =	19414
+Routed	372/582 Partitions, Violations =	19414
+Routed	374/582 Partitions, Violations =	19428
+Routed	376/582 Partitions, Violations =	19413
+Routed	378/582 Partitions, Violations =	19407
+Routed	380/582 Partitions, Violations =	19437
+Routed	382/582 Partitions, Violations =	19432
+Routed	384/582 Partitions, Violations =	19460
+Routed	386/582 Partitions, Violations =	19452
+Routed	388/582 Partitions, Violations =	19478
+Routed	390/582 Partitions, Violations =	19462
+Routed	392/582 Partitions, Violations =	19466
+Routed	394/582 Partitions, Violations =	19480
+Routed	396/582 Partitions, Violations =	19489
+Routed	398/582 Partitions, Violations =	19484
+Routed	400/582 Partitions, Violations =	19486
+Routed	402/582 Partitions, Violations =	19478
+Routed	404/582 Partitions, Violations =	19486
+Routed	406/582 Partitions, Violations =	19510
+Routed	408/582 Partitions, Violations =	19526
+Routed	410/582 Partitions, Violations =	19556
+Routed	412/582 Partitions, Violations =	19559
+Routed	414/582 Partitions, Violations =	19569
+Routed	416/582 Partitions, Violations =	19577
+Routed	418/582 Partitions, Violations =	19573
+Routed	420/582 Partitions, Violations =	19579
+Routed	422/582 Partitions, Violations =	19586
+Routed	424/582 Partitions, Violations =	19610
+Routed	426/582 Partitions, Violations =	19619
+Routed	428/582 Partitions, Violations =	19601
+Routed	430/582 Partitions, Violations =	19617
+Routed	432/582 Partitions, Violations =	19590
+Routed	434/582 Partitions, Violations =	19609
+Routed	436/582 Partitions, Violations =	19617
+Routed	438/582 Partitions, Violations =	19624
+Routed	440/582 Partitions, Violations =	19627
+Routed	442/582 Partitions, Violations =	19633
+Routed	444/582 Partitions, Violations =	19635
+Routed	446/582 Partitions, Violations =	19633
+Routed	448/582 Partitions, Violations =	19629
+Routed	450/582 Partitions, Violations =	19628
+Routed	452/582 Partitions, Violations =	19648
+Routed	454/582 Partitions, Violations =	19644
+Routed	456/582 Partitions, Violations =	19639
+Routed	458/582 Partitions, Violations =	19660
+Routed	460/582 Partitions, Violations =	19681
+Routed	462/582 Partitions, Violations =	19684
+Routed	464/582 Partitions, Violations =	19678
+Routed	466/582 Partitions, Violations =	19661
+Routed	468/582 Partitions, Violations =	19659
+Routed	470/582 Partitions, Violations =	19670
+Routed	472/582 Partitions, Violations =	19671
+Routed	474/582 Partitions, Violations =	19724
+Routed	476/582 Partitions, Violations =	19740
+Routed	478/582 Partitions, Violations =	19766
+Routed	480/582 Partitions, Violations =	19752
+Routed	482/582 Partitions, Violations =	19772
+Routed	484/582 Partitions, Violations =	19774
+Routed	486/582 Partitions, Violations =	19743
+Routed	488/582 Partitions, Violations =	19738
+Routed	490/582 Partitions, Violations =	19736
+Routed	492/582 Partitions, Violations =	19740
+Routed	494/582 Partitions, Violations =	19744
+Routed	496/582 Partitions, Violations =	19739
+Routed	498/582 Partitions, Violations =	19772
+Routed	500/582 Partitions, Violations =	19781
+Routed	502/582 Partitions, Violations =	19788
+Routed	504/582 Partitions, Violations =	19794
+Routed	506/582 Partitions, Violations =	19830
+Routed	508/582 Partitions, Violations =	19839
+Routed	510/582 Partitions, Violations =	19838
+Routed	512/582 Partitions, Violations =	19789
+Routed	514/582 Partitions, Violations =	19823
+Routed	516/582 Partitions, Violations =	19840
+Routed	518/582 Partitions, Violations =	19872
+Routed	520/582 Partitions, Violations =	19899
+Routed	522/582 Partitions, Violations =	19899
+Routed	524/582 Partitions, Violations =	19908
+Routed	526/582 Partitions, Violations =	19911
+Routed	528/582 Partitions, Violations =	19922
+Routed	530/582 Partitions, Violations =	19928
+Routed	532/582 Partitions, Violations =	19922
+Routed	534/582 Partitions, Violations =	19922
+Routed	536/582 Partitions, Violations =	19916
+Routed	538/582 Partitions, Violations =	19912
+Routed	540/582 Partitions, Violations =	19903
+Routed	542/582 Partitions, Violations =	19893
+Routed	544/582 Partitions, Violations =	19914
+Routed	546/582 Partitions, Violations =	19914
+Routed	548/582 Partitions, Violations =	19908
+Routed	550/582 Partitions, Violations =	19898
+Routed	552/582 Partitions, Violations =	19888
+Routed	554/582 Partitions, Violations =	19857
+Routed	556/582 Partitions, Violations =	19864
+Routed	558/582 Partitions, Violations =	19852
+Routed	560/582 Partitions, Violations =	19854
+Routed	562/582 Partitions, Violations =	19839
+Routed	564/582 Partitions, Violations =	19846
+Routed	566/582 Partitions, Violations =	19851
+Routed	568/582 Partitions, Violations =	19860
+Routed	570/582 Partitions, Violations =	19880
+Routed	572/582 Partitions, Violations =	19868
+Routed	574/582 Partitions, Violations =	19833
+Routed	576/582 Partitions, Violations =	19855
+Routed	578/582 Partitions, Violations =	19910
+Routed	580/582 Partitions, Violations =	19908
+Routed	582/582 Partitions, Violations =	19900
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	19900
+	Diff net spacing : 11026
+	Diff net via-cut spacing : 537
+	Edge-line via spacing : 17
+	End of line enclosure : 366
+	Less than minimum area : 191
+	Less than minimum enclosed area : 1
+	Less than minimum width : 6
+	Less than NDR width : 4
+	Multiple pin connections : 2
+	Off-grid : 217
+	Same net spacing : 166
+	Same net via-cut spacing : 82
+	Short : 6647
+	Internal-only types : 638
+
+[Iter 18] Elapsed real time: 0:30:52 
+[Iter 18] Elapsed cpu  time: sys=0:00:00 usr=0:30:49 total=0:30:49
+[Iter 18] Stage (MB): Used  168  Alloctr  176  Proc    0 
+[Iter 18] Total (MB): Used  169  Alloctr  177  Proc 2225 
+
+End DR iteration 18 with 582 parts
+
+Start DR iteration 19: non-uniform partition
+Routed	1/598 Partitions, Violations =	19896
+Routed	2/598 Partitions, Violations =	19904
+Routed	4/598 Partitions, Violations =	19853
+Routed	6/598 Partitions, Violations =	19843
+Routed	8/598 Partitions, Violations =	19881
+Routed	10/598 Partitions, Violations =	19851
+Routed	12/598 Partitions, Violations =	19880
+Routed	14/598 Partitions, Violations =	19880
+Routed	16/598 Partitions, Violations =	19838
+Routed	18/598 Partitions, Violations =	19867
+Routed	20/598 Partitions, Violations =	19878
+Routed	22/598 Partitions, Violations =	19877
+Routed	24/598 Partitions, Violations =	19828
+Routed	26/598 Partitions, Violations =	19826
+Routed	28/598 Partitions, Violations =	19825
+Routed	30/598 Partitions, Violations =	19837
+Routed	32/598 Partitions, Violations =	19837
+Routed	34/598 Partitions, Violations =	19842
+Routed	36/598 Partitions, Violations =	19849
+Routed	38/598 Partitions, Violations =	19854
+Routed	40/598 Partitions, Violations =	19849
+Routed	42/598 Partitions, Violations =	19815
+Routed	44/598 Partitions, Violations =	19806
+Routed	46/598 Partitions, Violations =	19777
+Routed	48/598 Partitions, Violations =	19733
+Routed	50/598 Partitions, Violations =	19705
+Routed	52/598 Partitions, Violations =	19741
+Routed	54/598 Partitions, Violations =	19743
+Routed	56/598 Partitions, Violations =	19726
+Routed	58/598 Partitions, Violations =	19746
+Routed	60/598 Partitions, Violations =	19746
+Routed	62/598 Partitions, Violations =	19748
+Routed	64/598 Partitions, Violations =	19746
+Routed	66/598 Partitions, Violations =	19706
+Routed	68/598 Partitions, Violations =	19716
+Routed	70/598 Partitions, Violations =	19707
+Routed	72/598 Partitions, Violations =	19691
+Routed	74/598 Partitions, Violations =	19670
+Routed	76/598 Partitions, Violations =	19669
+Routed	78/598 Partitions, Violations =	19668
+Routed	80/598 Partitions, Violations =	19643
+Routed	82/598 Partitions, Violations =	19635
+Routed	84/598 Partitions, Violations =	19629
+Routed	86/598 Partitions, Violations =	19635
+Routed	88/598 Partitions, Violations =	19613
+Routed	90/598 Partitions, Violations =	19608
+Routed	92/598 Partitions, Violations =	19601
+Routed	94/598 Partitions, Violations =	19600
+Routed	96/598 Partitions, Violations =	19600
+Routed	98/598 Partitions, Violations =	19602
+Routed	100/598 Partitions, Violations =	19576
+Routed	102/598 Partitions, Violations =	19534
+Routed	104/598 Partitions, Violations =	19566
+Routed	106/598 Partitions, Violations =	19543
+Routed	108/598 Partitions, Violations =	19578
+Routed	110/598 Partitions, Violations =	19592
+Routed	112/598 Partitions, Violations =	19557
+Routed	114/598 Partitions, Violations =	19593
+Routed	116/598 Partitions, Violations =	19616
+Routed	118/598 Partitions, Violations =	19597
+Routed	120/598 Partitions, Violations =	19621
+Routed	122/598 Partitions, Violations =	19614
+Routed	124/598 Partitions, Violations =	19580
+Routed	126/598 Partitions, Violations =	19547
+Routed	128/598 Partitions, Violations =	19567
+Routed	130/598 Partitions, Violations =	19597
+Routed	132/598 Partitions, Violations =	19617
+Routed	134/598 Partitions, Violations =	19573
+Routed	136/598 Partitions, Violations =	19564
+Routed	138/598 Partitions, Violations =	19555
+Routed	140/598 Partitions, Violations =	19554
+Routed	142/598 Partitions, Violations =	19522
+Routed	144/598 Partitions, Violations =	19545
+Routed	146/598 Partitions, Violations =	19543
+Routed	148/598 Partitions, Violations =	19557
+Routed	150/598 Partitions, Violations =	19511
+Routed	152/598 Partitions, Violations =	19540
+Routed	154/598 Partitions, Violations =	19518
+Routed	156/598 Partitions, Violations =	19498
+Routed	158/598 Partitions, Violations =	19490
+Routed	160/598 Partitions, Violations =	19508
+Routed	162/598 Partitions, Violations =	19475
+Routed	164/598 Partitions, Violations =	19471
+Routed	166/598 Partitions, Violations =	19494
+Routed	168/598 Partitions, Violations =	19519
+Routed	170/598 Partitions, Violations =	19517
+Routed	172/598 Partitions, Violations =	19497
+Routed	174/598 Partitions, Violations =	19506
+Routed	176/598 Partitions, Violations =	19520
+Routed	178/598 Partitions, Violations =	19510
+Routed	180/598 Partitions, Violations =	19548
+Routed	182/598 Partitions, Violations =	19539
+Routed	184/598 Partitions, Violations =	19536
+Routed	186/598 Partitions, Violations =	19519
+Routed	188/598 Partitions, Violations =	19526
+Routed	190/598 Partitions, Violations =	19533
+Routed	192/598 Partitions, Violations =	19524
+Routed	194/598 Partitions, Violations =	19522
+Routed	196/598 Partitions, Violations =	19538
+Routed	198/598 Partitions, Violations =	19553
+Routed	200/598 Partitions, Violations =	19544
+Routed	202/598 Partitions, Violations =	19541
+Routed	204/598 Partitions, Violations =	19554
+Routed	206/598 Partitions, Violations =	19581
+Routed	208/598 Partitions, Violations =	19591
+Routed	210/598 Partitions, Violations =	19588
+Routed	212/598 Partitions, Violations =	19612
+Routed	214/598 Partitions, Violations =	19626
+Routed	216/598 Partitions, Violations =	19624
+Routed	218/598 Partitions, Violations =	19658
+Routed	220/598 Partitions, Violations =	19660
+Routed	222/598 Partitions, Violations =	19653
+Routed	224/598 Partitions, Violations =	19665
+Routed	226/598 Partitions, Violations =	19697
+Routed	228/598 Partitions, Violations =	19702
+Routed	230/598 Partitions, Violations =	19674
+Routed	232/598 Partitions, Violations =	19701
+Routed	234/598 Partitions, Violations =	19691
+Routed	236/598 Partitions, Violations =	19724
+Routed	238/598 Partitions, Violations =	19696
+Routed	240/598 Partitions, Violations =	19704
+Routed	242/598 Partitions, Violations =	19711
+
+
+Interrupt seen, we'll abort soon, do not press further ctrl-C
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	19715
+	Diff net spacing : 4721
+	Diff net var rule spacing : 1
+	Diff net via-cut spacing : 550
+	Edge-line via spacing : 10
+	End of line enclosure : 341
+	Less than minimum area : 174
+	Less than minimum enclosed area : 1
+	Less than minimum width : 7
+	Less than NDR width : 6
+	Multiple pin connections : 2
+	Off-grid : 160
+	Same net spacing : 175
+	Same net via-cut spacing : 76
+	Short : 12892
+	Internal-only types : 599
+
+[Iter 19] Elapsed real time: 0:37:14 
+[Iter 19] Elapsed cpu  time: sys=0:00:00 usr=0:37:11 total=0:37:11
+[Iter 19] Stage (MB): Used  168  Alloctr  176  Proc    0 
+[Iter 19] Total (MB): Used  169  Alloctr  177  Proc 2225 
+
+End DR iteration 19 with 598 parts
+
+Information: Detail Routing terminated early because DRCs were not converging: false (ZRT-312)
+Information: Discarded 599 drcs of internal-only type. (ZRT-306)
+[DR] Elapsed real time: 0:37:14 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:37:11 total=0:37:11
+[DR] Stage (MB): Used  150  Alloctr  158  Proc    0 
+[DR] Total (MB): Used  151  Alloctr  159  Proc 2225 
+[DR: Done] Elapsed real time: 0:37:14 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:37:11 total=0:37:11
+[DR: Done] Stage (MB): Used  150  Alloctr  158  Proc    0 
+[DR: Done] Total (MB): Used  151  Alloctr  159  Proc 2225 
+
+DR finished with 0 open nets, of which 0 are frozen
+Information: Merged away 9678 aligned/redundant DRCs. (ZRT-305)
+
+DR finished with 9438 violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9438
+	Diff net spacing : 2703
+	Diff net var rule spacing : 1
+	Diff net via-cut spacing : 550
+	Edge-line via spacing : 8
+	End of line enclosure : 338
+	Less than minimum area : 170
+	Less than minimum enclosed area : 1
+	Less than minimum width : 3
+	Less than NDR width : 2
+	Multiple pin connections : 2
+	Off-grid : 156
+	Same net spacing : 141
+	Same net via-cut spacing : 74
+	Short : 5289
+
+
+
+Total Wire Length =                    537112 micron
+Total Number of Contacts =             209002
+Total Number of Wires =                269139
+Total Number of PtConns =              40762
+Total Number of Routed Wires =       269139
+Total Routed Wire Length =           510019 micron
+Total Number of Routed Contacts =       209002
+	Layer                 M1 :       2469 micron
+	Layer                 M2 :     103005 micron
+	Layer                 M3 :     107159 micron
+	Layer                 M4 :      66006 micron
+	Layer                 M5 :      75656 micron
+	Layer                 M6 :      87025 micron
+	Layer                 M7 :      57697 micron
+	Layer                 M8 :      37978 micron
+	Layer                 M9 :        117 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          8
+	Via            VIA78SQ_C :         76
+	Via       VIA78SQ_C(rot) :       2121
+	Via              VIA78SQ :         14
+	Via         VIA78SQ(rot) :         39
+	Via            VIA67SQ_C :       5679
+	Via       VIA67SQ_C(rot) :        170
+	Via              VIA67SQ :        721
+	Via         VIA67SQ(rot) :        648
+	Via            VIA56SQ_C :        380
+	Via       VIA56SQ_C(rot) :        990
+	Via              VIA56SQ :      10083
+	Via          VIA45BAR1_C :          1
+	Via          VIA45BAR2_C :          1
+	Via              VIA45SQ :      14579
+	Via         VIA45SQ(rot) :         25
+	Via            VIA34SQ_C :        374
+	Via       VIA34SQ_C(rot) :      12559
+	Via          VIA34BAR2_C :         27
+	Via              VIA34SQ :       1738
+	Via         VIA34SQ(rot) :        620
+	Via     VIA3_34SQ_C(rot) :        690
+	Via            VIA3_34SQ :        441
+	Via            VIA23SQ_C :      72256
+	Via       VIA23SQ_C(rot) :          8
+	Via          VIA23BAR2_C :         10
+	Via            VIA23LG_C :          1
+	Via              VIA23SQ :         19
+	Via         VIA23SQ(rot) :         18
+	Via            VIA23BAR1 :          3
+	Via          VIA2_33SQ_C :       8346
+	Via          VIA23_3SQ_C :       6744
+	Via        VIA2_33_3SQ_C :       2675
+	Via            VIA12SQ_C :         33
+	Via       VIA12SQ_C(rot) :      57112
+	Via          VIA12BAR1_C :          1
+	Via     VIA12BAR1_C(rot) :          2
+	Via     VIA12BAR2_C(rot) :         72
+	Via            VIA12LG_C :          7
+	Via              VIA12SQ :         87
+	Via         VIA12SQ(rot) :        586
+	Via     VIA1_32SQ_C(rot) :       6167
+	Via     VIA12_3SQ_C(rot) :       1148
+	Via   VIA1_32_3SQ_C(rot) :       1723
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 209002 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66938   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66938   vias)
+    Layer VIA2       =  0.00% (0      / 90080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (90080   vias)
+    Layer VIA3       =  0.00% (0      / 16449   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (16449   vias)
+    Layer VIA4       =  0.00% (0      / 14606   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (14606   vias)
+    Layer VIA5       =  0.00% (0      / 11453   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (11453   vias)
+    Layer VIA6       =  0.00% (0      / 7218    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (7218    vias)
+    Layer VIA7       =  0.00% (0      / 2250    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2250    vias)
+    Layer VIA8       =  0.00% (0      / 8       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 209002 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66938   vias)
+    Layer VIA2       =  0.00% (0      / 90080   vias)
+    Layer VIA3       =  0.00% (0      / 16449   vias)
+    Layer VIA4       =  0.00% (0      / 14606   vias)
+    Layer VIA5       =  0.00% (0      / 11453   vias)
+    Layer VIA6       =  0.00% (0      / 7218    vias)
+    Layer VIA7       =  0.00% (0      / 2250    vias)
+    Layer VIA8       =  0.00% (0      / 8       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 209002 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66938   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66938   vias)
+    Layer VIA2       =  0.00% (0      / 90080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (90080   vias)
+    Layer VIA3       =  0.00% (0      / 16449   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (16449   vias)
+    Layer VIA4       =  0.00% (0      / 14606   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (14606   vias)
+    Layer VIA5       =  0.00% (0      / 11453   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (11453   vias)
+    Layer VIA6       =  0.00% (0      / 7218    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (7218    vias)
+    Layer VIA7       =  0.00% (0      / 2250    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2250    vias)
+    Layer VIA8       =  0.00% (0      / 8       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8       vias)
+ 
+
+Total number of nets = 29245
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 9438
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...

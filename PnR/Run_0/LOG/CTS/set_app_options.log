@@ -1,0 +1,3 @@
+cts.optimize.enable_congestion_aware_ndr_promotion true
+cts.common.user_instance_name_prefix CTS_
+opt.common.user_instance_name_prefix CTS_

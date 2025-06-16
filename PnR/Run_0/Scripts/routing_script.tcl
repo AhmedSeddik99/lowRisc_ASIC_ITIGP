@@ -93,6 +93,7 @@ report_constraints -all_violators -max_delay -min_delay > "$REPORT/report_constr
 report_qor  > "$REPORT/report_qor.rpt"
 check_legality > "$REPORT/check_legality.rpt"
 
+
 save_block 
 
 ##############################

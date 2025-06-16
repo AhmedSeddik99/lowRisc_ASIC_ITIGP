@@ -1,0 +1,173 @@
+
+
+********  Legalize ECO Cells  ********
+
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Begin building search trees for block ibex_hvt:ibex_hvt_placement.design
+Done building search trees for block ibex_hvt:ibex_hvt_placement.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 234 total shapes.
+Layer M2: cached 0 shapes out of 3276 total shapes.
+Layer M3: cached 14 shapes out of 14 total shapes.
+Cached 3374 vias out of 3928 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     19562.8        19211        Yes DEFAULT_VA
+
+Warning: max_legality_failures=5000 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: max_legality_check_range=500 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U420 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U424 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U425 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U429 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U432 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U433 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U436 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U437 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U439 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell ibex_top_inst/gen_regfile_ff.register_file_i/U440 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+...
+Warning: 17466 standard cells were fixed but not placed on rows. All advanced rules will be ignored for those cells.
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Legalization complete (0 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  19211
+number of references:                72
+number of site rows:                233
+number of locations attempted:     3220
+number of locations failed:        1757  (54.6%)
+
+Legality of references at locations:
+1 references had failures.
+
+Worst 1 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+    51       2297      1371 ( 59.7%)        513       386 ( 75.2%)  SAEDHVT14_ND2_2
+
+Worst 1 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+    51       2297      1371 ( 59.7%)        513       386 ( 75.2%)  SAEDHVT14_ND2_2
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:         100 (800 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.215 um ( 0.36 row height)
+rms weighted cell displacement:   0.215 um ( 0.36 row height)
+max cell displacement:            0.717 um ( 1.19 row height)
+avg cell displacement:            0.187 um ( 0.31 row height)
+avg weighted cell displacement:   0.187 um ( 0.31 row height)
+number of cells moved:              100
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: sspare_7 (SAEDHVT14_ND2_2)
+  Input location: (104.95,130.414)
+  Legal location: (104.266,130.2)
+  Displacement:   0.717 um ( 1.19 row height)
+Cell: sspare_0_7 (SAEDHVT14_NR2_2)
+  Input location: (105.55,129.814)
+  Legal location: (106.042,129.6)
+  Displacement:   0.536 um ( 0.89 row height)
+Cell: sspare_8 (SAEDHVT14_ND2_2)
+  Input location: (114.945,130.414)
+  Legal location: (114.922,130.8)
+  Displacement:   0.387 um ( 0.64 row height)
+Cell: sspare_33 (SAEDHVT14_ND2_2)
+  Input location: (129.938,70.4999)
+  Legal location: (130.092,70.2)
+  Displacement:   0.337 um ( 0.56 row height)
+Cell: sspare_3 (SAEDHVT14_ND2_2)
+  Input location: (49.9763,70.4999)
+  Legal location: (50.098,70.2)
+  Displacement:   0.324 um ( 0.54 row height)
+Cell: sspare_30 (SAEDHVT14_ND2_2)
+  Input location: (69.9668,70.4999)
+  Legal location: (70.078,70.2)
+  Displacement:   0.320 um ( 0.53 row height)
+Cell: sspare_31 (SAEDHVT14_ND2_2)
+  Input location: (89.9573,70.4999)
+  Legal location: (90.058,70.2)
+  Displacement:   0.316 um ( 0.53 row height)
+Cell: sspare_32 (SAEDHVT14_ND2_2)
+  Input location: (109.948,70.4999)
+  Legal location: (110.038,70.2)
+  Displacement:   0.313 um ( 0.52 row height)
+Cell: sspare_28 (SAEDHVT14_ND2_2)
+  Input location: (9.9953,70.4999)
+  Legal location: (10.064,70.2)
+  Displacement:   0.308 um ( 0.51 row height)
+Cell: sspare_29 (SAEDHVT14_ND2_2)
+  Input location: (29.9858,70.4999)
+  Legal location: (30.044,70.2)
+  Displacement:   0.305 um ( 0.51 row height)
+
+****************************************
+Report : ECO Legalize Displacement
+Design : ibex_hvt_placement
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 22:15:55 2025
+****************************************
+
+avg cell displacement:    0.184 um ( 0.31 row height)
+max cell displacement:    0.717 um ( 1.19 row height)
+std deviation:            0.106 um ( 0.18 row height)
+number of cell moved:       100 cells (out of 100 cells)
+
+100

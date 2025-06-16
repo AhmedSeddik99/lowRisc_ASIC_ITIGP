@@ -1,0 +1,15 @@
+The total needed area to add new spare cells is 35.5200.
+****************************************
+Report : ECO add_spare_cells Summary
+Design : ibex_hvt_placement
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 22:15:54 2025
+****************************************
+Total 100 spare cells are added.
+
+Library Cell saed14hvt/SAEDHVT14_ND2_2:
+    Add   50 cells in the voltage Area DEFAULT_VA
+
+Library Cell saed14hvt/SAEDHVT14_NR2_2:
+    Add   50 cells in the voltage Area DEFAULT_VA
+1
