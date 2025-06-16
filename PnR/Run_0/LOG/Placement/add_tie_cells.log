@@ -1,0 +1,70 @@
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Warning: Corner Slow:  0 process number, 6 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 19211 cells affected for early, 19211 for late. (PVT-031)
+Warning: 379 port driving_cells affected for early, 379 for late. (PVT-034)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076562 ohm/um, via_r = 1.014966 ohm/cut, c = 0.105982 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.561287 ohm/um, via_r = 0.629615 ohm/cut, c = 0.119425 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18292, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+WARNING: The "-legalize" option is being deprecated. Please stop using this option.
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 234 total shapes.
+Layer M2: cached 0 shapes out of 3276 total shapes.
+Layer M3: cached 14 shapes out of 14 total shapes.
+Cached 3374 vias out of 3928 total vias.
+------------------------
+Begin tie-cell insertion
+INFO: debug level = 0
+INFO: max fanout = 25
+INFO: max diameter (in user unit) = 12.00
+INFO: Available logic one lib cells: SAEDHVT14_TIE1_4 
+INFO: Available logic zero lib cells: SAEDHVT14_TIE0_4 
+INFO: Tie cell support for abstract block enabled
+INFO: Found 1 constant zero nets with 200 load pins
+INFO: Found 1 tie-hi cells with 18 load pins
+INFO: Found 1 tie-low cells with 0 load pins
+INFO: Number of nets with violations: 1
+INFO: Added 51 tie-low cells
+1

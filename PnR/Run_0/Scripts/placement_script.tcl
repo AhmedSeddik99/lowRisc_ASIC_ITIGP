@@ -68,9 +68,6 @@ connect_pg_net -net "VDD" [get_pins -hierarchical "*/VDD*"] > "$LOG/connect_pg_n
 connect_pg_net -net "GND" [get_pins -hierarchical "*/VSS"] >> "$LOG/connect_pg_net.log"
 
 
-# The one line that had a noticable impact on DRCs count after routing (positive)
-route_global > "$LOG/route_global.log"
-
 set_svf -off >> "$LOG/svf.log"
 
 

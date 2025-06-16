@@ -1,0 +1,2006 @@
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Clearing abstracted power annotation ... 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_cts  (NEX-011)
+Information: r = 2.181655 ohm/um, via_r = 1.041632 ohm/cut, c = 0.133555 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.559083 ohm/um, via_r = 0.643520 ohm/cut, c = 0.136068 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+
+Running clock synthesis step.
+
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+remove buffers/inverters in clock clk_i and its generated clocks:
+  no buffer or inverter has been removed
+
+No buffer or inverter has been removed.
+Remove clock trees finished successfully
+synthesize_clock_trees
+************************************************************
+* CTS STEP: Design Initialization for Clock Synthesis
+************************************************************
+Information: All clock objects will be converted from ideal to propagated clock during CTS. (CTS-105)
+Information: CTS will work on the following scenarios. (CTS-101)
+   Func_Slow	(Mode: Func; Corner: Slow)
+Information: CTS will work on all clocks in active scenarios, including 1 master clocks and 1 generated clocks. (CTS-107)
+Information: Clock derating is disabled
+
+CTS related app options set by user:
+   cts.common.max_fanout = 25
+   cts.common.user_instance_name_prefix = CTS_
+   cts.optimize.enable_congestion_aware_ndr_promotion = true
+
+Buffer/Inverter reference list for clock tree synthesis:
+   saed14hvt/SAEDHVT14_BUF_12
+   saed14hvt/SAEDHVT14_BUF_16
+   saed14hvt/SAEDHVT14_BUF_20
+   saed14hvt/SAEDHVT14_BUF_2
+   saed14hvt/SAEDHVT14_BUF_4
+   saed14hvt/SAEDHVT14_BUF_6
+   saed14hvt/SAEDHVT14_BUF_8
+   saed14hvt/SAEDHVT14_BUF_CDC_2
+   saed14hvt/SAEDHVT14_BUF_ECO_2
+   saed14hvt/SAEDHVT14_BUF_ECO_3
+   saed14hvt/SAEDHVT14_BUF_ECO_4
+   saed14hvt/SAEDHVT14_BUF_ECO_6
+   saed14hvt/SAEDHVT14_BUF_ECO_7
+   saed14hvt/SAEDHVT14_BUF_ECO_8
+   saed14hvt/SAEDHVT14_BUF_S_10
+   saed14hvt/SAEDHVT14_BUF_S_12
+   saed14hvt/SAEDHVT14_BUF_S_16
+   saed14hvt/SAEDHVT14_BUF_S_20
+   saed14hvt/SAEDHVT14_BUF_S_3
+   saed14hvt/SAEDHVT14_BUF_S_8
+   saed14hvt/SAEDHVT14_BUF_PECO_12
+   saed14hvt/SAEDHVT14_BUF_PECO_2
+   saed14hvt/SAEDHVT14_BUF_PECO_4
+   saed14hvt/SAEDHVT14_BUF_PECO_8
+   saed14hvt/SAEDHVT14_BUF_PS_3
+   saed14hvt/SAEDHVT14_BUF_PS_6
+   saed14hvt/SAEDHVT14_INV_S_10
+   saed14hvt/SAEDHVT14_INV_S_12
+   saed14hvt/SAEDHVT14_INV_S_3
+   saed14hvt/SAEDHVT14_INV_S_4
+   saed14hvt/SAEDHVT14_INV_S_5
+   saed14hvt/SAEDHVT14_INV_S_6
+   saed14hvt/SAEDHVT14_INV_S_7
+   saed14hvt/SAEDHVT14_INV_S_8
+   saed14hvt/SAEDHVT14_INV_S_9
+   saed14hvt/SAEDHVT14_INV_10
+   saed14hvt/SAEDHVT14_INV_12
+   saed14hvt/SAEDHVT14_INV_16
+   saed14hvt/SAEDHVT14_INV_20
+   saed14hvt/SAEDHVT14_INV_4
+   saed14hvt/SAEDHVT14_INV_6
+   saed14hvt/SAEDHVT14_INV_8
+   saed14hvt/SAEDHVT14_INV_ECO_2
+   saed14hvt/SAEDHVT14_INV_ECO_3
+   saed14hvt/SAEDHVT14_INV_ECO_4
+   saed14hvt/SAEDHVT14_INV_ECO_6
+   saed14hvt/SAEDHVT14_INV_ECO_8
+   saed14hvt/SAEDHVT14_INV_PECO_12
+   saed14hvt/SAEDHVT14_INV_PECO_2
+   saed14hvt/SAEDHVT14_INV_PECO_4
+   saed14hvt/SAEDHVT14_INV_PECO_8
+   saed14hvt/SAEDHVT14_INV_PS_3
+   saed14hvt/SAEDHVT14_INV_PS_6
+
+ICG reference list:
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_12
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_2
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_3
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_4
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_5
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_6
+   saed14hvt/SAEDHVT14_CKGTNLT_V5_8
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_12
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_16
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_20
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_24
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_2
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_3
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_4
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_5
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_6
+   saed14hvt/SAEDHVT14_CKGTPLT_V5_8
+   saed14hvt/SAEDHVT14_CKGTPL_V5_2
+   saed14hvt/SAEDHVT14_CKGTPL_V5_4
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_2
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_3
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_4
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_5
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_6
+   saed14hvt/SAEDHVT14_CKINVGTPLT_V7_8
+
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: 'Slow' is identified as primary corner for initial clock tree building. (CTS-103)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+CTS NDR rule list:
+   Design Base; Net Type: sink;     Rule: default rule; Min Layer: M1; Max Layer: M9
+   Design Base; Net Type: internal; Rule: clk_2Xw_2Xs; Min Layer: M3; Max Layer: M9
+   Design Base; Net Type: root;     Rule: clk_2Xw_2Xs; Min Layer: M3; Max Layer: M9
+
+Clock cell spacing rule list:
+   No clock cell spacing rule is found.
+Information: The run time for design initialization is 0 hr : 0 min : 0.58 sec, cpu time is 0 hr : 0 min : 0.58 sec. (CTS-104)
+************************************************************
+* CTS STEP: Existing Clock Tree Removal
+************************************************************
+
+No buffer or inverter has been removed.
+Information: The run time for existing clock tree removal is 0 hr : 0 min : 0.00 sec, cpu time is 0 hr : 0 min : 0.00 sec. (CTS-104)
+************************************************************
+* CTS STEP: Clock Tree Initialization
+************************************************************
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 234 total shapes.
+Layer M2: cached 0 shapes out of 3276 total shapes.
+Layer M3: cached 14 shapes out of 14 total shapes.
+Cached 3374 vias out of 3928 total vias.
+Information: Legalizer's PDC rule check is enabled
+Information: Legalizer's advanced rule check is enabled
+
+Start Auto-Exception Derivations...
+ No internal pin was found.
+ No conflict pin was found.
+ No macro pin was found for clock balance point settings.
+ No macro pin was found for disabling self arcs.
+Information: The run time for clock tree initialization is 0 hr : 0 min : 1.16 sec, cpu time is 0 hr : 0 min : 1.16 sec. (CTS-104)
+Drc Mode Option: auto
+Enable multi-thread Tasks, number of thread is 1
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17579, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+* CTS STEP: Clock Cell Relocation
+************************************************************
+Information: Relocated the clock cell 'ibex_top_inst/core_clock_gate_i/U2' from (105.52, 83.40) to (64.31, 70.20). (CTS-106)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+APSINFO: No multi-Vth libcells found, turning off percentage LVT optimization flow
+START_FUNC: psynopt_delay_opto CPU:    162 s ( 0.05 hr) ELAPSE:    174 s ( 0.05 hr) MEM-PEAK:   656 Mb Mon Jun 16 22:18:02 2025
+Drc Mode Option: auto
+ABF: Best buffer=SAEDHVT14_BUF_20: best inverter=SAEDHVT14_INV_20: useInverter=true: effort=low: 1.249: Func_Slow: 0
+ABF: Core Area = 50 X 50 ()
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Virtually optimized 4 out of 17496 cells
+Virtually buffered 4 cell outputs
+Back-annotation statistics for mode 'Func'
+  2061 back-annotations generated.
+  0 have been transition time back annotations.
+  0 have been skipped.
+END_FUNC: psynopt_delay_opto   CPU:    164 s ( 0.05 hr) ELAPSE:    175 s ( 0.05 hr) MEM-PEAK:   660 Mb Mon Jun 16 22:18:03 2025
+Inst 'ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg' did not get relocated
+A total of 1 clock cells have been relocated
+Information: The run time for clock cell relocation is 0 hr : 0 min : 1.35 sec, cpu time is 0 hr : 0 min : 1.35 sec. (CTS-104)
+Information: The run time for enable resynthesis is 0 hr : 0 min : 1.35 sec, cpu time is 0 hr : 0 min : 1.35 sec. (CTS-104)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17579, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+* CTS STEP: Gate-By-Gate Clock Tree Synthesis
+************************************************************
+-------------------------------------------------------------
+ Gate level 2 clock tree synthesis
+ driving pin = ibex_top_inst/core_clock_gate_i/U2/X
+ Clocks:
+     clk_i (Func)
+ Design rule constraints:
+     max transition  = 0.050000
+     max capacitance = 600.000000
+ Number of load sinks = 2018
+ Number of ignore points = 0
+ Added 89 Repeaters. Built 2 Repeater Levels
+ Phase delay: ibex_top_inst/core_clock_gate_i/U2/A2 : (0.098 0.092) : skew = 0.007
+-------------------------------------------------------------
+ Gate level 2 clock tree synthesis
+ driving pin = ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/Q
+ Clocks:
+     clk_i (Func)
+ Design rule constraints:
+     max transition  = 2.000000
+     max capacitance = 600.000000
+ Number of load sinks = 0
+ Number of ignore points = 0
+ Number of gates with existing phase delay = 1
+    1. Phase delay = (max r/f: 0.096836/__ min r/f: 0.090084/__) : skew = 0.006752 : ibex_top_inst/core_clock_gate_i/U2/A1
+-------------------------------------------------------------
+ Gate level 1 clock tree synthesis
+ driving pin = clk_i
+ Clocks:
+     clk_i (Func)
+ Design rule constraints:
+     max transition  = 0.050000
+     max capacitance = 600.000000
+ Number of load sinks = 1
+ Number of ignore points = 0
+ Number of gates with existing phase delay = 2
+    1. Phase delay = (max r/f: __/0.162277 min r/f: __/0.143356) : skew = 0.018921 : ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+    2. Phase delay = (max r/f: 0.098324/__ min r/f: 0.091591/__) : skew = 0.006733 : ibex_top_inst/core_clock_gate_i/U2/A2
+ Added 4 Repeaters. Built 2 Repeater Levels
+ Phase delay: clk_i : (0.806 0.604) : skew = 0.202
+Information: The run time for gate-by-gate clock tree synthesis is 0 hr : 0 min : 5.88 sec, cpu time is 0 hr : 0 min : 5.88 sec. (CTS-104)
+************************************************************
+* CTS STEP: DRC Fixing Beyond Exceptions
+************************************************************
+Information: The run time for DRC fixing beyond exceptions is 0 hr : 0 min : 0.00 sec, cpu time is 0 hr : 0 min : 0.00 sec. (CTS-104)
+There are 4 buffers and 89 inverters added (total area 56.43) by Clock Tree Synthesis.
+************************************************************
+* CTS STEP: Clock Net Global Routing
+************************************************************
+CONG:: clock NDRs defined on this design: 3 rules:
+Created 2 new NDRs to be used for SI prevention:
+   NDR: default_rule_equivalent_ndr_double_spacing ... (width-mult: 1.00, spacing-mult: 1.00)
+   NDR: clk_2Xw_2Xs_ext_spacing ... (width-mult: 2.00, spacing-mult: 2.00)
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Performing initial clock net global routing ...
+Loading parastics information to the router ...
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+parastics information loaded to the router.
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Total number of global routed clock nets: 96
+Information: The run time for clock net global routing is 0 hr : 0 min : 4.89 sec, cpu time is 0 hr : 0 min : 4.89 sec. (CTS-104)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: Design ibex_hvt_cts has 17674 nets, 96 global routed, 0 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: The RC mode used is CTO for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17672, routed nets = 96, across physical hierarchy nets = 0, parasitics cached nets = 96, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+* CTS STEP: Pre-Optimization DRC Fixing
+************************************************************
+-------------------------------------------------------------
+Fixing clock: clk_i mode: Func root: clk_i
+
+Clock QoR Before Fixing Clock Tree DRC Violation ...
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Pre Initial DRC Fixing: GlobalSkew = 0.2032; ID = 0.8067; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 56.4324; ClockCellArea = 58.8744; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+
+Starting fixing clock tree DRC Violation ...
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Resized 30 cell(s), relocated 0 cell(s), cloned 0 cell(s) and inserted 0 buffer(s)/inverter(s)
+Cloned 0 non-repeater gate(s)
+Ran incremental ZGR 48 time(s) for 108 net(s) and restored ZGR 6 time(s) for 6 net(s)
+Clock QoR After Fixing Pre-Opt DRC Violation:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Initial DRC Fixing: GlobalSkew = 0.2032; ID = 0.8067; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 56.4324; ClockCellArea = 58.8744; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+The elapsed time for fixing DRC violation is 0 hr : 0 min : 0.72 sec, cpu time is 0 hr : 0 min : 0.72 sec.
+Information: The run time for pre-optimization DRC fixing is 0 hr : 0 min : 0.72 sec, cpu time is 0 hr : 0 min : 0.72 sec. (CTS-104)
+************************************************************
+* CTS STEP: Skew Latency Optimization and Area Recovery
+************************************************************
+-------------------------------------------------------------
+Optimizing clock tree
+clock: clk_i mode: Func root: clk_i
+Clock QoR Before Optimization:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Pre Optimization: GlobalSkew = 0.2032; ID = 0.8067; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 56.4324; ClockCellArea = 58.8744; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+
+Begin Network Flow Based Optimization:
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Information: Design Average RC for design ibex_hvt_cts  (NEX-011)
+Information: r = 2.181655 ohm/um, via_r = 1.041632 ohm/cut, c = 0.134749 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.559047 ohm/um, via_r = 0.643413 ohm/cut, c = 0.136978 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+No delay buffer was inserted due to DRC violation
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Default network flow optimizer made 17 successful improvements out of 31 iterations
+Resized 7, relocated 3, deleted 1, inserted 8, sizeUp Relocated 0 cells
+The elapsed time for network flow optimization is 0 hr : 0 min : 2.79 sec, cpu time is 0 hr : 0 min : 2.79 sec.
+Ran incremental ZGR 62 time(s) for 136 net(s) and restored ZGR 23 time(s) for 44 net(s)
+Clock Qor After Network Flow Optimization:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Optimization: GlobalSkew = 0.0374; ID = 0.7799; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 59.9400; ClockCellArea = 62.3820; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+
+Begin Layer Optimization:
+
+Beginning layer optimization ...
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+All clocks: total net count: 102
+All clocks: total committed/restored net count: 99/3
+All clocks: total count of nets with two layers: 0 (skipped)
+All clocks: total count of nets with unchanged layers: 0
+
+Ending layer optimization ...
+
+The elapsed time for layer optimization is 0 hr : 0 min : 0.93 sec, cpu time is 0 hr : 0 min : 0.93 sec.
+Ran incremental ZGR 2 time(s) for 2 net(s) and restored ZGR 3 time(s) for 3 net(s)
+Clock Qor After Layer Optimization:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Optimization: GlobalSkew = 0.0382; ID = 0.7799; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 59.9400; ClockCellArea = 62.3820; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+
+Begin Area Recovery Buffer Removal:
+AR: deleted 1 cell(s)
+Ran incremental ZGR 1 time(s) for 1 net(s) and restored ZGR 0 time(s) for 0 net(s)
+Clock QoR After Area Recovery Removal:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Area Recovery: GlobalSkew = 0.0382; ID = 0.7799; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 59.5404; ClockCellArea = 61.9824; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+
+Begin Area Recovery Resizing:
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+AR: resized 66 out of 101 cell(s)
+Ran incremental ZGR 13 time(s) for 79 net(s) and restored ZGR 0 time(s) for 0 net(s)
+Clock QoR After Area Recovery Resizing:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Area Recovery: GlobalSkew = 0.0364; ID = 0.7797; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 48.4404; ClockCellArea = 50.7048; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+The elapsed time for area recovery is 0 hr : 0 min : 1.74 sec, cpu time is 0 hr : 0 min : 1.74 sec.
+The elapsed time for optimization of clock tree is 0 hr : 0 min : 5.49 sec, cpu time is 0 hr : 0 min : 5.49 sec.
+-------------------------------------------------------------
+SI prevention through NDR promotion
+NDR promotion for clock: clk_i mode: Func root: clk_i
+Clock QoR Before Optimization:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Pre Optimization: GlobalSkew = 0.0364; ID = 0.7797; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 48.4404; ClockCellArea = 50.7048; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+Routing 17524 data signal nets ... 
+
+Start congestion route ...
+Information: The run time for congestion route is 0 hr : 0 min : 10.52 sec, cpu time is 0 hr : 0 min : 10.50 sec. (CTS-104)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Information: The RC mode used is CTO for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17678, routed nets = 102, across physical hierarchy nets = 0, parasitics cached nets = 104, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Number of processed non-congested nets: 28/28 ...
+Number of nets for which NDR promotion was successful: 17
+Number of nets for which NDR promotion failed: 11
+Clock QoR After Area Congestion Aware NDR Promotion:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Area Recovery: GlobalSkew = 0.0397; ID = 0.7794; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 48.4404; ClockCellArea = 50.7048; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+The elapsed time for NDR promotion is 0 hr : 0 min : 14.98 sec, cpu time is 0 hr : 0 min : 14.93 sec.
+Information: The run time for SI prevention through NDR promotion is 0 hr : 0 min : 14.98 sec, cpu time is 0 hr : 0 min : 14.93 sec. (CTS-104)
+Information: The run time for skew latency optimization is 0 hr : 0 min : 14.98 sec, cpu time is 0 hr : 0 min : 14.93 sec. (CTS-104)
+************************************************************
+* CTS STEP: Post-Optimization DRC Fixing
+************************************************************
+-------------------------------------------------------------
+Fixing clock: clk_i mode: Func root: clk_i
+Resized 8 cell(s), relocated 0 cell(s), cloned 0 cell(s) and inserted 0 buffer(s)/inverter(s)
+Cloned 0 non-repeater gate(s)
+Ran incremental ZGR 38 time(s) for 92 net(s) and restored ZGR 19 time(s) for 19 net(s)
+Clock QoR After Fixing Post-Opt DRC Violation:
+Clock: clk_i, Mode: Func, Root: clk_i
+Information: CTS QoR Post Final DRC Fixing: GlobalSkew = 0.0397; ID = 0.7794; NetsWithDRC = 1; Worst Tran/Cap/Fanout cost = 1.8250/0.0000/0; ClockBufArea = 48.4404; ClockCellArea = 50.7048; Clock = clk_i; Mode = Func; Corner = Slow; ClockRoot = clk_i. (CTS-037)
+The elapsed time for fixing DRC violation is 0 hr : 0 min : 0.80 sec, cpu time is 0 hr : 0 min : 0.80 sec.
+Information: The run time for post-optimization DRC fixing is 0 hr : 0 min : 0.80 sec, cpu time is 0 hr : 0 min : 0.80 sec. (CTS-104)
+All together, ran incremental ZGR 164 time(s) for 418 net(s) and restoring ZGR invoked 51 time(s) for 72 net(s)
+There are 0 buffers added and 6 inverters added by Clock Tree Optimization.
+************************************************************
+* CTS STEP: Postlude
+************************************************************
+Mark clock trees...
+Marking clock synthesized attributes
+
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 456 total shapes.
+Layer M2: cached 0 shapes out of 4045 total shapes.
+Layer M3: cached 14 shapes out of 2036 total shapes.
+Cached 3374 vias out of 9193 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     19562.8        18586        Yes DEFAULT_VA
+
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (1 sec)
+Legalization complete (2 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  18586
+number of references:               104
+number of site rows:                233
+number of locations attempted:   313339
+number of locations failed:       30740  (9.8%)
+
+Legality of references at locations:
+25 references had failures.
+
+Worst 10 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+  5702      72668     11163 ( 15.4%)      50092     10826 ( 21.6%)  SAEDHVT14_ND2_CDC_2
+   534       7954      1635 ( 20.6%)       3854      1209 ( 31.4%)  SAEDHVT14_ADDF_V2_2
+   267       4413      1019 ( 23.1%)       2256       606 ( 26.9%)  SAEDHVT14_AN3_2
+   305       5265      1094 ( 20.8%)       1926       371 ( 19.3%)  SAEDHVT14_EN2_2
+   153       2188       615 ( 28.1%)       1249       368 ( 29.5%)  SAEDHVT14_ADDH_2
+    53        964       303 ( 31.4%)        463       196 ( 42.3%)  SAEDHVT14_ND4_2
+    56        926       274 ( 29.6%)        367        76 ( 20.7%)  SAEDHVT14_ND3_2
+    96        659       108 ( 16.4%)        488       144 ( 29.5%)  SAEDHVT14_ND2_2
+    58        814       101 ( 12.4%)        567        90 ( 15.9%)  SAEDHVT14_NR2_4
+    28        341        62 ( 18.2%)        294        39 ( 13.3%)  SAEDHVT14_BUF_CDC_4
+
+Worst 10 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+     2         16        16 (100.0%)         64        47 ( 73.4%)  SAEDHVT14_ND3B_2
+     2         16        10 ( 62.5%)         56        34 ( 60.7%)  SAEDHVT14_MUX4_V1M_2
+     1          8         0 (  0.0%)         32        19 ( 59.4%)  SAEDHVT14_EN3_2
+     1         16         7 ( 43.8%)          0         0 (  0.0%)  SAEDHVT14_EO3_4
+     6         62        16 ( 25.8%)        104        51 ( 49.0%)  SAEDHVT14_ND2_6
+    53        964       303 ( 31.4%)        463       196 ( 42.3%)  SAEDHVT14_ND4_2
+    11        111        10 (  9.0%)        181        78 ( 43.1%)  SAEDHVT14_AN3_4
+   153       2188       615 ( 28.1%)       1249       368 ( 29.5%)  SAEDHVT14_ADDH_2
+    56        926       274 ( 29.6%)        367        76 ( 20.7%)  SAEDHVT14_ND3_2
+    38         40         7 ( 17.5%)        104        31 ( 29.8%)  SAEDHVT14_INV_S_6
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:       14721 (145704 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.097 um ( 0.16 row height)
+rms weighted cell displacement:   0.097 um ( 0.16 row height)
+max cell displacement:            3.529 um ( 5.88 row height)
+avg cell displacement:            0.011 um ( 0.02 row height)
+avg weighted cell displacement:   0.011 um ( 0.02 row height)
+number of cells moved:              296
+number of large displacements:        6
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: U10252 (SAEDHVT14_ND2_CDC_2)
+  Input location: (66.97,9)
+  Legal location: (70.448,9.6)
+  Displacement:   3.529 um ( 5.88 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/U786 (SAEDHVT14_ND2_CDC_2)
+  Input location: (110.112,132)
+  Legal location: (108.04,130.8)
+  Displacement:   2.394 um ( 3.99 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/U816 (SAEDHVT14_ND2_CDC_2)
+  Input location: (110.112,133.2)
+  Legal location: (108.04,132.6)
+  Displacement:   2.157 um ( 3.60 row height)
+Cell: U8967 (SAEDHVT14_ND2_CDC_2)
+  Input location: (128.316,58.8)
+  Legal location: (130.462,58.8)
+  Displacement:   2.146 um ( 3.58 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/U1417 (SAEDHVT14_ND2_CDC_2)
+  Input location: (106.19,132.6)
+  Legal location: (104.044,132.6)
+  Displacement:   2.146 um ( 3.58 row height)
+Cell: U5410 (SAEDHVT14_ND2_CDC_2)
+  Input location: (24.346,45)
+  Legal location: (26.418,45)
+  Displacement:   2.072 um ( 3.45 row height)
+Cell: U10249 (SAEDHVT14_ND2_CDC_2)
+  Input location: (66.156,9)
+  Legal location: (67.784,9.6)
+  Displacement:   1.735 um ( 2.89 row height)
+Cell: U5636 (SAEDHVT14_AN2_MM_2)
+  Input location: (67.266,6.6)
+  Legal location: (68.82,6.6)
+  Displacement:   1.554 um ( 2.59 row height)
+Cell: U6369 (SAEDHVT14_AN2_MM_2)
+  Input location: (69.856,9.6)
+  Legal location: (71.262,9.6)
+  Displacement:   1.406 um ( 2.34 row height)
+Cell: U6781 (SAEDHVT14_OR3_2)
+  Input location: (94.794,15.6)
+  Legal location: (95.46,14.4)
+  Displacement:   1.372 um ( 2.29 row height)
+
+ Successfully legalize placement.
+Information: The run time for postlude is 0 hr : 0 min : 2.99 sec, cpu time is 0 hr : 0 min : 2.99 sec. (CTS-104)
+************************************************************
+* CTS STEP: Summary report
+************************************************************
+There are 102 flat clock tree nets.
+There are 101 non-sink instances (total area 50.70) on clock trees including 0 instances dont_touch.
+Clock tree synthesize and optimization added 4 buffers and 95 inverters (total area 48.44).
+89 buffers/inverters were inserted below 1 leaf level Gates.
+ Compilation of clock trees finished successfully
+ Run time for cts 00:00:37.68u 00:00:01.85s 00:00:39.57e: 
+
+Summary of messages during CTS:
+===============================================================
+  Tag   Count  Type           Description
+---------------------------------------------------------------
+ No error or warning message.
+
+No clock balance group was found, so skip the balance
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Current block utilization is '0.44550', effective utilization is '0.66083'. (OPT-055)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17678, routed nets = 102, across physical hierarchy nets = 0, parasitics cached nets = 824, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:33     0.000     0.000  9626.719     1.825     1.687       124       827         0     0.000       845 
+
+
+
+Information: Running auto PG connection. (NDM-099)
+1
+##########################################
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+
+Running clock routing step.
+set_app_options -as_user_default -list {route.global.global_route_topology_style 1}
+route_group -all_clock_nets -reuse_existing_global_route true
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_BUF_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_INV_PS_6/VDD has no valid via regions. (ZRT-044)
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used  121  Alloctr  122  Proc 1912 
+GR will route in ATREE-style.
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 off                 
+global.global_route_topology_style                      :	 1                   
+global.placement_timing_driven_mode                     :	 false               
+global.timing_driven                                    :	 false               
+
+Begin global routing.
+Loading parastics information to the router ...
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+parastics information loaded to the router.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (-18.00,-18.00,158.00,158.00)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M2, dir Hor, min width = 0.03, min space = 0.03 pitch = 0.06
+layer M3, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M4, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.07
+layer M5, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M6, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M7, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M8, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M9, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer MRDL, dir Hor, min width = 2.00, min space = 2.00 pitch = 0.60
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Build Tech Data] Total (MB): Used  123  Alloctr  124  Proc 1912 
+Net statistics:
+Total number of nets     = 17909
+Number of nets to route  = 102
+Number of single or zero port nets = 229
+Number of nets with min-layer-mode soft = 20
+Number of nets with min-layer-mode soft-cost-medium = 20
+103 nets are fully connected,
+ of which 1 are detail routed and 102 are global routed.
+17 nets have non-default rule clk_2Xw_2Xs
+3 nets have non-default rule clk_2Xw_2Xs_ext_spacing
+14 nets have non-default rule default_rule_equivalent_ndr_double_spacing
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    6  Alloctr    6  Proc    0 
+[End of Build All Nets] Total (MB): Used  129  Alloctr  130  Proc 1912 
+Average gCell capacity  2.97	 on layer (1)	 M1
+Average gCell capacity  9.30	 on layer (2)	 M2
+Average gCell capacity  7.04	 on layer (3)	 M3
+Average gCell capacity  8.04	 on layer (4)	 M4
+Average gCell capacity  4.95	 on layer (5)	 M5
+Average gCell capacity  4.95	 on layer (6)	 M6
+Average gCell capacity  4.91	 on layer (7)	 M7
+Average gCell capacity  2.84	 on layer (8)	 M8
+Average gCell capacity  2.84	 on layer (9)	 M9
+Average gCell capacity  1.00	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.12	 on layer (1)	 M1
+Average number of tracks per gCell 10.01	 on layer (2)	 M2
+Average number of tracks per gCell 8.12	 on layer (3)	 M3
+Average number of tracks per gCell 8.12	 on layer (4)	 M4
+Average number of tracks per gCell 5.01	 on layer (5)	 M5
+Average number of tracks per gCell 5.01	 on layer (6)	 M6
+Average number of tracks per gCell 5.01	 on layer (7)	 M7
+Average number of tracks per gCell 5.01	 on layer (8)	 M8
+Average number of tracks per gCell 5.01	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 858490
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used    8  Alloctr    8  Proc    0 
+[End of Build Congestion map] Total (MB): Used  138  Alloctr  139  Proc 1912 
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used   17  Alloctr   17  Proc    0 
+[End of Build Data] Total (MB): Used  138  Alloctr  139  Proc 1912 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  138  Alloctr  139  Proc 1912 
+Information: Using 1 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  138  Alloctr  139  Proc 1912 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =   222 Max = 8 GRCs =   134 (0.08%)
+Initial. H routing: Overflow =     2 Max = 2 (GRCs =  1) GRCs =     5 (0.01%)
+Initial. V routing: Overflow =   220 Max = 8 (GRCs =  3) GRCs =   129 (0.15%)
+Initial. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M3         Overflow =   220 Max = 8 (GRCs =  3) GRCs =   129 (0.15%)
+Initial. M4         Overflow =     2 Max = 2 (GRCs =  1) GRCs =     4 (0.00%)
+Initial. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 7351.53
+Initial. Layer M1 wire length = 34.66
+Initial. Layer M2 wire length = 144.86
+Initial. Layer M3 wire length = 3456.12
+Initial. Layer M4 wire length = 3289.63
+Initial. Layer M5 wire length = 216.62
+Initial. Layer M6 wire length = 162.13
+Initial. Layer M7 wire length = 47.50
+Initial. Layer M8 wire length = 0.00
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 5265
+Initial. Via VIA12SQ_C count = 369
+Initial. Via VIA23SQ_C count = 2385
+Initial. Via VIA34SQ_C count = 2336
+Initial. Via VIA45SQ count = 140
+Initial. Via VIA56SQ count = 25
+Initial. Via VIA67SQ_C count = 8
+Initial. Via VIA78SQ_C count = 1
+Initial. Via VIA89_C count = 1
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  138  Alloctr  139  Proc 1912 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   197 Max = 8 GRCs =   115 (0.07%)
+phase1. H routing: Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. V routing: Overflow =   197 Max = 8 (GRCs =  3) GRCs =   114 (0.13%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M3         Overflow =   197 Max = 8 (GRCs =  3) GRCs =   114 (0.13%)
+phase1. M4         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 7348.13
+phase1. Layer M1 wire length = 32.96
+phase1. Layer M2 wire length = 169.23
+phase1. Layer M3 wire length = 3454.26
+phase1. Layer M4 wire length = 3268.81
+phase1. Layer M5 wire length = 215.42
+phase1. Layer M6 wire length = 161.74
+phase1. Layer M7 wire length = 45.70
+phase1. Layer M8 wire length = 0.00
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 5251
+phase1. Via VIA12SQ_C count = 369
+phase1. Via VIA23SQ_C count = 2389
+phase1. Via VIA34SQ_C count = 2320
+phase1. Via VIA45SQ count = 138
+phase1. Via VIA56SQ count = 25
+phase1. Via VIA67SQ_C count = 8
+phase1. Via VIA78SQ_C count = 1
+phase1. Via VIA89_C count = 1
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  138  Alloctr  139  Proc 1912 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    51 Max = 3 GRCs =    50 (0.03%)
+phase2. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =    51 Max = 3 (GRCs =  1) GRCs =    50 (0.06%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M3         Overflow =    51 Max = 3 (GRCs =  1) GRCs =    50 (0.06%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 7348.13
+phase2. Layer M1 wire length = 32.96
+phase2. Layer M2 wire length = 169.23
+phase2. Layer M3 wire length = 3454.26
+phase2. Layer M4 wire length = 3268.81
+phase2. Layer M5 wire length = 215.42
+phase2. Layer M6 wire length = 161.74
+phase2. Layer M7 wire length = 45.70
+phase2. Layer M8 wire length = 0.00
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 5251
+phase2. Via VIA12SQ_C count = 369
+phase2. Via VIA23SQ_C count = 2389
+phase2. Via VIA34SQ_C count = 2320
+phase2. Via VIA45SQ count = 138
+phase2. Via VIA56SQ count = 25
+phase2. Via VIA67SQ_C count = 8
+phase2. Via VIA78SQ_C count = 1
+phase2. Via VIA89_C count = 1
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+
+Start GR phase 3
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used  138  Alloctr  139  Proc 1912 
+phase3. Routing result:
+phase3. Both Dirs: Overflow =    51 Max = 3 GRCs =    50 (0.03%)
+phase3. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. V routing: Overflow =    51 Max = 3 (GRCs =  1) GRCs =    50 (0.06%)
+phase3. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M3         Overflow =    51 Max = 3 (GRCs =  1) GRCs =    50 (0.06%)
+phase3. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase3. Total Wire Length = 7348.13
+phase3. Layer M1 wire length = 32.96
+phase3. Layer M2 wire length = 169.23
+phase3. Layer M3 wire length = 3454.26
+phase3. Layer M4 wire length = 3268.81
+phase3. Layer M5 wire length = 215.42
+phase3. Layer M6 wire length = 161.74
+phase3. Layer M7 wire length = 45.70
+phase3. Layer M8 wire length = 0.00
+phase3. Layer M9 wire length = 0.00
+phase3. Layer MRDL wire length = 0.00
+phase3. Total Number of Contacts = 5251
+phase3. Via VIA12SQ_C count = 369
+phase3. Via VIA23SQ_C count = 2389
+phase3. Via VIA34SQ_C count = 2320
+phase3. Via VIA45SQ count = 138
+phase3. Via VIA56SQ count = 25
+phase3. Via VIA67SQ_C count = 8
+phase3. Via VIA78SQ_C count = 1
+phase3. Via VIA89_C count = 1
+phase3. Via VIA9RDL count = 0
+phase3. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used   17  Alloctr   17  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  138  Alloctr  139  Proc 1912 
+
+Information: Global Routing terminated early: false (ZRT-103)
+
+Congestion utilization per direction:
+Average vertical track utilization   =  0.77 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization =  0.78 %
+Peak    horizontal track utilization = 63.16 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used   -7  Alloctr   -7  Proc    0 
+[GR: Done] Total (MB): Used  132  Alloctr  133  Proc 1912 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[GR: Done] Stage (MB): Used   11  Alloctr   11  Proc    0 
+[GR: Done] Total (MB): Used  132  Alloctr  133  Proc 1912 
+Updating congestion ...
+Updating congestion ...
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:01 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Global Routing] Total (MB): Used  121  Alloctr  122  Proc 1912 
+
+Start track assignment
+
+Printing options for 'route.common.*'
+
+Printing options for 'route.track.*'
+track.timing_driven                                     :	 false               
+
+Information: Using 1 threads for routing. (ZRT-444)
+Information: RC layer preference is turned on for this design. (ZRT-613)
+
+[Track Assign: Read routes] Elapsed real time: 0:00:00 
+[Track Assign: Read routes] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Read routes] Stage (MB): Used    4  Alloctr    3  Proc    0 
+[Track Assign: Read routes] Total (MB): Used  120  Alloctr  121  Proc 1912 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Number of wires with overlap after iteration 0 = 1675 of 8267
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    4  Alloctr    4  Proc    0 
+[Track Assign: Iteration 0] Total (MB): Used  121  Alloctr  122  Proc 1912 
+
+Reroute to fix overlaps
+
+Assign Horizontal partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:01 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Track Assign: Iteration 1] Stage (MB): Used    4  Alloctr    4  Proc    0 
+[Track Assign: Iteration 1] Total (MB): Used  121  Alloctr  122  Proc 1912 
+
+Number of wires with overlap after iteration 1 = 1657 of 6851
+
+
+Wire length and via report:
+---------------------------
+Number of M1 wires: 41 		  : 0
+Number of M2 wires: 1078 		 VIA12SQ_C: 369
+Number of M3 wires: 3626 		 VIA23SQ_C: 2487
+Number of M4 wires: 1917 		 VIA34SQ_C: 2622
+Number of M5 wires: 167 		 VIA45SQ: 293
+Number of M6 wires: 16 		 VIA56SQ: 26
+Number of M7 wires: 6 		 VIA67SQ_C: 9
+Number of M8 wires: 0 		 VIA78SQ_C: 1
+Number of M9 wires: 0 		 VIA89_C: 1
+Number of MRDL wires: 0 		 VIA9RDL: 0
+Total number of wires: 6851 		 vias: 5808
+
+Total M1 wire length: 1.5
+Total M2 wire length: 202.1
+Total M3 wire length: 3494.8
+Total M4 wire length: 3152.9
+Total M5 wire length: 234.8
+Total M6 wire length: 161.4
+Total M7 wire length: 46.6
+Total M8 wire length: 0.0
+Total M9 wire length: 0.0
+Total MRDL wire length: 0.0
+Total wire length: 7294.2
+
+Longest M1 wire length: 0.0
+Longest M2 wire length: 6.2
+Longest M3 wire length: 70.8
+Longest M4 wire length: 56.8
+Longest M5 wire length: 17.1
+Longest M6 wire length: 40.8
+Longest M7 wire length: 23.5
+Longest M8 wire length: 0.0
+Longest M9 wire length: 0.0
+Longest MRDL wire length: 0.0
+
+
+[Track Assign: Done] Elapsed real time: 0:00:01 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Track Assign: Done] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[Track Assign: Done] Total (MB): Used  118  Alloctr  119  Proc 1912 
+Printing options for 'route.common.*'
+
+Printing options for 'route.detail.*'
+detail.force_end_on_preferred_grid                      :	 true                
+detail.timing_driven                                    :	 false               
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned on for this design. (ZRT-613)
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used    9  Alloctr    9  Proc    0 
+[Dr init] Total (MB): Used  128  Alloctr  129  Proc 1912 
+Total number of nets = 17909, of which 0 are not extracted
+Total number of open nets = 17577, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+
+Switch to reduced partition bloat for speedup (DRC report is not accurate)
+Start DR iteration 0: uniform partition
+Routed	13/900 Partitions, Violations =	0
+Routed	18/900 Partitions, Violations =	0
+Routed	19/900 Partitions, Violations =	0
+Routed	24/900 Partitions, Violations =	2
+Routed	25/900 Partitions, Violations =	2
+Routed	26/900 Partitions, Violations =	2
+Routed	31/900 Partitions, Violations =	4
+Routed	32/900 Partitions, Violations =	2
+Routed	33/900 Partitions, Violations =	2
+Routed	39/900 Partitions, Violations =	2
+Routed	40/900 Partitions, Violations =	1
+Routed	48/900 Partitions, Violations =	1
+Routed	49/900 Partitions, Violations =	0
+Routed	52/900 Partitions, Violations =	2
+Routed	58/900 Partitions, Violations =	3
+Routed	60/900 Partitions, Violations =	5
+Routed	64/900 Partitions, Violations =	2
+Routed	69/900 Partitions, Violations =	3
+Routed	72/900 Partitions, Violations =	1
+Routed	76/900 Partitions, Violations =	2
+Routed	81/900 Partitions, Violations =	1
+Routed	84/900 Partitions, Violations =	3
+Routed	88/900 Partitions, Violations =	3
+Routed	94/900 Partitions, Violations =	7
+Routed	96/900 Partitions, Violations =	8
+Routed	100/900 Partitions, Violations =	8
+Routed	108/900 Partitions, Violations =	4
+Routed	109/900 Partitions, Violations =	4
+Routed	112/900 Partitions, Violations =	2
+Routed	116/900 Partitions, Violations =	5
+Routed	123/900 Partitions, Violations =	4
+Routed	124/900 Partitions, Violations =	4
+Routed	128/900 Partitions, Violations =	4
+Routed	132/900 Partitions, Violations =	1
+Routed	139/900 Partitions, Violations =	6
+Routed	140/900 Partitions, Violations =	6
+Routed	144/900 Partitions, Violations =	6
+Routed	148/900 Partitions, Violations =	5
+Routed	156/900 Partitions, Violations =	3
+Routed	157/900 Partitions, Violations =	3
+Routed	160/900 Partitions, Violations =	8
+Routed	164/900 Partitions, Violations =	13
+Routed	168/900 Partitions, Violations =	12
+Routed	174/900 Partitions, Violations =	12
+Routed	176/900 Partitions, Violations =	13
+Routed	180/900 Partitions, Violations =	13
+Routed	184/900 Partitions, Violations =	25
+Routed	188/900 Partitions, Violations =	27
+Routed	193/900 Partitions, Violations =	29
+Routed	196/900 Partitions, Violations =	30
+Routed	200/900 Partitions, Violations =	32
+Routed	204/900 Partitions, Violations =	21
+Routed	208/900 Partitions, Violations =	20
+Routed	213/900 Partitions, Violations =	22
+Routed	216/900 Partitions, Violations =	20
+Routed	220/900 Partitions, Violations =	15
+Routed	224/900 Partitions, Violations =	16
+Routed	228/900 Partitions, Violations =	16
+Routed	234/900 Partitions, Violations =	19
+Routed	236/900 Partitions, Violations =	16
+Routed	240/900 Partitions, Violations =	16
+Routed	244/900 Partitions, Violations =	16
+Routed	248/900 Partitions, Violations =	14
+Routed	256/900 Partitions, Violations =	12
+Routed	257/900 Partitions, Violations =	11
+Routed	260/900 Partitions, Violations =	13
+Routed	264/900 Partitions, Violations =	13
+Routed	268/900 Partitions, Violations =	15
+Routed	272/900 Partitions, Violations =	17
+Routed	280/900 Partitions, Violations =	17
+Routed	281/900 Partitions, Violations =	16
+Routed	284/900 Partitions, Violations =	15
+Routed	288/900 Partitions, Violations =	15
+Routed	292/900 Partitions, Violations =	15
+Routed	296/900 Partitions, Violations =	13
+Routed	305/900 Partitions, Violations =	13
+Routed	306/900 Partitions, Violations =	13
+Routed	308/900 Partitions, Violations =	13
+Routed	312/900 Partitions, Violations =	13
+Routed	316/900 Partitions, Violations =	13
+Routed	320/900 Partitions, Violations =	14
+Routed	330/900 Partitions, Violations =	14
+Routed	331/900 Partitions, Violations =	14
+Routed	332/900 Partitions, Violations =	14
+Routed	336/900 Partitions, Violations =	14
+Routed	340/900 Partitions, Violations =	14
+Routed	344/900 Partitions, Violations =	19
+Routed	348/900 Partitions, Violations =	19
+Routed	357/900 Partitions, Violations =	19
+Routed	358/900 Partitions, Violations =	19
+Routed	360/900 Partitions, Violations =	20
+Routed	364/900 Partitions, Violations =	22
+Routed	368/900 Partitions, Violations =	33
+Routed	372/900 Partitions, Violations =	28
+Routed	376/900 Partitions, Violations =	29
+Routed	384/900 Partitions, Violations =	29
+Routed	385/900 Partitions, Violations =	29
+Routed	388/900 Partitions, Violations =	28
+Routed	392/900 Partitions, Violations =	30
+Routed	396/900 Partitions, Violations =	20
+Routed	400/900 Partitions, Violations =	23
+Routed	404/900 Partitions, Violations =	24
+Routed	412/900 Partitions, Violations =	24
+Routed	413/900 Partitions, Violations =	24
+Routed	416/900 Partitions, Violations =	24
+Routed	420/900 Partitions, Violations =	21
+Routed	424/900 Partitions, Violations =	24
+Routed	428/900 Partitions, Violations =	30
+Routed	432/900 Partitions, Violations =	29
+Routed	442/900 Partitions, Violations =	29
+Routed	443/900 Partitions, Violations =	29
+Routed	444/900 Partitions, Violations =	29
+Routed	448/900 Partitions, Violations =	29
+Routed	452/900 Partitions, Violations =	36
+Routed	456/900 Partitions, Violations =	64
+Routed	460/900 Partitions, Violations =	66
+Routed	471/900 Partitions, Violations =	65
+Routed	472/900 Partitions, Violations =	69
+Routed	473/900 Partitions, Violations =	69
+Routed	476/900 Partitions, Violations =	69
+Routed	480/900 Partitions, Violations =	69
+Routed	484/900 Partitions, Violations =	73
+Routed	488/900 Partitions, Violations =	77
+Routed	492/900 Partitions, Violations =	76
+Routed	499/900 Partitions, Violations =	76
+Routed	500/900 Partitions, Violations =	72
+Routed	504/900 Partitions, Violations =	72
+Routed	508/900 Partitions, Violations =	79
+Routed	512/900 Partitions, Violations =	79
+Routed	516/900 Partitions, Violations =	75
+Routed	520/900 Partitions, Violations =	76
+Routed	527/900 Partitions, Violations =	76
+Routed	528/900 Partitions, Violations =	76
+Routed	532/900 Partitions, Violations =	77
+Routed	536/900 Partitions, Violations =	77
+Routed	540/900 Partitions, Violations =	78
+Routed	544/900 Partitions, Violations =	77
+Routed	554/900 Partitions, Violations =	80
+Routed	555/900 Partitions, Violations =	80
+Routed	556/900 Partitions, Violations =	79
+Routed	560/900 Partitions, Violations =	82
+Routed	564/900 Partitions, Violations =	79
+Routed	568/900 Partitions, Violations =	81
+Routed	572/900 Partitions, Violations =	74
+Routed	580/900 Partitions, Violations =	74
+Routed	581/900 Partitions, Violations =	74
+Routed	584/900 Partitions, Violations =	72
+Routed	588/900 Partitions, Violations =	70
+Routed	592/900 Partitions, Violations =	72
+Routed	596/900 Partitions, Violations =	73
+Routed	605/900 Partitions, Violations =	73
+Routed	606/900 Partitions, Violations =	73
+Routed	608/900 Partitions, Violations =	73
+Routed	612/900 Partitions, Violations =	71
+Routed	616/900 Partitions, Violations =	71
+Routed	620/900 Partitions, Violations =	71
+Routed	629/900 Partitions, Violations =	71
+Routed	630/900 Partitions, Violations =	71
+Routed	632/900 Partitions, Violations =	71
+Routed	636/900 Partitions, Violations =	70
+Routed	640/900 Partitions, Violations =	70
+Routed	644/900 Partitions, Violations =	70
+Routed	652/900 Partitions, Violations =	70
+Routed	653/900 Partitions, Violations =	70
+Routed	656/900 Partitions, Violations =	70
+Routed	660/900 Partitions, Violations =	87
+Routed	664/900 Partitions, Violations =	87
+Routed	674/900 Partitions, Violations =	87
+Routed	676/900 Partitions, Violations =	87
+Routed	677/900 Partitions, Violations =	87
+Routed	680/900 Partitions, Violations =	87
+Routed	684/900 Partitions, Violations =	92
+Routed	699/900 Partitions, Violations =	94
+Routed	700/900 Partitions, Violations =	94
+Routed	701/900 Partitions, Violations =	94
+Routed	702/900 Partitions, Violations =	80
+Routed	704/900 Partitions, Violations =	79
+Routed	718/900 Partitions, Violations =	77
+Routed	719/900 Partitions, Violations =	77
+Routed	720/900 Partitions, Violations =	78
+Routed	721/900 Partitions, Violations =	77
+Routed	724/900 Partitions, Violations =	72
+Routed	737/900 Partitions, Violations =	72
+Routed	738/900 Partitions, Violations =	71
+Routed	739/900 Partitions, Violations =	71
+Routed	740/900 Partitions, Violations =	71
+Routed	744/900 Partitions, Violations =	71
+Routed	754/900 Partitions, Violations =	71
+Routed	755/900 Partitions, Violations =	71
+Routed	756/900 Partitions, Violations =	71
+Routed	760/900 Partitions, Violations =	70
+Routed	771/900 Partitions, Violations =	70
+Routed	772/900 Partitions, Violations =	70
+Routed	773/900 Partitions, Violations =	70
+Routed	776/900 Partitions, Violations =	124
+Routed	787/900 Partitions, Violations =	128
+Routed	788/900 Partitions, Violations =	128
+Routed	789/900 Partitions, Violations =	128
+Routed	792/900 Partitions, Violations =	70
+Routed	802/900 Partitions, Violations =	70
+Routed	803/900 Partitions, Violations =	72
+Routed	804/900 Partitions, Violations =	72
+Routed	815/900 Partitions, Violations =	72
+Routed	816/900 Partitions, Violations =	70
+Routed	817/900 Partitions, Violations =	70
+Routed	820/900 Partitions, Violations =	73
+Routed	827/900 Partitions, Violations =	73
+Routed	828/900 Partitions, Violations =	73
+Routed	832/900 Partitions, Violations =	72
+Routed	838/900 Partitions, Violations =	72
+Routed	840/900 Partitions, Violations =	72
+Routed	849/900 Partitions, Violations =	72
+Routed	850/900 Partitions, Violations =	72
+Routed	852/900 Partitions, Violations =	72
+Routed	859/900 Partitions, Violations =	72
+Routed	860/900 Partitions, Violations =	73
+Routed	864/900 Partitions, Violations =	73
+Routed	868/900 Partitions, Violations =	73
+Routed	872/900 Partitions, Violations =	73
+Routed	876/900 Partitions, Violations =	73
+Routed	882/900 Partitions, Violations =	73
+Routed	888/900 Partitions, Violations =	73
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	73
+	Less than minimum area : 3
+	Less than NDR width : 10
+	Multiple pin connections : 2
+	Same net spacing : 1
+	Same net via-cut spacing : 31
+	Internal-only types : 26
+
+[Iter 0] Elapsed real time: 0:00:06 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:06 total=0:00:06
+[Iter 0] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 0] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 0 with 900 parts
+
+Start DR iteration 1: non-uniform partition
+Routed	1/23 Partitions, Violations =	48
+Routed	2/23 Partitions, Violations =	49
+Routed	3/23 Partitions, Violations =	44
+Routed	4/23 Partitions, Violations =	44
+Routed	5/23 Partitions, Violations =	41
+Routed	6/23 Partitions, Violations =	37
+Routed	7/23 Partitions, Violations =	37
+Routed	8/23 Partitions, Violations =	37
+Routed	9/23 Partitions, Violations =	37
+Routed	10/23 Partitions, Violations =	37
+Routed	11/23 Partitions, Violations =	36
+Routed	12/23 Partitions, Violations =	36
+Routed	13/23 Partitions, Violations =	36
+Routed	14/23 Partitions, Violations =	36
+Routed	15/23 Partitions, Violations =	39
+Routed	16/23 Partitions, Violations =	55
+Routed	17/23 Partitions, Violations =	53
+Routed	18/23 Partitions, Violations =	52
+Routed	19/23 Partitions, Violations =	51
+Routed	20/23 Partitions, Violations =	50
+Routed	21/23 Partitions, Violations =	49
+Routed	22/23 Partitions, Violations =	48
+Routed	23/23 Partitions, Violations =	47
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	47
+	Less than NDR width : 3
+	Multiple pin connections : 2
+	Same net spacing : 2
+	Same net via-cut spacing : 28
+	Internal-only types : 12
+
+[Iter 1] Elapsed real time: 0:00:07 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:07 total=0:00:07
+[Iter 1] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 1] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 1 with 23 parts
+
+Start DR iteration 2: non-uniform partition
+Routed	1/14 Partitions, Violations =	29
+Routed	2/14 Partitions, Violations =	28
+Routed	3/14 Partitions, Violations =	28
+Routed	4/14 Partitions, Violations =	25
+Routed	5/14 Partitions, Violations =	29
+Routed	6/14 Partitions, Violations =	28
+Routed	7/14 Partitions, Violations =	28
+Routed	8/14 Partitions, Violations =	26
+Routed	9/14 Partitions, Violations =	26
+Routed	10/14 Partitions, Violations =	28
+Routed	11/14 Partitions, Violations =	28
+Routed	12/14 Partitions, Violations =	28
+Routed	13/14 Partitions, Violations =	28
+Routed	14/14 Partitions, Violations =	28
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	28
+	Less than minimum area : 1
+	Less than NDR width : 4
+	Multiple pin connections : 3
+	Same net via-cut spacing : 20
+
+[Iter 2] Elapsed real time: 0:00:08 
+[Iter 2] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[Iter 2] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 2] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 2 with 14 parts
+
+Start DR iteration 3: non-uniform partition
+Routed	1/12 Partitions, Violations =	28
+Routed	2/12 Partitions, Violations =	28
+Routed	3/12 Partitions, Violations =	21
+Routed	4/12 Partitions, Violations =	21
+Routed	5/12 Partitions, Violations =	22
+Routed	6/12 Partitions, Violations =	22
+Routed	7/12 Partitions, Violations =	22
+Routed	8/12 Partitions, Violations =	22
+Routed	9/12 Partitions, Violations =	22
+Routed	10/12 Partitions, Violations =	22
+Routed	11/12 Partitions, Violations =	22
+Routed	12/12 Partitions, Violations =	19
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	19
+	Multiple pin connections : 3
+	Same net via-cut spacing : 16
+
+[Iter 3] Elapsed real time: 0:00:08 
+[Iter 3] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[Iter 3] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 3] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 3 with 12 parts
+
+Start DR iteration 4: non-uniform partition
+Routed	1/11 Partitions, Violations =	18
+Routed	2/11 Partitions, Violations =	17
+Routed	3/11 Partitions, Violations =	16
+Routed	4/11 Partitions, Violations =	14
+Routed	5/11 Partitions, Violations =	14
+Routed	6/11 Partitions, Violations =	14
+Routed	7/11 Partitions, Violations =	14
+Routed	8/11 Partitions, Violations =	13
+Routed	9/11 Partitions, Violations =	13
+Routed	10/11 Partitions, Violations =	14
+Routed	11/11 Partitions, Violations =	11
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	11
+	Multiple pin connections : 2
+	Same net via-cut spacing : 9
+
+[Iter 4] Elapsed real time: 0:00:09 
+[Iter 4] Elapsed cpu  time: sys=0:00:00 usr=0:00:09 total=0:00:09
+[Iter 4] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 4] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 4 with 11 parts
+
+Start DR iteration 5: non-uniform partition
+Routed	1/6 Partitions, Violations =	11
+Routed	2/6 Partitions, Violations =	11
+Routed	3/6 Partitions, Violations =	10
+Routed	4/6 Partitions, Violations =	11
+Routed	5/6 Partitions, Violations =	11
+Routed	6/6 Partitions, Violations =	11
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	11
+	Multiple pin connections : 2
+	Off-grid : 1
+	Same net via-cut spacing : 8
+
+[Iter 5] Elapsed real time: 0:00:09 
+[Iter 5] Elapsed cpu  time: sys=0:00:00 usr=0:00:09 total=0:00:09
+[Iter 5] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 5] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 5 with 6 parts
+
+Start DR iteration 6: non-uniform partition
+Routed	1/5 Partitions, Violations =	11
+Routed	2/5 Partitions, Violations =	9
+Routed	3/5 Partitions, Violations =	9
+Routed	4/5 Partitions, Violations =	9
+Routed	5/5 Partitions, Violations =	9
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9
+	Multiple pin connections : 2
+	Off-grid : 1
+	Same net via-cut spacing : 6
+
+[Iter 6] Elapsed real time: 0:00:10 
+[Iter 6] Elapsed cpu  time: sys=0:00:00 usr=0:00:10 total=0:00:10
+[Iter 6] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 6] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 6 with 5 parts
+
+Start DR iteration 7: non-uniform partition
+Routed	1/5 Partitions, Violations =	9
+Routed	2/5 Partitions, Violations =	9
+Routed	3/5 Partitions, Violations =	9
+Routed	4/5 Partitions, Violations =	9
+Routed	5/5 Partitions, Violations =	9
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9
+	Multiple pin connections : 2
+	Same net via-cut spacing : 7
+
+[Iter 7] Elapsed real time: 0:00:10 
+[Iter 7] Elapsed cpu  time: sys=0:00:00 usr=0:00:10 total=0:00:10
+[Iter 7] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 7] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 7 with 5 parts
+
+Start DR iteration 8: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	8
+Routed	4/5 Partitions, Violations =	8
+Routed	5/5 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+[Iter 8] Elapsed real time: 0:00:11 
+[Iter 8] Elapsed cpu  time: sys=0:00:00 usr=0:00:11 total=0:00:11
+[Iter 8] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 8] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 8 with 5 parts
+
+Start DR iteration 9: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	9
+Routed	4/5 Partitions, Violations =	9
+Routed	5/5 Partitions, Violations =	9
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9
+	Multiple pin connections : 2
+	Off-grid : 1
+	Same net via-cut spacing : 6
+
+[Iter 9] Elapsed real time: 0:00:11 
+[Iter 9] Elapsed cpu  time: sys=0:00:00 usr=0:00:11 total=0:00:11
+[Iter 9] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 9] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 9 with 5 parts
+
+
+Switch back to normal partition bloat and recalculate DRC:
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/64 Partitions, Violations =	9
+Checked	2/64 Partitions, Violations =	9
+Checked	4/64 Partitions, Violations =	9
+Checked	6/64 Partitions, Violations =	9
+Checked	9/64 Partitions, Violations =	9
+Checked	10/64 Partitions, Violations =	9
+Checked	12/64 Partitions, Violations =	9
+Checked	14/64 Partitions, Violations =	9
+Checked	17/64 Partitions, Violations =	9
+Checked	18/64 Partitions, Violations =	9
+Checked	20/64 Partitions, Violations =	9
+Checked	22/64 Partitions, Violations =	9
+Checked	25/64 Partitions, Violations =	9
+Checked	26/64 Partitions, Violations =	9
+Checked	28/64 Partitions, Violations =	9
+Checked	30/64 Partitions, Violations =	9
+Checked	33/64 Partitions, Violations =	9
+Checked	34/64 Partitions, Violations =	9
+Checked	36/64 Partitions, Violations =	9
+Checked	38/64 Partitions, Violations =	9
+Checked	41/64 Partitions, Violations =	9
+Checked	42/64 Partitions, Violations =	9
+Checked	44/64 Partitions, Violations =	9
+Checked	46/64 Partitions, Violations =	9
+Checked	49/64 Partitions, Violations =	9
+Checked	50/64 Partitions, Violations =	9
+Checked	52/64 Partitions, Violations =	9
+Checked	54/64 Partitions, Violations =	9
+Checked	62/64 Partitions, Violations =	9
+[DRC CHECK] Elapsed real time: 0:00:12 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:12 total=0:00:12
+[DRC CHECK] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[DRC CHECK] Total (MB): Used  137  Alloctr  138  Proc 1912 
+Start DR iteration 10: non-uniform partition
+Routed	1/5 Partitions, Violations =	9
+Routed	2/5 Partitions, Violations =	9
+Routed	3/5 Partitions, Violations =	9
+Routed	4/5 Partitions, Violations =	9
+Routed	5/5 Partitions, Violations =	9
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	9
+	Multiple pin connections : 2
+	Same net via-cut spacing : 7
+
+[Iter 10] Elapsed real time: 0:00:13 
+[Iter 10] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:13
+[Iter 10] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 10] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 10 with 5 parts
+
+Start DR iteration 11: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	8
+Routed	4/5 Partitions, Violations =	8
+Routed	5/5 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+[Iter 11] Elapsed real time: 0:00:13 
+[Iter 11] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:13
+[Iter 11] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 11] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 11 with 5 parts
+
+Start DR iteration 12: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	8
+Routed	4/5 Partitions, Violations =	8
+Routed	5/5 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+[Iter 12] Elapsed real time: 0:00:13 
+[Iter 12] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:13
+[Iter 12] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 12] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 12 with 5 parts
+
+Start DR iteration 13: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	8
+Routed	4/5 Partitions, Violations =	8
+Routed	5/5 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+[Iter 13] Elapsed real time: 0:00:13 
+[Iter 13] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:13
+[Iter 13] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 13] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 13 with 5 parts
+
+Start DR iteration 14: non-uniform partition
+Routed	1/5 Partitions, Violations =	8
+Routed	2/5 Partitions, Violations =	8
+Routed	3/5 Partitions, Violations =	8
+Routed	4/5 Partitions, Violations =	8
+Routed	5/5 Partitions, Violations =	8
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+[Iter 14] Elapsed real time: 0:00:14 
+[Iter 14] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[Iter 14] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[Iter 14] Total (MB): Used  137  Alloctr  138  Proc 1912 
+
+End DR iteration 14 with 5 parts
+
+Stop DR since not converging
+
+Information: Detail Routing terminated early because DRCs were not converging: true (ZRT-312)
+[DR] Elapsed real time: 0:00:14 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[DR] Stage (MB): Used    1  Alloctr    0  Proc    0 
+[DR] Total (MB): Used  119  Alloctr  120  Proc 1912 
+[DR: Done] Elapsed real time: 0:00:14 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[DR: Done] Stage (MB): Used    1  Alloctr    0  Proc    0 
+[DR: Done] Total (MB): Used  119  Alloctr  120  Proc 1912 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 8 violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	8
+	Multiple pin connections : 2
+	Same net via-cut spacing : 6
+
+
+
+Total Wire Length =                    8355 micron
+Total Number of Contacts =             5347
+Total Number of Wires =                6426
+Total Number of PtConns =              1133
+Total Number of Routed Wires =       6426
+Total Routed Wire Length =           7314 micron
+Total Number of Routed Contacts =       5347
+	Layer                 M1 :          0 micron
+	Layer                 M2 :        311 micron
+	Layer                 M3 :       4575 micron
+	Layer                 M4 :       3042 micron
+	Layer                 M5 :        214 micron
+	Layer                 M6 :        166 micron
+	Layer                 M7 :         46 micron
+	Layer                 M8 :          0 micron
+	Layer                 M9 :          0 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          1
+	Via         VIA78SQ(rot) :          1
+	Via            VIA67SQ_C :          3
+	Via       VIA67SQ_C(rot) :          5
+	Via       VIA56SQ_C(rot) :         16
+	Via              VIA56SQ :         12
+	Via              VIA45SQ :        200
+	Via       VIA34SQ_C(rot) :       2342
+	Via         VIA34SQ(rot) :         10
+	Via     VIA3_34SQ_C(rot) :          1
+	Via            VIA23SQ_C :       2382
+	Via          VIA23BAR2_C :          1
+	Via          VIA2_33SQ_C :          2
+	Via          VIA23_3SQ_C :          1
+	Via        VIA2_33_3SQ_C :          1
+	Via       VIA12SQ_C(rot) :        271
+	Via            VIA12LG_C :         16
+	Via     VIA1_32SQ_C(rot) :         81
+	Via   VIA1_32_3SQ_C(rot) :          1
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 5347 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 369     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (369     vias)
+    Layer VIA2       =  0.00% (0      / 2387    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2387    vias)
+    Layer VIA3       =  0.00% (0      / 2353    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2353    vias)
+    Layer VIA4       =  0.00% (0      / 200     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (200     vias)
+    Layer VIA5       =  0.00% (0      / 28      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (28      vias)
+    Layer VIA6       =  0.00% (0      / 8       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8       vias)
+    Layer VIA7       =  0.00% (0      / 1       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1       vias)
+    Layer VIA8       =  0.00% (0      / 1       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 5347 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 369     vias)
+    Layer VIA2       =  0.00% (0      / 2387    vias)
+    Layer VIA3       =  0.00% (0      / 2353    vias)
+    Layer VIA4       =  0.00% (0      / 200     vias)
+    Layer VIA5       =  0.00% (0      / 28      vias)
+    Layer VIA6       =  0.00% (0      / 8       vias)
+    Layer VIA7       =  0.00% (0      / 1       vias)
+    Layer VIA8       =  0.00% (0      / 1       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 5347 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 369     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (369     vias)
+    Layer VIA2       =  0.00% (0      / 2387    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2387    vias)
+    Layer VIA3       =  0.00% (0      / 2353    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2353    vias)
+    Layer VIA4       =  0.00% (0      / 200     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (200     vias)
+    Layer VIA5       =  0.00% (0      / 28      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (28      vias)
+    Layer VIA6       =  0.00% (0      / 8       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (8       vias)
+    Layer VIA7       =  0.00% (0      / 1       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1       vias)
+    Layer VIA8       =  0.00% (0      / 1       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1       vias)
+ 
+
+Total number of nets = 17909
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 8
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+set_app_options -as_user_default -list {route.global.global_route_topology_style 0}
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Information: Design ibex_hvt_cts has 17680 nets, 0 global routed, 102 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: The RC mode used is CTO for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17678, routed nets = 102, across physical hierarchy nets = 0, parasitics cached nets = 102, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Mode:Func             Latency(early)   Latency(late)
+Clock        Updated   rise    fall    rise    fall   Corner
+------------------------------------------------------------
+clk_i        Yes     0.1252  0.1603  0.7971  0.5866   Slow
+cluster_clock_gating Yes  0.0252  0.0252  0.0496  0.0496 Slow
+
+
+Information: Running auto PG connection. (NDM-099)
+1

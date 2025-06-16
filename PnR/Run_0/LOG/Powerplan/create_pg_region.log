@@ -1,0 +1,15 @@
+Define region based on core area.
+Expanding the region by: 
+{Horizontal offset: 0.000} {Vertical offset: 0.000} {Edge ID: 1 offset: 2.000} {Edge ID: 2 offset: 2.000} {Edge ID: 3 offset: 2.000} {Edge ID: 4 offset: 2.000} 
+Create region Power_Ring
+{Power_Ring}
+Define region based on core area.
+Expanding the region by: 
+{Horizontal offset: 0.000} {Vertical offset: 0.000} {Edge ID: 1 offset: 0.500} {Edge ID: 2 offset: 0.500} {Edge ID: 3 offset: 0.500} {Edge ID: 4 offset: 0.500} 
+Create region M2_STUBS_REGION_VDD
+{M2_STUBS_REGION_VDD}
+Define region based on core area.
+Expanding the region by: 
+{Horizontal offset: 0.000} {Vertical offset: 0.000} {Edge ID: 1 offset: 0.500} {Edge ID: 2 offset: 0.500} {Edge ID: 3 offset: 0.500} {Edge ID: 4 offset: 0.500} 
+Create region M2_STUBS_REGION_GND
+{M2_STUBS_REGION_GND}
