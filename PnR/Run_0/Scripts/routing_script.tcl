@@ -93,11 +93,6 @@ report_constraints -all_violators -max_delay -min_delay > "$REPORT/report_constr
 report_qor  > "$REPORT/report_qor.rpt"
 check_legality > "$REPORT/check_legality.rpt"
 
-report_timing  > "$REPORT/report_timing_after_route_detail.rpt"
-report_timing -delay_type min > "$REPORT/report_timing_min_after_route_detail.rpt"
-
-report_qor  > "$REPORT/report_qor_after_route_detail.rpt"
-
 save_block 
 
 ##############################
