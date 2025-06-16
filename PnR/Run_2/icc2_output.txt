@@ -1,0 +1,232 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_gui/preferences.tcl
+icc2_shell> source ./Scripts/master_script.tcl
+############################
+######     Setup     #######
+############################
+Using libraries: ibex_hvt saed14hvt
+Linking block ibex_hvt:ibex_wrapper.design
+Information: User units loaded from library 'saed14hvt' (LNK-040)
+Design 'ibex_wrapper' was successfully linked.
+Information: Saving 'ibex_hvt:ibex_wrapper.design' to 'ibex_hvt:ibex_hvt_setup.design'. (DES-028)
+############################
+#####  End of Setup  #######
+############################
+############################
+######  Floor Plan   #######
+############################
+Information: Saving block 'ibex_hvt:ibex_hvt_floorplan.design'
+Warning: Net name 'irqs_o[irq_fast][14]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][13]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][12]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][11]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][10]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][9]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][8]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][7]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][6]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][5]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][33]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][32]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][31]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][30]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][29]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][28]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][27]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][26]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][25]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][24]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][23]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][22]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][21]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][20]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][19]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][18]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][17]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][16]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][15]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][14]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][13]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][12]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][11]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][10]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][9]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][8]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][7]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][6]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][5]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+############################
+###  End of Floor Plan   ###
+############################
+############################
+####     Power Plan     ####
+############################
+****************************************
+Report : Ignored Layers
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 17:22:51 2025
+****************************************
+Layer Attribute                 Value
+--------------------------------------------------------------------------------
+Min Routing Layer               (none given)
+Max Routing Layer               (none given)
+RC Estimation Ignored Layers    (none given)
+No via def rule is found.
+No pattern is found.
+All strategies have been removed.
+All strategy via rules have been removed.
+Information: Saving block 'ibex_hvt:ibex_hvt_powerplan.design'
+Warning: Net name 'irqs_o[irq_fast][14]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][13]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][12]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][11]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][10]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][9]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][8]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][7]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][6]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][5]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'irqs_o[irq_fast][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][33]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][32]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][31]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][30]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][29]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][28]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][27]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][26]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][25]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][24]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][23]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][22]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][21]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][20]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][19]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][18]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][17]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][16]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][15]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][14]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][13]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][12]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][11]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][10]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][9]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][8]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][7]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][6]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][5]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_pmp_addr_o[3][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][4]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][3]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][2]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][1]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+Warning: Net name 'csr_mcause_i[lower_cause][0]' is omitted from the output file, because the net name does not match a connected port name. The net is implicitly renamed to match one of its connected ports. (VW-007)
+############################
+###  End of Power Plan  ####
+############################
+############################
+######  Placement    #######
+############################
+Information: Saving block 'ibex_hvt:ibex_hvt_placement.design'
+############################
+###  End of Placement    ###
+############################
+############################
+#########   CTS   ##########
+############################
+Using libraries: ibex_hvt saed14hvt
+Visiting block ibex_hvt:ibex_hvt_cts.design
+Design 'ibex_wrapper' was successfully linked.
+Information: Saving block 'ibex_hvt:ibex_hvt_cts.design'
+############################
+###### End of CTS   ########
+############################
+############################
+#######   Routing   ########
+############################
+Information: Merged away 13 aligned/redundant DRCs. (ZRT-305)
+13
+Total number of DRCs = 30
+30
+Total number of DRCs = 0
+0
+Information: Saving block 'ibex_hvt:ibex_hvt_routing.design'
+****************************************
+Report : Data Mismatches
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 17:37:29 2025
+****************************************
+No mismatches exist on the design.
+---------------------------------------
+Number of Written DEF Constructs
+---------------------------------------
+VERSION                        : 1
+DIVIDERCHAR                    : 1
+BUSBITCHARS                    : 1
+DESIGN                         : 1
+UNITS                          : 1
+PROPERTYDEFINITIONS            : 1
+DIEAREA                        : 1
+ROW                            : 233
+TRACKS                         : 20
+VIAS                           : 13
+NONDEFAULTRULES                : 1
+COMPONENTS                     : 26359
+PINS                           : 657
+PINPROPERTIES                  : 655
+SPECIALNETS                    : 2147
+NETS                           : 25681
+Warning: Ideal clock clk_i has zero network latency but non-zero io path latency. (CSTR-101)
+Warning: Ideal clock cluster_clock_gating has zero network latency but non-zero io path latency. (CSTR-101)
+Information: Design ibex_hvt_routing has 25453 nets, 0 global routed, 25451 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: extract design ibex_wrapper
+Information: batch extract takes 0.00 seconds, elapse 0.00 seconds (NEX-015)
+NEX: write corner ID 0 parasitics to ./OUTPUT/Routing/ibex_wrapper.spef.tlup_max_-40.spef 
+spefName ./OUTPUT/Routing/ibex_wrapper.spef.tlup_max_-40.spef, corner name Slow 
+NEX: write corner ID 1 parasitics to ./OUTPUT/Routing/ibex_wrapper.spef.tlup_min_125.spef 
+spefName ./OUTPUT/Routing/ibex_wrapper.spef.tlup_min_125.spef, corner name Slow 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_routing.design'. (TIM-125)
+############################
+####  End of Routing   #####
+############################
+icc2_shell> exit
+Maximum memory usage for this session: 1087.14 MB
+CPU usage for this session:    867 seconds (  0.24 hours)
+Elapsed time for this session:   1203 seconds (  0.33 hours)
+Thank you for using IC Compiler II.
+

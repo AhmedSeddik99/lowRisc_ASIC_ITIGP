@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 17:37:21 2025
+****************************************
+
+  Startpoint: ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Mode: Func
+  Corner: Slow
+  Scenario: Func_Slow
+  Path Group: cluster_clock_gating
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6]/CK (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.00      0.00 r
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6]/Q (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.03      0.03 f
+  ibex_top_inst/u_ibex_core/cs_registers_i/U1671/X (SAEDHVT14_MUX2_2)
+                                                   0.01      0.04 f
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6]/D (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.00      0.04 f
+  data arrival time                                          0.04
+
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_dcsr_csr/rdata_q_reg[6]/CK (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                                0.03      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.04
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.09
+
+
+1

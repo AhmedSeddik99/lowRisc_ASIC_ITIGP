@@ -1,0 +1,711 @@
+Set max undo steps to 20.
+Sanity check for inputs.
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Begin building search trees for block ibex_hvt:ibex_hvt_powerplan.design
+Done building search trees for block ibex_hvt:ibex_hvt_powerplan.design (time 0s)
+Updating PG strategies.
+Updating strategy ring.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating rings.
+Creating via connection between strategies and existing shapes.
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias inside strategy ring.
+Checking 8 stacked vias:0% 10% 20% 30% 50% 60% 70% 80% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 8 wires.
+Committing wires takes 0.00 seconds.
+Committed 8 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy mesh.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies mesh .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies mesh .
+Check and fix DRC for 28 wires for strategy mesh.
+Checking DRC for 28 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 28 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies mesh .
+Working on strategy mesh.
+Number of detected intersections: 98
+Total runtime of via shapes creation: 0 seconds
+Check and fix DRC for 98 stacked vias for strategy mesh.
+Checking DRC for 98 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Runtime of via DRC checking for strategy mesh: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 56 stacked vias.
+Checking DRC for 56 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias inside strategy mesh.
+Checking 98 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 56 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 28 wires.
+Committing wires takes 0.00 seconds.
+Committed 154 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+No strategy-level via rule is specified, the default rule will be applied.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy cell_rail.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating standard cell rails.
+Creating standard cell rails for strategy cell_rail.
+DRC checking and fixing for standard cell rail strategy cell_rail.
+Checking DRC for 234 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 234 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 1638 stacked vias.
+Checking DRC for 1638 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 2.00 seconds.
+via connection runtime: 2 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 1638 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Start iteration 2:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 1225 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Start iteration 3:
+Checking potential dangling/floating power plan wires.
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 234 wires.
+Committing wires takes 0.00 seconds.
+Committed 0 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 2 seconds.
+Successfully compiled PG.
+Overall runtime: 2 seconds.
+1
+################### M7 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M7_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M7_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M7_STRATEGY_VDD .
+Check and fix DRC for 49 wires for strategy M7_STRATEGY_VDD.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M7_STRATEGY_VDD .
+Working on strategy M7_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M7_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M7_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M7_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M7_STRATEGY_GND .
+Check and fix DRC for 49 wires for strategy M7_STRATEGY_GND.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M7_STRATEGY_GND .
+Working on strategy M7_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M7_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+################### M6 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M6_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M6_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M6_STRATEGY_VDD .
+Check and fix DRC for 49 wires for strategy M6_STRATEGY_VDD.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M6_STRATEGY_VDD .
+Working on strategy M6_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M6_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M6_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M6_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M6_STRATEGY_GND .
+Check and fix DRC for 49 wires for strategy M6_STRATEGY_GND.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M6_STRATEGY_GND .
+Working on strategy M6_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M6_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+################### M5 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M5_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M5_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M5_STRATEGY_VDD .
+Check and fix DRC for 49 wires for strategy M5_STRATEGY_VDD.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M5_STRATEGY_VDD .
+Working on strategy M5_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M5_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M5_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M5_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M5_STRATEGY_GND .
+Check and fix DRC for 49 wires for strategy M5_STRATEGY_GND.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M5_STRATEGY_GND .
+Working on strategy M5_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M5_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 1 seconds.
+Successfully compiled PG.
+Overall runtime: 1 seconds.
+1
+################### M4 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M4_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M4_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M4_STRATEGY_VDD .
+Check and fix DRC for 49 wires for strategy M4_STRATEGY_VDD.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M4_STRATEGY_VDD .
+Working on strategy M4_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M4_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M4_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M4_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M4_STRATEGY_GND .
+Check and fix DRC for 49 wires for strategy M4_STRATEGY_GND.
+Checking DRC for 49 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 49 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M4_STRATEGY_GND .
+Working on strategy M4_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M4_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 49 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+################### M3 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M3_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M3_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M3_STRATEGY_VDD .
+Check and fix DRC for 7 wires for strategy M3_STRATEGY_VDD.
+Checking DRC for 7 wires:0% 10% 20% 40% 50% 70% 80% 100%
+Creating 7 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M3_STRATEGY_VDD .
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M3_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 7 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M3_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M3_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M3_STRATEGY_GND .
+Check and fix DRC for 7 wires for strategy M3_STRATEGY_GND.
+Checking DRC for 7 wires:0% 10% 20% 40% 50% 70% 80% 100%
+Creating 7 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M3_STRATEGY_GND .
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M3_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 49 stacked vias.
+Checking DRC for 49 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 49 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 7 wires.
+Committing wires takes 0.00 seconds.
+Committed 49 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+################### M2 ###################
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M2_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M2_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M2_STRATEGY_VDD .
+Check and fix DRC for 819 wires for strategy M2_STRATEGY_VDD.
+Checking DRC for 819 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 819 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M2_STRATEGY_VDD .
+Working on strategy M2_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M2_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 819 stacked vias.
+Checking DRC for 819 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 819 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 819 wires.
+Committing wires takes 0.00 seconds.
+Committed 819 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M2_STRATEGY_VDD.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M2_STRATEGY_VDD .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M2_STRATEGY_VDD .
+Check and fix DRC for 819 wires for strategy M2_STRATEGY_VDD.
+Checking DRC for 819 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 819 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M2_STRATEGY_VDD .
+Working on strategy M2_STRATEGY_VDD.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M2_STRATEGY_VDD: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 1638 stacked vias.
+Checking DRC for 1638 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 1.00 seconds.
+via connection runtime: 1 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 819 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 819 wires.
+Committing wires takes 0.00 seconds.
+Committed 819 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 1 seconds.
+Successfully compiled PG.
+Overall runtime: 1 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M2_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M2_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M2_STRATEGY_GND .
+Check and fix DRC for 819 wires for strategy M2_STRATEGY_GND.
+Checking DRC for 819 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 819 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M2_STRATEGY_GND .
+Working on strategy M2_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M2_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 819 stacked vias.
+Checking DRC for 819 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 819 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 819 wires.
+Committing wires takes 0.00 seconds.
+Committed 819 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1
+Sanity check for inputs.
+Automatic PG net connection through connect_pg_net is disabled.
+Loading library and design information.
+Updating PG strategies.
+Updating strategy M2_STRATEGY_GND.
+Number of Standard Cells: 0
+Number of Hard Macros: 0
+Number of Pads: 0
+Creating straps and vias in power plan.
+Creating wire shapes for strategies M2_STRATEGY_GND .
+Creating wire shapes runtime: 0 seconds
+Blockage cutting and DRC fixing for wire shapes for strategies M2_STRATEGY_GND .
+Check and fix DRC for 819 wires for strategy M2_STRATEGY_GND.
+Checking DRC for 819 wires:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Creating 819 wires after DRC fixing.
+Wire DRC checking runtime 0.00 seconds.
+Creating via shapes for strategies M2_STRATEGY_GND .
+Working on strategy M2_STRATEGY_GND.
+Number of detected intersections: 0
+Total runtime of via shapes creation: 0 seconds
+Runtime of via DRC checking for strategy M2_STRATEGY_GND: 0.00 seconds.
+Creating via connection between strategies and existing shapes.
+Check and fix DRCs for 1638 stacked vias.
+Checking DRC for 1638 stacked vias:0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%
+Via DRC checking runtime 0.00 seconds.
+via connection runtime: 0 seconds.
+Removing dangling/floating wire/vias after DRC check.
+Start iteration 1:
+Checking potential dangling/floating power plan wires.
+Checking dangling/floating vias between strategies and existing shapes.
+Checking 819 stacked vias:0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
+Finish removing all dangling or floating wires and vias.
+Commiting wires and vias.
+Committed 819 wires.
+Committing wires takes 0.00 seconds.
+Committed 819 vias.
+Committed 0 wires for via creation.
+Committing vias takes 0.00 seconds.
+Overall PG creation runtime: 0 seconds.
+Successfully compiled PG.
+Overall runtime: 0 seconds.
+1

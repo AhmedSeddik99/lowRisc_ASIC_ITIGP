@@ -1,0 +1,97 @@
+****************************************
+Report : qor
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 17:26:33 2025
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Information: Design ibex_hvt_placement has 17581 nets, 17579 global routed, 0 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: gr/dr coup map average coverRate for layer#1: 0.396078
+Information: build GR coup map successfully (NEX-012)
+Information: The RC mode used is GR for design 'ibex_wrapper'. (NEX-022)
+Warning: Net 'ibex_top_inst/clk' is exceeding threshold (over 1000 pins) and will be skipped. (NEX-020)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17527, routed nets = 17526, across physical hierarchy nets = 0, parasitics cached nets = 17526, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+
+Scenario           'Func_Slow'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.08
+Critical Path Slack:               2.85
+Critical Path Clk Period:          6.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.08
+Total Hold Violation:             -0.25
+No. of Hold Violations:               4
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                     66
+Critical Path Length:              2.60
+Critical Path Slack:               2.75
+Critical Path Clk Period:          6.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.10
+Total Hold Violation:           -168.09
+No. of Hold Violations:            2018
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              2
+Hierarchical Port Count:            843
+Leaf Cell Count:                  16842
+Buf/Inv Cell Count:                 852
+Buf Cell Count:                     120
+Inv Cell Count:                     732
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         14822
+Sequential Cell Count:             2020
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             6505.13
+Noncombinational Area:          2195.49
+Buf/Inv Area:                    208.15
+Total Buffer Area:                43.16
+Total Inverter Area:             164.99
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           8700.62
+Cell Area (netlist and physical only):         9577.08
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             17811
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

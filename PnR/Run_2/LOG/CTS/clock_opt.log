@@ -1,0 +1,114 @@
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Clearing abstracted power annotation ... 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: Design ibex_hvt_cts has 17581 nets, 17579 global routed, 0 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: gr/dr coup map average coverRate for layer#1: 0.396078
+Information: build GR coup map successfully (NEX-012)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+
+Running clock synthesis step.
+
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+remove buffers/inverters in clock clk_i and its generated clocks:
+  no buffer or inverter has been removed
+
+No buffer or inverter has been removed.
+Remove clock trees finished successfully
+synthesize_clock_trees
+Begin building search trees for block ibex_hvt:ibex_hvt_cts.design
+Done building search trees for block ibex_hvt:ibex_hvt_cts.design (time 0s)
+Error: The current design has been routed, so it is not appropriate to run this command. (CTS-119)
+ Run time for cts 00:00:00.03u 00:00:00.00s 00:00:00.03e: 
+Error: 0
+	Use error_info for more info. (CMD-013)
+
+No clock balance group was found, so skip the balance
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Current block utilization is '0.44290', effective utilization is '0.65739'. (OPT-055)
+Information: The RC mode used is GR for design 'ibex_wrapper'. (NEX-022)
+Information: Design Average RC for design ibex_hvt_cts  (NEX-011)
+Information: r = 2.181655 ohm/um, via_r = 1.041632 ohm/cut, c = 0.133555 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.559083 ohm/um, via_r = 0.643520 ohm/cut, c = 0.136068 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17579, routed nets = 17576, across physical hierarchy nets = 0, parasitics cached nets = 17578, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:04:31     0.000     0.000  9577.080     0.000   281.967       120       732         0     0.000       693 
+
+
+
+Information: Running auto PG connection. (NDM-099)
+1
+##########################################
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1399340 1398000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+
+Running clock routing step.
+set_app_options -as_user_default -list {route.global.global_route_topology_style 1}
+route_group -all_clock_nets -reuse_existing_global_route true
+Error: Could not find any nets in the design that match the specification. (ZRT-070)
+set_app_options -as_user_default -list {route.global.global_route_topology_style 0}
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17579, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Mode:Func             Latency(early)   Latency(late)
+Clock        Updated   rise    fall    rise    fall   Corner
+------------------------------------------------------------
+clk_i        No          --      --      --      --   --
+cluster_clock_gating No      --      --      --      -- --
+
+
+Information: Running auto PG connection. (NDM-099)
+1

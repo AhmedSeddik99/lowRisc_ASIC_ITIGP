@@ -1,0 +1,7 @@
+opt.tie_cell.max_fanout 25
+place.coarse.continue_on_missing_scandef true
+place.coarse.congestion_driven_max_util 0.5
+place.coarse.max_density 0.2
+place.coarse.target_routing_density 0.7
+opt.common.user_instance_name_prefix PLACE_
+place_opt.congestion.effort high
