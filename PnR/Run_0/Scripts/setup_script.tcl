@@ -4,7 +4,7 @@ puts "############################"
 set BLOCK "ibex_hvt"
 
 #We used the tech file provided through Google Drive
-set TECH_FILE "../PDK/saed14nm_1p9m_mw_drive.tf"
+set TECH_FILE "../PDK/saed14nm_1p9m_mw.tf"
 
 set REF_NDM "../NDM/saed14hvt.ndm"
 
