@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 23:29:41 2025
+****************************************
+
+  Startpoint: boot_addr_i[24] (input port clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[24] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Mode: Func
+  Corner: Slow
+  Scenario: Func_Slow
+  Path Group: cluster_clock_gating
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.00      0.00
+
+  boot_addr_i[24] (in)                             0.01      0.01 f
+  ibex_top_inst/u_ibex_core/cs_registers_i/U2875/X (SAEDHVT14_AN2_MM_2)
+                                                   0.01      0.02 f
+  ibex_top_inst/u_ibex_core/cs_registers_i/U2877/X (SAEDHVT14_OR3_2)
+                                                   0.01      0.03 f
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[24]/D (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.00      0.03 f
+  data arrival time                                          0.03
+
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  ibex_top_inst/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[24]/CK (SAEDHVT14_FDPRBQ_V2LP_2)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                                0.03      0.13
+  data required time                                         0.13
+  ------------------------------------------------------------------------
+  data required time                                         0.13
+  data arrival time                                         -0.03
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+1

@@ -1,0 +1,9 @@
+Loading verilog file '/mnt/hgfs/0_GP/Official_Repo/lowRisc_ASIC_ITIGP/PnR/Run_1/syn_output/ibex_wrapper.v'
+Information: Reading Verilog into new design 'ibex_wrapper' in library 'ibex_hvt'. (VR-012)
+Number of modules read: 3
+Top level ports: 655
+Total ports in all modules: 1462
+Total nets in all modules: 19477
+Total instances in all modules: 17468
+Elapsed = 00:00:00.19, CPU = 00:00:00.11
+1

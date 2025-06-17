@@ -1,0 +1,114 @@
+Begin building search trees for block ibex_hvt:ibex_hvt_floorplan.design
+Done building search trees for block ibex_hvt:ibex_hvt_floorplan.design (time 0s)
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M6 
+sides:                     1
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 145
+CPU Time for Pin Placement: 00:00:00.05u 00:00:00.01s 00:00:00.05e: 
+Total Pin Placement CPU Time: 00:00:00.06u 00:00:00.02s 00:00:00.08e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M6 
+sides:                     1
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 9
+CPU Time for Pin Placement: 00:00:00.01u 00:00:00.00s 00:00:00.01e: 
+Total Pin Placement CPU Time: 00:00:00.02u 00:00:00.01s 00:00:00.03e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M7 
+sides:                     2
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 129
+CPU Time for Pin Placement: 00:00:00.07u 00:00:00.00s 00:00:00.07e: 
+Total Pin Placement CPU Time: 00:00:00.09u 00:00:00.00s 00:00:00.09e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M7 
+sides:                     2
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 16
+CPU Time for Pin Placement: 00:00:00.01u 00:00:00.00s 00:00:00.01e: 
+Total Pin Placement CPU Time: 00:00:00.03u 00:00:00.00s 00:00:00.03e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M9 
+sides:                     2
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 2
+CPU Time for Pin Placement: 00:00:00.01u 00:00:00.00s 00:00:00.01e: 
+Total Pin Placement CPU Time: 00:00:00.03u 00:00:00.00s 00:00:00.03e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M6 
+sides:                     3
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 192
+CPU Time for Pin Placement: 00:00:00.06u 00:00:00.01s 00:00:00.07e: 
+Total Pin Placement CPU Time: 00:00:00.08u 00:00:00.01s 00:00:00.09e: 
+1
+
+Min routing layer: M1
+Max routing layer: MRDL
+
+Non default block pin constraint setting(s) of top block: ibex_wrapper
+corner_keepout_num_tracks: 1
+allowed_layers:            M7 
+sides:                     4
+
+Number of block ports: 655
+Number of block pin locations assigned from router: 0
+Number of PG ports on blocks: 0
+Number of pins created: 164
+CPU Time for Pin Placement: 00:00:00.07u 00:00:00.01s 00:00:00.08e: 
+Total Pin Placement CPU Time: 00:00:00.08u 00:00:00.01s 00:00:00.10e: 
+1

@@ -1,0 +1,78 @@
+****************************************
+Report : qor
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 23:39:17 2025
+****************************************
+
+
+Scenario           'Func_Slow'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:              0.08
+Critical Path Slack:               2.85
+Critical Path Clk Period:          6.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.08
+Total Hold Violation:             -0.08
+No. of Hold Violations:               1
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                     71
+Critical Path Length:              3.09
+Critical Path Slack:               2.26
+Critical Path Clk Period:          6.25
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.09
+Total Hold Violation:            -18.57
+No. of Hold Violations:             553
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              2
+Hierarchical Port Count:            843
+Leaf Cell Count:                  24311
+Buf/Inv Cell Count:                8321
+Buf Cell Count:                    7589
+Inv Cell Count:                     732
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         22291
+Sequential Cell Count:             2020
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            10045.86
+Noncombinational Area:          2195.49
+Buf/Inv Area:                   3734.66
+Total Buffer Area:              3570.51
+Total Inverter Area:             164.15
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          12241.35
+Cell Area (netlist and physical only):        13117.80
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             25280
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

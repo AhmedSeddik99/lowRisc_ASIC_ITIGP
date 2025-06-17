@@ -1,0 +1,94 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_cts.design'. (TIM-125)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17579, routed nets = 17576, across physical hierarchy nets = 0, parasitics cached nets = 17578, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock timing
+        -type summary
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jun 16 23:29:40 2025
+****************************************
+
+  Mode: Func
+  Clock: clk_i
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+  Minimum hold launch latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+  Maximum hold capture latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+  Maximum active transition:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.05       f-+        Slow
+
+  Minimum active transition:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.05       f-+        Slow
+
+  Maximum setup skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 r-+        Slow
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+  Maximum hold skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 r-+        Slow
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       f-+        Slow
+
+
+
+  Mode: Func
+  Clock: cluster_clock_gating
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+  Minimum hold launch latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+  Maximum hold capture latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+  Maximum active transition:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.05       r-+        Slow
+
+  Minimum active transition:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.05       r-+        Slow
+
+  Maximum setup skew:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                                          r-+        Slow
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+  Maximum hold skew:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                                          r-+        Slow
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[31]/CK
+                                                               0.00       r-+        Slow
+
+
+1
