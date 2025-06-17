@@ -1,6 +1,6 @@
 # Run_0 #
 
-Configurations:   
+- Configurations:   
 	Core are = 140 sq.   
 	Core-to-Die margin = 18   
 	PG region offset = 2   
@@ -10,22 +10,22 @@ Configurations:
 	target_routing_density -value 0.7   
 	NDR {width, spacing} = {2, 2}   
 
-Key Note:   
+- Key Difference:   
 	No route_global after place_opt.   
 
-Result:   
+- Result:   
 	Routing ends with 10k DRCs!   
 
 
 # Run_1 #
 
-Configurations:   
+- Configurations:   
 	Same as Run_0   
 
-Key Note:   
+- Key Difference:   
 	Run route_global after place_opt.    
 
-Result:   
+- Result:   
 	route_opt finishes with 134 DRCs.   
 	0 DRCs after 1 iteration of route_detail.   
 	Setup time clean.   
@@ -34,13 +34,13 @@ Result:
 
 # Run_2 #
 
-Configurations:   
+- Configurations:   
 	Same as Run_1   
 
-Key Note:   
+- Key Difference:   
 	Remove source dont_use_constraints in CTS.    
 
-Result:   
+- Result:   
 	route_opt finishes with 30 DRCs.   
 	0 DRCs after 1 iteration of route_detail.   
 	Setup time clean.   
