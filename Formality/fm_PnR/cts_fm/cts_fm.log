@@ -1,0 +1,235 @@
+
+                                 Formality (R)
+
+               Version L-2016.03-SP1 for linux64 - Apr 13, 2016 
+
+                    Copyright (c) 1988 - 2016 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+  ** Highlights of Formality (R) Version L-2016.03 **
+   - New alternate verification strategies for resolving inconclusive verifications
+   - Automation for deploying alternate strategies
+   - New command to export the mapping of reference to implementation registers
+   - New capability to combine PG and low power information from db libraries with Verilog functional models
+
+   * Please refer to the Formality Release Notes for details and additional enhancements
+
+Build: 4031317
+Hostname: IC (RHEL64)
+Current time: Sat Jun 14 04:34:33 2025
+
+Loading db file '/opt/Synopsys/Formality2016/libraries/syn/gtech.db'
+############################  Stages ################################
+set prev_stage ibex_wrapper_pl
+ibex_wrapper_pl
+set curr_stage ibex_wrapper_cts
+ibex_wrapper_cts
+############################  Search PATH ################################
+set LIB_PATH  "/mnt/hgfs/stdcell_hvt/db_ccs"
+/mnt/hgfs/stdcell_hvt/db_ccs
+lappend search_path $LIB_PATH
+/mnt/hgfs/stdcell_hvt/db_ccs
+####################### Read Reference tech libs ########################
+set FFLIB "saed14hvt_ff0p88v125c.db"
+saed14hvt_ff0p88v125c.db
+set TTLIB "saed14hvt_tt0p8v25c.db"
+saed14hvt_tt0p8v25c.db
+set SSLIB "saed14hvt_ss0p72vm40c.db"
+saed14hvt_ss0p72vm40c.db
+######################### Formality Setup File ###########################
+# Synopsys setup variable
+set synopsys_auto_setup true
+true
+set verification_failing_point_limit 2300 
+2300
+# Formality Setup File
+set_svf "./${curr_stage}.svf/cmd-1.svf"
+Warning: Can't open file /home/synopsys/icc2/O-2018.06-SP1/packages/dware/src/DWpackages.vhd (FM-140)
+Info:  $hdlin_dwroot not set.
+SVF set to './ibex_wrapper_cts.svf/cmd-1.svf'.
+1
+###################################################################
+###################### Reference Container ########################
+###################################################################
+read_verilog -container Ref -netlist "./${prev_stage}.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/ITI_GP/fm_dont_use_cv32/cts_fm/ibex_wrapper_pl.v'
+Created container 'Ref'
+Current container set to 'Ref'
+1
+# Read Reference technology libraries
+read_db -container Ref [list $SSLIB $FFLIB $TTLIB]
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+1
+# set the top Reference Design
+set_top ibex_wrapper
+Setting top design to 'Ref:/WORK/ibex_wrapper'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  186 unlinked power cell(s) with unread pg pins.
+Warning:  2535 unlinked power cell(s) with no power down functions on outputs.
+Warning:  6 unlinked power cell(s) with unread backup pg pins.
+Warning:  714 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Ref:/WORK/ibex_wrapper'
+1
+set_reference_design ibex_wrapper
+Reference design set to 'Ref:/WORK/ibex_wrapper'
+1
+###################################################################
+#################### Implementation Container #####################
+###################################################################
+# Read Implementation Design Files
+read_verilog -container Imp -netlist "./${curr_stage}.v"
+No target library specified, default is WORK
+Loading verilog file '/home/IC/ITI_GP/fm_dont_use_cv32/cts_fm/ibex_wrapper_cts.v'
+Created container 'Imp'
+Current container set to 'Imp'
+1
+# Read Implementation technology libraries
+read_db -container Imp [list $SSLIB $FFLIB $TTLIB]
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+1
+# set the top Implementation Design
+set_top ibex_wrapper
+Setting top design to 'Imp:/WORK/ibex_wrapper'
+Status:  Implementing inferred operators...
+
+************ Library Checking Summary ************
+Warning:  186 unlinked power cell(s) with unread pg pins.
+Warning:  2535 unlinked power cell(s) with no power down functions on outputs.
+Warning:  6 unlinked power cell(s) with unread backup pg pins.
+Warning:  714 unlinked power cell(s) with no power down function on an ff or latch.
+        Use 'report_libraries -defects all' for more details.
+**************************************************
+
+Top design successfully set to 'Imp:/WORK/ibex_wrapper'
+1
+set_implementation_design ibex_wrapper
+Implementation design set to 'Imp:/WORK/ibex_wrapper'
+1
+###################### Matching Compare points ####################
+match
+Reference design is 'Ref:/WORK/ibex_wrapper'
+Implementation design is 'Imp:/WORK/ibex_wrapper'
+Status:  Checking designs...
+    Warning: 247 (247) undriven nets found in reference (implementation) design; see formality.log for list (FM-399)
+    Warning: 1645 (1645) black-box references found in reference (implementation) design; see formality.log for list (FM-182)
+Status:  Building verification models...
+Status:  Processing Guide Commands...
+
+***************************** Guidance Summary *****************************
+                                         Status
+Command                 Accepted   Rejected  Unsupported  Unprocessed  Total
+----------------------------------------------------------------------------
+environment         :          1          0          0          0          1
+
+SVF files read:
+      ./ibex_wrapper_cts.svf/cmd-1.svf
+
+SVF files produced:
+  /home/IC/ITI_GP/fm_dont_use_cv32/cts_fm/formality_svf/
+    svf.txt
+****************************************************************************
+
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 2295 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 150 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+1
+######################### Run Verification ########################
+set successful [verify]
+Reference design is 'Ref:/WORK/ibex_wrapper'
+Implementation design is 'Imp:/WORK/ibex_wrapper'
+    
+*********************************** Matching Results ***********************************    
+ 2295 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 150 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+****************************************************************************************
+
+Status:  Verifying...
+
+***************************** Synopsys Auto Setup Summary ******************************
+
+!!! Synopsys Auto Setup Mode was enabled. !!!
+!!! Verification results are valid assuming the following setup constraints: !!!
+
+### RTL Interpretation Setup
+   set hdlin_ignore_parallel_case false
+   set hdlin_ignore_full_case false
+   set hdlin_error_on_mismatch_message false
+   set hdlin_ignore_embedded_configuration true
+
+### Undriven Signal Handling Setup
+   set verification_set_undriven_signals synthesis
+
+### Test Logic Setup
+   set verification_verify_directly_undriven_output false
+   For details see report_dont_verify_points and report_constants
+
+
+For further details on Synopsys Auto Setup Mode: Type man synopsys_auto_setup
+****************************************************************************************
+
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+   ATTENTION: synopsys_auto_setup mode was enabled.
+              See Synopsys Auto Setup Summary for details.
+----------------------------------------------------------
+ Reference design: Ref:/WORK/ibex_wrapper
+ Implementation design: Imp:/WORK/ibex_wrapper
+ 2295 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0     276    2018       1    2295
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+Not Compared
+  Unread                       0       0       0       0       0       1       0       1
+****************************************************************************************
+1
+if {!$successful} {
+diagnose
+analyze_points -failing
+}
+########################### Reporting ############################# 
+sh mkdir report 
+report_passing_points > ./report/passing_points.rpt
+report_failing_points > ./report/failing_points.rpt
+report_aborted_points > ./report/aborted_points.rpt
+report_unverified_points > ./report/unverified_points.rpt
+report_not_compared_points > ./report/not_compared_points.rpt
+report_hdlin_mismatches > ./report/hdlin_mismatches.rpt
+report_matched_points > ./report/matched_points
+report_unmatched_points > ./report/unmatched_points
+#start_gui
+fm_shell (verify)> exit
+
+Maximum memory usage for this session: 1405844 KB
+CPU usage for this session: 29.6 seconds
+Current time: Sat Jun 14 04:35:23 2025
+Elapsed time: 60 seconds
+
+Thank you for using Formality (R)!
