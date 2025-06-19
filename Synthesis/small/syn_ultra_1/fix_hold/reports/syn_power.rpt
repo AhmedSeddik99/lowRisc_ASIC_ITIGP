@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Tue Apr 15 20:19:04 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14hvt_tt0p8v25c (File: /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db)
+
+
+Operating Conditions: ss0p72vm40c   Library: saed14hvt_ss0p72vm40c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ibex_top               8000              saed14hvt_tt0p8v25c
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 194.8708 uW   (77%)
+  Net Switching Power  =  57.1057 uW   (23%)
+                         ---------
+Total Dynamic Power    = 251.9765 uW  (100%)
+
+Cell Leakage Power     =   1.2814 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.2411           42.6442        3.7709e+03           43.8890  (  17.33%)
+register         186.9904            2.9901        5.0691e+05          190.4875  (  75.21%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      6.6388           11.4715        7.7047e+05           18.8808  (   7.46%)
+--------------------------------------------------------------------------------------------------
+Total            194.8704 uW        57.1058 uW     1.2812e+06 pW       253.2573 uW
+1

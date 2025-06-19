@@ -1,0 +1,141 @@
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db"
+Analyzing: "/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db"
+Library analysis succeeded.
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 268 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'ibex_top'
+
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_0P5'. (OPT-914)
+  Loading target library 'saed14hvt_ss0p72vm40c'
+  Loading target library 'saed14hvt_ff0p88v125c'
+Loaded alib file './alib-52/saed14hvt_tt0p8v25c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ss0p72vm40c.db.alib'
+Loaded alib file './alib-52/saed14hvt_ff0p88v125c.db.alib'
+Warning: Operating condition ss0p72vm40c set on design ibex_top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14hvt_tt0p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDHVT14_TIE1_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_PV1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1ECO_1' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_V1_2' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_4' in the library 'saed14hvt_tt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:30    4914.0      0.00       0.0      39.0                           1307941.2500
+    0:00:31    4914.6      0.00       0.0      39.0                           1308105.0000
+    0:00:32    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:33    4912.9      0.00       0.0      39.0                           1307740.5000
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:34    4910.7      0.00       0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+    0:00:36    4910.7      0.00      -0.0      39.0                           1306279.7500
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'saed14hvt_ss0p72vm40c'
+  Loading target library 'saed14hvt_ff0p88v125c'
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDHVT14_FSDN2_V2_0P5'. (OPT-914)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1

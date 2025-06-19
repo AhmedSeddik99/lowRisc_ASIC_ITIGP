@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : resources
+Design : ibex_top
+Version: O-2018.06-SP1
+Date   : Mon Apr 14 07:43:36 2025
+****************************************
+
+
+Resource Report for this hierarchy in file
+        /mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_96       | DW01_add       | width=32   | u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/add_170 (ibex_prefetch_buffer.sv:170) |
+| add_x_257      | DW01_add       | width=32   | u_ibex_core/id_stage_i/controller_i/add_760_aco (ibex_controller.sv:760) |
+| add_x_318      | DW01_add       | width=34   | u_ibex_core/ex_block_i/alu_i/add_105 (ibex_alu.sv:105) |
+| eq_x_320       | DW_cmp         | width=32   | u_ibex_core/ex_block_i/alu_i/eq_132 (ibex_alu.sv:132) |
+| sub_x_324      | DW01_sub       | width=5    | u_ibex_core/ex_block_i/alu_i/sub_280 (ibex_alu.sv:280) |
+| ashr_331       | DW_rightsh     | A_width=33 | u_ibex_core/ex_block_i/alu_i/sra_342 (ibex_alu.sv:342) |
+      | SH_width=5 |                            |
+| add_x_349      | DW01_add       | width=31   | u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/add_145 (ibex_fetch_fifo.sv:145) |
+=============================================================================
+
+
+Resource Report for Ungrouped Hierarchy u_ibex_core/cs_registers_i in file
+        /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| gt_x_1         | DW_cmp         | width=2    | gt_316 (ibex_cs_registers.sv:316) |
+| add_x_129      | DW01_inc       | width=64   | mcycle_counter_i/add_30 (ibex_counter.sv:30) |
+| add_x_132      | DW01_inc       | width=64   | minstret_counter_i/add_30 (ibex_counter.sv:30) |
+=============================================================================
+
+
+Resource Report for Ungrouped Hierarchy
+        u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i in file
+        /mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| ash_15         | DW_leftsh      | A_width=32 | sll_393 (ibex_multdiv_fast.sv:393) |
+         |                | SH_width=5 |                            |
+| sub_x_17       | DW01_dec       | width=5    | sub_413 (ibex_multdiv_fast.sv:413) |
+| DP_OP_71J4_122_6124             |            |                            |
+|                | DP_OP_71J4_122_6124 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_71J4_122_6124
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_71J4_122_6124  | mult_277 (ibex_multdiv_fast.sv:277)                 |
+|                      | add_277 (ibex_multdiv_fast.sv:277)                  |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 17    |                                          |
+| I2    | PI   | Signed   | 17    |                                          |
+| I3    | PI   | Signed   | 34    |                                          |
+| T2    | IFO  | Signed   | 34    | I1 * I2 (ibex_multdiv_fast.sv:277)       |
+| O1    | PO   | Unsigned | 34    | T2 + I3 (ibex_multdiv_fast.sv:277)       |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_96           | DW01_add         | apparch (area)     |                |
+| add_x_257          | DW01_add         | apparch (area)     |                |
+| add_x_318          | DW01_add         | apparch (area)     |                |
+| eq_x_320           | DW_cmp           | apparch (area)     |                |
+| sub_x_324          | DW01_sub         | apparch (area)     |                |
+| ashr_331           | DW_rightsh       | astr (area)        |                |
+| add_x_349          | DW01_add         | apparch (area)     |                |
+| gt_x_1             | DW_cmp           | apparch (area)     |                |
+| add_x_129          | DW01_inc         | apparch (area)     |                |
+| add_x_132          | DW01_inc         | apparch (area)     |                |
+| ash_15             | DW_leftsh        | astr (area)        |                |
+| sub_x_17           | DW01_dec         | apparch (area)     |                |
+| DP_OP_71J4_122_6124                   |                    |                |
+|                    | DP_OP_71J4_122_6124 | str (area)      |                |
+|                    |                  | mult_arch: benc_radix8              |
+===============================================================================
+
+1

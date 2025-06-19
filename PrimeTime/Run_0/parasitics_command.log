@@ -1,0 +1,18 @@
+Information: Derived library resistance unit is 999.999939 Kohm (Time unit is 1 ns, and Capacitance unit is 0.001000 pF). (DES-028)
+
+****************************************
+Report : read_parasitics /mnt/hgfs/PnR_GP/PrimeTime/Run_5/Routing_ss_spef/ibex_wrapper_ss_spef.tlup_max_-40.spef
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Thu Jun 19 12:38:37 2025
+****************************************
+
+        0 error(s)
+        Format is SPEF
+        Annotated nets                   :        25645
+        Annotated capacitances           :       405170
+        Annotated resistances            :       379525
+        Reduced coupling capacitances    :            0
+        Annotated PI models              :            0
+        Annotated Elmore delays          :            0
+

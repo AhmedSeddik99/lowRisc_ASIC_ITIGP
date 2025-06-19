@@ -1,0 +1,13 @@
+
+  Linking design 'ibex_top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (28 designs)              /mnt/hgfs/0_GP/Synthesis/syn_ultra_0/ibex_top.db, etc
+  saed14hvt_tt0p8v25c (library)
+                              /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db
+  saed14hvt_ss0p72vm40c (library)
+                              /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db
+  saed14hvt_ff0p88v125c (library)
+                              /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db
+
+1

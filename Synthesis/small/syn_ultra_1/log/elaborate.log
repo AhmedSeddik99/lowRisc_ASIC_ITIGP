@@ -1,0 +1,837 @@
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine ibex_top line 230 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_top.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   core_busy_q_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'ibex_top'.
+Information: Building the design 'prim_clock_gating'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ibex_core' instantiated from design 'ibex_top' with
+	the parameters "PMPEnable=1'h0,PMPGranularity=32'h00000000,PMPNumRegions=32'h00000004,PMPRstCfg=96'h000000000000000000000000,PMPRstAddr=544'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,PMPRstMsecCfg=3'h0,MHPMCounterNum=32'h00000000,MHPMCounterWidth=32'h00000028,RV32E=1'h0,RV32M=2,RV32B=0,BranchTargetALU=1'h0,ICache=1'h0,ICacheECC=1'h0,BusSizeECC=32'h00000020,TagSizeECC=32'h00000016,LineSizeECC=32'h00000040,BranchPredictor=1'h0,DbgTriggerEn=1'h0,DbgHwBreakNum=32'h00000001,WritebackStage=1'h0,ResetAll=1'h0,RndCnstLfsrSeed=32'hac533bf4,RndCnstLfsrPerm=160'h1e35ecba467fd1b12e958152c04fa43878a8daed,SecureIbex=1'h0,DummyInstructions=1'h0,RegFileECC=1'h0,RegFileDataWidth=32'h00000020,MemECC=1'h0,MemDataWidth=32'h00000020,DmBaseAddr=32'h1a110000,DmAddrMask=32'h00000fff,DmHaltAddr=32'h1a110800,DmExceptionAddr=32'h1a110808". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_core.sv:395: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'ibex_register_file_latch' instantiated from design 'ibex_top' with
+	the parameters "RV32E=1'h0,DataWidth=32'h00000020,DummyInstructions=1'h0,WrenCheck=1'h0,RdataMuxCheck=1'h0,WordZeroVal=32'h00000000". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv:252: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv:263: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv:203: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv:208: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine ibex_register_file_latch_0_00000020_0_0_0_00000000 line 190 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    wdata_a_q_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_register_file_latch_0_00000020_0_0_0_00000000 line 258 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_register_file_latch.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|       mem_reg       | Latch |  992  |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Statistics for MUX_OPs
+============================================================================================
+|                    block name/line                     | Inputs | Outputs | # sel inputs |
+============================================================================================
+| ibex_register_file_latch_0_00000020_0_0_0_00000000/171 |   32   |   32    |      5       |
+| ibex_register_file_latch_0_00000020_0_0_0_00000000/172 |   32   |   32    |      5       |
+============================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'prim_generic_clock_gating' instantiated from design 'prim_clock_gating' with
+	the parameters "FpgaBufGlobal=1'h1,NoFpgaGate=1'h0". (HDL-193)
+
+Inferred memory devices in process
+	in routine prim_generic_clock_gating_0_1 line 21 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/prim_generic_clock_gating.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    en_latch_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_if_stage' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "DmHaltAddr=32'h1a110800,DmExceptionAddr=32'h1a110808,DummyInstructions=1'h0,ICache=1'h0,ICacheECC=1'h0,BusSizeECC=32'h00000020,TagSizeECC=32'h00000016,LineSizeECC=32'h00000040,PCIncrCheck=1'h0,ResetAll=1'h0,RndCnstLfsrSeed=32'hac533bf4,RndCnstLfsrPerm=160'h1e35ecba467fd1b12e958152c04fa43878a8daed,BranchPredictor=1'h0,MemECC=1'h0,MemDataWidth=32'h00000020". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv:192: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 184 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           192            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 207 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           208            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_if_stage_1a110800_1a110808_0_0_0_00000020_00000016_00000040_0_0_ac533bf4_0_0_00000020 line 483 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|  instr_new_id_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| instr_valid_id_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine ibex_if_stage_1a110800_1a110808_0_0_0_00000020_00000016_00000040_0_0_ac533bf4_0_0_00000020 line 524 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_if_stage.sv'.
+========================================================================================
+|        Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+========================================================================================
+|         pc_id_o_reg          | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     instr_rdata_id_o_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   instr_rdata_alu_id_o_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    instr_fetch_err_o_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| instr_fetch_err_plus2_o_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    instr_rdata_c_id_o_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+| instr_is_compressed_id_o_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   illegal_c_insn_id_o_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+========================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_id_stage' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "RV32E=1'h0,RV32M=2,RV32B=0,BranchTargetALU=1'h0,DataIndTiming=1'h0,WritebackStage=1'h0,BranchPredictor=1'h0,MemECC=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv:318: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv:425: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv:794: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 317 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           318            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 375 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           376            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 424 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           425            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 781 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           794            |    user/user     |
+|           796            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_id_stage_0_2_0_0_0_0_0_0 line 405 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    imd_val_q_reg    | Flip-flop |  68   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_id_stage_0_2_0_0_0_0_0_0 line 683 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'.
+==================================================================================================
+|             Register Name              |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================================
+| g_branch_set_flop.branch_set_raw_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+==================================================================================================
+
+Inferred memory devices in process
+	in routine ibex_id_stage_0_2_0_0_0_0_0_0 line 703 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+| branch_jump_set_done_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine ibex_id_stage_0_2_0_0_0_0_0_0 line 768 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_id_stage.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    id_fsm_q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_ex_block' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "RV32M=2,RV32B=0,BranchTargetALU=1'h0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ibex_load_store_unit' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "MemECC=1'h0,MemDataWidth=32'h00000020". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:122: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:130: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:142: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:156: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:119: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:176: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:229: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:244: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:283: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv:322: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 118 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           119            |    user/user     |
+|           122            |    user/user     |
+|           130            |    user/user     |
+|           142            |    user/user     |
+|           156            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 175 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           176            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 228 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           229            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 243 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           244            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 282 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           283            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 321 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           322            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 369 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           385            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_load_store_unit_0_00000020 line 190 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_load_store_unit_0_00000020 line 199 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_we_q_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| rdata_offset_q_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_type_q_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+| data_sign_ext_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_load_store_unit_0_00000020 line 219 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   addr_last_q_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_load_store_unit_0_00000020 line 492 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_load_store_unit.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+|      lsu_err_q_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      ls_fsm_cs_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| handle_misaligned_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      pmp_err_q_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_wb_stage' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "ResetAll=1'h0,WritebackStage=1'h0,DummyInstructions=1'h0". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ibex_cs_registers' instantiated from design 'ibex_core_0_00000000_00000004_0_00000000_00000028_0_2_0_0_0_0_0_00000020_00000016_00000040_0_0_00000001_0_ac533bf4_0_0_0_00000020_0_00000020_1a110000_00000fff_1a110800_1a110808' with
+	the parameters "DbgTriggerEn=1'h0,DbgHwBreakNum=32'h00000001,DataIndTiming=1'h0,DummyInstructions=1'h0,ShadowCSR=1'h0,ICache=1'h0,MHPMCounterNum=32'h00000000,MHPMCounterWidth=32'h00000028,PMPEnable=1'h0,PMPGranularity=32'h00000000,PMPNumRegions=32'h00000004,PMPRstCfg=96'h000000000000000000000000,PMPRstAddr=544'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,PMPRstMsecCfg=3'h0,RV32E=1'h0,RV32M=2,RV32B=0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv:164: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv:164: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv:1254: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv:1258: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv:825: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 328 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           333            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 564 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           608            |    user/user     |
+|           714            |    user/user     |
+|           717            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 824 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           825            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0 line 810 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   priv_lvl_q_reg    | Flip-flop |   2   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0 line 1428 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_cs_registers.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mcountinhibit_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+============================================================================================================================
+|                                    block name/line                                     | Inputs | Outputs | # sel inputs |
+============================================================================================================================
+| ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0/476 |   32   |   65    |      5       |
+============================================================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_prefetch_buffer' instantiated from design 'ibex_if_stage_1a110800_1a110808_0_0_0_00000020_00000016_00000040_0_0_ac533bf4_0_0_00000020' with
+	the parameters "ResetAll=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_prefetch_buffer.sv:81: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_prefetch_buffer.sv:226: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine ibex_prefetch_buffer_0 line 159 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_prefetch_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  stored_addr_q_reg  | Flip-flop |  30   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_prefetch_buffer_0 line 183 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_prefetch_buffer.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  fetch_addr_q_reg   | Flip-flop |  30   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_prefetch_buffer_0 line 243 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_prefetch_buffer.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+|  branch_discard_q_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     valid_req_q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    discard_req_q_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| rdata_outstanding_q_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_compressed_decoder'. (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:45: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:142: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:124: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:86: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:208: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv:42: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 36 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_compressed_decoder.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            42            |    user/user     |
+|            45            |    user/user     |
+|            86            |    user/user     |
+|           124            |    user/user     |
+|           142            |    user/user     |
+|           208            |    user/user     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_decoder' instantiated from design 'ibex_id_stage_0_2_0_0_0_0_0_0' with
+	the parameters "RV32E=1'h0,RV32M=2,RV32B=0,BranchTargetALU=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:418: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:418: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:427: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:700: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:722: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:755: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:840: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:855: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:861: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:867: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:873: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:879: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:885: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:835: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:917: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:928: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:902: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:954: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1011: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1017: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1023: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1024: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1025: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1026: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1028: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1029: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1030: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1032: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1033: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1034: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1037: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1038: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1039: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1042: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1043: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1044: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1045: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1048: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1051: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1052: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1054: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1057: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1060: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1063: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1066: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1069: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1072: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1077: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1080: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1083: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1088: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1094: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:1153: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:357: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv:826: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 208 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           240            |    user/user     |
+|           280            |    user/user     |
+|           309            |    user/user     |
+|           326            |    user/user     |
+|           357            |    user/user     |
+|           366            |    user/user     |
+|           382            |    user/user     |
+|           407            |    user/user     |
+|           459            |    user/user     |
+|           569            |    user/user     |
+|           597            |    user/user     |
+|           633            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 674 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_decoder.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           693            |    user/user     |
+|           745            |    user/user     |
+|           826            |    user/user     |
+|           996            |    user/user     |
+|           1144           |    user/user     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_controller' instantiated from design 'ibex_id_stage_0_2_0_0_0_0_0_0' with
+	the parameters "WritebackStage=1'h0,BranchPredictor=1'h0,MemECC=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv:422: signed to unsigned part selection occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv:602: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv:744: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 453 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           494            |    user/user     |
+|           757            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_controller_0_0_0 line 439 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  debug_cause_q_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_controller_0_0_0 line 874 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_controller.sv'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+|     illegal_insn_q_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       ctrl_fsm_cs_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       nmi_mode_q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    do_single_step_q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      debug_mode_q_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| enter_debug_mode_prio_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       load_err_q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|       store_err_q_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|        exc_req_q_reg        | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=======================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_alu' instantiated from design 'ibex_ex_block_2_0_0' with
+	the parameters "RV32B=0". (HDL-193)
+
+Statistics for case statements in always block at line 55 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            60            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 84 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            85            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 96 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            97            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 119 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           120            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 159 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           160            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 304 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           305            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 371 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           372            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 391 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           392            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 1319 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_alu.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1322           |    user/user     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_multdiv_fast' instantiated from design 'ibex_ex_block_2_0_0' with
+	the parameters "RV32M=2". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv:293: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 282 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           293            |    user/user     |
+===============================================
+
+Statistics for case statements in always block at line 412 in file
+	'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           425            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine ibex_multdiv_fast_RV32M2 line 101 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  div_by_zero_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  div_counter_q_reg  | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   md_state_q_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| op_numerator_q_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  op_quotient_q_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_multdiv_fast_RV32M2 line 367 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_multdiv_fast.sv'.
+==========================================================================================
+|         Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==========================================================================================
+| gen_mult_fast.mult_state_q_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+==========================================================================================
+Statistics for MUX_OPs
+==================================================================
+|       block name/line        | Inputs | Outputs | # sel inputs |
+==================================================================
+| ibex_multdiv_fast_RV32M2/478 |   32   |    1    |      5       |
+==================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=6,ShadowCopy=1'h0,ResetValue=6'h10". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_csr_6_0_10 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rdata_q_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=32,ShadowCopy=1'h0,ResetValue=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv:14: Default value of the sized parameter 'ResetValue' has been overridden with an expression whose self-determined type is not as wide as the parameter. (ELAB-2029)
+
+Inferred memory devices in process
+	in routine ibex_csr_32_0_0 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=18,ShadowCopy=1'h0,ResetValue=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv:14: Default value of the sized parameter 'ResetValue' has been overridden with an expression whose self-determined type is not as wide as the parameter. (ELAB-2029)
+
+Inferred memory devices in process
+	in routine ibex_csr_18_0_0 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=7,ShadowCopy=1'h0,ResetValue=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv:14: Default value of the sized parameter 'ResetValue' has been overridden with an expression whose self-determined type is not as wide as the parameter. (ELAB-2029)
+
+Inferred memory devices in process
+	in routine ibex_csr_7_0_0 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=32,ShadowCopy=1'h0,ResetValue=32'h00000001". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_csr_32_0_00000001 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  31   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rdata_q_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=32,ShadowCopy=1'h0,ResetValue=32'h40000003". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_csr_32_0_40000003 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  29   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rdata_q_reg     | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=3,ShadowCopy=1'h0,ResetValue=3'h4". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_csr_3_0_4 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     rdata_q_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_counter' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "CounterWidth=64". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_counter_CounterWidth64 line 76 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    counter_q_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_counter' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "CounterWidth=64,ProvideValUpd=1". (HDL-193)
+
+Inferred memory devices in process
+	in routine ibex_counter_CounterWidth64_ProvideValUpd1 line 76 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_counter.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    counter_q_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_csr' instantiated from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_2_0' with
+	the parameters "Width=8,ShadowCopy=1'h0,ResetValue=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv:14: Default value of the sized parameter 'ResetValue' has been overridden with an expression whose self-determined type is not as wide as the parameter. (ELAB-2029)
+
+Inferred memory devices in process
+	in routine ibex_csr_8_0_0 line 28 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_csr.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ibex_fetch_fifo' instantiated from design 'ibex_prefetch_buffer_0' with
+	the parameters "NUM_REQS=32'h00000002,ResetAll=1'h0". (HDL-193)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_fetch_fifo.sv:214: signed to unsigned conversion occurs. (VER-318)
+Warning:  /mnt/hgfs/0_GP/RTL/V_3_2/ibex_fetch_fifo.sv:255: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine ibex_fetch_fifo_00000002_0 line 161 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_fetch_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  instr_addr_q_reg   | Flip-flop |  31   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_fetch_fifo_00000002_0 line 228 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_fetch_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     valid_q_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ibex_fetch_fifo_00000002_0 line 248 in file
+		'/mnt/hgfs/0_GP/RTL/V_3_2/ibex_fetch_fifo.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rdata_q_reg     | Flip-flop |  96   |  Y  | N  | N  | N  | N  | N  | N  |
+|      err_q_reg      | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
