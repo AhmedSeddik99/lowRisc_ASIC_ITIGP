@@ -1,0 +1,4 @@
+Information: Loading SDC version 2.1 file '/mnt/hgfs/0_GP/Final_2/1_DFT/output/ibex_wrapper.sdc' (FILE-007)
+Warning: Redefining clock 'clk_i'.  
+ Previously defined at: /mnt/hgfs/0_GP/Final_2/1_DFT/output/ibex_wrapper.sdc, line 933; /mnt/hgfs/0_GP/Final_2/1_DFT/output/ibex_wrapper.sdc, line 934 (UIC-034)
+1

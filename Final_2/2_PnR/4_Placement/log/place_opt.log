@@ -1,0 +1,2492 @@
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1599880 1596000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+Running merge clock gates
+Setting all modes active.
+Information: CTS will work on the following scenarios. (CTS-101)
+   Func_Fast	(Mode: Func; Corner: Fast)
+   Func_Slow	(Mode: Func; Corner: Slow)
+Information: CTS will work on all clocks in active scenarios, including 1 master clocks and 1 generated clocks. (CTS-107)
+Information: Clock derating is disabled
+
+CTS related app options set by user:
+   No CTS related app option is set.
+
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN2_V2_0P5'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN2_V2_1'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN2_V2_2'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN2_V2_4'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN4_V2_0P5'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN4_V2_1'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN4_V2_2'. (SQM-2004)
+No single-bit representative was found for multibit lib cell 'saed14hvt/SAEDHVT14_FSDN4_V2_4'. (SQM-2004)
+
+MCG (merge_clock_gates) Statistics: ICG
+    ICG                           0
+    Attempt                       0
+    Survivor                      0
+    Removed                       0
+    Total ICG at the end          0
+
+Clearing enable all modes setting.
+
+MCG (merge_clock_gates) Statistics: Total
+    ICG                           0
+    Attempt                       0
+    Survivor                      0
+    Removed                       0
+    Total ICG at the end          0
+
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1599880 1596000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+INFO: sweep stats: 0 gates / 0 nets gobbled, 0 gates (0 seq) simplified
+Running initial placement
+----------------------------------------------------------------
+running create_placement
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Warning: turning e-eLpp off because no active dynamic power scenarios were found
+
+Placement Options:
+Effort:                        high_effort         
+Timing Driven:                 true                
+Buffering Aware Timing Driven: true                
+Seed locs:                     false               
+Incremental:                   false               
+Congestion:                    false               
+
+Printing options for 'place.coarse.*' (non-default only)
+place.coarse.congestion_driven_max_util                 :	 0.5                 
+place.coarse.continue_on_missing_scandef                :	 true                
+place.coarse.max_density                                :	 0.2                 
+place.coarse.target_routing_density                     :	 0.7                 
+
+Start transferring placement data.
+Restructuring in 3 hierarchies
+CGRW: importing permutable pins & pairs, size 8 and above
+Information: Automatic timing control is enabled.
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+DTDP placement: scenario=Func_Slow
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Completed transferring placement data.
+Running placement using 1 thread(s)
+Information: Automatic density control has selected the following settings: max_density 0.20, congestion_driven_max_util 0.50. (PLACE-027)
+Running precluster optimization.
+coarse place 0% done.
+coarse place 8% done.
+coarse place 17% done.
+coarse place 25% done.
+coarse place 33% done.
+coarse place 42% done.
+coarse place 50% done.
+coarse place 58% done.
+coarse place 67% done.
+coarse place 75% done.
+coarse place 83% done.
+coarse place 92% done.
+coarse place 100% done.
+Information: Coarse placer weighted wire length estimate = 2.66151e+09
+----------------------------------------------------------------
+
+Running initial HFS and DRC step.
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Current block utilization is '0.38640', effective utilization is '0.57320'. (OPT-055)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133596 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138776 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18774, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 991, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:24     0.000     0.000 11043.701  3676.005 1.000e+06      1008       880         0     0.000       564 
+
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+APSINFO: No multi-Vth libcells found, turning off percentage LVT optimization flow
+START_FUNC: psynopt_delay_opto CPU:     52 s ( 0.01 hr) ELAPSE:    205 s ( 0.06 hr) MEM-PEAK:   564 Mb Mon Jul  7 20:24:54 2025
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+INFO: sweep stats: 12 gates / 381 nets gobbled, 0 gates (0 seq) simplified
+Isolated 0 ports, skipped 0 ports
+Already Isolated 0 ports, Deleted 0 existing Isolation cells 
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:26     0.000     0.000 11038.506  3676.005 1.000e+06      1008       879         0     0.000       564 
+
+END_FUNC: psynopt_delay_opto   CPU:     53 s ( 0.01 hr) ELAPSE:    206 s ( 0.06 hr) MEM-PEAK:   564 Mb Mon Jul  7 20:24:55 2025
+
+    Scenario Func_Fast  WNS = 0.000000, TNS = 0.000000, NVP = 0
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+    Scenario Func_Fast  WNHS = 0.088978, TNHS = 272.038455, NHVP = 4055
+    Scenario Func_Slow  WNHS = 0.076928, TNHS = 104.488181, NHVP = 3455
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK     MIN DELAY 
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY       COST   
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- -----------
+      0:03:27     0.000     0.000 11038.506  3676.005 1.000e+06      1008       879         0     0.000       564    -0.089
+
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Collecting Drivers ...  
+Design max_transition = 2.000
+Design max_capacitance = inf
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Port scan_out_3 does not have valid locaiton, buffert-tree root ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[31]/Q skipped
+Warning: Port scan_out_2 does not have valid locaiton, buffert-tree root ibex_top_inst/u_ibex_core/cs_registers_i/u_mtval_csr/rdata_q_reg[31]/Q skipped
+Warning: Buffert-tree root scan_en skipped, because it has no valid location
+Warning: Buffert-tree root scan_in_0 skipped, because it has no valid location
+Warning: Port scan_out_0 does not have valid locaiton, buffert-tree root ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[16].rf_reg_q_reg[5]/Q skipped
+Warning: Buffert-tree root scan_in_1 skipped, because it has no valid location
+Warning: Port scan_out_1 does not have valid locaiton, buffert-tree root ibex_top_inst/u_ibex_core/cs_registers_i/mcountinhibit_q_reg[0]/Q skipped
+Warning: Buffert-tree root scan_in_2 skipped, because it has no valid location
+Warning: Buffert-tree root scan_in_3 skipped, because it has no valid location
+Found 32 buffer-tree drivers
+
+Roi-HfsDrc SN: 3403505 (1233.581421)
+
+Processing Buffer Trees  (ROI) ... 
+
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+    [4]  10% ...
+    [8]  20% ...
+    [12]  30% ...
+    [16]  40% ...
+    [20]  50% ...
+    [24]  60% ...
+    [28]  70% ...
+    [32]  80% ...
+    [32] 100%  Done
+
+                  Deleted        Added
+------------ ------------ ------------
+    Buffers:           59           76
+  Inverters:          125           29
+------------ ------------ ------------
+      Total:          184          105
+------------ ------------ ------------
+
+Number of Drivers Sized: 0 [0.00%]
+
+ZBuf-MEM(max-mem) = total 599504 K / inuse 579048 K
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.134690 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138806 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18694, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1044, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+
+Running initial optimization step.
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+START_FUNC: psynopt_delay_opto CPU:     58 s ( 0.02 hr) ELAPSE:    212 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:01 2025
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:31     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+END_FUNC: psynopt_delay_opto   CPU:     59 s ( 0.02 hr) ELAPSE:    212 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:01 2025
+START_FUNC: psynopt_delay_opto CPU:     59 s ( 0.02 hr) ELAPSE:    212 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:01 2025
+Drc Mode Option: auto
+ABF: Best buffer=SAEDHVT14_BUF_S_20: best inverter=SAEDHVT14_INV_20: useInverter=true: effort=low: 1.330: Func_Slow: 0
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+ABF: Core Area = 50 X 50 ()
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:32     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+
+    Processing cells 
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:32     0.000     0.000 11066.300     0.000    11.628      1025       783         0     0.000       585 
+
+END_FUNC: psynopt_delay_opto   CPU:     59 s ( 0.02 hr) ELAPSE:    213 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:02 2025
+START_FUNC: psynopt_delay_opto CPU:     59 s ( 0.02 hr) ELAPSE:    213 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:02 2025
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:34     0.000     0.000 10937.007     0.000    11.628       623       739         0     0.000       585 
+
+END_FUNC: psynopt_delay_opto   CPU:     61 s ( 0.02 hr) ELAPSE:    215 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:04 2025
+START_FUNC: psynopt_delay_opto CPU:     61 s ( 0.02 hr) ELAPSE:    215 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:04 2025
+
+    Processing cells .....10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:35     0.000     0.000 10937.007     0.000    11.628       623       739         0     0.000       585 
+
+END_FUNC: psynopt_delay_opto   CPU:     62 s ( 0.02 hr) ELAPSE:    215 s ( 0.06 hr) MEM-PEAK:   585 Mb Mon Jul  7 20:25:04 2025
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133592 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138663 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18248, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1108, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:03:36     0.000     0.000 10937.007     0.000    11.580       623       739         0     0.000       585 
+
+
+INFO: sweep stats: 0 gates / 11 nets gobbled, 0 gates (0 seq) simplified
+
+Running final (timing-driven) placement step.
+----------------------------------------------------------------
+Running congestion-aware direct-timing-driven placement
+Information: Current block utilization is '0.38220', effective utilization is '0.56528'. (OPT-055)
+chip utilization before DTDP: 0.57
+Start Timing-driven placement
+
+Placement Options:
+Effort:                        medium_effort       
+Timing Driven:                 true                
+Buffering Aware Timing Driven: false               
+Seed locs:                     true                
+Incremental:                   false               
+Congestion:                    true                
+Congestion Effort:             high                
+
+Printing options for 'place.coarse.*' (non-default only)
+place.coarse.congestion_driven_max_util                 :	 0.5                 
+place.coarse.continue_on_missing_scandef                :	 true                
+place.coarse.max_density                                :	 0.2                 
+place.coarse.target_routing_density                     :	 0.7                 
+
+Start transferring placement data.
+Completed transferring placement data.
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Snapped 17341 standard cells to the nearest  cellrow to improve the accuracy of congestion analysis.
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    5  Alloctr    5  Proc 1651 
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.placement_timing_driven_mode                     :	 false               
+global.timing_driven                                    :	 false               
+
+Begin global routing.
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:01 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Read DB] Stage (MB): Used   98  Alloctr   99  Proc    2 
+[End of Read DB] Total (MB): Used  103  Alloctr  104  Proc 1653 
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (-18.00,-18.00,178.00,178.00)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M2, dir Hor, min width = 0.03, min space = 0.03 pitch = 0.06
+layer M3, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M4, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.07
+layer M5, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M6, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M7, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M8, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M9, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer MRDL, dir Hor, min width = 2.00, min space = 2.00 pitch = 0.60
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Build Tech Data] Total (MB): Used  106  Alloctr  107  Proc 1653 
+Net statistics:
+Total number of nets     = 18542
+Number of nets to route  = 18253
+Number of single or zero port nets = 235
+54 nets are fully connected,
+ of which 54 are detail routed and 0 are global routed.
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    6  Alloctr    6  Proc    4 
+[End of Build All Nets] Total (MB): Used  112  Alloctr  113  Proc 1658 
+Average gCell capacity  2.71	 on layer (1)	 M1
+Average gCell capacity  9.37	 on layer (2)	 M2
+Average gCell capacity  6.97	 on layer (3)	 M3
+Average gCell capacity  8.01	 on layer (4)	 M4
+Average gCell capacity  4.94	 on layer (5)	 M5
+Average gCell capacity  4.93	 on layer (6)	 M6
+Average gCell capacity  4.89	 on layer (7)	 M7
+Average gCell capacity  2.84	 on layer (8)	 M8
+Average gCell capacity  2.84	 on layer (9)	 M9
+Average gCell capacity  0.99	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.10	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.10	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 5.00	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 5.00	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 5.00	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1069290
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used   10  Alloctr   11  Proc   18 
+[End of Build Congestion map] Total (MB): Used  123  Alloctr  124  Proc 1676 
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used   19  Alloctr   19  Proc   23 
+[End of Build Data] Total (MB): Used  123  Alloctr  124  Proc 1676 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  123  Alloctr  124  Proc 1676 
+Information: Using 1 threads for routing. (ZRT-444)
+placement fast mode ON
+multi gcell levels ON
+
+Start GR phase 0
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:01 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Initial Routing] Stage (MB): Used    9  Alloctr    9  Proc   15 
+[End of Initial Routing] Total (MB): Used  133  Alloctr  134  Proc 1691 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =  2224 Max = 6 GRCs =  2917 (1.36%)
+Initial. H routing: Overflow =   668 Max = 6 (GRCs =  1) GRCs =   839 (0.78%)
+Initial. V routing: Overflow =  1556 Max = 6 (GRCs =  2) GRCs =  2078 (1.94%)
+Initial. M1         Overflow =     1 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M2         Overflow =   557 Max = 6 (GRCs =  1) GRCs =   688 (0.64%)
+Initial. M3         Overflow =  1538 Max = 6 (GRCs =  2) GRCs =  2041 (1.91%)
+Initial. M4         Overflow =   110 Max = 3 (GRCs =  2) GRCs =   151 (0.14%)
+Initial. M5         Overflow =    16 Max = 1 (GRCs = 36) GRCs =    36 (0.03%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 262092.39
+Initial. Layer M1 wire length = 64.36
+Initial. Layer M2 wire length = 87539.84
+Initial. Layer M3 wire length = 106011.87
+Initial. Layer M4 wire length = 36793.25
+Initial. Layer M5 wire length = 20081.13
+Initial. Layer M6 wire length = 6064.22
+Initial. Layer M7 wire length = 5496.80
+Initial. Layer M8 wire length = 40.92
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 120720
+Initial. Via VIA12SQ_C count = 49062
+Initial. Via VIA23SQ_C count = 64516
+Initial. Via VIA34SQ_C count = 4698
+Initial. Via VIA45SQ count = 1464
+Initial. Via VIA56SQ count = 585
+Initial. Via VIA67SQ_C count = 385
+Initial. Via VIA78SQ_C count = 8
+Initial. Via VIA89_C count = 2
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  133  Alloctr  134  Proc 1691 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   354 Max = 6 GRCs =   494 (0.23%)
+phase1. H routing: Overflow =   172 Max = 6 (GRCs =  1) GRCs =   209 (0.20%)
+phase1. V routing: Overflow =   181 Max = 5 (GRCs =  1) GRCs =   285 (0.27%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =   164 Max = 6 (GRCs =  1) GRCs =   191 (0.18%)
+phase1. M3         Overflow =   177 Max = 5 (GRCs =  1) GRCs =   273 (0.26%)
+phase1. M4         Overflow =     8 Max = 1 (GRCs = 18) GRCs =    18 (0.02%)
+phase1. M5         Overflow =     4 Max = 1 (GRCs = 12) GRCs =    12 (0.01%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 263449.10
+phase1. Layer M1 wire length = 63.87
+phase1. Layer M2 wire length = 84634.27
+phase1. Layer M3 wire length = 101833.10
+phase1. Layer M4 wire length = 40582.94
+phase1. Layer M5 wire length = 24059.92
+phase1. Layer M6 wire length = 6545.70
+phase1. Layer M7 wire length = 5685.41
+phase1. Layer M8 wire length = 43.90
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 123264
+phase1. Via VIA12SQ_C count = 49044
+phase1. Via VIA23SQ_C count = 65015
+phase1. Via VIA34SQ_C count = 5894
+phase1. Via VIA45SQ count = 2248
+phase1. Via VIA56SQ count = 647
+phase1. Via VIA67SQ_C count = 404
+phase1. Via VIA78SQ_C count = 10
+phase1. Via VIA89_C count = 2
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  133  Alloctr  134  Proc 1691 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    68 Max = 3 GRCs =    60 (0.03%)
+phase2. H routing: Overflow =     2 Max = 2 (GRCs =  1) GRCs =     1 (0.00%)
+phase2. V routing: Overflow =    66 Max = 3 (GRCs =  2) GRCs =    59 (0.06%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     2 Max = 2 (GRCs =  1) GRCs =     1 (0.00%)
+phase2. M3         Overflow =    66 Max = 3 (GRCs =  2) GRCs =    59 (0.06%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 263460.47
+phase2. Layer M1 wire length = 63.87
+phase2. Layer M2 wire length = 84855.07
+phase2. Layer M3 wire length = 101929.65
+phase2. Layer M4 wire length = 40373.29
+phase2. Layer M5 wire length = 23967.62
+phase2. Layer M6 wire length = 6545.38
+phase2. Layer M7 wire length = 5681.69
+phase2. Layer M8 wire length = 43.90
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 123230
+phase2. Via VIA12SQ_C count = 49044
+phase2. Via VIA23SQ_C count = 65016
+phase2. Via VIA34SQ_C count = 5875
+phase2. Via VIA45SQ count = 2238
+phase2. Via VIA56SQ count = 643
+phase2. Via VIA67SQ_C count = 402
+phase2. Via VIA78SQ_C count = 10
+phase2. Via VIA89_C count = 2
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:04 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[End of Whole Chip Routing] Stage (MB): Used   29  Alloctr   29  Proc   38 
+[End of Whole Chip Routing] Total (MB): Used  133  Alloctr  134  Proc 1691 
+
+Information: Global Routing terminated early: false (ZRT-103)
+
+Congestion utilization per direction:
+Average vertical track utilization   = 10.78 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization = 10.06 %
+Peak    horizontal track utilization = 80.00 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used  -10  Alloctr  -10  Proc    0 
+[GR: Done] Total (MB): Used  125  Alloctr  126  Proc 1691 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:05 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[GR: Done] Stage (MB): Used  119  Alloctr  120  Proc   40 
+[GR: Done] Total (MB): Used  125  Alloctr  126  Proc 1691 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used -113  Alloctr -114  Proc    0 
+[DBOUT] Total (MB): Used    4  Alloctr    5  Proc 1691 
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:05 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc   40 
+[End of Global Routing] Total (MB): Used    4  Alloctr    5  Proc 1691 
+Information: 0.49% of design has horizontal routing density above target_routing_density of 0.70.
+Information: 6.86% of design has vertical routing density above target_routing_density of 0.70.
+Running placement using 1 thread(s)
+Information: Automatic density control has selected the following settings: max_density 0.20, congestion_driven_max_util 0.50. (PLACE-027)
+coarse place 100% done.
+Information: Reducing cell density for 5.6% of the movable cells to alleviate congestion. This changes the average cell density in non-congested areas from 0.40 to 0.40. (PLACE-030)
+Information: Coarse placer weighted wire length estimate = 2.60039e+09
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18248, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1108, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+eLpp: using low effort
+Warning: turning eLpp off because no active dynamic power scenarios were found
+Start transferring placement data.
+Information: Automatic timing control is enabled.
+DTDP placement: scenario=Func_Slow
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Completed transferring placement data.
+Running placement using 1 thread(s)
+Information: Automatic density control has selected the following settings: max_density 0.20, congestion_driven_max_util 0.50. (PLACE-027)
+coarse place 50% done.
+coarse place 67% done.
+coarse place 83% done.
+coarse place 100% done.
+Information: Coarse placer weighted wire length estimate = 2.53147e+09
+Completed Timing-driven placement, Elapsed time =   0: 0:12 
+Moved 17445 out of 19589 cells, ratio = 0.890551
+Total displacement = 44452.808594(um)
+Max displacement = 43.655300(um), U8141 (107.195297, 111.996803, 0) => (107.150398, 68.386398, 0)
+Displacement histogram:
+----------------------------------------------------------------
+Fixing logic constant
+Fixing logic constant
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133592 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138663 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18248, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1095, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+------------------------
+Begin tie-cell insertion
+INFO: debug level = 0
+INFO: max fanout = 25
+INFO: max diameter (in user unit) = 12.00
+INFO: Available logic one lib cells: SAEDHVT14_TIE1_V1_2 SAEDHVT14_TIE1_4 
+INFO: Available logic zero lib cells: SAEDHVT14_TIE0_4 SAEDHVT14_TIE0_V1_2 
+INFO: Tie cell support for abstract block enabled
+INFO: Found 1 constant zero nets with 0 load pins
+INFO: Found 1 tie-hi cells with 35 load pins
+INFO: Found 63 tie-low cells with 200 load pins
+INFO: Number of nets with violations: 65
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+INFO: Removed 1 tie-hi cells
+INFO: Removed 63 tie-low cells
+INFO: Added 14 tie-hi cells
+INFO: Added 63 tie-low cells
+----------------------------------------------------------------
+Running congestion-aware direct-timing-driven placement
+Information: Current block utilization is '0.38240', effective utilization is '0.56558'. (OPT-055)
+chip utilization before DTDP: 0.57
+Start Timing-driven placement
+
+Placement Options:
+Effort:                        medium_effort       
+Timing Driven:                 true                
+Buffering Aware Timing Driven: false               
+Seed locs:                     true                
+Incremental:                   false               
+Congestion:                    true                
+Congestion Effort:             high                
+
+Printing options for 'place.coarse.*' (non-default only)
+place.coarse.congestion_driven_max_util                 :	 0.5                 
+place.coarse.continue_on_missing_scandef                :	 true                
+place.coarse.max_density                                :	 0.2                 
+place.coarse.target_routing_density                     :	 0.7                 
+
+Start transferring placement data.
+Completed transferring placement data.
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Snapped 17382 standard cells to the nearest  cellrow to improve the accuracy of congestion analysis.
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    5  Alloctr    5  Proc 1735 
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.placement_timing_driven_mode                     :	 false               
+global.timing_driven                                    :	 false               
+
+Begin global routing.
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:01 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Read DB] Stage (MB): Used   98  Alloctr   99  Proc    0 
+[End of Read DB] Total (MB): Used  103  Alloctr  104  Proc 1735 
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (-18.00,-18.00,178.00,178.00)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M2, dir Hor, min width = 0.03, min space = 0.03 pitch = 0.06
+layer M3, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M4, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.07
+layer M5, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M6, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M7, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M8, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M9, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer MRDL, dir Hor, min width = 2.00, min space = 2.00 pitch = 0.60
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    2  Alloctr    2  Proc    0 
+[End of Build Tech Data] Total (MB): Used  106  Alloctr  107  Proc 1735 
+Net statistics:
+Total number of nets     = 18555
+Number of nets to route  = 18248
+Number of single or zero port nets = 235
+72 nets are fully connected,
+ of which 72 are detail routed and 0 are global routed.
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    6  Alloctr    6  Proc    0 
+[End of Build All Nets] Total (MB): Used  112  Alloctr  113  Proc 1735 
+Average gCell capacity  2.71	 on layer (1)	 M1
+Average gCell capacity  9.37	 on layer (2)	 M2
+Average gCell capacity  6.97	 on layer (3)	 M3
+Average gCell capacity  8.01	 on layer (4)	 M4
+Average gCell capacity  4.94	 on layer (5)	 M5
+Average gCell capacity  4.93	 on layer (6)	 M6
+Average gCell capacity  4.89	 on layer (7)	 M7
+Average gCell capacity  2.84	 on layer (8)	 M8
+Average gCell capacity  2.84	 on layer (9)	 M9
+Average gCell capacity  0.99	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.10	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.10	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 5.00	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 5.00	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 5.00	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1069290
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used   10  Alloctr   11  Proc    0 
+[End of Build Congestion map] Total (MB): Used  123  Alloctr  124  Proc 1735 
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[End of Build Data] Total (MB): Used  123  Alloctr  124  Proc 1735 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  123  Alloctr  124  Proc 1735 
+Information: Using 1 threads for routing. (ZRT-444)
+placement fast mode ON
+multi gcell levels ON
+
+Start GR phase 0
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:01 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Initial Routing] Stage (MB): Used    9  Alloctr    9  Proc    0 
+[End of Initial Routing] Total (MB): Used  133  Alloctr  134  Proc 1735 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =  2114 Max = 7 GRCs =  2781 (1.30%)
+Initial. H routing: Overflow =   601 Max = 5 (GRCs =  2) GRCs =   750 (0.70%)
+Initial. V routing: Overflow =  1513 Max = 7 (GRCs =  2) GRCs =  2031 (1.90%)
+Initial. M1         Overflow =     5 Max = 2 (GRCs =  1) GRCs =     4 (0.00%)
+Initial. M2         Overflow =   507 Max = 5 (GRCs =  2) GRCs =   617 (0.58%)
+Initial. M3         Overflow =  1490 Max = 7 (GRCs =  2) GRCs =  1993 (1.86%)
+Initial. M4         Overflow =    94 Max = 4 (GRCs =  1) GRCs =   132 (0.12%)
+Initial. M5         Overflow =    17 Max = 1 (GRCs = 34) GRCs =    34 (0.03%)
+Initial. M6         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 256243.16
+Initial. Layer M1 wire length = 29.80
+Initial. Layer M2 wire length = 85447.30
+Initial. Layer M3 wire length = 105656.20
+Initial. Layer M4 wire length = 35180.80
+Initial. Layer M5 wire length = 20100.53
+Initial. Layer M6 wire length = 5082.66
+Initial. Layer M7 wire length = 4726.86
+Initial. Layer M8 wire length = 19.02
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 120791
+Initial. Via VIA12SQ_C count = 49102
+Initial. Via VIA23SQ_C count = 65034
+Initial. Via VIA34SQ_C count = 4364
+Initial. Via VIA45SQ count = 1398
+Initial. Via VIA56SQ count = 519
+Initial. Via VIA67SQ_C count = 368
+Initial. Via VIA78SQ_C count = 4
+Initial. Via VIA89_C count = 2
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  133  Alloctr  134  Proc 1735 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   390 Max = 9 GRCs =   485 (0.23%)
+phase1. H routing: Overflow =   207 Max = 5 (GRCs =  1) GRCs =   219 (0.20%)
+phase1. V routing: Overflow =   183 Max = 9 (GRCs =  1) GRCs =   266 (0.25%)
+phase1. M1         Overflow =     3 Max = 1 (GRCs =  3) GRCs =     3 (0.00%)
+phase1. M2         Overflow =   196 Max = 5 (GRCs =  1) GRCs =   199 (0.19%)
+phase1. M3         Overflow =   180 Max = 9 (GRCs =  1) GRCs =   261 (0.24%)
+phase1. M4         Overflow =    10 Max = 2 (GRCs =  1) GRCs =    20 (0.02%)
+phase1. M5         Overflow =     0 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 257491.89
+phase1. Layer M1 wire length = 28.67
+phase1. Layer M2 wire length = 83487.92
+phase1. Layer M3 wire length = 101351.52
+phase1. Layer M4 wire length = 37955.93
+phase1. Layer M5 wire length = 24120.82
+phase1. Layer M6 wire length = 5484.95
+phase1. Layer M7 wire length = 5043.06
+phase1. Layer M8 wire length = 19.02
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 122915
+phase1. Via VIA12SQ_C count = 49088
+phase1. Via VIA23SQ_C count = 65451
+phase1. Via VIA34SQ_C count = 5326
+phase1. Via VIA45SQ count = 2099
+phase1. Via VIA56SQ count = 569
+phase1. Via VIA67SQ_C count = 376
+phase1. Via VIA78SQ_C count = 4
+phase1. Via VIA89_C count = 2
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  133  Alloctr  134  Proc 1735 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    65 Max = 8 GRCs =    56 (0.03%)
+phase2. H routing: Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase2. V routing: Overflow =    63 Max = 8 (GRCs =  1) GRCs =    54 (0.05%)
+phase2. M1         Overflow =     1 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase2. M2         Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase2. M3         Overflow =    62 Max = 8 (GRCs =  1) GRCs =    53 (0.05%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 257503.54
+phase2. Layer M1 wire length = 27.48
+phase2. Layer M2 wire length = 83683.85
+phase2. Layer M3 wire length = 101371.09
+phase2. Layer M4 wire length = 37773.79
+phase2. Layer M5 wire length = 24100.91
+phase2. Layer M6 wire length = 5484.35
+phase2. Layer M7 wire length = 5043.06
+phase2. Layer M8 wire length = 19.02
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 122881
+phase2. Via VIA12SQ_C count = 49088
+phase2. Via VIA23SQ_C count = 65443
+phase2. Via VIA34SQ_C count = 5305
+phase2. Via VIA45SQ count = 2096
+phase2. Via VIA56SQ count = 567
+phase2. Via VIA67SQ_C count = 376
+phase2. Via VIA78SQ_C count = 4
+phase2. Via VIA89_C count = 2
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:04 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[End of Whole Chip Routing] Stage (MB): Used   29  Alloctr   29  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  133  Alloctr  134  Proc 1735 
+
+Information: Global Routing terminated early: false (ZRT-103)
+
+Congestion utilization per direction:
+Average vertical track utilization   = 10.67 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization =  9.71 %
+Peak    horizontal track utilization = 87.50 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used  -10  Alloctr  -10  Proc    0 
+[GR: Done] Total (MB): Used  125  Alloctr  126  Proc 1735 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:05 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[GR: Done] Stage (MB): Used  119  Alloctr  120  Proc    0 
+[GR: Done] Total (MB): Used  125  Alloctr  126  Proc 1735 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used -113  Alloctr -114  Proc    0 
+[DBOUT] Total (MB): Used    4  Alloctr    5  Proc 1735 
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:05 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Global Routing] Total (MB): Used    4  Alloctr    5  Proc 1735 
+Information: 0.46% of design has horizontal routing density above target_routing_density of 0.70.
+Information: 6.79% of design has vertical routing density above target_routing_density of 0.70.
+Running placement using 1 thread(s)
+Information: Automatic density control has selected the following settings: max_density 0.20, congestion_driven_max_util 0.50. (PLACE-027)
+coarse place 100% done.
+Information: Reducing cell density for 8.3% of the movable cells to alleviate congestion. This changes the average cell density in non-congested areas from 0.40 to 0.41. (PLACE-030)
+Information: Coarse placer weighted wire length estimate = 2.53254e+09
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18261, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1094, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+eLpp: using low effort
+Warning: turning eLpp off because no active dynamic power scenarios were found
+Start transferring placement data.
+Information: Automatic timing control is enabled.
+DTDP placement: scenario=Func_Slow
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Completed transferring placement data.
+Running placement using 1 thread(s)
+Information: Automatic density control has selected the following settings: max_density 0.20, congestion_driven_max_util 0.50. (PLACE-027)
+coarse place 83% done.
+coarse place 100% done.
+Information: Coarse placer weighted wire length estimate = 2.54095e+09
+Completed Timing-driven placement, Elapsed time =   0: 0:11 
+Moved 17458 out of 19602 cells, ratio = 0.890623
+Total displacement = 7968.718262(um)
+Max displacement = 3.713300(um), PLACE_optlc_358 (148.666000, 103.800003, 0) => (150.993805, 102.414497, 6)
+Displacement histogram:
+----------------------------------------------------------------
+Fixing logic constant
+Fixing logic constant
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133592 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138663 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18261, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1087, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+------------------------
+Begin tie-cell insertion
+INFO: debug level = 0
+INFO: max fanout = 25
+INFO: max diameter (in user unit) = 12.00
+INFO: Available logic one lib cells: SAEDHVT14_TIE1_V1_2 SAEDHVT14_TIE1_4 
+INFO: Available logic zero lib cells: SAEDHVT14_TIE0_4 SAEDHVT14_TIE0_V1_2 
+INFO: Tie cell support for abstract block enabled
+INFO: Found 1 constant zero nets with 0 load pins
+INFO: Found 14 tie-hi cells with 35 load pins
+INFO: Found 63 tie-low cells with 200 load pins
+INFO: Number of nets with violations: 1
+----------------------------------------------------------------
+Running legalize_placement
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Start Legalization
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 267 total shapes.
+Layer M2: cached 0 shapes out of 4272 total shapes.
+Layer M3: cached 16 shapes out of 16 total shapes.
+Cached 4400 vias out of 5112 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        19703        Yes DEFAULT_VA
+
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (3 sec)
+Legalization complete (5 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  19703
+number of references:                98
+number of site rows:                266
+number of locations attempted:   668166
+number of locations failed:      129170  (19.3%)
+
+Legality of references at locations:
+47 references had failures.
+
+Worst 10 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+  1651      64357     32456 ( 50.4%)      51757     30111 ( 58.2%)  SAEDHVT14_FSDPRBQ_V2LP_2
+   507      19814      9103 ( 45.9%)      11358      7193 ( 63.3%)  SAEDHVT14_ADDF_V2_2
+   697      16225      5415 ( 33.4%)      14368      5402 ( 37.6%)  SAEDHVT14_ND2_2
+   199       7437      3352 ( 45.1%)       5258      2972 ( 56.5%)  SAEDHVT14_ADDH_2
+   108       4727      2670 ( 56.5%)       4618      2833 ( 61.3%)  SAEDHVT14_AN3_4
+   307       7462      2178 ( 29.2%)       6317      2263 ( 35.8%)  SAEDHVT14_EN2_2
+   258       5498      1501 ( 27.3%)       4432      1579 ( 35.6%)  SAEDHVT14_FSDPQ_V2_2
+    38       2622      1597 ( 60.9%)       2591      1480 ( 57.1%)  SAEDHVT14_ND4_2
+   108       3038      1190 ( 39.2%)       3276      1266 ( 38.6%)  SAEDHVT14_AN2_4
+    93       3094      1337 ( 43.2%)       2511      1089 ( 43.4%)  SAEDHVT14_AN3_2
+
+Worst 10 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+     1        475       402 ( 84.6%)        432       423 ( 97.9%)  SAEDHVT14_MUX4_V1M_2
+     1         16        16 (100.0%)         40        33 ( 82.5%)  SAEDHVT14_EN3_2
+     1        104        74 ( 71.2%)         56        56 (100.0%)  SAEDHVT14_FSDPQ_V3_2
+     4        262       184 ( 70.2%)        152       148 ( 97.4%)  SAEDHVT14_EO3_2
+     3        519       432 ( 83.2%)        605       432 ( 71.4%)  SAEDHVT14_FSDP_V2_2
+     4        292       200 ( 68.5%)        298       214 ( 71.8%)  SAEDHVT14_FSDPSBQ_V2_2
+     1         40        40 (100.0%)        104        56 ( 53.8%)  SAEDHVT14_INV_S_9
+    38       2622      1597 ( 60.9%)       2591      1480 ( 57.1%)  SAEDHVT14_ND4_2
+   108       4727      2670 ( 56.5%)       4618      2833 ( 61.3%)  SAEDHVT14_AN3_4
+     2        136        80 ( 58.8%)        154        80 ( 51.9%)  SAEDHVT14_NR2_6
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:       17459 (219918 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.463 um ( 0.77 row height)
+rms weighted cell displacement:   0.463 um ( 0.77 row height)
+max cell displacement:            5.144 um ( 8.57 row height)
+avg cell displacement:            0.321 um ( 0.53 row height)
+avg weighted cell displacement:   0.321 um ( 0.53 row height)
+number of cells moved:            17459
+number of large displacements:       88
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[13].rf_reg_q_reg[8] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (88.2381,93.9225)
+  Legal location: (83.102,94.2)
+  Displacement:   5.144 um ( 8.57 row height)
+Cell: U12870 (SAEDHVT14_ND3_2)
+  Input location: (147.802,13.8828)
+  Legal location: (143.338,13.2)
+  Displacement:   4.515 um ( 7.53 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[20].rf_reg_q_reg[0] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (46.7003,109.977)
+  Legal location: (42.624,109.8)
+  Displacement:   4.080 um ( 6.80 row height)
+Cell: U6282 (SAEDHVT14_INV_2)
+  Input location: (154.7,7.9724)
+  Legal location: (158.73,8.4)
+  Displacement:   4.053 um ( 6.75 row height)
+Cell: ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_counter_q_reg[1] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (151.478,8.3086)
+  Legal location: (155.178,8.4)
+  Displacement:   3.701 um ( 6.17 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[13].rf_reg_q_reg[7] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (85.967,94.1563)
+  Legal location: (82.362,93.6)
+  Displacement:   3.648 um ( 6.08 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[18].rf_reg_q_reg[22] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (46.2428,135.938)
+  Legal location: (42.624,136.2)
+  Displacement:   3.628 um ( 6.05 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[15].rf_reg_q_reg[7] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (90.701,94.1647)
+  Legal location: (87.098,94.2)
+  Displacement:   3.603 um ( 6.01 row height)
+Cell: U6873 (SAEDHVT14_ND4_2)
+  Input location: (146.638,56.4426)
+  Legal location: (150.22,56.4)
+  Displacement:   3.582 um ( 5.97 row height)
+Cell: ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[28] (SAEDHVT14_FSDPRBQ_V2LP_2)
+  Input location: (146.796,8.2949)
+  Legal location: (150.146,8.4)
+  Displacement:   3.351 um ( 5.59 row height)
+
+Completed Legalization, Elapsed time =   0: 0: 6 
+Moved 17458 out of 19602 cells, ratio = 0.890623
+Total displacement = 10635.997070(um)
+Max displacement = 6.135600(um), ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_counter_q_reg[2] (149.510300, 8.236100, 0) => (154.882004, 9.000000, 2)
+Displacement histogram:
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Legalization succeeded.
+----------------------------------------------------------------
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133592 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138663 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18261, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 1092, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:04:13     0.000     0.000 10942.202     0.000    14.017       623       739         0     0.000       669 
+
+
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133592 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555938 ohm/um, via_r = 0.623007 ohm/cut, c = 0.138663 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (0 0) (1599880 1596000)
+Number of unique PDs = 1
+Number of Power Domains = 1
+Number of Voltage Areas = 1
+Number of supply Nets = 2
+Number of used supplies = 2
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Information: Current block utilization is '0.38240', effective utilization is '0.56558'. (OPT-055)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 18261, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 18260, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+    Scenario Func_Fast  WNS = 0.000000, TNS = 0.000000, NVP = 0
+    Scenario Func_Slow  WNS = 0.000000, TNS = 0.000000, NVP = 0
+
+     ELAPSED  WORST NEG TOTAL NEG              MAX       MAX     BUFFER    INVERTER   LVTH      LVTH      PEAK   
+      TIME      SLACK     SLACK     AREA    TRAN COST CAP COST    COUNT     COUNT     COUNT    PERCENT   MEMORY  
+    --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+      0:04:16     0.000     0.000 10942.202     0.000    14.017       623       739         0     0.000       669 
+
+Running final optimization step.
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+
+Isolated 0 ports, skipped 0 ports
+Already Isolated 0 ports, Deleted 0 existing Isolation cells 
+
+
+npo-place-opt timing update complete          CPU:    74 s (  0.02 hr )  ELAPSE:   257 s (  0.07 hr )  MEM-PEAK:   669 MB
+
+npo-place-opt initial QoR
+_________________________
+Scenario Mapping Table
+1: Func_Fast
+2: Func_Slow
+
+Pathgroup Mapping Table
+1: **default**
+2: **async_default**
+3: **clock_gating_default**
+4: **in2reg_default**
+5: **reg2out_default**
+6: **in2out_default**
+7: clk_i
+8: cluster_clock_gating
+
+-----------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV
+    1   1   0.0000     0.0000      0        -          -      -
+    1   2   0.0000     0.0000      0        -          -      -
+    1   3   0.0000     0.0000      0        -          -      -
+    1   4   0.0000     0.0000      0        -          -      -
+    1   5   0.0000     0.0000      0        -          -      -
+    1   6   0.0000     0.0000      0        -          -      -
+    1   7   0.0000     0.0000      0        -          -      -
+    1   8   0.0000     0.0000      0        -          -      -
+    2   1   0.0000     0.0000      0        -          -      -
+    2   2   0.0000     0.0000      0        -          -      -
+    2   3   0.0000     0.0000      0        -          -      -
+    2   4   0.0000     0.0000      0        -          -      -
+    2   5   0.0000     0.0000      0        -          -      -
+    2   6   0.0000     0.0000      0        -          -      -
+    2   7   0.0000     0.0000      0        -          -      -
+    2   8   0.0000     0.0000      0        -          -      -
+--------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage
+    1   *   0.0000     0.0000      0        -          -      -        0     0.0000        0          -
+    2   *   0.0000     0.0000      0        -          -      -        0     0.0000        4          -
+--------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage         Area    InstCnt     BufCnt     InvCnt
+    *   *   0.0000     0.0000      0   0.0000     0.0000      0        0     0.0000        4          -      9799.88      17559        627        739
+--------------------------------------------------------------------------------------------------------------------
+
+npo-place-opt initial QoR Summary       WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV  MaxCapV    Leakage         Area    InstCnt
+npo-place-opt initial QoR Summary    0.0000     0.0000      0   0.0000     0.0000      0        0        4          -      9799.88      17559
+Information: The netlist and extraction change observers are disabled for further incremental timing updates during on-route optimization. (TIM-119)
+INFO: using 1 threads
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+npo-place-opt initialization complete         CPU:    75 s (  0.02 hr )  ELAPSE:   258 s (  0.07 hr )  MEM-PEAK:   669 MB
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization summary            SETUP-COST HOLD-COST LDRC-COST        AREA       POWER     ELAPSE (hr)
+Information: The netlist and extraction change observers are enabled for further incremental timing updates. (TIM-120)
+
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization Phase 8 Iter  1          0.00      0.00         4       0.010           -           0.072
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+npo-place-opt optimization Phase 8 Iter  2          0.00      0.00         4       0.010           -           0.073
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Begin building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design
+Done building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design (time 0s)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+npo-place-opt optimization Phase 8 Iter  3          0.00      0.00         0       0.010           -           0.073
+
+CCL: Total Usage Adjustment : 1
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Updating congestion ...
+Updating congestion ...
+INFO: Derive row count 20 from GR congestion map (81/4)
+INFO: Derive col count 20 from GR congestion map (81/4)
+npo-place-opt optimization Phase 9 Iter  1          0.00      0.00         0       0.010           -           0.073
+npo-place-opt optimization Phase 9 Iter  2          0.00      0.00         0       0.010           -           0.073
+npo-place-opt optimization Phase 9 Iter  3          0.00      0.00         0       0.010           -           0.073
+npo-place-opt optimization Phase 9 Iter  4          0.00      0.00         0       0.010           -           0.073
+PBO-INFO:  LR disabled
+npo-place-opt optimization Phase 9 Iter  5          0.00      0.00         0       0.010           -           0.073
+npo-place-opt optimization Phase 9 Iter  6          0.00      0.00         0       0.010           -           0.073
+PBO-INFO:  LR disabled
+npo-place-opt optimization Phase 9 Iter  7          0.00      0.00         0       0.010           -           0.073
+
+npo-place-opt optimization Phase 10 Iter  1         0.00      0.00         0       0.010           -           0.073
+
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization Phase 11 Iter  1         0.00      0.00         0       0.010           -           0.074
+Begin building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design
+Done building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design (time 0s)
+
+npo-place-opt optimization Phase 12 Iter  1         0.00      0.00         0       0.010           -           0.075
+
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization Phase 13 Iter  1         0.00      0.00         0       0.010           -           0.075
+npo-place-opt optimization Phase 13 Iter  2         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 14 Iter  1         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 15 Iter  1         0.00      0.00         0       0.010           -           0.076
+Begin building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design
+Done building search trees for block ibex_hvt:SCRATCH_DESIGN_2147483648.design (time 0s)
+
+npo-place-opt optimization Phase 16 Iter  1         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 17 Iter  1         0.00      0.00         0       0.010           -           0.076
+npo-place-opt optimization Phase 17 Iter  2         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 18 Iter  1         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 19 Iter  1         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 20 Iter  1         0.00      0.00         0       0.010           -           0.076
+
+npo-place-opt optimization Phase 21 Iter  1         0.00      0.00         0       0.010           -           0.076
+----------------------------------------------------------------
+running legalize_placement
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 267 total shapes.
+Layer M2: cached 0 shapes out of 4272 total shapes.
+Layer M3: cached 16 shapes out of 16 total shapes.
+Cached 4400 vias out of 5112 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        19331        Yes DEFAULT_VA
+
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Legalization complete (1 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  19331
+number of references:                84
+number of site rows:                266
+number of locations attempted:   201914
+number of locations failed:        8652  (4.3%)
+
+Legality of references at locations:
+36 references had failures.
+
+Worst 10 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+  1651      13110      2589 ( 19.7%)       5472       870 ( 15.9%)  SAEDHVT14_FSDPRBQ_V2LP_2
+   189       2078       520 ( 25.0%)       1056       317 ( 30.0%)  SAEDHVT14_AN3_2
+   710       5225       492 (  9.4%)       2540       183 (  7.2%)  SAEDHVT14_ND2_2
+   507       4038       538 ( 13.3%)        922       116 ( 12.6%)  SAEDHVT14_ADDF_V2_2
+   260       2091       376 ( 18.0%)        997       114 ( 11.4%)  SAEDHVT14_FSDPQ_V2_2
+    34        464       175 ( 37.7%)        360       176 ( 48.9%)  SAEDHVT14_BUF_CDC_4
+    15        280       136 ( 48.6%)        200       127 ( 63.5%)  SAEDHVT14_INV_S_4
+   199       1563       205 ( 13.1%)        584        48 (  8.2%)  SAEDHVT14_ADDH_2
+     6        200       135 ( 67.5%)        152       116 ( 76.3%)  SAEDHVT14_INV_S_6
+   307       2445       179 (  7.3%)       1119        54 (  4.8%)  SAEDHVT14_EN2_2
+
+Worst 10 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+     1          8         8 (100.0%)          8         4 ( 50.0%)  SAEDHVT14_EN3_2
+     6        200       135 ( 67.5%)        152       116 ( 76.3%)  SAEDHVT14_INV_S_6
+     1        104        65 ( 62.5%)         56        48 ( 85.7%)  SAEDHVT14_INV_S_8
+     1          8         8 (100.0%)          8         2 ( 25.0%)  SAEDHVT14_ND2_4
+    15        280       136 ( 48.6%)        200       127 ( 63.5%)  SAEDHVT14_INV_S_4
+    34        464       175 ( 37.7%)        360       176 ( 48.9%)  SAEDHVT14_BUF_CDC_4
+     9         72        38 ( 52.8%)         48        13 ( 27.1%)  SAEDHVT14_FSDPQ_V2_4
+    17        192        57 ( 29.7%)        160        77 ( 48.1%)  SAEDHVT14_BUF_S_6
+     2         16         6 ( 37.5%)          0         0 (  0.0%)  SAEDHVT14_EO3_4
+     1          8         3 ( 37.5%)          0         0 (  0.0%)  SAEDHVT14_MUX4_V1M_2
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:       17087 (215007 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.014 um ( 0.02 row height)
+rms weighted cell displacement:   0.014 um ( 0.02 row height)
+max cell displacement:            1.036 um ( 1.73 row height)
+avg cell displacement:            0.000 um ( 0.00 row height)
+avg weighted cell displacement:   0.000 um ( 0.00 row height)
+number of cells moved:               35
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: PLACE_HFSINV_2916_201 (SAEDHVT14_INV_S_6)
+  Input location: (149.184,38.4)
+  Legal location: (150.22,38.4)
+  Displacement:   1.036 um ( 1.73 row height)
+Cell: PLACE_HFSINV_600_197 (SAEDHVT14_INV_S_4)
+  Input location: (69.486,43.2)
+  Legal location: (70.3,43.2)
+  Displacement:   0.814 um ( 1.36 row height)
+Cell: PLACE_ZBUF_inst_384 (SAEDHVT14_BUF_S_2)
+  Input location: (142.228,51)
+  Legal location: (142.228,51.6)
+  Displacement:   0.600 um ( 1.00 row height)
+Cell: PLACE_HFSINV_1795_204 (SAEDHVT14_INV_S_8)
+  Input location: (128.686,126.6)
+  Legal location: (128.094,126.6)
+  Displacement:   0.592 um ( 0.99 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/PLACE_HFSBUF_507_153 (SAEDHVT14_BUF_CDC_4)
+  Input location: (4.736,157.8)
+  Legal location: (4.218,157.8)
+  Displacement:   0.518 um ( 0.86 row height)
+Cell: PLACE_ZBUF_inst_381 (SAEDHVT14_BUF_S_2)
+  Input location: (151.848,52.8)
+  Legal location: (151.33,52.8)
+  Displacement:   0.518 um ( 0.86 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/PLACE_HFSBUF_2435_123 (SAEDHVT14_BUF_CDC_4)
+  Input location: (48.692,157.8)
+  Legal location: (48.174,157.8)
+  Displacement:   0.518 um ( 0.86 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/U3573 (SAEDHVT14_OR2_4)
+  Input location: (46.694,105)
+  Legal location: (47.212,105)
+  Displacement:   0.518 um ( 0.86 row height)
+Cell: PLACE_HFSBUF_1041_200 (SAEDHVT14_BUF_CDC_4)
+  Input location: (145.632,95.4)
+  Legal location: (146.15,95.4)
+  Displacement:   0.518 um ( 0.86 row height)
+Cell: ibex_top_inst/gen_regfile_ff.register_file_i/PLACE_HFSBUF_4890_126 (SAEDHVT14_BUF_CDC_4)
+  Input location: (65.638,131.4)
+  Legal location: (66.156,131.4)
+  Displacement:   0.518 um ( 0.86 row height)
+
+Legalization succeeded.
+Total Legalizer CPU: 2.434
+----------------------------------------------------------------
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133588 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.556013 ohm/um, via_r = 0.623218 ohm/cut, c = 0.138656 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17889, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 17888, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+
+CCL: Total Usage Adjustment : 1
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Updating congestion ...
+Updating congestion ...
+INFO: Derive row count 20 from GR congestion map (81/4)
+INFO: Derive col count 20 from GR congestion map (81/4)
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization Phase 22 Iter  1         0.00      0.00         0       0.010           -           0.078
+npo-place-opt optimization Phase 22 Iter  2         0.00      0.00         0       0.010           -           0.078
+npo-place-opt optimization Phase 22 Iter  3         0.00      0.00         0       0.010           -           0.078
+npo-place-opt optimization Phase 22 Iter  4         0.00      0.00         0       0.010           -           0.078
+PBO-INFO:  LR disabled
+npo-place-opt optimization Phase 22 Iter  5         0.00      0.00         0       0.010           -           0.078
+
+Use advanced legalizer engine : 0
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+npo-place-opt optimization Phase 23 Iter  1         0.00      0.00         0       0.010           -           0.079
+npo-place-opt optimization Phase 23 Iter  2         0.00      0.00         0       0.010           -           0.079
+
+npo-place-opt optimization Phase 24 Iter  1         0.00      0.00         0       0.010           -           0.079
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+ORB: timingScenario Func_Slow timingCorner Slow
+INFO: No leakage and power scenarios. Using regular scenarios instead.
+INFO: No active leakage scenarios. Leakage will be turned off
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+ORB: Nominal = 0.006797  Design MT = 2.000000  Target = 0.048809 (7.181 nominal)  MaxRC = 0.031415
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+npo-place-opt optimization Phase 24 Iter  2         0.00      0.00         0       0.010           -           0.079
+
+npo-place-opt optimization Phase 25 Iter  1         0.00      0.00         0       0.010           -           0.079
+----------------------------------------------------------------
+running legalize_placement
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 267 total shapes.
+Layer M2: cached 0 shapes out of 4272 total shapes.
+Layer M3: cached 16 shapes out of 16 total shapes.
+Cached 4400 vias out of 5112 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        19331        Yes DEFAULT_VA
+
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Legalization complete (1 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  19331
+number of references:                84
+number of site rows:                266
+number of locations attempted:   197080
+number of locations failed:        6764  (3.4%)
+
+Legality of references at locations:
+35 references had failures.
+
+Worst 10 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+  1651      12993      2518 ( 19.4%)       5392       839 ( 15.6%)  SAEDHVT14_FSDPRBQ_V2LP_2
+   710       5179       487 (  9.4%)       2516       183 (  7.3%)  SAEDHVT14_ND2_2
+   507       4017       538 ( 13.4%)        922       116 ( 12.6%)  SAEDHVT14_ADDF_V2_2
+   260       2060       374 ( 18.2%)        981       114 ( 11.6%)  SAEDHVT14_FSDPQ_V2_2
+   199       1563       205 ( 13.1%)        584        48 (  8.2%)  SAEDHVT14_ADDH_2
+   307       2445       179 (  7.3%)       1119        54 (  4.8%)  SAEDHVT14_EN2_2
+   189       1502       145 (  9.7%)        660        71 ( 10.8%)  SAEDHVT14_AN3_2
+    90        717       128 ( 17.9%)        272        11 (  4.0%)  SAEDHVT14_FSDPQ_V2LP_2
+   140       1086        82 (  7.6%)        516        41 (  7.9%)  SAEDHVT14_NR2_4
+    24        189        55 ( 29.1%)        125        41 ( 32.8%)  SAEDHVT14_OR2_4
+
+Worst 10 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+     1          8         8 (100.0%)          8         4 ( 50.0%)  SAEDHVT14_EN3_2
+     1          8         8 (100.0%)          8         2 ( 25.0%)  SAEDHVT14_ND2_4
+     9         72        38 ( 52.8%)         48        13 ( 27.1%)  SAEDHVT14_FSDPQ_V2_4
+     2         16         6 ( 37.5%)          0         0 (  0.0%)  SAEDHVT14_EO3_4
+     1          8         3 ( 37.5%)          0         0 (  0.0%)  SAEDHVT14_INV_S_8
+     1          8         3 ( 37.5%)          0         0 (  0.0%)  SAEDHVT14_MUX4_V1M_2
+    24        189        55 ( 29.1%)        125        41 ( 32.8%)  SAEDHVT14_OR2_4
+     3         24         7 ( 29.2%)         16         5 ( 31.2%)  SAEDHVT14_NR3B_2
+     4         30        12 ( 40.0%)         22         3 ( 13.6%)  SAEDHVT14_FSDPSBQ_V2_2
+     5         40         7 ( 17.5%)         32         7 ( 21.9%)  SAEDHVT14_NR4_2
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:       17087 (215007 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.000 um ( 0.00 row height)
+rms weighted cell displacement:   0.000 um ( 0.00 row height)
+max cell displacement:            0.000 um ( 0.00 row height)
+avg cell displacement:            0.000 um ( 0.00 row height)
+avg weighted cell displacement:   0.000 um ( 0.00 row height)
+number of cells moved:                0
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: PLACE_HFSINV_966_218 (SAEDHVT14_INV_S_2)
+  Input location: (131.276,78)
+  Legal location: (131.276,78)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_704_216 (SAEDHVT14_INV_S_2)
+  Input location: (110.852,74.4)
+  Legal location: (110.852,74.4)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_585_212 (SAEDHVT14_INV_S_2)
+  Input location: (115.662,100.8)
+  Legal location: (115.662,100.8)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_375_210 (SAEDHVT14_INV_S_2)
+  Input location: (88.282,54.6)
+  Legal location: (88.282,54.6)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_460_198 (SAEDHVT14_INV_S_2)
+  Input location: (69.856,44.4)
+  Legal location: (69.856,44.4)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: ibex_top_inst/u_ibex_core/cs_registers_i/PLACE_HFSINV_803_209 (SAEDHVT14_INV_S_2)
+  Input location: (84.138,54.6)
+  Legal location: (84.138,54.6)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_617_207 (SAEDHVT14_INV_S_2)
+  Input location: (108.114,108.6)
+  Legal location: (108.114,108.6)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_536_188 (SAEDHVT14_INV_S_2)
+  Input location: (149.776,27)
+  Legal location: (149.776,27)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_369_194 (SAEDHVT14_INV_S_2)
+  Input location: (154.882,12)
+  Legal location: (154.882,12)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: PLACE_HFSINV_290_185 (SAEDHVT14_INV_S_2)
+  Input location: (146.742,21.6)
+  Legal location: (146.742,21.6)
+  Displacement:   0.000 um ( 0.00 row height)
+
+Legalization succeeded.
+Total Legalizer CPU: 2.472
+----------------------------------------------------------------
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_placement.design'. (TIM-125)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: Design Average RC for design ibex_hvt_placement  (NEX-011)
+Information: r = 2.076880 ohm/um, via_r = 1.015590 ohm/cut, c = 0.133588 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.556013 ohm/um, via_r = 0.623218 ohm/cut, c = 0.138656 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'ibex_wrapper'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 17889, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 17888, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+npo-place-opt optimization Phase 26 Iter  1         0.00      0.00         0       0.010           -           0.080
+
+npo-place-opt optimization Phase 27 Iter  1         0.00      0.00         0       0.010           -           0.080
+Enable dominated scenarios
+
+npo-place-opt optimization complete                 0.00      0.00         0       0.010           -           0.080
+Co-efficient Ratio Summary:
+4.193421605155  6.578038173730  2.479639287277  7.744187540401  0.485050000353  3.179565833784  5.567214754587  2.894454387461  6.565921617863  -9.017937605874  3.104549787724  9.864184409851  6.078185664085  2.744271241123
+8.318115604907  9.699225026083  2.464623950064  1.382370221226  9.387184029619  3.142429406669  0.968752789964  6.613180723294  4.146578793224  -7.876358018112  2.191015286997  0.964480641094  2.700101743881  3.840423964440
+3.750206053169  7.663458842299  6.212201167950  7.759678473967  7.862243056717  0.402387977150  0.032845095897  0.596111512371  4.701287396892  -7.205135612169  8.278231471569  1.184471690997  3.334499708244  5.867672631622
+7.173894385364  9.669819999761  7.591487347087  7.632106393266  7.679078063326  9.831314288630  1.878805817928  3.230072343539  1.226270037326  -7.050450594780  2.403808256932  6.130508044054  4.100273366110  1.274781489655
+4.570746653063  5.624878808820  7.826857253678  4.759133418263  5.409027926377  2.609823652834  0.626142538674  6.381676652919  9.187474022495  -0.513656896621  5.027436475138  6.110521146103  6.181497812107  1.581648265776
+7.486041822107  9.584562469756  2.041727387119  3.921160867338  0.650488682345  9.472458902409  3.368484394994  4.897111549020  6.860149244452  -2.000104151691  9.095293546995  2.198759409512  0.915925567443  5.466065208426
+8.142690055883  4.607193265224  8.244463794567  3.504870705451  1.682716012888  7.173433718510  9.939562708373  3.617852772683  8.946772637652  -1.169969632707  4.529894295578  3.091687109795  5.580741636993  1.131360663510
+0.721709625254  7.515947417690  0.649322209371  1.017031043513  5.811519666269  5.826730883342  4.349383292435  0.216216918317  9.612142422527  -7.311156882104  0.823467780934  0.357879986693  8.022034069284  2.603105485844
+5.024802551363  1.359359521353  5.407563451201  2.804123477518  1.265300052200  0.417760313533  1.833872465081  6.448557737188  4.848373112548  -2.936801155033  8.671342763531  4.213013016610  9.007642770112  3.308170078452
+5.607471109985  8.514743640423  2.764676979434  9.324216938770  1.551199989997  2.300508202625  0.754685030179  1.961421411696  2.781303341418  -3.355375255650  9.437857976707  9.137410342545  9.020224708464  9.978444395117
+7.467457734047  3.171274721421  9.815920740044  4.331414637138  0.413524984361  3.309910198619  7.452798206103  1.902827924529  5.623407259547  -7.269363108696  3.367351286889  7.094359215702  7.411351656476  6.944219876650
+5.239565921087  4.802189647382  3.894401463832  4.531610419342  1.605155657803  8.173730247963  9.287277774418  7.540401048505  0.000353317956  -5.833784656721  4.754435362540  4.388179356592  1.217888401793  7.505847210467
+0.800933986343  9.509851607812  3.964085274420  8.341123831811  5.604907969922  5.026083246462  3.950064138237  0.221226938718  4.029619314242  -9.406669196875  2.789812744413  0.724902114657  8.793249287635  8.918185119113
+5.103696096373  4.141094270014  8.443881384045  0.064440375020  6.053169766345  8.842299621220  1.167950775967  8.473967786224  3.056717040238  -7.977150103284  5.095745132716  1.513089170128  7.396817220513  5.512132727835
+1.398268118372  5.190997333443  6.408244586760  9.731622717389  4.385364966981  9.999761759148  7.347087763210  6.393266767907  8.063326983131  -4.288630287880  5.817876406102  2.344247822627  0.037341205045  0.494753140392
+8.173631613985  2.544054410021  0.066110127471  8.589655457074  6.653063562487  8.808820782685  7.253678475913  3.418263540902  7.926377260982  -3.652834162614  2.538522711262  6.653627618747  4.022410551365  6.796694402757
+0.618562611981  3.446103618147  2.312107158167  5.365776748604  1.822107958456  2.469756204172  7.387119392116  0.867338065048  8.682345947245  -8.902409436848  4.394842562816  1.540738386014  9.244477700010  4.051664809534
+5.907689219704  1.709512091590  0.067443546609  2.308426814269  0.055883460719  3.265224824446  3.794567350487  0.705451168271  6.012888717343  -3.718510093956  2.708221444880  2.773391594677  2.637677616996  9.532770352994
+6.656262309097  9.409795558072  6.136993113139  7.763510072170  9.625254751594  7.417690064932  2.209371101703  1.043513581151  9.666269582673  -0.883342534938  3.292383104726  6.919025661214  2.422542231115  6.782177982351
+9.141628035616  1.286693802201  9.569284260313  2.585844502480  2.551363135935  9.521353540756  3.451201280412  3.477518126530  0.052200041776  -0.313533283387  2.465939727950  7.738896184837  3.112563793680  1.055006767149
+4.124225421230  5.316610900762  7.270112330810  7.178452560747  1.109985851474  3.640423276467  6.979434932421  6.938770155119  9.989997230050  -8.202625175468  5.030027279247  1.412304978130  3.341433835537  5.155623843790
+
+npo-place-opt final QoR
+_______________________
+Scenario Mapping Table
+1: Func_Fast
+2: Func_Slow
+
+Pathgroup Mapping Table
+1: **default**
+2: **async_default**
+3: **clock_gating_default**
+4: **in2reg_default**
+5: **reg2out_default**
+6: **in2out_default**
+7: clk_i
+8: cluster_clock_gating
+
+-----------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV
+    1   1   0.0000     0.0000      0   0.0000     0.0000      0
+    1   2   0.0000     0.0000      0   0.0000     0.0000      0
+    1   3   0.0000     0.0000      0   0.0000     0.0000      0
+    1   4   0.0000     0.0000      0   0.0000     0.0000      0
+    1   5   0.0000     0.0000      0   0.0000     0.0000      0
+    1   6   0.0000     0.0000      0   0.0000     0.0000      0
+    1   7   0.0000     0.0000      0   0.0000     0.0000      0
+    1   8   0.0000     0.0000      0   0.0000     0.0000      0
+    2   1   0.0000     0.0000      0   0.0000     0.0000      0
+    2   2   0.0000     0.0000      0   0.0000     0.0000      0
+    2   3   0.0000     0.0000      0   0.0000     0.0000      0
+    2   4   0.0000     0.0000      0   0.0000     0.0000      0
+    2   5   0.0000     0.0000      0   0.0000     0.0000      0
+    2   6   0.0000     0.0000      0   0.0000     0.0000      0
+    2   7   0.0000     0.0000      0   0.0000     0.0000      0
+    2   8   0.0000     0.0000      0   0.0000     0.0000      0
+--------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage
+    1   *   0.0000     0.0000      0   0.0000     0.0000      0        0     0.0000        0          -
+    2   *   0.0000     0.0000      0   0.0000     0.0000      0        0     0.0000        0          -
+--------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage         Area    InstCnt     BufCnt     InvCnt
+    *   *   0.0000     0.0000      0   0.0000     0.0000      0        0     0.0000        0          -      9581.83      17187        255        739
+--------------------------------------------------------------------------------------------------------------------
+
+npo-place-opt final QoR Summary         WNS        TNS    NSV      WHV        THV    NHV  MaxTrnV  MaxCapV    Leakage         Area    InstCnt
+npo-place-opt final QoR Summary      0.0000     0.0000      0   0.0000     0.0000      0        0        0          -      9581.83      17187
+
+npo-place-opt command complete                CPU:   105 s (  0.03 hr )  ELAPSE:   289 s (  0.08 hr )  MEM-PEAK:   673 MB
+npo-place-opt command statistics  CPU=34 sec (0.01 hr) ELAPSED=36 sec (0.01 hr) MEM-PEAK=0.657 GB
+Information: Running auto PG connection. (NDM-099)
+1

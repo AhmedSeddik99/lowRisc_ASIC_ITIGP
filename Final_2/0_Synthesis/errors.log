@@ -1,0 +1,66 @@
+Error:  ./RTL/prim_util_pkg.sv:85: The construct '$clog2( non-constant expression )' is not supported in this language. (VER-720)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_compressed_decoder.sv:286: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_fetch_fifo.sv:263: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/prim_lfsr.sv:499: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_branch_predict.sv:91: The number of parameters for the 'ASSERT_IF' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_decoder.sv:1212: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_controller.sv:207: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_multdiv_fast.sv:117: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_wb_stage.sv:249: The number of parameters for the 'DV_FCOV_SIGNAL_GEN_IF' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_csr.sv:55: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/prim_onehot_check.sv:112: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_branch_predict.sv:91: The number of parameters for the 'ASSERT_IF' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_controller.sv:302: The number of parameters for the 'ASSERT_IF' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_wb_stage.sv:249: The number of parameters for the 'DV_FCOV_SIGNAL_GEN_IF' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_icache.sv:1183: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_cs_registers.sv:1678: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_id_stage.sv:364: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_id_stage.sv:1095: The number of parameters for the 'DV_FCOV_SIGNAL_GEN_IF' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_id_stage.sv:1106: The number of parameters for the 'ASSERT_KNOWN_IF' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_if_stage.sv:262: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/ibex_load_store_unit.sv:610: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/prim_onehot_mux.sv:47: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+Error:  ./RTL/prim_ram_1p_adv.sv:171: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL/ibex_core.sv:1167: The number of parameters for the 'ASSERT' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+
+Error:  ./RTL//ibex_top.sv:1134: The number of parameters for the 'ASSERT_KNOWN' macro doesn't match its definition. (VER-927)
+
+###########################################################################################################################################
+

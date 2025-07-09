@@ -1,0 +1,43 @@
+#@ # 
+#@ # Running icc2_shell Version O-2018.06-SP1 for linux64 -- Jul 17, 2018
+#@ # Date:   Mon Jul  7 20:21:30 2025
+#@ # Run by: ICer@IC_EDA
+#@ 
+
+source ./1_Setup/setup_script.tcl
+source ./2_Floorplan/floorplan_script.tcl
+source ./3_PowerPlanning/powerplan_script.tcl
+source ./4_Placement/placement_script.tcl
+source ./5_CTS/cts_script.tcl
+source ./6_Routing/routing_script.tcl
+check_lvs
+e
+set_svf -off >> "$LOG/svf.log"
+##############################
+# CHECKS #
+##############################
+check_pg_drc > "$REPORT/check_pg_drc.log"
+report_utilization > "$REPORT/report_utilization.log"
+check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+report_clock_timing -type summary > "$REPORT/report_clock_timing.rpt"
+report_timing  > "$REPORT/report_timing.rpt"
+report_timing -delay_type min > "$REPORT/report_timing_min.rpt"
+report_constraints -all_violators -max_delay -min_delay > "$REPORT/report_constraints.rpt"
+report_qor  > "$REPORT/report_qor.rpt"
+check_legality > "$REPORT/check_legality.rpt"
+check_routes > "$REPORT/check_routes.rpt"
+check_lvs > "$REPORT/check_lvs.rpt"
+save_block
+##############################
+# OUTPUTS #
+##############################
+write_def "$OUTPUT/ibex_wrapper.def"
+write_sdc -scenario Func_Fast -output "$OUTPUT/ibex_wrapper_fast.sdc"
+write_sdc -scenario Func_Slow -output "$OUTPUT/ibex_wrapper_slow.sdc"
+write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+write_parasitics -output "$OUTPUT/ibex_wrapper"
+puts "############################"
+puts "####  End of Routing   #####"
+puts "############################"
+exit

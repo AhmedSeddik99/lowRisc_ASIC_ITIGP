@@ -1,0 +1,345 @@
+Warning: Design 'ibex_wrapper' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Information: Using test design rule information from previous dft_drc run.
+  Architecting Scan Chains
+  Inserting Scan Cells
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02   21764.9  18767.43   55351.5    1014.3                          
+  Routing Scan Chains
+  Routing Global Signals
+  Mapping New Logic
+Resetting current test mode
+Warning: Design 'ibex_wrapper' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Beginning Mapping Optimizations
+  -------------------------------
+    0:00:04   24488.2 40820536.00 9780657152.0 119404024.0 instr_addr_o[7]          
+    0:00:04   24488.2 40820536.00 9769447424.0 119036272.0 data_req_o               
+    0:00:04   24488.7 40820536.00 9769319424.0 118731752.0 instr_addr_o[28]         
+    0:00:04   24488.8 40820536.00 9761460224.0 118421880.0 data_wdata_o[1]          
+    0:00:04   24489.6 40820536.00 9758803968.0 118140608.0 instr_addr_o[5]          
+    0:00:04   24489.8 40820536.00 9758668800.0 117987200.0 instr_addr_o[5]          
+    0:00:04   24489.9 40820536.00 9757614080.0 117700840.0 instr_addr_o[31]         
+    0:00:04   24490.0 40820536.00 9756557312.0 117408696.0 instr_addr_o[31]         
+    0:00:04   24490.0 40820536.00 9755494400.0 117116880.0 instr_addr_o[31]         
+    0:00:04   24490.0 40820536.00 9754426368.0 116825016.0 instr_addr_o[31]         
+    0:00:04   24490.0 40820536.00 9753308160.0 116538064.0 data_wdata_o[1]          
+    0:00:05   24490.2 40820424.00 9751853056.0 116538056.0 ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[0]/D
+    0:00:05   24490.5 40775072.00 9750398976.0 116538056.0 ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[21].rf_reg_q_reg[0]/D
+    0:00:05   24490.7 40775072.00 9750390784.0 116521144.0 ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[0]/D
+
+
+  Beginning Phase 1 Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   24492.9  74049.38 137439888.0 36889864.0 ibex_top_inst/gen_regfile_ff.register_file_i/n2
+    0:00:05   24492.9  74049.38 137439888.0 36889864.0 ibex_top_inst/gen_regfile_ff.register_file_i/n2
+    0:00:05   24493.4  74049.38 137403264.0 36797192.0 ibex_top_inst/gen_regfile_ff.register_file_i/n4064
+    0:00:05   24493.7  74049.38 137377280.0 36712188.0 ibex_top_inst/u_ibex_core/cs_registers_i/n260
+    0:00:05   24493.8  74049.38 137335392.0 36681432.0 ibex_top_inst/gen_regfile_ff.register_file_i/n4062
+    0:00:05   24497.0  74049.38 137303776.0 36567864.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1399
+    0:00:05   24497.0  74049.38 137303776.0 36567864.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1399
+    0:00:05   24497.0  74049.38 137303776.0 36567864.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1399
+    0:00:05   24498.0  74049.38 137290992.0 36540552.0 ibex_top_inst/gen_regfile_ff.register_file_i/n48
+    0:00:05   24498.0  74049.38 137290992.0 36540552.0 ibex_top_inst/gen_regfile_ff.register_file_i/n48
+    0:00:05   24498.0  74049.38 137290992.0 36540552.0 ibex_top_inst/gen_regfile_ff.register_file_i/n48
+    0:00:05   24498.0  74049.38 137290992.0 36540552.0 ibex_top_inst/gen_regfile_ff.register_file_i/n48
+    0:00:05   24498.1  74049.38 137218240.0 36367628.0 ibex_top_inst/u_ibex_core/cs_registers_i/n745
+    0:00:05   24498.2  74049.38 137145472.0 36194700.0 ibex_top_inst/u_ibex_core/cs_registers_i/n556
+    0:00:05   24498.3  74049.38 137072720.0 36021772.0 ibex_top_inst/u_ibex_core/cs_registers_i/n597
+    0:00:05   24498.4  74049.38 137000224.0 35848848.0 ibex_top_inst/u_ibex_core/cs_registers_i/n847
+    0:00:05   24498.5  74049.38 136928128.0 35675920.0 ibex_top_inst/u_ibex_core/cs_registers_i/n916
+    0:00:05   24498.6  74049.38 136855376.0 35502996.0 ibex_top_inst/u_ibex_core/cs_registers_i/n989
+    0:00:05   24498.6  74049.38 136777472.0 35330376.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1113
+    0:00:05   24498.6  74049.38 136704976.0 35157452.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1146
+    0:00:05   24498.7  74049.38 136632208.0 34984528.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1218
+    0:00:05   24498.7  74049.38 136554320.0 34811908.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1360
+    0:00:05   24498.7  74049.38 136470768.0 34639596.0 ibex_top_inst/u_ibex_core/cs_registers_i/n712
+    0:00:05   24498.7  74049.38 136387472.0 34467284.0 ibex_top_inst/u_ibex_core/cs_registers_i/n785
+    0:00:05   24498.7  74049.38 136304192.0 34294972.0 ibex_top_inst/u_ibex_core/cs_registers_i/n816
+    0:00:05   24498.7  74049.38 136220896.0 34122660.0 ibex_top_inst/u_ibex_core/cs_registers_i/n909
+    0:00:05   24498.8  74049.38 136147648.0 33950452.0 ibex_top_inst/u_ibex_core/cs_registers_i/n589
+    0:00:05   24498.8  74049.38 136069008.0 33778548.0 ibex_top_inst/u_ibex_core/cs_registers_i/n626
+    0:00:05   24498.8  74049.38 135990368.0 33606640.0 ibex_top_inst/u_ibex_core/cs_registers_i/n704
+    0:00:05   24498.8  74049.38 135911472.0 33434738.0 ibex_top_inst/u_ibex_core/cs_registers_i/n877
+    0:00:05   24498.9  74049.38 135837984.0 33262528.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1016
+    0:00:05   24499.9  74049.38 135779904.0 33146396.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1075
+    0:00:05   24499.9  74049.38 135779904.0 33146396.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1075
+    0:00:05   24499.9  74049.38 135701680.0 32974492.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1082
+    0:00:05   24499.9  74049.38 135623472.0 32802588.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1226
+    0:00:05   24500.4  74049.38 135606784.0 32755648.0 ibex_top_inst/u_ibex_core/cs_registers_i/n259
+    0:00:05   24500.4  74049.38 135522496.0 32584048.0 ibex_top_inst/u_ibex_core/cs_registers_i/n657
+    0:00:05   24500.5  74049.38 135443664.0 32412146.0 ibex_top_inst/u_ibex_core/cs_registers_i/n694
+    0:00:05   24500.5  74049.38 135360048.0 32240548.0 ibex_top_inst/u_ibex_core/cs_registers_i/n954
+    0:00:05   24500.5  74049.38 135276432.0 32068950.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1047
+    0:00:05   24500.5  74049.38 135192400.0 31897350.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1254
+    0:00:05   24500.5  74049.38 135108368.0 31725752.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1311
+    0:00:05   24500.6  74049.38 135031536.0 31559452.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1261
+    0:00:05   24501.5  74049.38 135017504.0 31517902.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1673
+    0:00:05   24501.5  74049.38 135012784.0 31507442.0 ibex_top_inst/u_ibex_core/cs_registers_i/n16
+    0:00:05   24501.5  74049.38 135008064.0 31497058.0 ibex_top_inst/u_ibex_core/cs_registers_i/n5
+    0:00:05   24502.3  74049.38 135005856.0 31492232.0 ibex_top_inst/u_ibex_core/cs_registers_i/n12
+    0:00:05   24502.3  74049.38 135003664.0 31487380.0 ibex_top_inst/u_ibex_core/cs_registers_i/n10
+    0:00:05   24503.0  74049.38 134975024.0 31406266.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1396
+    0:00:05   24503.0  74049.38 134975024.0 31406266.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1396
+    0:00:05   24503.6  74049.38 134953168.0 31350810.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1075
+    0:00:05   24505.0  74049.38 134953152.0 31350428.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1669
+    0:00:05   24505.0  74049.38 134953152.0 31350428.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1669
+    0:00:05   24505.5  74049.38 134950224.0 31348878.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1116
+    0:00:05   24505.5  74049.38 134950224.0 31348878.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1116
+    0:00:06   24506.6  74049.38 134939936.0 31319564.0 ibex_top_inst/u_ibex_core/cs_registers_i/n470
+    0:00:06   24506.6  74049.38 134939936.0 31319564.0 ibex_top_inst/u_ibex_core/cs_registers_i/n470
+    0:00:06   24506.6  74049.38 134939936.0 31319564.0 ibex_top_inst/u_ibex_core/cs_registers_i/n470
+    0:00:06   24506.6  74049.38 134939936.0 31319564.0 ibex_top_inst/u_ibex_core/cs_registers_i/n470
+    0:00:06   24506.6  74049.38 134939936.0 31319564.0 ibex_top_inst/u_ibex_core/cs_registers_i/n470
+    0:00:06   24508.0  74049.38 134939952.0 31319284.0 ibex_top_inst/u_ibex_core/cs_registers_i/n297
+    0:00:06   24508.0  74049.38 134939952.0 31319284.0 ibex_top_inst/u_ibex_core/cs_registers_i/n297
+    0:00:06   24509.5  74049.38 134939936.0 31318968.0 ibex_top_inst/gen_regfile_ff.register_file_i/n1443
+    0:00:06   24509.5  74049.38 134939936.0 31318968.0 ibex_top_inst/gen_regfile_ff.register_file_i/n1443
+    0:00:06   24510.3  74049.38 134934464.0 31304528.0 ibex_top_inst/u_ibex_core/cs_registers_i/n285
+    0:00:06   24510.3  74049.38 134934464.0 31304528.0 ibex_top_inst/u_ibex_core/cs_registers_i/n285
+    0:00:06   24510.3  74049.38 134934464.0 31304528.0 ibex_top_inst/u_ibex_core/cs_registers_i/n285
+    0:00:06   24512.2  74049.38 134934464.0 31303928.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1221
+    0:00:06   24512.2  74049.38 134934464.0 31303928.0 ibex_top_inst/u_ibex_core/cs_registers_i/n1221
+    0:00:06   24511.3  74049.38 134078344.0 31290546.0 ibex_top_inst/gen_regfile_ff.register_file_i/n1
+    0:00:06   24511.3  74049.38 134078344.0 31290546.0 ibex_top_inst/gen_regfile_ff.register_file_i/n1
+    0:00:06   24512.8  74049.38 133475024.0 31237010.0 ibex_top_inst/gen_regfile_ff.register_file_i/n4063
+    0:00:06   24512.8  74049.38 133475024.0 31237010.0 ibex_top_inst/gen_regfile_ff.register_file_i/n4063
+    0:00:06   24514.0  74049.38 133469728.0 31223990.0 ibex_top_inst/gen_regfile_ff.register_file_i/n3992
+    0:00:06   24514.0  74049.38 133469728.0 31223990.0 ibex_top_inst/gen_regfile_ff.register_file_i/n3992
+    0:00:06   24514.0  74049.38 133469728.0 31223990.0 ibex_top_inst/gen_regfile_ff.register_file_i/n3992
+    0:00:06   24515.2  74049.38 133452656.0 31177288.0 ibex_top_inst/u_ibex_core/cs_registers_i/n210
+    0:00:06   24515.2  74049.38 133452656.0 31177288.0 ibex_top_inst/u_ibex_core/cs_registers_i/n210
+    0:00:06   24515.2  74049.38 133452656.0 31177288.0 ibex_top_inst/u_ibex_core/cs_registers_i/n210
+    0:00:07   24516.7  74049.38 133407976.0 31053996.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_s_type[3]
+    0:00:07   24518.3  74049.38 133363752.0 30924114.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_s_type[1]
+    0:00:07   24518.5  74049.38 133230960.0 30705856.0 ibex_top_inst/u_ibex_core/instr_rdata_id[3]
+    0:00:07   24518.6  74049.38 133188288.0 30585774.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_s_type[0]
+    0:00:07   24519.2  74049.38 133145936.0 30469028.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_s_type[4]
+    0:00:07   24519.7  74049.38 131826584.0 30143032.0 ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_instr_type_q[1]
+    0:00:07   24520.3  74049.38 130200400.0 29856172.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[23]
+    0:00:07   24520.4  74049.38 128689936.0 29574964.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[28]
+    0:00:07   24520.9  74049.38 127102296.0 29289184.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[8]
+    0:00:07   24521.5  74049.38 125636368.0 29009560.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[10]
+    0:00:07   24522.0  74049.38 124160848.0 28728846.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[26]
+    0:00:07   24522.0  74049.38 124016904.0 28444902.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[27]
+    0:00:07   24522.1  74049.38 123832400.0 28144672.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/err_q[1]
+    0:00:07   24523.1  74049.38 123796200.0 28035294.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[4]
+    0:00:07   24524.6  74049.38 123740912.0 27887280.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/err_q[0]
+    0:00:07   24525.2  74049.38 122397448.0 27612434.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[29]
+    0:00:07   24525.3  74049.38 121056016.0 27336974.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[21]
+    0:00:07   24525.4  74049.38 119729664.0 27061186.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[18]
+    0:00:08   24525.3  74049.38 119049872.0 26923900.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[19]
+    0:00:08   24525.2  74049.38 118385008.0 26785564.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[16]
+    0:00:08   24525.1  74049.38 117705208.0 26648336.0 ibex_top_inst/u_ibex_core/rf_wdata_fwd_wb[22]
+    0:00:08   24525.2  74049.38 117573048.0 26313648.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][5]
+    0:00:08   24525.3  74049.38 117440640.0 25979248.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][2]
+    0:00:08   24525.4  74049.38 117328560.0 25666288.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][29]
+    0:00:08   24525.4  74049.38 117199952.0 25331602.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][15]
+    0:00:08   24525.5  74049.38 117065496.0 24997504.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][12]
+    0:00:08   24526.1  74049.38 116932440.0 24662834.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][6]
+    0:00:08   24526.6  74049.38 116802120.0 24328450.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][8]
+    0:00:08   24527.1  74049.38 116658608.0 23994370.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][10]
+    0:00:08   24527.2  74049.38 116535232.0 23660584.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][25]
+    0:00:08   24527.7  74049.38 116397928.0 23326468.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][31]
+    0:00:08   24527.7  74049.38 116324352.0 23159436.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][3]
+    0:00:08   24527.7  74049.38 116259320.0 22992900.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][23]
+    0:00:08   24528.7  71787.66 116163424.0 22839052.0 ibex_top_inst/u_ibex_core/pc_wb[31]
+    0:00:08   24529.2  71787.66 115990616.0 22543670.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][0]
+    0:00:08   24529.9  71787.66 115949816.0 22429788.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[30]
+    0:00:08   24529.9  71787.66 115916072.0 22321082.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_s_type[2]
+    0:00:08   24530.0  71787.66 115871144.0 22196492.0 ibex_top_inst/u_ibex_core/instr_rdata_id[2]
+    0:00:08   24531.1  71787.66 115846496.0 22133204.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[13]
+    0:00:08   24531.2  71787.66 115795360.0 22041646.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[19]
+    0:00:08   24531.4  71787.66 114560968.0 21889440.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[3]
+    0:00:08   24532.1  71787.66 114517456.0 21752622.0 ibex_top_inst/u_ibex_core/instr_rdata_id[5]
+    0:00:08   24532.2  71787.66 94647656.0 21622584.0 ibex_top_inst/rf_waddr_wb[2]
+    0:00:08   24532.7  71787.66 94579928.0 21423490.0 ibex_top_inst/u_ibex_core/instr_fetch_err
+    0:00:08   24533.9  71787.66 94474768.0 21131242.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][26]
+    0:00:08   24534.4  71787.66 94428576.0 20983466.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][18]
+    0:00:08   24534.4  71787.66 94376000.0 20837116.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][19]
+    0:00:08   24534.4  71787.66 94323424.0 20690636.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][20]
+    0:00:08   24535.6  71787.66 94213536.0 20398516.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][21]
+    0:00:08   24537.1  71787.66 94156200.0 20253008.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][28]
+    0:00:09   24538.7  71787.66 94009720.0 20170376.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[18]
+    0:00:09   24538.7  71787.66 93871976.0 19856756.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][9]
+    0:00:09   24540.2  71787.66 93777032.0 19697674.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][8]
+    0:00:09   24540.3  71787.66 93694504.0 19539242.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][7]
+    0:00:09   24540.4  71787.66 93549600.0 19224422.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][13]
+    0:00:09   24540.4  71787.66 92743576.0 18943722.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][15]
+    0:00:09   24542.1  71787.66 92203168.0 18623662.0 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[1]
+    0:00:09   24542.6  69582.86 91943056.0 18321676.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][30]
+    0:00:09   24542.6  69582.86 91692960.0 18021080.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][28]
+    0:00:09   24542.6  69582.86 91436784.0 17719512.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][26]
+    0:00:09   24542.6  69582.86 91180000.0 17417946.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][24]
+    0:00:09   24542.6  69582.86 90923832.0 17116380.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][22]
+    0:00:09   24542.6  69582.86 90667048.0 16814812.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][20]
+    0:00:09   24542.6  69582.86 90410880.0 16513245.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][18]
+    0:00:09   24542.6  69582.86 90150272.0 16211679.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][16]
+    0:00:09   24542.6  69582.86 89885672.0 15910112.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][14]
+    0:00:09   24542.6  69582.86 89620776.0 15608545.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][12]
+    0:00:09   24542.6  69582.86 89356032.0 15306978.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][10]
+    0:00:09   24542.6  69582.86 89091280.0 15005411.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][8]
+    0:00:09   24542.6  69582.86 88826216.0 14703845.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][6]
+    0:00:09   24542.6  69582.86 88561000.0 14402278.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][4]
+    0:00:09   24543.2  69582.86 88295120.0 14097749.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][2]
+    0:00:09   24543.7  68360.89 88223312.0 13932572.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[9]
+    0:00:09   24543.2  66728.79 88088184.0 13783621.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][29]
+    0:00:09   24543.7  66728.79 87957600.0 13470734.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][11]
+    0:00:09   24544.2  66728.79 87832104.0 13158107.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][2]
+    0:00:09   24544.8  66728.79 87706608.0 12844812.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][4]
+    0:00:09   24544.7  66728.79 87638704.0 12688709.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][6]
+    0:00:09   24544.7  66728.79 87458968.0 12396262.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][31]
+    0:00:09   24546.2  66728.79 87387248.0 12243147.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][30]
+    0:00:09   24546.2  66728.79 87261936.0 11940303.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][28]
+    0:00:09   24547.8  66728.79 87189912.0 11787188.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][27]
+    0:00:09   24547.8  66728.79 87063744.0 11484600.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][18]
+    0:00:09   24549.3  66728.79 86991472.0 11331748.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][17]
+    0:00:09   24550.8  66728.79 86925584.0 11179675.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][26]
+    0:00:09   24552.4  66728.79 86859440.0 11027862.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][25]
+    0:00:09   24553.9  66728.79 86793544.0 10875789.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][24]
+    0:00:09   24555.5  66728.79 86727696.0 10723976.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][23]
+    0:00:09   24557.0  66728.79 86661800.0 10571903.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][22]
+    0:00:09   24558.6  66728.79 86595656.0 10420091.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][21]
+    0:00:09   24558.6  66728.79 86529808.0 10268278.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][20]
+    0:00:09   24558.6  66728.79 86463664.0 10116465.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][16]
+    0:00:09   24559.1  66728.79 86344592.0 9833204.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[2]
+    0:00:09   24559.6  66728.79 86225528.0 9549942.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[4]
+    0:00:09   24560.2  66728.79 86106464.0 9266681.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[6]
+    0:00:09   24560.7  66728.79 85987392.0 8983419.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[8]
+    0:00:09   24561.2  66728.79 85868328.0 8700158.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[10]
+    0:00:09   24561.8  66728.79 85749264.0 8416896.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[12]
+    0:00:09   24562.3  66728.79 85630200.0 8133635.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[14]
+    0:00:09   24562.8  66728.79 85511128.0 7850373.5 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[16]
+    0:00:09   24563.4  66728.79 85392072.0 7567112.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[18]
+    0:00:09   24563.9  66728.79 85273008.0 7283850.5 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[20]
+    0:00:09   24564.4  66728.79 85153944.0 7000589.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[22]
+    0:00:09   24565.0  66728.79 85034888.0 6717327.5 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[24]
+    0:00:09   24565.5  63529.89 84905928.0 6435492.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[30]
+    0:00:09   24565.0  61862.37 84839896.0 6295712.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/stored_addr_q[26]
+    0:00:09   24565.8  61862.37 84816256.0 6223915.0 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[13]
+    0:00:09   24565.8  59712.55 84353608.0 6090918.5 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[29]
+    0:00:09   24567.4  59712.55 84295120.0 5948233.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[15]
+    0:00:09   24567.9  59712.55 84195152.0 5661578.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[0]
+    0:00:09   24568.1  59712.55 84088736.0 5375466.5 ibex_top_inst/u_ibex_core/instr_rdata_c_id[11]
+    0:00:09   24569.6  59712.55 84035528.0 5233830.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[3]
+    0:00:09   24570.1  59712.55 83982320.0 5092193.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[2]
+    0:00:09   24571.7  59712.55 83929120.0 4949860.5 ibex_top_inst/u_ibex_core/instr_rdata_c_id[14]
+    0:00:09   24572.4  59712.55 83875912.0 4807209.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[13]
+    0:00:09   24573.9  59712.55 83822704.0 4664871.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[5]
+    0:00:09   24574.7  59712.55 83714784.0 4383664.5 ibex_top_inst/u_ibex_core/instr_rdata_c_id[7]
+    0:00:09   24574.8  59712.55 83656296.0 4240273.0 ibex_top_inst/u_ibex_core/instr_rdata_c_id[6]
+    0:00:09   24575.5  59712.55 83603088.0 4097789.5 ibex_top_inst/u_ibex_core/instr_rdata_c_id[4]
+    0:00:09   24575.0  59515.71 77862696.0 3967040.8 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[2]
+    0:00:09   24576.6  59515.71 77795536.0 3839236.0 ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_compressed_q
+    0:00:09   24576.3  59515.71 77775952.0 3766487.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[17]
+    0:00:09   24575.8  59515.71 77586880.0 3642761.5 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[31]
+    0:00:09   24575.2  59515.71 76765304.0 3521974.8 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][17]
+    0:00:09   24574.7  59515.71 76478128.0 3401747.5 ibex_top_inst/u_ibex_core/illegal_c_insn_id
+    0:00:09   24575.8  59515.71 76465456.0 3361689.5 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[12]
+    0:00:09   24576.8  59515.71 59721292.0 3310532.0 ibex_top_inst/rf_waddr_wb[1]
+    0:00:10   24578.4  59515.71 59682240.0 3203090.2 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[2]
+    0:00:10   24578.9  59515.71 55685960.0 3029209.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[7]
+    0:00:10   24578.9  59515.71 55617620.0 2860931.2 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[2]
+    0:00:10   24578.9  59515.71 55549284.0 2692652.8 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[4]
+    0:00:10   24578.9  59515.71 55480944.0 2524374.5 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[8]
+    0:00:10   24578.9  59515.71 55412604.0 2356096.2 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[10]
+    0:00:10   24579.4  59515.71 55348392.0 2186010.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[13]
+    0:00:10   24579.4  59515.71 55280052.0 2017731.6 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[15]
+    0:00:10   24579.4  59515.71 55211716.0 1849453.4 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[17]
+    0:00:10   24579.4  59515.71 55143376.0 1681175.0 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[19]
+    0:00:10   24579.4  59515.71 55075036.0 1512896.8 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[21]
+    0:00:10   24579.4  59515.71 55006700.0 1344618.4 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[23]
+    0:00:10   24579.4  59515.71 54938360.0 1176340.1 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[25]
+    0:00:10   24579.4  59515.71 54870020.0 1008061.8 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[27]
+    0:00:10   24579.4  59515.71 54801684.0  839783.4 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[29]
+    0:00:10   24579.4  59515.71 54767512.0  755644.3 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[6]
+    0:00:10   24578.9  59515.71 54729220.0  673313.1 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[31]
+    0:00:10   24578.4  59515.71 54690924.0  590981.8 ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fetch_addr_q[12]
+    0:00:10   24578.6  59515.71 54690896.0  540925.0 n8798                    
+    0:00:10   24579.1  59515.71 52252812.0  427541.5 n9310                    
+    0:00:10   24583.5  59001.67 49683560.0  290485.5 n11709                   
+    0:00:10   24583.5  59001.67 49683560.0  290485.5 n11709                   
+    0:00:10   24583.5  59001.67 49683560.0  290485.5 n11709                   
+    0:00:10   24584.0  42760.51 39049704.0  152955.0 n11697                   
+    0:00:10   24584.5   9694.27 8331699.5   45726.8 n9523                    
+    0:00:10   24584.8   9694.27 8327734.5   33120.7 n8804                    
+    0:00:10   24585.4      0.14      89.8    4692.5 n4708                    
+    0:00:11   24585.7      0.13      89.8    4691.5 n4889                    
+    0:00:11   24585.7      0.13      89.8    4691.5 n4889                    
+    0:00:11   24585.8      0.13      89.8    4690.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[15]
+    0:00:11   24585.8      0.13      89.8    4690.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[15]
+    0:00:12   24585.9      0.13      89.8    4689.5 net4492                  
+    0:00:12   24585.9      0.13      89.8    4689.5 net4492                  
+    0:00:12   24585.9      0.13      89.8    4689.5 net4492                  
+    0:00:12   24587.1      0.13      89.8    4688.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[8]
+    0:00:12   24587.1      0.13      89.8    4688.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[8]
+    0:00:12   24587.1      0.13      89.8    4688.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[8]
+    0:00:12   24587.1      0.13      89.8    4688.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[8]
+    0:00:12   24587.6      0.13      89.8    4687.5 current_pc[1]            
+    0:00:12   24587.6      0.13      89.8    4687.5 current_pc[1]            
+    0:00:12   24587.6      0.13      89.8    4687.5 current_pc[1]            
+    0:00:12   24587.6      0.13      89.8    4687.5 current_pc[1]            
+    0:00:12   24588.8      0.13      89.8    4686.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[14]
+    0:00:12   24588.8      0.13      89.8    4686.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[14]
+    0:00:12   24588.8      0.13      89.8    4686.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[14]
+    0:00:12   24588.8      0.13      89.8    4686.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[14]
+    0:00:12   24590.4      0.13      89.8    4685.5 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[14]
+    0:00:12   24590.4      0.13      89.8    4685.5 ibex_top_inst/u_ibex_core/instr_rdata_alu_id[14]
+    0:00:12   24590.5      0.13      89.8    4684.5 ibex_top_inst/u_ibex_core/instr_rdata_id[4]
+    0:00:12   24590.5      0.13      89.8    4684.5 ibex_top_inst/u_ibex_core/instr_rdata_id[4]
+    0:00:12   24590.5      0.13      89.8    4684.5 ibex_top_inst/u_ibex_core/instr_rdata_id[4]
+    0:00:12   24590.6      0.13      89.8    4683.5 ibex_top_inst/u_ibex_core/instr_rdata_id[6]
+    0:00:12   24590.6      0.13      89.8    4683.5 ibex_top_inst/u_ibex_core/instr_rdata_id[6]
+    0:00:12   24590.6      0.13      89.8    4683.5 ibex_top_inst/u_ibex_core/instr_rdata_id[6]
+    0:00:12   24590.8      0.13      89.8    4682.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_counter_q[0]
+    0:00:12   24590.8      0.13      89.8    4682.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_counter_q[0]
+    0:00:12   24590.8      0.13      89.8    4682.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/div_counter_q[0]
+    0:00:12   24590.9      0.13      89.8    4681.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/gen_mult_single_cycle.mult_state_q
+    0:00:12   24590.9      0.13      89.8    4681.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/gen_mult_single_cycle.mult_state_q
+    0:00:12   24590.9      0.13      89.8    4681.5 ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/gen_mult_single_cycle.mult_state_q
+    0:00:12   24591.0      0.13      89.8    4680.5 ibex_top_inst/u_ibex_core/load_store_unit_i/ls_fsm_cs[1]
+    0:00:12   24591.0      0.13      89.8    4680.5 ibex_top_inst/u_ibex_core/load_store_unit_i/ls_fsm_cs[1]
+    0:00:12   24591.0      0.13      89.8    4680.5 ibex_top_inst/u_ibex_core/load_store_unit_i/ls_fsm_cs[1]
+    0:00:12   24592.3      0.13      89.8    4679.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[16]
+    0:00:12   24592.3      0.13      89.8    4679.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[16]
+    0:00:12   24592.3      0.13      89.8    4679.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_u_type[16]
+    0:00:12   24592.3      0.13      89.8    4678.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[4]
+    0:00:12   24592.3      0.13      89.8    4678.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[4]
+    0:00:12   24592.0      0.13      89.8    4677.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[3]
+    0:00:12   24592.0      0.13      89.8    4677.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[3]
+    0:00:12   24592.4      0.13      89.8    4676.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[1]
+    0:00:12   24592.4      0.13      89.8    4676.5 ibex_top_inst/u_ibex_core/id_stage_i/imm_i_type[1]
+    0:00:12   24592.5      0.13      89.7    4676.5 instr_addr_o[18]         
+    0:00:12   24592.8      0.09      88.4    4676.5 instr_addr_o[31]         
+    0:00:12   24595.6      0.06      87.8    4676.5 instr_addr_o[31]         
+    0:00:12   24595.6      0.06      87.8    4676.5 instr_addr_o[31]         
+    0:00:12   24595.6      0.06      87.8    4676.5 instr_addr_o[31]         
+    0:00:12   24595.6      0.04      87.4    4676.5 instr_addr_o[31]         
+    0:00:12   24595.8      0.03      87.2    4676.5 instr_addr_o[31]         
+    0:00:13   24596.0      0.03      87.1    4676.5 instr_addr_o[31]         
+    0:00:13   24596.3      0.02      87.0    4676.5 instr_addr_o[31]         
+    0:00:13   24596.3      0.01      87.0    4676.5 instr_addr_o[31]         
+    0:00:13   24596.8      0.01      87.0    4676.5 instr_addr_o[31]         
+    0:00:13   24597.0      0.00      86.9    4676.5 instr_addr_o[31]         
+    0:00:13   24597.1      0.00      86.9    4675.5 ibex_top_inst/gen_regfile_ff.register_file_i/waddr_a_i[4]
+
+
+  Beginning Phase 2 Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ------------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:13    9768.4      0.00      86.9    4675.6                          
+    0:00:13    9769.7      0.00      86.9    4675.8                          
+    0:00:13    9767.8      0.00      86.9    4675.8                          
+
+1

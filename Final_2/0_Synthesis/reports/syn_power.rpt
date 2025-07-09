@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 19:48:10 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14hvt_ss0p72vm40c (File: /mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db)
+
+
+Operating Conditions: ss0p72vm40c   Library: saed14hvt_ss0p72vm40c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ibex_wrapper           16000             saed14hvt_ss0p72vm40c
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 316.8887 uW   (72%)
+  Net Switching Power  = 124.7540 uW   (28%)
+                         ---------
+Total Dynamic Power    = 441.6426 uW  (100%)
+
+Cell Leakage Power     = 336.8778 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.4528          110.0129           16.5070          110.4657  (  24.99%)
+register         305.7849            3.1369        6.3145e+04          308.9853  (  69.91%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     10.6495           11.6042        2.7370e+05           22.5272  (   5.10%)
+--------------------------------------------------------------------------------------------------
+Total            316.8871 uW       124.7541 uW     3.3687e+05 pW       441.9781 uW
+1

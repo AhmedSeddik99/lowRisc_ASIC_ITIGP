@@ -1,0 +1,173 @@
+
+
+********  Legalize ECO Cells  ********
+
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Begin building search trees for block ibex_hvt:ibex_hvt_placement.design
+Done building search trees for block ibex_hvt:ibex_hvt_placement.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 267 total shapes.
+Layer M2: cached 0 shapes out of 4272 total shapes.
+Layer M3: cached 16 shapes out of 16 total shapes.
+Cached 4400 vias out of 5112 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        20164        Yes DEFAULT_VA
+
+Warning: max_legality_failures=5000 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: max_legality_check_range=500 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: standard cell ibex_top_inst/u_ibex_core/cs_registers_i/U22 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U5718 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U5904 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U6493 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U6757 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U6839 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U7362 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U8344 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U10614 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+Warning: standard cell U11011 is fixed but not placed on rows. All advanced rules will be ignored for this cell.
+...
+Warning: 17920 standard cells were fixed but not placed on rows. All advanced rules will be ignored for those cells.
+Optimizing attract points
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Legalization complete (0 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  20164
+number of references:                84
+number of site rows:                266
+number of locations attempted:     1572
+number of locations failed:         488  (31.0%)
+
+Legality of references at locations:
+1 references had failures.
+
+Worst 1 references by total failures:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+   703        596       170 ( 28.5%)        472       318 ( 67.4%)  SAEDHVT14_ND2_2
+
+Worst 1 references by failure rate:
+ CELLS       UNFLIPPED                       FLIPPED                REFERENCE NAME
+         ATTEMPTS  FAILURES            ATTEMPTS  FAILURES           
+   703        596       170 ( 28.5%)        472       318 ( 67.4%)  SAEDHVT14_ND2_2
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:         100 (800 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.245 um ( 0.41 row height)
+rms weighted cell displacement:   0.245 um ( 0.41 row height)
+max cell displacement:            0.880 um ( 1.47 row height)
+avg cell displacement:            0.116 um ( 0.19 row height)
+avg weighted cell displacement:   0.116 um ( 0.19 row height)
+number of cells moved:              100
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: sspare_0_9 (SAEDHVT14_NR2_2)
+  Input location: (154.874,148.2)
+  Legal location: (153.994,148.2)
+  Displacement:   0.880 um ( 1.47 row height)
+Cell: sspare_0_48 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,148.2)
+  Legal location: (34.114,148.2)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_41 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,125.4)
+  Legal location: (34.114,125.4)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_22 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,57)
+  Legal location: (34.114,57)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_1 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,11.4)
+  Legal location: (34.114,11.4)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_35 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,102.6)
+  Legal location: (34.114,102.6)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_29 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,79.8)
+  Legal location: (34.114,79.8)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_0_16 (SAEDHVT14_NR2_2)
+  Input location: (34.8831,34.2)
+  Legal location: (34.114,34.2)
+  Displacement:   0.769 um ( 1.28 row height)
+Cell: sspare_7 (SAEDHVT14_ND2_2)
+  Input location: (125.705,148.8)
+  Legal location: (126.096,148.8)
+  Displacement:   0.391 um ( 0.65 row height)
+Cell: sspare_26 (SAEDHVT14_ND2_2)
+  Input location: (125.705,57.6)
+  Legal location: (126.096,57.6)
+  Displacement:   0.391 um ( 0.65 row height)
+
+****************************************
+Report : ECO Legalize Displacement
+Design : ibex_hvt_placement
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:24:21 2025
+****************************************
+
+avg cell displacement:    0.119 um ( 0.20 row height)
+max cell displacement:    0.880 um ( 1.47 row height)
+std deviation:            0.224 um ( 0.37 row height)
+number of cell moved:       100 cells (out of 100 cells)
+
+100

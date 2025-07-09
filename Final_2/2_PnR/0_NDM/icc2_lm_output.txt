@@ -1,0 +1,26 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_lm_gui/preferences.tcl
+icc2_lm_shell> 
+icc2_lm_shell> start_gui
+icc2_lm_shell> open_lib /mnt/hgfs/0_GP/Final_1/2_PnR/0_NDM/saed14hvt.ndm
+Information: Loading library file '/mnt/hgfs/0_GP/Final_1/2_PnR/0_NDM/saed14hvt.ndm' (FILE-007)
+Information: Library is effectively read-only. (LMUI-027)
+{saed14hvt}
+icc2_lm_shell> change_selection [get_lib_cells -include_subcells {saed14hvt/SAEDHVT14_ND2_CDC_2/frame}]
+icc2_lm_shell> current_block saed14hvt:SAEDHVT14_ND2_CDC_2.frame
+icc2_lm_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+icc2_lm_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {-0.039 0.642} -scale 0.0008
+icc2_lm_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {-0.049 -0.052} -scale 0.0008
+icc2_lm_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc2_lm_shell> change_selection [get_lib_cells -include_subcells {saed14hvt/SAEDHVT14_ND2_CDC_4/frame}]
+icc2_lm_shell> current_block saed14hvt:SAEDHVT14_ND2_CDC_4.frame
+icc2_lm_shell> change_selection [get_lib_cells -include_subcells {saed14hvt/SAEDHVT14_ND2_CDC_1/frame}]
+icc2_lm_shell> current_block saed14hvt:SAEDHVT14_ND2_CDC_1.frame
+icc2_lm_shell> set_working_design_stack saed14hvt:SAEDHVT14_ND2_CDC_4.frame
+icc2_lm_shell> set_working_design_stack saed14hvt:SAEDHVT14_ND2_CDC_2.frame
+icc2_lm_shell> exit
+Maximum memory usage for this session: 247.96 MB
+CPU usage for this session:     10 seconds (  0.00 hours)
+Elapsed time for this session:    284 seconds (  0.08 hours)
+Thank you for using IC Compiler II Library Manager.
+

@@ -1,0 +1,249 @@
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_buf.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_clock_gating.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_prefetch_buffer.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_icache.sv
+Opening include file ./RTL/prim_assert.sv
+Opening include file ./RTL/prim_assert_dummy_macros.svh
+Warning:  ./RTL/prim_assert_dummy_macros.svh:12: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:13: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_assert_sec_cm.svh
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_flop_macros.sv
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_dummy_instr.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_cs_registers.sv
+Opening include file ./RTL/prim_assert.sv
+Opening include file ./RTL/prim_assert_dummy_macros.svh
+Warning:  ./RTL/prim_assert_dummy_macros.svh:12: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:13: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_assert_sec_cm.svh
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_flop_macros.sv
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_id_stage.sv
+Opening include file ./RTL/prim_assert.sv
+Opening include file ./RTL/prim_assert_dummy_macros.svh
+Warning:  ./RTL/prim_assert_dummy_macros.svh:12: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:13: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:14: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:15: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:16: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:17: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_dummy_macros.svh:18: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:119: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:124: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:129: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:142: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:156: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert.sv:167: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_assert_sec_cm.svh
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:48: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:51: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:54: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:57: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:60: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:70: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:73: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:76: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:79: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_assert_sec_cm.svh:82: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/prim_flop_macros.sv
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:24: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/prim_flop_macros.sv:44: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Opening include file ./RTL/dv_fcov_macros.svh
+Warning:  ./RTL/dv_fcov_macros.svh:33: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/dv_fcov_macros.svh:33: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/dv_fcov_macros.svh:67: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/dv_fcov_macros.svh:67: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Warning:  ./RTL/dv_fcov_macros.svh:101: The 'macro default arguments' construct is not supported.  It will be ignored. (VER-104)
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/ibex_ex_block.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_and2.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_flop.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_ram_1p.sv
+Presto compilation completed successfully.
+1
+Running PRESTO HDLC
+Compiling source file ./RTL/prim_clock_mux2.sv
+Presto compilation completed successfully.
+1

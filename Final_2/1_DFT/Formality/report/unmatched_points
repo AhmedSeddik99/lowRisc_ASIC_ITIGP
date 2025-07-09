@@ -1,0 +1,50 @@
+**************************************************
+Report         : unmatched_points
+
+Reference      : Ref:/WORK/ibex_wrapper
+Implementation : Imp:/WORK/ibex_wrapper
+Version        : L-2016.03-SP1
+Date           : Tue Jul  8 22:33:34 2025
+**************************************************
+
+5 Unmatched points (0 reference, 5 implementation):
+
+  Impl Port       Imp:/WORK/ibex_wrapper/scan_en
+
+  Impl Port       Imp:/WORK/ibex_wrapper/scan_in_0
+
+  Impl Port       Imp:/WORK/ibex_wrapper/scan_in_1
+
+  Impl Port       Imp:/WORK/ibex_wrapper/scan_in_2
+
+  Impl Port       Imp:/WORK/ibex_wrapper/scan_in_3
+
+ [BBNet: multiply-driven net
+  BBox:  black-box
+  BBPin: black-box pin
+  Block: hierarchical block
+  BlPin: hierarchical block pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Net:   matchable net
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

@@ -1,0 +1,521 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_gui/preferences.tcl
+icc2_shell> source ./1_Setup/setup_script.tcl
+############################
+######     Setup     #######
+############################
+Using libraries: ibex_hvt saed14hvt
+Linking block ibex_hvt:ibex_wrapper.design
+Information: User units loaded from library 'saed14hvt' (LNK-040)
+Design 'ibex_wrapper' was successfully linked.
+Begin building search trees for block ibex_hvt:ibex_wrapper.design
+Done building search trees for block ibex_hvt:ibex_wrapper.design (time 0s)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner Fast: no PVT mismatches. (PVT-032)
+Information: Corner Slow: no PVT mismatches. (PVT-032)
+****************************************
+Report : pvt
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:21:52 2025
+****************************************
+
+--------------------------------------------------------------------------------
+Information: Corner Slow: no PVT mismatches. (PVT-032)
+--------------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------
+Information: Corner Fast: no PVT mismatches. (PVT-032)
+--------------------------------------------------------------------------------
+
+
+
+Information: Saving 'ibex_hvt:ibex_wrapper.design' to 'ibex_hvt:ibex_hvt_setup.design'. (DES-028)
+############################
+#####  End of Setup  #######
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> source ./2_Floorplan/floorplan_script.tcl
+############################
+######  Floor Plan   #######
+############################
+Information: Saving block 'ibex_hvt:ibex_hvt_floorplan.design'
+############################
+###  End of Floor Plan   ###
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> source ./3_PowerPlanning/powerplan_script.tcl
+############################
+####     Power Plan     ####
+############################
+****************************************
+Report : Ignored Layers
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:23:32 2025
+****************************************
+Layer Attribute                 Value
+--------------------------------------------------------------------------------
+Min Routing Layer               (none given)
+Max Routing Layer               (none given)
+RC Estimation Ignored Layers    (none given)
+No via def rule is found.
+No pattern is found.
+All strategies have been removed.
+All strategy via rules have been removed.
+Information: Saving block 'ibex_hvt:ibex_hvt_powerplan.design'
+############################
+###  End of Power Plan  ####
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> source ./4_Placement/placement_script.tcl
+############################
+######  Placement    #######
+############################
+Information: Saving block 'ibex_hvt:ibex_hvt_placement.design'
+############################
+###  End of Placement    ###
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> source ./5_CTS/cts_script.tcl
+############################
+#########   CTS   ##########
+############################
+Using libraries: ibex_hvt saed14hvt
+Visiting block ibex_hvt:ibex_hvt_cts.design
+Design 'ibex_wrapper' was successfully linked.
+Information: Saving block 'ibex_hvt:ibex_hvt_cts.design'
+############################
+###### End of CTS   ########
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> source ./6_Routing/routing_script.tcl
+############################
+#######   Routing   ########
+############################
+Total number of DRCs = 1
+1
+Total number of DRCs = 1
+1
+Total number of DRCs = 1
+1
+Total number of DRCs = 1
+1
+4th iteration of route_detail & Number of DRCs = 1
+Total number of DRCs = 0
+0
+icc2_shell> check_lvs
+Information: Using 1 threads for LVS
+Begin building search trees for block ibex_hvt:ibex_hvt_routing.design
+Done building search trees for block ibex_hvt:ibex_hvt_routing.design (time 0s)
+[Check Short] Stage 1   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2 Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2-2 Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] Stage 3   Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] End       Elapsed =    0:00:04, CPU =    0:00:04
+[Check Net] Init        Elapsed =    0:00:04, CPU =    0:00:04
+Warning: Port GND have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port VDD have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_en have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_1 have no valid pin shapes. Skip this port. (RT-203)
+[Check Net] 10%         Elapsed =    0:00:06, CPU =    0:00:06
+[Check Net] 20%         Elapsed =    0:00:06, CPU =    0:00:06
+Warning: Port scan_in_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_0 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_1 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_1 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_2 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_3 has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] 30%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 40%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 50%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 60%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 70%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 80%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 90%         Elapsed =    0:00:08, CPU =    0:00:08
+Warning: Net ram_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_valid_i has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[127] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[126] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[125] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[124] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[123] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[122] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[121] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[120] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[119] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[118] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[117] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[116] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[115] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[114] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[113] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[112] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[111] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[110] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[109] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[108] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[107] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[106] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[105] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[104] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[103] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[102] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[101] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[100] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[99] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[98] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[97] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[96] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[95] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[94] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[93] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[92] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[91] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[90] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[89] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[88] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[87] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[86] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[85] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[84] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[83] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[82] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[81] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[80] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[79] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[78] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[77] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[76] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[75] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[74] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[73] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[72] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[71] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[70] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[69] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[68] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[67] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[66] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[65] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[64] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scan_rst_ni has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] All nets are submitted.
+[Check Net] 100%        Elapsed =    0:00:08, CPU =    0:00:08
+
+===============================================================
+    Maximum number of violations is set to 20
+    Abort checking when more than 20 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 25922.
+Total number of short violations is 0.
+Total number of open nets is 0.
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:08, CPU =    0:00:08
+1
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> e
+Error: ambiguous command 'e' matched 12 commands:
+        (eco_netlist, eco_opt, eco_update_supply_net ...) (CMD-006)
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> set_svf -off >> "$LOG/svf.log"
+icc2_shell> 
+icc2_shell> ##############################
+icc2_shell> # CHECKS #
+icc2_shell> ##############################
+icc2_shell> 
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+icc2_shell> 
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+icc2_shell> 
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+icc2_shell> 
+icc2_shell> report_clock_timing -type summary > "$REPORT/report_clock_timing.rpt"
+icc2_shell> report_timing  > "$REPORT/report_timing.rpt"
+icc2_shell> report_timing -delay_type min > "$REPORT/report_timing_min.rpt"
+icc2_shell> report_constraints -all_violators -max_delay -min_delay > "$REPORT/report_constraints.rpt"
+icc2_shell> 
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+icc2_shell> 
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+icc2_shell> 
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+icc2_shell> 
+icc2_shell> save_block
+Information: Saving block 'ibex_hvt:ibex_hvt_routing.design'
+1
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> ##############################
+icc2_shell> # OUTPUTS #
+icc2_shell> ##############################
+icc2_shell> 
+icc2_shell> write_def "$OUTPUT/ibex_wrapper.def"
+****************************************
+Report : Data Mismatches
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:49:42 2025
+****************************************
+No mismatches exist on the design.
+---------------------------------------
+Number of Written DEF Constructs
+---------------------------------------
+VERSION                        : 1
+DIVIDERCHAR                    : 1
+BUSBITCHARS                    : 1
+DESIGN                         : 1
+UNITS                          : 1
+PROPERTYDEFINITIONS            : 1
+DIEAREA                        : 1
+ROW                            : 266
+TRACKS                         : 20
+VIAS                           : 13
+NONDEFAULTRULES                : 3
+COMPONENTS                     : 27050
+PINS                           : 666
+PINPROPERTIES                  : 655
+SPECIALNETS                    : 1827
+NETS                           : 25900
+1
+icc2_shell> 
+icc2_shell> write_sdc -scenario Func_Fast -output "$OUTPUT/ibex_wrapper_fast.sdc"
+1
+icc2_shell> 
+icc2_shell> write_sdc -scenario Func_Slow -output "$OUTPUT/ibex_wrapper_slow.sdc"
+1
+icc2_shell> 
+icc2_shell> write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+1
+icc2_shell> 
+icc2_shell> write_parasitics -output "$OUTPUT/ibex_wrapper"
+Information: Design ibex_hvt_routing has 25673 nets, 0 global routed, 25667 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: extract design ibex_wrapper
+Information: batch extract takes 0.00 seconds, elapse 0.00 seconds (NEX-015)
+NEX: write corner ID 0 parasitics to ./6_Routing/output/ibex_wrapper.tlup_max_-40.spef 
+spefName ./6_Routing/output/ibex_wrapper.tlup_max_-40.spef, corner name Slow 
+NEX: write corner ID 1 parasitics to ./6_Routing/output/ibex_wrapper.tlup_min_125.spef 
+spefName ./6_Routing/output/ibex_wrapper.tlup_min_125.spef, corner name Fast 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_routing.design'. (TIM-125)
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> puts "############################"
+############################
+icc2_shell> puts "####  End of Routing   #####"
+####  End of Routing   #####
+icc2_shell> puts "############################"
+############################
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> exit
+Maximum memory usage for this session: 1062.11 MB
+CPU usage for this session:    723 seconds (  0.20 hours)
+Elapsed time for this session:   1713 seconds (  0.48 hours)
+Thank you for using IC Compiler II.
+
