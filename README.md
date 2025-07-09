@@ -59,4 +59,20 @@
 
 # State on June 19 #
 
-- Fixing post-routing timing violations in PrimeTime in progress... 
+- WIP
+
+
+# State on June 24 #
+
+- WIP
+
+
+# State on June 26 #
+
+- WIP
+
+# State on July 9 #
+
+- Final_1 >> Complete run (clock of 6.25 ns as constrained at the beginning)
+- Final_2 >> Complete run (clock of 5 ns as further optimization in performance achieving 200 MHz)
+
