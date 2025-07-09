@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 17:05:59 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'ibex_wrapper' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed14hvt_ss0p72vm40c (File: /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db)
+
+Number of ports:                         1481
+Number of nets:                         19197
+Number of cells:                        17774
+Number of combinational cells:          15752
+Number of sequential cells:              2020
+Number of macros/black boxes:               0
+Number of buf/inv:                       1882
+Number of references:                      54
+
+Combinational area:               6936.656231
+Buf/Inv area:                      585.635993
+Noncombinational area:            2627.103625
+Macro/Black Box area:                0.000000
+Net Interconnect area:           13230.693846
+
+Total cell area:                  9563.759856
+Total area:                      22794.453702
+1

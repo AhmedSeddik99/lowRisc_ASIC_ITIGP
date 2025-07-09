@@ -1,0 +1,7 @@
+Begin building search trees for block ibex_hvt:ibex_hvt_routing_change_3.design
+Done building search trees for block ibex_hvt:ibex_hvt_routing_change_3.design (time 0s)
+Command check_pg_drc started  at Tue Jul  8 08:09:38 2025
+Command check_pg_drc finished at Tue Jul  8 08:09:41 2025
+CPU usage for check_pg_drc: 3.12 seconds ( 0.00 hours)
+Elapsed time for check_pg_drc: 3.12 seconds ( 0.00 hours)
+No errors found.

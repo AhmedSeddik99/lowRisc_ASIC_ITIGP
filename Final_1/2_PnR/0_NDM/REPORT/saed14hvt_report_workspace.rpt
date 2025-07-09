@@ -1,0 +1,51 @@
+
+****************************************
+Report : Workspace
+Version: O-2018.06-SP1
+Date   : Wed Jun  4 20:49:52 2025
+****************************************
+
+Workspace name: saed14hvt
+
+...Flow:        normal
+
+...Checked?     Success
+
+...Technology file:
+      /SCRATCH/armanga/ndm_gen/tf/saed14rvt_1p9m.tf
+
+...Current PVT Configuration:
+      <No rules specified>
+
+...DB/Liberty files:
+      1. /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_ss0p72vm40c.db
+      2. /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_ff0p88v125c.db
+      3. /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_tt0p8v25c.db
+
+...Physical source files:
+      1. /mnt/hgfs/stdcell_hvt/ndm/saed14hvt_frame_only.ndm
+
+...TLUP files: <none>
+
+...Panes: 3
+     Pane 0, process = ss (1),  voltages:  0.72; temperatures: -40
+       Rail 1 -  power (VDD):  0.72
+       Rail 2 -  power (VDDR):  0.72
+       Rail 3 - ground (VSS):  0
+       Source DB libraries:
+         /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_ss0p72vm40c.db
+
+     Pane 1, process = ff (1),  voltages:  0.88; temperatures: 125
+       Rail 1 -  power (VDD):  0.88
+       Rail 2 -  power (VDDR):  0.88
+       Rail 3 - ground (VSS):  0
+       Source DB libraries:
+         /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_ff0p88v125c.db
+
+     Pane 2, process = tt (1),  voltages:  0.8; temperatures: 25
+       Rail 1 -  power (VDD):  0.8
+       Rail 2 -  power (VDDR):  0.8
+       Rail 3 - ground (VSS):  0
+       Source DB libraries:
+         /mnt/hgfs/stdcell_hvt/db_nldm/saed14hvt_tt0p8v25c.db
+

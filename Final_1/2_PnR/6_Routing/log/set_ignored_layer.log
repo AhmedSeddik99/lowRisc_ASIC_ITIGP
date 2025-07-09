@@ -1,0 +1,5 @@
+Using libraries: ibex_hvt saed14hvt
+Warning: In library ibex_hvt, no block views exist for block ibex_wrapper. (LNK-064)
+Visiting block ibex_hvt:ibex_hvt_routing.design
+Design 'ibex_wrapper' was successfully linked.
+1

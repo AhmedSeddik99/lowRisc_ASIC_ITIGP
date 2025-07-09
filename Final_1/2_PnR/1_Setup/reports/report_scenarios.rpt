@@ -1,0 +1,28 @@
+****************************************
+Report : scenario
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:20:54 2025
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+-------------------------------------------------------------------------------------------------------------------------------
+Func_Fast *     Func            Fast            true    true   true  true     true     true      true     true     false false
+Func_Slow *     Func            Slow            true    true   true  true     true     true      true     true     false false
+
+1
+****************************************
+Report : scenario
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:20:54 2025
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+-------------------------------------------------------------------------------------------------------------------------------
+Func_Fast *     Func            Fast            true    true   true  false    false    true      true     true     false false
+Func_Slow *     Func            Slow            true    true   true  false    false    true      true     true     false false
+
+1

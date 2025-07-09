@@ -1,0 +1,89 @@
+Information: The RC mode used is DR for design 'ibex_wrapper'. (NEX-022)
+Extracting design(INC): ibex_hvt_routing 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+****************************************
+Report : clock timing
+        -type summary
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:43:30 2025
+****************************************
+
+  Mode: Func
+  Clock: clk_i
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.15       rp-+       Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       fp-+       Fast
+
+  Minimum hold launch latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       fp-+       Fast
+
+  Maximum hold capture latency:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.15       rp-+       Slow
+
+  Maximum active transition:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.05       fp-+       Fast
+
+  Minimum active transition:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.01       rp-+       Fast
+
+  Maximum setup skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 rp-+       Slow
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.15       fp-+       Slow
+
+  Maximum hold skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 rp-+       Fast
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                              -0.07       fp-+       Fast
+
+
+
+  Mode: Func
+  Clock: cluster_clock_gating
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[13]/CK
+                                                               0.16       rp-+       Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[29].rf_reg_q_reg[2]/CK
+                                                               0.07       rp-+       Fast
+
+  Minimum hold launch latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[29].rf_reg_q_reg[2]/CK
+                                                               0.07       rp-+       Fast
+
+  Maximum hold capture latency:
+      ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[13]/CK
+                                                               0.16       rp-+       Slow
+
+  Maximum active transition:
+      ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[13]/CK
+                                                               0.03       rp-+       Slow
+
+  Minimum active transition:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[20].rf_reg_q_reg[12]/CK
+                                                               0.01       rp-+       Fast
+
+  Maximum setup skew:
+      ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[0]/CK   rp-+       Slow
+      ibex_top_inst/u_ibex_core/id_stage_i/imd_val_q_reg[0][24]/CK
+                                                               0.01       rp-+       Slow
+
+  Maximum hold skew:
+      ibex_top_inst/u_ibex_core/cs_registers_i/u_mscratch_csr/rdata_q_reg[17]/CK
+                                                                          rp-+       Slow
+      ibex_top_inst/u_ibex_core/cs_registers_i/u_mtval_csr/rdata_q_reg[17]/CK
+                                                               0.01       rp-+       Slow
+
+
+1

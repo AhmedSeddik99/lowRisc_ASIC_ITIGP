@@ -1,0 +1,11 @@
+Loading verilog file '/mnt/hgfs/PnR_GP/Final_1/0_Synthesis/output/ibex_wrapper.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /mnt/hgfs/PnR_GP/Final_1/0_Synthesis/output/ibex_wrapper.v
+Reading with netlist reader (equivalent to -netlist option).
+Verilog netlist reader completed successfully.
+Current design is now '/mnt/hgfs/PnR_GP/Final_1/0_Synthesis/output/ibex_register_file_ff_0_00000020_0_0_0_00000000.db:ibex_register_file_ff_0_00000020_0_0_0_00000000'
+Loaded 3 designs.
+Current design is 'ibex_register_file_ff_0_00000020_0_0_0_00000000'.
+ibex_register_file_ff_0_00000020_0_0_0_00000000 ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0 ibex_wrapper

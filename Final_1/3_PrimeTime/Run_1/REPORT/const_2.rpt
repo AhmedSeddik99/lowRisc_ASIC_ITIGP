@@ -1,0 +1,50 @@
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Fast'
+Started    : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+-----------------------------------
+End of Master/Slave Task Processing
+
+****************************************
+Report : constraint
+Design : multi_scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 04:05:25 2025
+****************************************
+
+Scenarios: Func_Slow Func_Fast 
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk_i                        0.00       -        0.00
+    clock_gating_default         0.00       -        0.00
+    cluster_clock_gating         0.00       -        0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk_i                        0.00       -        0.00
+    clock_gating_default         0.10       -        0.10
+    cluster_clock_gating         1.70       -        1.70
+    -----------------------------------------------------
+    min_delay/hold                                   1.81
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_delay/setup                                  0.00  (MET)
+    min_delay/hold                                   1.81  (VIOLATED)
+    clock_gating_setup                               0.00  (MET)
+    clock_gating_hold                                0.10  (VIOLATED)
+    sequential_clock_pulse_width                     0.00  (MET)
+    clock_tree_pulse_width                           0.00  (MET)
+    max_capacitance                                  0.00  (MET)
+    min_capacitance                                 60.61  (VIOLATED)
+    max_transition                                   0.00  (MET)
+
+1

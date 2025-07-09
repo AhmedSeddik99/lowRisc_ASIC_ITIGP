@@ -1,0 +1,141 @@
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner Fast: no PVT mismatches. (PVT-032)
+Information: Corner Slow: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_routing_change_5.design'. (TIM-125)
+Information: Design ibex_hvt_routing_change_5 has 25509 nets, 0 global routed, 25503 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: The RC mode used is DR for design 'ibex_wrapper'. (NEX-022)
+---extraction options---
+Corner: Slow
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: Fast
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: ibex_hvt_routing_change_5 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 25503 nets are successfully extracted. (NEX-028)
+Information: Design Average RC for design ibex_hvt_routing_change_5  (NEX-011)
+Information: r = 2.182077 ohm/um, via_r = 1.042294 ohm/cut, c = 0.138474 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555263 ohm/um, via_r = 0.641080 ohm/cut, c = 0.138516 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 25507, routed nets = 25503, across physical hierarchy nets = 0, parasitics cached nets = 25507, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock timing
+        -type summary
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:34:31 2025
+****************************************
+
+  Mode: Func
+  Clock: clk_i
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.15       rp-+       Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       fp-+       Fast
+
+  Minimum hold launch latency:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.00       fp-+       Fast
+
+  Maximum hold capture latency:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.15       rp-+       Slow
+
+  Maximum active transition:
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.05       fp-+       Fast
+
+  Minimum active transition:
+      ibex_top_inst/core_busy_q_reg[0]/CK                      0.01       rp-+       Fast
+
+  Maximum setup skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 rp-+       Slow
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                               0.15       fp-+       Slow
+
+  Maximum hold skew:
+      ibex_top_inst/core_busy_q_reg[0]/CK                                 rp-+       Fast
+      ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G
+                                                              -0.07       fp-+       Fast
+
+
+
+  Mode: Func
+  Clock: cluster_clock_gating
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[13]/CK
+                                                               0.16       rp-+       Slow
+
+  Minimum setup capture latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[29].rf_reg_q_reg[2]/CK
+                                                               0.07       rp-+       Fast
+
+  Minimum hold launch latency:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[29].rf_reg_q_reg[2]/CK
+                                                               0.07       rp-+       Fast
+
+  Maximum hold capture latency:
+      ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[13]/CK
+                                                               0.16       rp-+       Slow
+
+  Maximum active transition:
+      ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[6]/CK
+                                                               0.03       rp-+       Slow
+
+  Minimum active transition:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[24].rf_reg_q_reg[11]/CK
+                                                               0.01       rp-+       Fast
+
+  Maximum setup skew:
+      ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[0]/CK   rp-+       Slow
+      ibex_top_inst/u_ibex_core/id_stage_i/imd_val_q_reg[0][24]/CK
+                                                               0.01       rp-+       Slow
+
+  Maximum hold skew:
+      ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[23]/CK
+                                                                          rp-+       Slow
+      ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[24]/CK
+                                                               0.01       rp-+       Slow
+
+
+1

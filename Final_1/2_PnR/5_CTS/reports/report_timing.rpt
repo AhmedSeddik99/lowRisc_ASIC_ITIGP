@@ -1,0 +1,118 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:26:55 2025
+****************************************
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[20] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: instr_addr_o[14] (output port clocked by clk_i)
+  Mode: Func
+  Corner: Slow
+  Scenario: Func_Slow
+  Path Group: clk_i
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (propagated)                 0.17      0.17
+
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[20]/CK (SAEDHVT14_FSDPQ_V2LP_2)
+                                                   0.00      0.17 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[20]/Q (SAEDHVT14_FSDPQ_V2LP_2)
+                                                   0.05      0.22 r
+  CTS_copt_h_inst_11593/X (SAEDHVT14_DEL_R2V1_2)   0.03      0.24 r
+  CTS_copt_h_inst_11592/X (SAEDHVT14_DEL_R2V3_2)   0.11      0.35 r
+  U6641/X (SAEDHVT14_INV_2)                        0.05      0.41 f
+  U6644/X (SAEDHVT14_INV_S_2)                      0.04      0.44 r
+  ibex_top_inst/gen_regfile_ff.register_file_i/U1161/X (SAEDHVT14_INV_2)
+                                                   0.02      0.47 f
+  ibex_top_inst/gen_regfile_ff.register_file_i/U124/X (SAEDHVT14_AN2_2)
+                                                   0.03      0.50 f
+  ibex_top_inst/gen_regfile_ff.register_file_i/U154/X (SAEDHVT14_AN2_2)
+                                                   0.12      0.62 f
+  ibex_top_inst/gen_regfile_ff.register_file_i/U2966/X (SAEDHVT14_ND2_CDC_2)
+                                                   0.05      0.67 r
+  ibex_top_inst/gen_regfile_ff.register_file_i/U2986/X (SAEDHVT14_AN4_2)
+                                                   0.05      0.72 r
+  ibex_top_inst/gen_regfile_ff.register_file_i/U2987/X (SAEDHVT14_AN4_2)
+                                                   0.04      0.76 r
+  ibex_top_inst/gen_regfile_ff.register_file_i/U2/X (SAEDHVT14_ND4_2)
+                                                   0.06      0.82 f
+  U7329/X (SAEDHVT14_MUX2_2)                       0.11      0.93 f
+  U4779/X (SAEDHVT14_ND2_CDC_2)                    0.05      0.98 r
+  U4690/X (SAEDHVT14_AN2_2)                        0.04      1.03 r
+  U7807/X (SAEDHVT14_INV_2)                        0.04      1.06 f
+  U7808/X (SAEDHVT14_MUX2_2)                       0.05      1.11 r
+  U4980/X (SAEDHVT14_ND2_CDC_2)                    0.01      1.12 f
+  U7909/CO (SAEDHVT14_ADDF_V2_2)                   0.05      1.17 f
+  U7908/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.20 f
+  U7835/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.22 f
+  U7834/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.25 f
+  U7833/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.27 f
+  U7832/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.29 f
+  U7831/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.32 f
+  U7830/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.34 f
+  U7829/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.37 f
+  U7828/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.40 f
+  U7827/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.42 f
+  U7826/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.45 f
+  U7825/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.47 f
+  U7824/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.50 f
+  U7823/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.52 f
+  U7822/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.55 f
+  U7821/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.57 f
+  U7820/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.60 f
+  U7819/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.62 f
+  U7818/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.65 f
+  U7817/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.67 f
+  U7816/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.70 f
+  U7815/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.72 f
+  U7814/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.75 f
+  U7813/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.77 f
+  U7812/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.80 f
+  U7811/CO (SAEDHVT14_ADDF_V2_2)                   0.03      1.82 f
+  U7810/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.85 f
+  U7809/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.87 f
+  U7888/CO (SAEDHVT14_ADDF_V2_2)                   0.02      1.90 f
+  U7890/S (SAEDHVT14_ADDF_V2_2)                    0.11      2.01 r
+  U7917/X (SAEDHVT14_OR4_2)                        0.10      2.11 r
+  U7918/X (SAEDHVT14_OR4_2)                        0.04      2.14 r
+  U7919/X (SAEDHVT14_NR4_2)                        0.10      2.24 f
+  U5834/X (SAEDHVT14_ND2_CDC_2)                    0.05      2.30 r
+  U7920/X (SAEDHVT14_OR3_2)                        0.03      2.33 r
+  U6037/X (SAEDHVT14_ND2_CDC_2)                    0.01      2.34 f
+  U6741/X (SAEDHVT14_OR2_2)                        0.02      2.36 f
+  U6742/X (SAEDHVT14_ND2_CDC_2)                    0.01      2.37 r
+  U4978/X (SAEDHVT14_ND2_CDC_2)                    0.02      2.39 f
+  U6753/X (SAEDHVT14_ND2_CDC_2)                    0.02      2.40 r
+  U6752/X (SAEDHVT14_AN4_2)                        0.10      2.50 r
+  PLACE_HFSINV_532_204/X (SAEDHVT14_INV_2)         0.10      2.60 f
+  U6768/X (SAEDHVT14_AN3_2)                        0.10      2.69 f
+  PLACE_HFSBUF_391_202/X (SAEDHVT14_BUF_S_2)       0.07      2.77 f
+  U6671/X (SAEDHVT14_ND2_CDC_2)                    0.04      2.81 r
+  U11788/X (SAEDHVT14_AN4_2)                       0.04      2.84 r
+  U11789/X (SAEDHVT14_ND2_CDC_2)                   0.06      2.90 f
+  U10624/X (SAEDHVT14_ND2B_2)                      0.08      2.98 f
+  U12627/X (SAEDHVT14_MUX2_2)                      0.07      3.05 f
+  instr_addr_o[14] (out)                           0.00      3.05 f
+  data arrival time                                          3.05
+
+  clock clk_i (rise edge)                          6.25      6.25
+  clock network delay (ideal)                      0.17      6.42
+  clock uncertainty                               -0.20      6.22
+  output external delay                           -1.88      4.35
+  data required time                                         4.35
+  ------------------------------------------------------------------------
+  data required time                                         4.35
+  data arrival time                                         -3.05
+  ------------------------------------------------------------------------
+  slack (MET)                                                1.29
+
+
+1

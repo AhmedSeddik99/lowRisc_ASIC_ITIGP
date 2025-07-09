@@ -1,0 +1,101 @@
+****************************************
+Report : qor
+Design : multi-scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 03:59:03 2025
+****************************************
+
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Fast'
+Started    : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+Succeeded  : Command execution in scenario 'Func_Slow'
+-----------------------------------
+End of Master/Slave Task Processing
+
+  Timing Path Group '**clock_gating_default**' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            1 (Func_Slow)
+  Critical Path Length:                    0.08 (Func_Slow)
+  Critical Path Slack:                     2.90 (Func_Slow)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk_i' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           61 (Func_Slow)
+  Critical Path Length:                    4.45 (Func_Slow)
+  Critical Path Slack:                    -0.10 (Func_Slow)
+  Total Negative Slack:                   -0.93
+  No. of Violating Paths:                    21
+  ---------------------------------------------
+
+  Timing Path Group 'cluster_clock_gating' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           85 (Func_Slow)
+  Critical Path Length:                    4.71 (Func_Slow)
+  Critical Path Slack:                     1.83 (Func_Slow)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group '**clock_gating_default**' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            1 (Func_Fast)
+  Critical Path Length:                    0.03 (Func_Fast)
+  Critical Path Slack:                    -0.10 (Func_Fast)
+  Total Negative Slack:                   -0.10
+  No. of Violating Paths:                     1
+  ---------------------------------------------
+
+  Timing Path Group 'clk_i' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            4 (Func_Fast)
+  Critical Path Length:                    0.10 (Func_Fast)
+  Critical Path Slack:                     0.01 (Func_Fast)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'cluster_clock_gating' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            5 (Func_Fast)
+  Critical Path Length:                    0.15 (Func_Fast)
+  Critical Path Slack:                    -0.04 (Func_Fast)
+  Total Negative Slack:                   -1.68
+  No. of Violating Paths:                   206
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                    2 (Func_Fast, Func_Slow)
+  Hierarchical Port Count:                  689 (Func_Fast, Func_Slow)
+  Leaf Cell Count:                        11238 (Func_Fast, Func_Slow)
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect Area:                6047.74 (Func_Fast, Func_Slow)
+  Total Cell Area:                      5698.06 (Func_Fast, Func_Slow)
+  Design Area:                         11745.80 (Func_Fast, Func_Slow)
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:            35721
+  max_capacitance Count:                      5
+  min_capacitance Count:                    405
+  max_transition Count:                     320
+  clock_gating_hold Count:                    1
+  max_capacitance Cost:                    3.34
+  min_capacitance Cost:                   60.61
+  max_transition Cost:                   367.43
+  clock_gating_hold Cost:                  0.10
+  Total DRC Cost:                        431.47
+  ---------------------------------------------
+1

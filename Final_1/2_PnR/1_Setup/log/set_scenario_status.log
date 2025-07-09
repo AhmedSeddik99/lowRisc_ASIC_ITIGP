@@ -1,0 +1,4 @@
+Scenario Func_Slow (mode Func corner Slow) is active for setup/hold/max_transition/max_capacitance/min_capacitance analysis.
+1
+Scenario Func_Fast (mode Func corner Fast) is active for setup/hold/max_transition/max_capacitance/min_capacitance analysis.
+1

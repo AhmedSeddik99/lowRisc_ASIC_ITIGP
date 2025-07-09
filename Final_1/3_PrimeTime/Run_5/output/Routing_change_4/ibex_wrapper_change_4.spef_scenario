@@ -1,0 +1,6 @@
+./7_Eco/output/Routing_change_4/ibex_wrapper_change_4.tlup_max_-40.spef for scenarios: 
+	 scenario: Func_Slow, corner type: late/early
+
+./7_Eco/output/Routing_change_4/ibex_wrapper_change_4.tlup_min_125.spef for scenarios: 
+	 scenario: Func_Fast, corner type: late/early
+

@@ -1,0 +1,359 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-slack_lesser_than 0.00
+	-max_paths 500
+	-sort_by slack
+Design : multi-scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:14:12 2025
+****************************************
+
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Fast'
+Started    : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+-----------------------------------
+End of Master/Slave Task Processing
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[31]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_valid_id_q_reg
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: ibex_top_inst/core_clock_gate_i/U2/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[31]/CK (SAEDHVT14_FSDPQ_V2_4)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[31]/Q (SAEDHVT14_FSDPQ_V2_4)
+                                                          0.02 &     0.09 f
+  CTS_copt_h_inst_8799/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.11 f
+  U_PTECO_HOLD_BUF34/X (SAEDHVT14_BUF_16)                 0.01 &     0.13 f
+  U_PTECO_HOLD_BUF5/X (SAEDHVT14_BUF_2)                   0.01 &     0.13 f
+  U_PTECO_HOLD_BUF157/X (SAEDHVT14_BUF_16)                0.01 &     0.14 f
+  CTS_copt_h_inst_8800/X (SAEDHVT14_DEL_R2V3_2)           0.03 H     0.17 f
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_valid_id_q_reg/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.01       0.18 f
+  data arrival time                                                  0.18
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  clock reconvergence pessimism                          -0.26       0.09
+  clock uncertainty                                       0.10       0.19
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_valid_id_q_reg/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                                     0.19 r
+  library hold time                                      -0.00       0.19
+  data required time                                                 0.19
+  ------------------------------------------------------------------------------
+  data required time                                                 0.19
+  data arrival time                                                 -0.18
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][4]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][5]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_26823060/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][4]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][4]/Q (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.02 &     0.09 r
+  CTS_copt_h_inst_10584/X (SAEDHVT14_DEL_R2V3_2)          0.02 &     0.11 r
+  CTS_copt_h_inst_10585/X (SAEDHVT14_DEL_R2V3_2)          0.03 &     0.13 r
+  U_PTECO_HOLD_BUF7/X (SAEDHVT14_BUF_16)                  0.01 &     0.14 r
+  U_PTECO_HOLD_BUF156/X (SAEDHVT14_BUF_16)                0.01 &     0.15 r
+  CTS_copt_h_inst_10586/X (SAEDHVT14_DEL_R2V3_2)          0.02 &     0.17 r
+  U_PTECO_HOLD_BUF96/X (SAEDHVT14_BUF_16)                 0.01 &     0.18 r
+  ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][5]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00 &     0.18 r
+  data arrival time                                                  0.18
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.36       0.36
+  clock reconvergence pessimism                          -0.26       0.10
+  clock uncertainty                                       0.10       0.20
+  ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q_reg[1][5]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.20 r
+  library hold time                                      -0.00       0.19
+  data required time                                                 0.19
+  ------------------------------------------------------------------------------
+  data required time                                                 0.19
+  data arrival time                                                 -0.18
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[2]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[3]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_26823060/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[2]/CK (SAEDHVT14_FSDPQ_V2LP_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[2]/Q (SAEDHVT14_FSDPQ_V2LP_2)
+                                                          0.02 &     0.09 r
+  CTS_copt_h_inst_11278/X (SAEDHVT14_DEL_R2V3_2)          0.02 &     0.12 r
+  U_PTECO_HOLD_BUF37/X (SAEDHVT14_BUF_16)                 0.01 &     0.13 r
+  U_PTECO_HOLD_BUF8/X (SAEDHVT14_BUF_2)                   0.01 &     0.13 r
+  U_PTECO_HOLD_BUF158/X (SAEDHVT14_BUF_16)                0.01 &     0.14 r
+  CTS_copt_h_inst_11279/X (SAEDHVT14_DEL_R2V3_2)          0.02 H     0.16 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[3]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.01       0.17 r
+  data arrival time                                                  0.17
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  clock reconvergence pessimism                          -0.26       0.07
+  clock uncertainty                                       0.10       0.17
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_waddr_wb_q_reg[3]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.17 r
+  library hold time                                      -0.00       0.17
+  data required time                                                 0.17
+  ------------------------------------------------------------------------------
+  data required time                                                 0.17
+  data arrival time                                                 -0.17
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[14]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[15]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_26823060/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[14]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00       0.08 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[14]/Q (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.01 &     0.09 r
+  CTS_copt_h_inst_6203/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.11 r
+  CTS_copt_h_inst_6204/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.14 r
+  U_PTECO_HOLD_BUF10/X (SAEDHVT14_BUF_8)                  0.01 &     0.14 r
+  U_PTECO_HOLD_BUF161/X (SAEDHVT14_BUF_S_20)              0.01 &     0.15 r
+  U_PTECO_HOLD_BUF45/X (SAEDHVT14_BUF_16)                 0.01 &     0.16 r
+  CTS_copt_h_inst_6205/X (SAEDHVT14_DEL_R2V3_2)           0.02 H     0.17 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[15]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.01       0.18 r
+  data arrival time                                                  0.18
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  clock reconvergence pessimism                          -0.26       0.09
+  clock uncertainty                                       0.10       0.19
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[15]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.19 r
+  library hold time                                      -0.01       0.18
+  data required time                                                 0.18
+  ------------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.18
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[0]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: ibex_top_inst/core_clock_gate_i/U2/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/Q (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.02       0.10 r
+  U7852/X (SAEDHVT14_NR3_2)                               0.03 H     0.12 f
+  U_PTECO_HOLD_BUF151/X (SAEDHVT14_BUF_S_20)              0.01 &     0.13 f
+  U_PTECO_HOLD_BUF30/X (SAEDHVT14_BUF_S_20)               0.01 &     0.14 f
+  U5742/X (SAEDHVT14_AN3_2)                               0.02 &     0.16 f
+  U5991/X (SAEDHVT14_ND2_CDC_2)                           0.01 &     0.17 r
+  U11069/X (SAEDHVT14_ND2_CDC_2)                          0.01 &     0.18 f
+  U_PTECO_HOLD_BUF3/X (SAEDHVT14_BUF_20)                  0.01 &     0.19 f
+  ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[0]/D (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.00 &     0.19 f
+  data arrival time                                                  0.19
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  clock reconvergence pessimism                          -0.26       0.09
+  clock uncertainty                                       0.10       0.19
+  ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[0]/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                                     0.19 r
+  library hold time                                       0.00       0.19
+  data required time                                                 0.19
+  ------------------------------------------------------------------------------
+  data required time                                                 0.19
+  data arrival time                                                 -0.19
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[1]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[2]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_26823060/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[1]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[1]/Q (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.02 &     0.09 r
+  CTS_copt_h_inst_8649/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.11 r
+  CTS_copt_h_inst_8650/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.14 r
+  U_PTECO_HOLD_BUF9/X (SAEDHVT14_BUF_8)                   0.01 &     0.14 r
+  U_PTECO_HOLD_BUF160/X (SAEDHVT14_BUF_S_20)              0.01 &     0.15 r
+  U_PTECO_HOLD_BUF49/X (SAEDHVT14_BUF_16)                 0.01 &     0.16 r
+  CTS_copt_h_inst_8651/X (SAEDHVT14_DEL_R2V3_2)           0.02 H     0.18 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[2]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.01       0.18 r
+  data arrival time                                                  0.18
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  clock reconvergence pessimism                          -0.26       0.09
+  clock uncertainty                                       0.10       0.19
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.wb_pc_q_reg[2]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.19 r
+  library hold time                                      -0.01       0.18
+  data required time                                                 0.18
+  ------------------------------------------------------------------------------
+  data required time                                                 0.18
+  data arrival time                                                 -0.18
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[1]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: ibex_top_inst/core_clock_gate_i/U2/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/Q (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.02       0.10 f
+  U7852/X (SAEDHVT14_NR3_2)                               0.03 H     0.13 r
+  U_PTECO_HOLD_BUF151/X (SAEDHVT14_BUF_S_20)              0.01 &     0.13 r
+  U_PTECO_HOLD_BUF30/X (SAEDHVT14_BUF_S_20)               0.01 &     0.14 r
+  U5742/X (SAEDHVT14_AN3_2)                               0.02 &     0.16 r
+  U5991/X (SAEDHVT14_ND2_CDC_2)                           0.01 &     0.17 f
+  U_PTECO_HOLD_BUF1/X (SAEDHVT14_BUF_16)                  0.01 &     0.18 f
+  U7262/X (SAEDHVT14_AN2_2)                               0.01 &     0.19 f
+  ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[1]/D (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.00 &     0.19 f
+  data arrival time                                                  0.19
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.35       0.35
+  clock reconvergence pessimism                          -0.26       0.09
+  clock uncertainty                                       0.10       0.19
+  ibex_top_inst/u_ibex_core/id_stage_i/controller_i/debug_cause_q_reg[1]/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                                     0.19 r
+  library hold time                                       0.00       0.19
+  data required time                                                 0.19
+  ------------------------------------------------------------------------------
+  data required time                                                 0.19
+  data arrival time                                                 -0.19
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[27]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_26823060/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[27]/CK (SAEDHVT14_FSDPQ_V2_4)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[27]/Q (SAEDHVT14_FSDPQ_V2_4)
+                                                          0.02 &     0.09 r
+  CTS_copt_h_inst_8647/X (SAEDHVT14_DEL_R2V3_2)           0.02 &     0.11 r
+  U_PTECO_HOLD_BUF12/X (SAEDHVT14_BUF_2)                  0.01 &     0.12 r
+  U_PTECO_HOLD_BUF159/X (SAEDHVT14_BUF_S_20)              0.01 &     0.13 r
+  U_PTECO_HOLD_BUF139/X (SAEDHVT14_BUF_16)                0.01 &     0.14 r
+  CTS_copt_h_inst_8646/X (SAEDHVT14_DEL_R2V3_2)           0.02 H     0.16 r
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.01       0.17 r
+  data arrival time                                                  0.17
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.33       0.33
+  clock reconvergence pessimism                          -0.26       0.07
+  clock uncertainty                                       0.10       0.17
+  ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_id_o_reg[28]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.17 r
+  library hold time                                      -0.00       0.17
+  data required time                                                 0.17
+  ------------------------------------------------------------------------------
+  data required time                                                 0.17
+  data arrival time                                                 -0.17
+  ------------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+1

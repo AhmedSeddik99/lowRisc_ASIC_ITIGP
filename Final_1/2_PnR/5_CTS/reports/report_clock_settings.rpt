@@ -1,0 +1,137 @@
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner Fast: no PVT mismatches. (PVT-032)
+Information: Corner Slow: no PVT mismatches. (PVT-032)
+****************************************
+ Report : clock settings
+ Design : ibex_hvt_cts
+ Date   : Mon Jul  7 20:23:57 2025
+****************************************
+
+
+======================================
+Configurations 
+======================================
+
+##Global
+  Corner = Fast
+    Max transition: 2.000
+    Max capacitance: 600.000
+    Target skew: 0.010
+    Target latency: Not specified
+  Corner = Slow
+    Max transition: 2.000
+    Max capacitance: 600.000
+    Target skew: 0.010
+    Target latency: Not specified
+
+##clk_i
+  Corner = Fast
+    Max transition: 0.050
+    Max capacitance: 600.000
+    Target skew: 0.010
+    Target latency: Not specified
+  Corner = Slow
+    Max transition: 2.000
+    Max capacitance: 600.000
+    Target skew: 0.010
+    Target latency: Not specified
+
+##cluster_clock_gating
+  Corner = Fast
+    Max transition: 0.050
+    Max capacitance: 600.000
+  Corner = Slow
+    Max transition: 2.000
+    Max capacitance: 600.000
+
+
+======================================
+Routing Rules 
+======================================
+
+##Global
+Routing rule for sink nets: Default Min Layer:M1 Max Layer:M9
+Routing rule for internal nets: clk_2Xw_2Xs  Min Layer:M3 Max Layer:M9
+Routing rule for root nets: clk_2Xw_2Xs  Min Layer:M3 Max Layer:M9
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+##clk_i
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+
+======================================
+Buffers and Inverters 
+======================================
+
+##Buffers
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+saed14hvt/SAEDHVT14_BUF_10            0.710                 inf        446.400
+saed14hvt/SAEDHVT14_BUF_12            0.844                 inf        537.100
+saed14hvt/SAEDHVT14_BUF_16            1.066                 inf        719.600
+saed14hvt/SAEDHVT14_BUF_20            1.288                 inf        901.800
+saed14hvt/SAEDHVT14_BUF_2             0.311                 inf         88.950
+saed14hvt/SAEDHVT14_BUF_4             0.400                 inf        177.500
+saed14hvt/SAEDHVT14_BUF_6             0.488                 inf        265.900
+saed14hvt/SAEDHVT14_BUF_CDC_2         0.311                 inf         88.950
+saed14hvt/SAEDHVT14_BUF_S_10          0.755                 inf        446.700
+saed14hvt/SAEDHVT14_BUF_S_12          0.844                 inf        530.000
+saed14hvt/SAEDHVT14_BUF_S_16          1.110                 inf        718.400
+saed14hvt/SAEDHVT14_BUF_S_20          1.288                 inf        898.600
+saed14hvt/SAEDHVT14_BUF_S_3           0.400                 inf        135.900
+saed14hvt/SAEDHVT14_BUF_S_8           0.666                 inf        356.300
+
+##Inverters
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+saed14hvt/SAEDHVT14_INV_S_10          0.577                 inf        380.900
+saed14hvt/SAEDHVT14_INV_S_12          0.666                 inf        458.800
+saed14hvt/SAEDHVT14_INV_S_16          0.844                 inf        610.400
+saed14hvt/SAEDHVT14_INV_S_20          1.021                 inf        837.700
+saed14hvt/SAEDHVT14_INV_S_3           0.311                 inf        113.700
+saed14hvt/SAEDHVT14_INV_S_4           0.311                 inf        149.000
+saed14hvt/SAEDHVT14_INV_S_5           0.400                 inf        189.100
+saed14hvt/SAEDHVT14_INV_S_6           0.400                 inf        225.400
+saed14hvt/SAEDHVT14_INV_S_7           0.488                 inf        265.700
+saed14hvt/SAEDHVT14_INV_S_8           0.488                 inf        302.100
+saed14hvt/SAEDHVT14_INV_S_9           0.577                 inf        344.400
+saed14hvt/SAEDHVT14_INV_10            0.577                 inf        379.500
+saed14hvt/SAEDHVT14_INV_12            0.666                 inf        457.900
+saed14hvt/SAEDHVT14_INV_16            0.844                 inf        609.300
+saed14hvt/SAEDHVT14_INV_20            1.021                 inf        753.500
+saed14hvt/SAEDHVT14_INV_6             0.400                 inf        225.200
+saed14hvt/SAEDHVT14_INV_8             0.488                 inf        302.400
+
+
+======================================
+Spacing Rules 
+======================================
+
+##By design
+No by design spacing rule is specified
+
+##By clock
+No by clock spacing rule is specified
+
+##By libcell
+No by libcell spacing rule is specified
+
+##By clock and libcell
+No by clock and libcell spacing rule is specified
+1
