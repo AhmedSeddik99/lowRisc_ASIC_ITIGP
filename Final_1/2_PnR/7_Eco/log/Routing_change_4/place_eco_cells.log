@@ -1,0 +1,194 @@
+
+
+********  Initialize ECO Placement Network  ********
+
+Information: The current maximum fanout to ignore high fanout net connection of ECO cells is 100. (EPL-005)
+
+
+********  Computing Seed Location  ********
+
+
+
+********  Legalize ECO Cells  ********
+
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Begin building search trees for block ibex_hvt:ibex_hvt_routing_change_4.design
+Done building search trees for block ibex_hvt:ibex_hvt_routing_change_4.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 0 shapes out of 4698 total shapes.
+Layer M2: cached 0 shapes out of 120871 total shapes.
+Layer M3: cached 16 shapes out of 95110 total shapes.
+Cached 4400 vias out of 169011 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        26902        Yes DEFAULT_VA
+
+Warning: max_legality_failures=5000 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: max_legality_check_range=500 ignored.
+	To use it, set limit_legality_checks to true.
+Optimizing attract points
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 24 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 24 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 24 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Writing GIF plot to file './legalizer_debug_plots/ibex_hvt_routing_change_4_SITE_unit.001-0001-max_displacements.gif'.
+Writing GIF plot to file './legalizer_debug_plots/ibex_hvt_routing_change_4_SITE_unit.001-0002-colored_displacements.gif'.
+Legalization complete (1 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  26902
+number of references:               107
+number of site rows:                266
+number of locations attempted:       23
+number of locations failed:           0  (0.0%)
+
+Legality of references at locations:
+0 references had failures.
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:           8 (132 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            3.243 um ( 5.40 row height)
+rms weighted cell displacement:   3.243 um ( 5.40 row height)
+max cell displacement:            5.966 um ( 9.94 row height)
+avg cell displacement:            2.676 um ( 4.46 row height)
+avg weighted cell displacement:   2.676 um ( 4.46 row height)
+number of cells moved:                8
+number of large displacements:        4
+large displacement threshold:     3.000 row height
+
+Displacements of worst 8 cells:
+Cell: U_PTECO_HOLD_BUF13 (SAEDHVT14_BUF_16)
+  Input location: (15.54,1.753)
+  Legal location: (12.062,6.6)
+  Displacement:   5.966 um ( 9.94 row height)
+Cell: U_PTECO_HOLD_BUF37 (SAEDHVT14_BUF_S_20)
+  Input location: (99.16,36.853)
+  Legal location: (102.342,36)
+  Displacement:   3.294 um ( 5.49 row height)
+Cell: U_PTECO_HOLD_BUF9 (SAEDHVT14_BUF_20)
+  Input location: (80.956,24.853)
+  Legal location: (82.658,26.4)
+  Displacement:   2.300 um ( 3.83 row height)
+Cell: U_PTECO_HOLD_BUF5 (SAEDHVT14_DEL_L4D100_2)
+  Input location: (100.233,26.053)
+  Legal location: (101.38,27.6)
+  Displacement:   1.926 um ( 3.21 row height)
+Cell: U_PTECO_HOLD_BUF10 (SAEDHVT14_DEL_L4D100_2)
+  Input location: (61.975,13.753)
+  Legal location: (61.05,13.2)
+  Displacement:   1.078 um ( 1.80 row height)
+Cell: U_PTECO_HOLD_BUF12 (SAEDHVT14_DEL_L4D100_2)
+  Input location: (103.526,40.453)
+  Legal location: (102.86,40.8)
+  Displacement:   0.751 um ( 1.25 row height)
+Cell: U_PTECO_HOLD_BUF14 (SAEDHVT14_BUF_2)
+  Input location: (99.974,35.653)
+  Legal location: (99.974,35.4)
+  Displacement:   0.253 um ( 0.42 row height)
+Cell: U_PTECO_HOLD_BUF15 (SAEDHVT14_BUF_2)
+  Input location: (80.6692,44.8779)
+  Legal location: (80.734,45)
+  Displacement:   0.138 um ( 0.23 row height)
+
+****************************************
+Report : ECO Large Displacement Cell
+Design : ibex_hvt_routing_change_4
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:18:11 2025
+****************************************
+
+Large displacement cells:
+  Cell: U_PTECO_HOLD_BUF13 (SAEDHVT14_BUF_16)
+    Pre-legalization location:  (15.5400 1.7530)
+    Post-legalization location: (12.0620 6.6000)
+    Displacement: 5.966 um, e.g. 9.94 row height.
+  Cell: U_PTECO_HOLD_BUF37 (SAEDHVT14_BUF_S_20)
+    Pre-legalization location:  (99.1600 36.8530)
+    Post-legalization location: (102.3420 36.0000)
+    Displacement: 3.294 um, e.g. 5.49 row height.
+
+Total 2 cells have large displacement (e.g. > 3.000 um or 5 row height)
+
+****************************************
+Report : ECO Legalize Displacement
+Design : ibex_hvt_routing_change_4
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:18:11 2025
+****************************************
+
+avg cell displacement:    1.963 um ( 3.27 row height)
+max cell displacement:    5.966 um ( 9.94 row height)
+std deviation:            1.817 um ( 3.03 row height)
+number of cell moved:         8 cells (out of 8 cells)
+
+8

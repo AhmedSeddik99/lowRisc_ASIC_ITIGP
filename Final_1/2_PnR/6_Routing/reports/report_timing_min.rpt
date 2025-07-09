@@ -1,0 +1,47 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:43:31 2025
+****************************************
+
+  Startpoint: ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg (negative level-sensitive latch clocked by clk_i)
+  Endpoint: ibex_top_inst/core_clock_gate_i/U2 (falling clock gating-check end-point clocked by clk_i)
+  Mode: Func
+  Corner: Fast
+  Scenario: Func_Fast
+  Path Group: clk_i
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_i (fall edge)                          3.12      3.12
+  clock network delay (propagated)                 0.00      3.13
+
+  ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G (SAEDHVT14_LDNQOR2_4)
+                                                   0.00      3.13 f
+  ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/Q (SAEDHVT14_LDNQOR2_4)
+                                                   0.03      3.16 r
+  ibex_top_inst/core_clock_gate_i/U2/A1 (SAEDHVT14_AN2_2)
+                                                   0.00      3.16 r
+  data arrival time                                          3.16
+
+  clock clk_i (fall edge)                          3.12      3.12
+  clock network delay (propagated)                 0.03      3.16
+  ibex_top_inst/core_clock_gate_i/U2/A2 (SAEDHVT14_AN2_2)
+                                                   0.00      3.16 f
+  clock uncertainty                                0.10      3.26
+  library hold time                                0.00      3.26
+  data required time                                         3.26
+  ------------------------------------------------------------------------
+  data required time                                         3.26
+  data arrival time                                         -3.16
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.10
+
+
+1

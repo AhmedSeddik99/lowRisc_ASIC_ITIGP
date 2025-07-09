@@ -1,0 +1,13 @@
+
+  Linking design 'ibex_wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (33 designs)              /mnt/hgfs/PnR_GP/Final_1/0_Synthesis/ibex_wrapper.db, etc
+  saed14hvt_ss0p72vm40c (library)
+                              /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db
+  saed14hvt_ff0p88v125c (library)
+                              /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db
+  saed14hvt_tt0p8v25c (library)
+                              /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db
+
+1

@@ -1,0 +1,62 @@
+****************************************
+Report : design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 20:23:30 2025
+****************************************
+
+Total number of std cells in library : 881
+Total number of dont_use lib cells   : 597
+Total number of dont_touch lib cells : 18
+Total number of buffers              : 59
+Total number of inverters            : 51
+Total number of flip-flops           : 171
+Total number of latches              : 45
+Total number of ICGs                 : 30
+
+Cell Instance Type  Count         Area
+--------------------------------------
+TOTAL LEAF CELLS    19181    10442.214
+Standard cells      17037     9299.891
+Hard macro cells        0        0.000
+Soft macro cells        0        0.000
+Always on cells         0        0.000
+Physical only        2144     1142.323
+Fixed cells          2244     1177.843
+Moveable cells      16937     9264.371
+Sequential           2020     2627.992
+Buffer/inverter       985      260.406
+ICG cells               0        0.000
+
+Logic Hierarchies                    : 2
+Design Masters count                 : 60
+Total Flat nets count                : 18016
+Total FloatingNets count             : 230
+Total no of Ports                    : 666
+Number of Master Clocks in design    : 1
+Number of Generated Clocks in design : 1
+Number of Path Groups in design      : 8 (2 of them Non Default)
+Number of Scan Chains in design      : 0
+List of Modes                        : Func
+List of Corners                      : Slow, Fast
+List of Scenarios                    : Func_Fast, Func_Slow
+
+Core Area                            : 25534.085
+Chip Area                            : 38416.000
+Total Site Row Area                  : 25534.085
+Number of Blockages                  : 0
+Total area of Blockages              : 0.000
+Number of Power Domains              : 1
+Number of Voltage Areas              : 1
+Number of Group Bounds               : 0
+Number of Exclusive MoveBounds       : 0
+Number of Hard or Soft MoveBounds    : 0
+Number of Multibit Registers         : 0
+Number of Multibit LS/ISO Cells      : 0
+Number of Top Level RP Groups        : 0
+Number of Tech Layers                : 63 (53 of them have unknown routing dir.)
+
+Total wire length                    : 0.00 micron
+Total number of wires                : 0
+Total number of contacts             : 5112
+1

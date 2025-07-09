@@ -1,0 +1,50 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:10:09 2025
+****************************************
+
+  Startpoint: ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[23] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[24] (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Mode: Func
+  Corner: Fast
+  Scenario: Func_Fast
+  Path Group: cluster_clock_gating
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (propagated)                 0.08      0.08
+
+  ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[23]/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                   0.00      0.08 r
+  ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[23]/Q (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                   0.02      0.10 f
+  CTS_copt_h_inst_7006/X (SAEDHVT14_DEL_R2V3_2)    0.02      0.12 f
+  CTS_copt_h_inst_7004/X (SAEDHVT14_DEL_R2V3_2)    0.02      0.15 f
+  CTS_copt_h_inst_7003/X (SAEDHVT14_DEL_R2V3_2)    0.02      0.17 f
+  ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[24]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                   0.00      0.17 f
+  data arrival time                                          0.17
+
+  clock cluster_clock_gating (rise edge)           0.00      0.00
+  clock network delay (propagated)                 0.08      0.08
+  ibex_top_inst/u_ibex_core/ex_block_i/gen_multdiv_fast.multdiv_i/op_numerator_q_reg[24]/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                   0.00      0.08 r
+  clock uncertainty                                0.10      0.18
+  library hold time                                0.00      0.18
+  data required time                                         0.18
+  ------------------------------------------------------------------------
+  data required time                                         0.18
+  data arrival time                                         -0.17
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+1

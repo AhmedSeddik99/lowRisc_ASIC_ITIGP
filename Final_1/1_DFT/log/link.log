@@ -1,0 +1,11 @@
+
+  Linking design 'ibex_wrapper'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  ibex_wrapper                /mnt/hgfs/PnR_GP/Final_1/0_Synthesis/output/ibex_wrapper.ddc
+  saed14hvt_ss0p72vm40c (library) /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db
+  saed14hvt_ff0p88v125c (library) /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db
+  saed14hvt_tt0p8v25c (library) /mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db
+  * (3 designs)               /mnt/hgfs/PnR_GP/Final_1/0_Synthesis/output/ibex_register_file_ff_0_00000020_0_0_0_00000000.db, etc
+
+1

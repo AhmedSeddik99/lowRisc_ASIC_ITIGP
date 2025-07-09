@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1751934217
+pid 34800
+log /mnt/hgfs/PnR_GP/Final_1/3_PrimeTime/Run_5/work/system_log/master.IC_EDA.34800.log
+tcp 192.168.122.1:46419
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

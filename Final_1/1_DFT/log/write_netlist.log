@@ -1,0 +1,4 @@
+Writing verilog file '/mnt/hgfs/PnR_GP/Final_1/1_DFT/output/ibex_wrapper.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 11 nets to module ibex_wrapper using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1

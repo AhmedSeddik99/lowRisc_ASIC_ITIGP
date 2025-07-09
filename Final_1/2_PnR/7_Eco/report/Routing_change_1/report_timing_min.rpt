@@ -1,0 +1,59 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 07:34:58 2025
+****************************************
+
+  Startpoint: ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg (negative level-sensitive latch clocked by clk_i)
+  Endpoint: ibex_top_inst/core_clock_gate_i/U2 (falling clock gating-check end-point clocked by clk_i)
+  Mode: Func
+  Corner: Fast
+  Scenario: Func_Fast
+  Path Group: clk_i
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk_i (fall edge)                          3.12      3.12
+  clock network delay (propagated)                 0.00      3.13
+
+  ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/G (SAEDHVT14_LDNQOR2_4)
+                                                   0.00      3.13 f
+  ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch_reg/Q (SAEDHVT14_LDNQOR2_4)
+                                                   0.02      3.15 r
+  U161/X (SAEDHVT14_BUF_2)                         0.01      3.16 r
+  U160/X (SAEDHVT14_BUF_2)                         0.01      3.16 r
+  U159/X (SAEDHVT14_BUF_2)                         0.01      3.17 r
+  U158/X (SAEDHVT14_BUF_2)                         0.01      3.18 r
+  U157/X (SAEDHVT14_BUF_2)                         0.01      3.18 r
+  U156/X (SAEDHVT14_BUF_2)                         0.01      3.19 r
+  U155/X (SAEDHVT14_BUF_2)                         0.01      3.20 r
+  U154/X (SAEDHVT14_BUF_2)                         0.01      3.20 r
+  U153/X (SAEDHVT14_BUF_2)                         0.01      3.21 r
+  U152/X (SAEDHVT14_BUF_2)                         0.01      3.22 r
+  U151/X (SAEDHVT14_BUF_2)                         0.01      3.23 r
+  U150/X (SAEDHVT14_BUF_2)                         0.01      3.23 r
+  ibex_top_inst/core_clock_gate_i/U2/A1 (SAEDHVT14_AN2_2)
+                                                   0.00      3.23 r
+  data arrival time                                          3.23
+
+  clock clk_i (fall edge)                          3.12      3.12
+  clock network delay (propagated)                 0.03      3.16
+  ibex_top_inst/core_clock_gate_i/U2/A2 (SAEDHVT14_AN2_2)
+                                                   0.00      3.16 f
+  clock uncertainty                                0.10      3.26
+  library hold time                                0.00      3.26
+  data required time                                         3.26
+  ------------------------------------------------------------------------
+  data required time                                         3.26
+  data arrival time                                         -3.23
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+1

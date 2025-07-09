@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : DFT signals
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Mon Jul  7 17:05:59 2025
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+scan_in_0          ScanDataIn          -         -         Delay 0.0 -
+scan_out_0         ScanDataOut         -         -         -         -
+scan_in_1          ScanDataIn          -         -         Delay 0.0 -
+scan_out_1         ScanDataOut         -         -         -         -
+scan_in_2          ScanDataIn          -         -         Delay 0.0 -
+scan_out_2         ScanDataOut         -         -         -         -
+scan_in_3          ScanDataIn          -         -         Delay 0.0 -
+scan_out_3         ScanDataOut         -         -         -         -
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+scan_in_0          ScanDataIn          -         -         Delay 0.0 -
+scan_out_0         ScanDataOut         -         -         -         -
+scan_in_1          ScanDataIn          -         -         Delay 0.0 -
+scan_out_1         ScanDataOut         -         -         -         -
+scan_in_2          ScanDataIn          -         -         Delay 0.0 -
+scan_out_2         ScanDataOut         -         -         -         -
+scan_in_3          ScanDataIn          -         -         Delay 0.0 -
+scan_out_3         ScanDataOut         -         -         -         -
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+scan_in_0          ScanDataIn          -         -         Delay 0.0 -
+scan_out_0         ScanDataOut         -         -         -         -
+scan_in_1          ScanDataIn          -         -         Delay 0.0 -
+scan_out_1         ScanDataOut         -         -         -         -
+scan_in_2          ScanDataIn          -         -         Delay 0.0 -
+scan_out_2         ScanDataOut         -         -         -         -
+scan_in_3          ScanDataIn          -         -         Delay 0.0 -
+scan_out_3         ScanDataOut         -         -         -         -
+
+1

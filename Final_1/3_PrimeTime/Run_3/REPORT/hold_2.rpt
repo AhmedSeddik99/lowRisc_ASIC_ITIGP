@@ -1,0 +1,66 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : multi-scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:04:53 2025
+****************************************
+
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Fast'
+Started    : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+Succeeded  : Command execution in scenario 'Func_Slow'
+-----------------------------------
+End of Master/Slave Task Processing
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[14]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_wdata_wb_q_reg[14]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: ibex_top_inst/core_clock_gate_i/U2/X
+  Path Group: cluster_clock_gating
+  Path Type: min
+  Scenario: Func_Fast
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[14]/CK (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.00       0.07 r
+  ibex_top_inst/u_ibex_core/load_store_unit_i/addr_last_q_reg[14]/Q (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                                          0.03 &     0.10 f
+  U5910/X (SAEDHVT14_AN2_2)                               0.01 &     0.11 f
+  U7555/X (SAEDHVT14_OR3_2)                               0.01 H     0.12 f
+  U10318/X (SAEDHVT14_OR3_2)                              0.02 H     0.14 f
+  U10316/X (SAEDHVT14_AN4_2)                              0.01 &     0.15 f
+  U10320/X (SAEDHVT14_AN4_2)                              0.01 &     0.16 f
+  U_PTECO_HOLD_BUF69/X (SAEDHVT14_BUF_2)                  0.01 &     0.17 f
+  U5125/X (SAEDHVT14_ND2_CDC_2)                           0.00 &     0.17 r
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_wdata_wb_q_reg[14]/D (SAEDHVT14_FSDPQ_V2_2)
+                                                          0.00 &     0.17 r
+  data arrival time                                                  0.17
+
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.36       0.36
+  clock reconvergence pessimism                          -0.28       0.08
+  clock uncertainty                                       0.10       0.18
+  ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_wdata_wb_q_reg[14]/CK (SAEDHVT14_FSDPQ_V2_2)
+                                                                     0.18 r
+  library hold time                                      -0.01       0.17
+  data required time                                                 0.17
+  ------------------------------------------------------------------------------
+  data required time                                                 0.17
+  data arrival time                                                 -0.17
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

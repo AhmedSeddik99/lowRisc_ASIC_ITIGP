@@ -1,0 +1,17 @@
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/gtech.db'
+Loading db file '/home/synopsys/syn/O-2018.06-SP1/libraries/syn/standard.sldb'
+  Loading link library 'saed14hvt_ss0p72vm40c'
+  Loading link library 'saed14hvt_ff0p88v125c'
+  Loading link library 'saed14hvt_tt0p8v25c'
+  Loading link library 'gtech'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Warning: Overwriting design file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'. (DDB-24)
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Warning: Overwriting design file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'. (DDB-24)
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+Warning: Overwriting design file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'. (DDB-24)
+Loaded 0 designs.

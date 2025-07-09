@@ -1,0 +1,95 @@
+****************************************
+Report : qor
+Design : multi-scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 08:14:10 2025
+****************************************
+
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Fast'
+Started    : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+-----------------------------------
+End of Master/Slave Task Processing
+
+  Timing Path Group '**clock_gating_default**' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           19 (Func_Slow)
+  Critical Path Length:                    0.31 (Func_Slow)
+  Critical Path Slack:                     2.67 (Func_Slow)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk_i' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           62 (Func_Slow)
+  Critical Path Length:                    3.88 (Func_Slow)
+  Critical Path Slack:                     0.47 (Func_Slow)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'cluster_clock_gating' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           89 (Func_Slow)
+  Critical Path Length:                    4.19 (Func_Slow)
+  Critical Path Slack:                     2.53 (Func_Slow)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group '**clock_gating_default**' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                           19 (Func_Fast)
+  Critical Path Length:                    0.14 (Func_Fast)
+  Critical Path Slack:                     0.01 (Func_Fast)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'clk_i' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            4 (Func_Fast)
+  Critical Path Length:                    0.10 (Func_Fast)
+  Critical Path Slack:                     0.01 (Func_Fast)
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'cluster_clock_gating' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            6 (Func_Fast)
+  Critical Path Length:                    0.18 (Func_Fast)
+  Critical Path Slack:                    -0.01 (Func_Fast)
+  Total Negative Slack:                   -0.03
+  No. of Violating Paths:                     8
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                    2 (Func_Slow, Func_Fast)
+  Hierarchical Port Count:                  689 (Func_Slow, Func_Fast)
+  Leaf Cell Count:                        11499 (Func_Slow, Func_Fast)
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect Area:                6084.35 (Func_Slow, Func_Fast)
+  Total Cell Area:                      5845.39 (Func_Slow, Func_Fast)
+  Design Area:                         11929.74 (Func_Slow, Func_Fast)
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:            36243
+  min_capacitance Count:                    405
+  min_capacitance Cost:                   60.61
+  Total DRC Cost:                         60.61
+  ---------------------------------------------
+1

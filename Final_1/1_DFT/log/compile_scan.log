@@ -1,0 +1,116 @@
+Information: Performing power optimization. (PWR-850)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.1 |     *     |
+| Licensed DW Building Blocks        |                         |     *     |
+============================================================================
+
+
+Information: There are 469 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ss0p72vm40c set on design ibex_wrapper has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14hvt_ff0p88v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SAEDHVT14_TIE1_V1_2' in the library 'saed14hvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE1_4' in the library 'saed14hvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_V1_2' in the library 'saed14hvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SAEDHVT14_TIE0_4' in the library 'saed14hvt_ss0p72vm40c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Medium effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:05    9554.0      0.00       0.0    2657.8                           272858.3438
+    0:00:05    9554.0      0.00       0.0    2657.8                           272858.3438
+    0:00:05    9554.0      0.00       0.0    2657.8                           272858.3438
+    0:00:05    9554.0      0.00       0.0    2657.8                           272858.3438
+    0:00:05    9554.0      0.00       0.0    2657.8                           272858.3438
+    0:00:06    9520.6   3194.65 3118156.0   13694.1                           266692.6562
+    0:00:06    9520.6   3194.65 3118156.0   13694.1                           266692.6562
+    0:00:06    9520.6   3194.65 3118156.0   13694.1                           266692.6562
+    0:00:06    9520.6   3194.65 3118156.0   13694.1                           266692.6562
+    0:00:06    9520.6   3194.65 3118156.0   13694.1                           266692.6562
+    0:00:06    9521.6    646.81  596731.8    4751.4                           266734.7500
+    0:00:06    9521.6    646.81  596731.8    4751.4                           266734.7500
+    0:00:06    9521.6    646.81  596731.8    4751.4                           266734.7500
+    0:00:06    9521.6    646.81  596731.8    4751.4                           266734.7500
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:06    9522.3      0.00       0.0    2657.8                           266768.8750
+    0:00:07    9522.3      0.00       0.0    2657.8                           266768.8750
+    0:00:08    9583.6      0.00       0.0    2657.8                           266181.6250
+    0:00:08    9583.5      0.00       0.0    2657.8                           266180.9062
+    0:00:08    9583.5      0.00       0.0    2657.8                           266180.9062
+    0:00:08    9583.5      0.00       0.0    2657.8                           266180.9062
+    0:00:08    9583.5      0.00       0.0    2657.8                           266180.9062
+    0:00:09    9579.8      0.00       0.0    2657.8                           266102.6250
+    0:00:09    9572.6      0.00       0.0    2657.8                           265930.7188
+    0:00:10    9569.8      0.00       0.0    2657.8                           265864.9062
+    0:00:10    9569.4      0.00       0.0    2657.8                           265855.1875
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+    0:00:15    9568.8      0.00       0.0    2657.8                           258774.9219
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_ff0p88v125c.db'
+Loading db file '/mnt/hgfs/stdcell_hvt/db_ccs/saed14hvt_tt0p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ibex_wrapper' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'ibex_top_inst/u_ibex_core/cs_registers_i/clk_i': 2018 load(s), 1 driver(s)
+     Net 'ibex_top_inst/u_ibex_core/cs_registers_i/rst_ni': 1652 load(s), 1 driver(s)
+1

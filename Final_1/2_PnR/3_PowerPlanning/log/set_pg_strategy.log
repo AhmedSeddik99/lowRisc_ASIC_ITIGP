@@ -1,0 +1,21 @@
+Successfully set PG strategy ring.
+Successfully set PG strategy mesh.
+Successfully set PG strategy cell_rail.
+################### M7 ###################
+Successfully set PG strategy M7_STRATEGY_VDD.
+Successfully set PG strategy M7_STRATEGY_GND.
+################### M6 ###################
+Successfully set PG strategy M6_STRATEGY_VDD.
+Successfully set PG strategy M6_STRATEGY_GND.
+################### M5 ###################
+Successfully set PG strategy M5_STRATEGY_VDD.
+Successfully set PG strategy M5_STRATEGY_GND.
+################### M4 ###################
+Successfully set PG strategy M4_STRATEGY_VDD.
+Successfully set PG strategy M4_STRATEGY_GND.
+################### M3 ###################
+Successfully set PG strategy M3_STRATEGY_VDD.
+Successfully set PG strategy M3_STRATEGY_GND.
+################### M2 ###################
+Successfully set PG strategy M2_STRATEGY_VDD.
+Successfully set PG strategy M2_STRATEGY_GND.

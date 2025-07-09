@@ -1,0 +1,10 @@
+git add ./Final_0/0_Synthesis
+git add ./Final_0/1_DFT
+git add ./Final_0/2_PnR/0_NDM/create_stdcell_ndm.tcl
+git add ./Final_0/2_PnR/1_Setup
+git add ./Final_0/2_PnR/2_Floorplan
+git add ./Final_0/2_PnR/3_PowerPlanning
+git add ./Final_0/2_PnR/4_Placement
+git add ./Final_0/2_PnR/5_CTS
+git add ./Final_0/2_PnR/6_Routing
+git add ./Final_0/PDK
