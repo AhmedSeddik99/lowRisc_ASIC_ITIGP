@@ -1,0 +1,6 @@
+./output/ibex_wrapper.tlup_max_-40.spef for scenarios: 
+	 scenario: Func_Slow, corner type: late/early
+
+./output/ibex_wrapper.tlup_min_125.spef for scenarios: 
+	 scenario: Func_Fast, corner type: late/early
+

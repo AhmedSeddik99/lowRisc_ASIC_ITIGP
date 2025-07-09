@@ -1,0 +1,3 @@
+source /home/synopsys/pts/O-2018.06-SP1/admin/setup/.synopsys_pt.setup
+source -echo /mnt/hgfs/0_GP/Final_2/6_SignOff/pt_func_slow.tcl
+update_timing

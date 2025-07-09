@@ -1,0 +1,1744 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_gui/preferences.tcl
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14hvt', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library "ibex_hvt'. (NDM-102)
+icc2_shell> open_block /mnt/hgfs/0_GP/Final_2/2_PnR/ibex_hvt:ibex_hvt_eco_1_1_DRCs.design
+Information: User units loaded from library 'saed14hvt' (LNK-040)
+Opening block 'ibex_hvt:ibex_hvt_eco_1_1_DRCs.design' in edit mode
+Information: loading PG routing via master rules, patterns, strategies and strategy via rules.
+Ignore undefined PG region Power_Ring.
+Error: For option -pg_regions, the specified value Power_Ring  is invalid. (PGR-002)
+No PG region is found.
+Fail to set PG strategy ring.
+Ignore undefined PG region M2_STUBS_REGION_VDD.
+Error: For option -pg_regions, the specified value M2_STUBS_REGION_VDD  is invalid. (PGR-002)
+No PG region is found.
+Fail to set PG strategy M2_STRATEGY_VDD.
+Ignore undefined PG region M2_STUBS_REGION_GND.
+Error: For option -pg_regions, the specified value M2_STUBS_REGION_GND  is invalid. (PGR-002)
+No PG region is found.
+Fail to set PG strategy M2_STRATEGY_GND.
+Begin building search trees for block ibex_hvt:ibex_hvt_eco_1_1_DRCs.design
+Done building search trees for block ibex_hvt:ibex_hvt_eco_1_1_DRCs.design (time 0s)
+icc2_shell> link_block
+Using libraries: ibex_hvt saed14hvt
+Warning: In library ibex_hvt, no block views exist for block ibex_wrapper. (LNK-064)
+Visiting block ibex_hvt:ibex_hvt_eco_1_1_DRCs.design
+Design 'ibex_wrapper' was successfully linked.
+1
+icc2_shell> check_lvs
+Information: Using 1 threads for LVS
+[Check Short] Stage 1   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2 Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2-2 Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] Stage 3   Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] End       Elapsed =    0:00:04, CPU =    0:00:04
+[Check Net] Init        Elapsed =    0:00:04, CPU =    0:00:04
+Warning: Port GND have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port VDD have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_en have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_1 have no valid pin shapes. Skip this port. (RT-203)
+[Check Net] 10%         Elapsed =    0:00:06, CPU =    0:00:06
+[Check Net] 20%         Elapsed =    0:00:07, CPU =    0:00:07
+Warning: Port scan_in_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_0 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_1 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_1 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_2 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_3 has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] 30%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 40%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 50%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 60%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 70%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 80%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 90%         Elapsed =    0:00:08, CPU =    0:00:08
+Warning: Net ram_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_valid_i has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[127] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[126] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[125] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[124] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[123] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[122] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[121] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[120] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[119] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[118] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[117] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[116] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[115] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[114] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[113] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[112] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[111] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[110] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[109] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[108] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[107] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[106] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[105] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[104] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[103] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[102] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[101] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[100] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[99] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[98] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[97] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[96] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[95] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[94] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[93] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[92] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[91] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[90] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[89] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[88] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[87] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[86] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[85] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[84] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[83] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[82] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[81] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[80] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[79] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[78] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[77] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[76] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[75] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[74] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[73] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[72] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[71] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[70] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[69] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[68] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[67] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[66] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[65] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[64] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scan_rst_ni has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] All nets are submitted.
+[Check Net] 100%        Elapsed =    0:00:08, CPU =    0:00:08
+
+===============================================================
+    Maximum number of violations is set to 20
+    Abort checking when more than 20 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 26362.
+Total number of short violations is 0.
+Total number of open nets is 0.
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:08, CPU =    0:00:08
+1
+icc2_shell> check_routes
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 26342 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used  139  Alloctr  146  Proc 1757 
+Printing options for 'route.common.*'
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :        true                
+detail.force_end_on_preferred_grid                      :        true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked 1/81 Partitions, Violations =   0
+Checked 3/81 Partitions, Violations =   0
+Checked 6/81 Partitions, Violations =   0
+Checked 9/81 Partitions, Violations =   0
+Checked 12/81 Partitions, Violations =  0
+Checked 15/81 Partitions, Violations =  0
+Checked 18/81 Partitions, Violations =  0
+Checked 21/81 Partitions, Violations =  0
+Checked 24/81 Partitions, Violations =  0
+Checked 28/81 Partitions, Violations =  0
+Checked 30/81 Partitions, Violations =  0
+Checked 33/81 Partitions, Violations =  0
+Checked 36/81 Partitions, Violations =  0
+Checked 39/81 Partitions, Violations =  0
+Checked 42/81 Partitions, Violations =  0
+Checked 45/81 Partitions, Violations =  0
+Checked 48/81 Partitions, Violations =  0
+Checked 51/81 Partitions, Violations =  0
+Checked 54/81 Partitions, Violations =  0
+Checked 57/81 Partitions, Violations =  0
+Checked 60/81 Partitions, Violations =  0
+Checked 63/81 Partitions, Violations =  0
+Checked 66/81 Partitions, Violations =  0
+Checked 69/81 Partitions, Violations =  2
+Checked 72/81 Partitions, Violations =  2
+Checked 75/81 Partitions, Violations =  2
+Checked 78/81 Partitions, Violations =  2
+Checked 81/81 Partitions, Violations =  2
+[DRC CHECK] Elapsed real time: 0:00:08 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc   60 
+[DRC CHECK] Total (MB): Used  161  Alloctr  168  Proc 1834 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+Information: Merged away 1 aligned/redundant DRCs. (ZRT-305)
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      1
+        Off-grid : 1
+
+
+Total Wire Length =                    310390 micron
+Total Number of Contacts =             173442
+Total Number of Wires =                209291
+Total Number of PtConns =              31297
+Total Number of Routed Wires =       209283
+Total Routed Wire Length =           288701 micron
+Total Number of Routed Contacts =       173442
+        Layer                 M1 :        668 micron
+        Layer                 M2 :     106029 micron
+        Layer                 M3 :     115113 micron
+        Layer                 M4 :      31009 micron
+        Layer                 M5 :      36093 micron
+        Layer                 M6 :      12691 micron
+        Layer                 M7 :       8698 micron
+        Layer                 M8 :         80 micron
+        Layer                 M9 :          8 micron
+        Layer               MRDL :          0 micron
+        Via              VIA89_C :          4
+        Via       VIA78SQ_C(rot) :         15
+        Via         VIA78SQ(rot) :          3
+        Via            VIA67SQ_C :        620
+        Via       VIA67SQ_C(rot) :         43
+        Via              VIA67SQ :         23
+        Via         VIA67SQ(rot) :         10
+        Via            VIA56SQ_C :         23
+        Via       VIA56SQ_C(rot) :        102
+        Via              VIA56SQ :       1631
+        Via              VIA45SQ :       6205
+        Via         VIA45SQ(rot) :          2
+        Via            VIA34SQ_C :         52
+        Via       VIA34SQ_C(rot) :       8959
+        Via          VIA34BAR2_C :         24
+        Via              VIA34SQ :        292
+        Via         VIA34SQ(rot) :        822
+        Via          VIA3_34SQ_C :          6
+        Via     VIA3_34SQ_C(rot) :         64
+        Via            VIA3_34SQ :         37
+        Via       VIA3_34SQ(rot) :          5
+        Via            VIA23SQ_C :      87149
+        Via       VIA23SQ_C(rot) :          1
+        Via          VIA23BAR2_C :          1
+        Via              VIA23SQ :         17
+        Via         VIA23SQ(rot) :         10
+        Via          VIA2_33SQ_C :        538
+        Via          VIA23_3SQ_C :        463
+        Via        VIA2_33_3SQ_C :        166
+        Via            VIA12SQ_C :          7
+        Via       VIA12SQ_C(rot) :      64743
+        Via            VIA12LG_C :          1
+        Via              VIA12SQ :          7
+        Via         VIA12SQ(rot) :        322
+        Via          VIA1_32SQ_C :          2
+        Via     VIA1_32SQ_C(rot) :        751
+        Via     VIA12_3SQ_C(rot) :        123
+        Via   VIA1_32_3SQ_C(rot) :        199
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 1
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
+icc2_shell> gui_show_error_data
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.410 153.851} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.306 153.860} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.467 153.839} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.697 153.836} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.444 153.900} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.670 153.968} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.430 153.866} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.611 153.775} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.492 153.856} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.511 153.675} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.346 153.858} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.436 154.029} -scale 0.0007
+icc2_shell> move_objects -rotate_by CW90 -group
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.440 153.857} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.444 154.043} -scale 0.0007
+icc2_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc2_shell> check_routes
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 26342 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used  139  Alloctr  146  Proc 1835 
+Printing options for 'route.common.*'
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :        true                
+detail.force_end_on_preferred_grid                      :        true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked 1/81 Partitions, Violations =   0
+Checked 3/81 Partitions, Violations =   0
+Checked 6/81 Partitions, Violations =   0
+Checked 9/81 Partitions, Violations =   0
+Checked 12/81 Partitions, Violations =  0
+Checked 15/81 Partitions, Violations =  0
+Checked 18/81 Partitions, Violations =  0
+Checked 21/81 Partitions, Violations =  0
+Checked 24/81 Partitions, Violations =  0
+Checked 28/81 Partitions, Violations =  0
+Checked 30/81 Partitions, Violations =  0
+Checked 33/81 Partitions, Violations =  0
+Checked 36/81 Partitions, Violations =  0
+Checked 39/81 Partitions, Violations =  0
+Checked 42/81 Partitions, Violations =  0
+Checked 45/81 Partitions, Violations =  0
+Checked 48/81 Partitions, Violations =  0
+Checked 51/81 Partitions, Violations =  0
+Checked 54/81 Partitions, Violations =  0
+Checked 57/81 Partitions, Violations =  0
+Checked 60/81 Partitions, Violations =  0
+Checked 63/81 Partitions, Violations =  0
+Checked 66/81 Partitions, Violations =  0
+Checked 69/81 Partitions, Violations =  25
+Checked 72/81 Partitions, Violations =  25
+Checked 75/81 Partitions, Violations =  25
+Checked 78/81 Partitions, Violations =  25
+Checked 81/81 Partitions, Violations =  25
+[DRC CHECK] Elapsed real time: 0:00:08 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    4 
+[DRC CHECK] Total (MB): Used  161  Alloctr  168  Proc 1839 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+Information: Merged away 6 aligned/redundant DRCs. (ZRT-305)
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Diff net var rule spacing : 6
+        Less than minimum area : 4
+        Less than NDR width : 4
+        Short : 5
+
+
+Total Wire Length =                    310390 micron
+Total Number of Contacts =             173442
+Total Number of Wires =                209293
+Total Number of PtConns =              31297
+Total Number of Routed Wires =       209285
+Total Routed Wire Length =           288701 micron
+Total Number of Routed Contacts =       173442
+        Layer                 M1 :        668 micron
+        Layer                 M2 :     106029 micron
+        Layer                 M3 :     115113 micron
+        Layer                 M4 :      31009 micron
+        Layer                 M5 :      36093 micron
+        Layer                 M6 :      12691 micron
+        Layer                 M7 :       8698 micron
+        Layer                 M8 :         80 micron
+        Layer                 M9 :          8 micron
+        Layer               MRDL :          0 micron
+        Via              VIA89_C :          4
+        Via       VIA78SQ_C(rot) :         15
+        Via         VIA78SQ(rot) :          3
+        Via            VIA67SQ_C :        620
+        Via       VIA67SQ_C(rot) :         43
+        Via              VIA67SQ :         23
+        Via         VIA67SQ(rot) :         10
+        Via            VIA56SQ_C :         23
+        Via       VIA56SQ_C(rot) :        102
+        Via              VIA56SQ :       1631
+        Via              VIA45SQ :       6205
+        Via         VIA45SQ(rot) :          2
+        Via            VIA34SQ_C :         52
+        Via       VIA34SQ_C(rot) :       8959
+        Via          VIA34BAR2_C :         24
+        Via              VIA34SQ :        292
+        Via         VIA34SQ(rot) :        822
+        Via          VIA3_34SQ_C :          6
+        Via     VIA3_34SQ_C(rot) :         64
+        Via            VIA3_34SQ :         37
+        Via       VIA3_34SQ(rot) :          5
+        Via            VIA23SQ_C :      87149
+        Via       VIA23SQ_C(rot) :          1
+        Via          VIA23BAR2_C :          1
+        Via              VIA23SQ :         17
+        Via         VIA23SQ(rot) :         10
+        Via          VIA2_33SQ_C :        538
+        Via          VIA23_3SQ_C :        463
+        Via        VIA2_33_3SQ_C :        166
+        Via            VIA12SQ_C :          7
+        Via       VIA12SQ_C(rot) :      64743
+        Via            VIA12LG_C :          1
+        Via              VIA12SQ :          7
+        Via         VIA12SQ(rot) :        322
+        Via          VIA1_32SQ_C :          3
+        Via     VIA1_32SQ_C(rot) :        750
+        Via     VIA12_3SQ_C(rot) :        123
+        Via   VIA1_32_3SQ_C(rot) :        199
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 19
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
+icc2_shell> remove_physical_objects
+icc2_shell> remove_physical_objects
+icc2_shell> remove_physical_objects
+icc2_shell> remove_physical_objects
+icc2_shell> check_routes
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 26342 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used  139  Alloctr  146  Proc 1839 
+Printing options for 'route.common.*'
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :        true                
+detail.force_end_on_preferred_grid                      :        true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked 1/81 Partitions, Violations =   0
+Checked 3/81 Partitions, Violations =   0
+Checked 6/81 Partitions, Violations =   0
+Checked 9/81 Partitions, Violations =   0
+Checked 12/81 Partitions, Violations =  0
+Checked 15/81 Partitions, Violations =  0
+Checked 18/81 Partitions, Violations =  0
+Checked 21/81 Partitions, Violations =  0
+Checked 24/81 Partitions, Violations =  0
+Checked 28/81 Partitions, Violations =  0
+Checked 30/81 Partitions, Violations =  0
+Checked 33/81 Partitions, Violations =  0
+Checked 36/81 Partitions, Violations =  0
+Checked 39/81 Partitions, Violations =  0
+Checked 42/81 Partitions, Violations =  0
+Checked 45/81 Partitions, Violations =  0
+Checked 48/81 Partitions, Violations =  0
+Checked 51/81 Partitions, Violations =  0
+Checked 54/81 Partitions, Violations =  0
+Checked 57/81 Partitions, Violations =  0
+Checked 60/81 Partitions, Violations =  0
+Checked 63/81 Partitions, Violations =  0
+Checked 66/81 Partitions, Violations =  0
+Checked 69/81 Partitions, Violations =  0
+Checked 72/81 Partitions, Violations =  0
+Checked 75/81 Partitions, Violations =  0
+Checked 78/81 Partitions, Violations =  0
+Checked 81/81 Partitions, Violations =  0
+[DRC CHECK] Elapsed real time: 0:00:08 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  161  Alloctr  168  Proc 1839 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+Total Wire Length =                    310390 micron
+Total Number of Contacts =             173442
+Total Number of Wires =                209289
+Total Number of PtConns =              31297
+Total Number of Routed Wires =       209281
+Total Routed Wire Length =           288701 micron
+Total Number of Routed Contacts =       173442
+        Layer                 M1 :        668 micron
+        Layer                 M2 :     106029 micron
+        Layer                 M3 :     115113 micron
+        Layer                 M4 :      31009 micron
+        Layer                 M5 :      36093 micron
+        Layer                 M6 :      12691 micron
+        Layer                 M7 :       8698 micron
+        Layer                 M8 :         80 micron
+        Layer                 M9 :          8 micron
+        Layer               MRDL :          0 micron
+        Via              VIA89_C :          4
+        Via       VIA78SQ_C(rot) :         15
+        Via         VIA78SQ(rot) :          3
+        Via            VIA67SQ_C :        620
+        Via       VIA67SQ_C(rot) :         43
+        Via              VIA67SQ :         23
+        Via         VIA67SQ(rot) :         10
+        Via            VIA56SQ_C :         23
+        Via       VIA56SQ_C(rot) :        102
+        Via              VIA56SQ :       1631
+        Via              VIA45SQ :       6205
+        Via         VIA45SQ(rot) :          2
+        Via            VIA34SQ_C :         52
+        Via       VIA34SQ_C(rot) :       8959
+        Via          VIA34BAR2_C :         24
+        Via              VIA34SQ :        292
+        Via         VIA34SQ(rot) :        822
+        Via          VIA3_34SQ_C :          6
+        Via     VIA3_34SQ_C(rot) :         64
+        Via            VIA3_34SQ :         37
+        Via       VIA3_34SQ(rot) :          5
+        Via            VIA23SQ_C :      87149
+        Via       VIA23SQ_C(rot) :          1
+        Via          VIA23BAR2_C :          1
+        Via              VIA23SQ :         17
+        Via         VIA23SQ(rot) :         10
+        Via          VIA2_33SQ_C :        538
+        Via          VIA23_3SQ_C :        463
+        Via        VIA2_33_3SQ_C :        166
+        Via            VIA12SQ_C :          7
+        Via       VIA12SQ_C(rot) :      64743
+        Via            VIA12LG_C :          1
+        Via              VIA12SQ :          7
+        Via         VIA12SQ(rot) :        322
+        Via          VIA1_32SQ_C :          3
+        Via     VIA1_32SQ_C(rot) :        750
+        Via     VIA12_3SQ_C(rot) :        123
+        Via   VIA1_32_3SQ_C(rot) :        199
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173442 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66155   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66155   vias)
+    Layer VIA2       =  0.00% (0      / 88345   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88345   vias)
+    Layer VIA3       =  0.00% (0      / 10261   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10261   vias)
+    Layer VIA4       =  0.00% (0      / 6207    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6207    vias)
+    Layer VIA5       =  0.00% (0      / 1756    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1756    vias)
+    Layer VIA6       =  0.00% (0      / 696     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (696     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+
+icc2_shell> check_lvs
+Information: Using 1 threads for LVS
+[Check Short] Stage 1   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2 Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2   Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2-2 Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] Stage 3   Elapsed =    0:00:04, CPU =    0:00:04
+[Check Short] End       Elapsed =    0:00:04, CPU =    0:00:04
+[Check Net] Init        Elapsed =    0:00:05, CPU =    0:00:05
+Warning: Port GND have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port VDD have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_en have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Port scan_out_1 have no valid pin shapes. Skip this port. (RT-203)
+[Check Net] 10%         Elapsed =    0:00:06, CPU =    0:00:06
+[Check Net] 20%         Elapsed =    0:00:07, CPU =    0:00:07
+Warning: Port scan_in_0 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_0 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_1 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_1 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_2 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_2 has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Port scan_in_3 have no valid pin shapes. Skip this port. (RT-203)
+Warning: Net scan_in_3 has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] 30%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 40%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 50%         Elapsed =    0:00:07, CPU =    0:00:07
+[Check Net] 60%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 70%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 80%         Elapsed =    0:00:08, CPU =    0:00:08
+[Check Net] 90%         Elapsed =    0:00:08, CPU =    0:00:08
+Warning: Net ram_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net ram_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg_en has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net rf_cfg[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net boot_addr_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net instr_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net data_rdata_intg_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_valid_i has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[127] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[126] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[125] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[124] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[123] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[122] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[121] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[120] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[119] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[118] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[117] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[116] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[115] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[114] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[113] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[112] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[111] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[110] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[109] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[108] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[107] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[106] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[105] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[104] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[103] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[102] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[101] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[100] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[99] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[98] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[97] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[96] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[95] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[94] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[93] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[92] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[91] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[90] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[89] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[88] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[87] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[86] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[85] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[84] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[83] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[82] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[81] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[80] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[79] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[78] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[77] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[76] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[75] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[74] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[73] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[72] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[71] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[70] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[69] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[68] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[67] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[66] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[65] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[64] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_key_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[63] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[62] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[61] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[60] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[59] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[58] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[57] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[56] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[55] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[54] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[53] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[52] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[51] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[50] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[49] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[48] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[47] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[46] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[45] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[44] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[43] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[42] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[41] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[40] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[39] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[38] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[37] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[36] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[35] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[34] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[33] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[32] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scramble_nonce_i[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net fetch_enable_i[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net scan_rst_ni has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] All nets are submitted.
+[Check Net] 100%        Elapsed =    0:00:09, CPU =    0:00:08
+
+===============================================================
+    Maximum number of violations is set to 20
+    Abort checking when more than 20 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 26362.
+Total number of short violations is 0.
+Total number of open nets is 0.
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:09, CPU =    0:00:08
+1
+icc2_shell> set_svf -off >> "$LOG/svf.log"
+Error: can't read "LOG": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> ##############################
+icc2_shell> # CHECKS #
+icc2_shell> ##############################
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> set REPORT "./reports"
+./reports
+icc2_shell> set_svf -off >> "$LOG/svf.log"
+Error: can't read "LOG": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> ##############################
+icc2_shell> # CHECKS #
+icc2_shell> ##############################
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+icc2_shell> gui_show_error_data
+icc2_shell> set_attribute -objects [get_shapes PATH_21_21304] -name shape_use -value detail_route
+icc2_shell> ##############################
+icc2_shell> # CHECKS #
+icc2_shell> ##############################
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+icc2_shell> save_block -as "$BLOCK\_0_DRCs"
+Error: can't read "BLOCK": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> set BLOCK "ibex_hvt_eco_1"
+ibex_hvt_eco_1
+icc2_shell> save_block -as "$BLOCK\_0_DRCs"
+Information: Saving 'ibex_hvt:ibex_hvt_eco_1_1_DRCs.design' to 'ibex_hvt:ibex_hvt_eco_1_0_DRCs.design'. (DES-028)
+1
+icc2_shell> close_blocks -force -purge ibex_hvt_eco_1_1_DRCs
+Closing block 'ibex_hvt:ibex_hvt_eco_1_1_DRCs.design'
+Information: The net parasitics of block ibex_wrapper are cleared. (TIM-123)
+icc2_shell> open_block "$PATH:$BLOCK\_0_DRCs.design"
+Error: can't read "PATH": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> set PATH "../../2_PnR/ibex_hvt"
+../../2_PnR/ibex_hvt
+icc2_shell> open_block "$PATH:$BLOCK\_0_DRCs.design"
+Opening block 'ibex_hvt:ibex_hvt_eco_1_0_DRCs.design' in edit mode
+Information: loading PG routing via master rules, patterns, strategies and strategy via rules.
+Begin building search trees for block ibex_hvt:ibex_hvt_eco_1_0_DRCs.design
+Done building search trees for block ibex_hvt:ibex_hvt_eco_1_0_DRCs.design (time 0s)
+{ibex_hvt:ibex_hvt_eco_1_0_DRCs.design}
+icc2_shell> link_block
+Using libraries: ibex_hvt saed14hvt
+Warning: In library ibex_hvt, no block views exist for block ibex_wrapper. (LNK-064)
+Visiting block ibex_hvt:ibex_hvt_eco_1_0_DRCs.design
+Information: Clearing abstracted power annotation ... 
+Design 'ibex_wrapper' was successfully linked.
+1
+icc2_shell> gui_show_error_data
+icc2_shell> check_legality
+
+************************
+
+running check_legality
+
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+        place.legalize.enable_prerouted_net_check: 1
+        place.legalize.num_tracks_for_access_check: 1
+        place.legalize.use_eol_spacing_for_access_check: 0
+        place.legalize.allow_touch_track_for_access_check: 1
+        place.legalize.reduce_conservatism_in_eol_check: 0
+        place.legalize.preroute_shape_merge_distance: 0.0
+        place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 3 shapes out of 4181 total shapes.
+Layer M2: cached 4 shapes out of 123891 total shapes.
+Layer M3: cached 16 shapes out of 97890 total shapes.
+Cached 4400 vias out of 178554 total vias.
+
+check_legality for block design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+Checking legality
+Checking cell legality:
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Sorting rows.
+Checking spacing rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Checking packing rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Checking layer rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+
+****************************************
+  Report : Legality
+****************************************
+
+VIOLATIONS BY CATEGORY:
+   MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+         0          0          0  Two objects overlap.
+         1          0          0  A cell violates a pnet.
+         0          0          0  A cell is illegal at a site.
+         0          0          0  A cell is not aligned with a site.
+         0          0          0  A cell has an illegal orientation.
+         0          0          0  A cell spacing rule is violated.
+         0          0          0  A layer rule is violated.
+         0          0          0  A cell is in the wrong region.
+         0          0          0  Two cells violate cts margins.
+         0          0          0  Two cells violate coloring.
+
+         1          0          0  TOTAL
+
+TOTAL 1 Violations.
+
+VIOLATIONS BY SUBCATEGORY:
+     MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+
+         0          0          0    Two objects overlap.
+           0          0          0    Two cells overlap.
+           0          0          0    Two cells have overlapping keepout margins.
+           0          0          0    A cell overlaps a blockage.
+           0          0          0    A cell keepout margin overlaps a blockage.
+
+         1          0          0    A cell violates a pnet.
+
+         0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates pin-track alignment rules.
+           0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates legal index rule.
+           0          0          0    A cell has the wrong variant for its location.
+
+         0          0          0    A cell is not aligned with a site.
+           0          0          0    A cell is not aligned with the base site.
+           0          0          0    A cell is not aligned with an overlaid site.
+
+         0          0          0    A cell has an illegal orientation.
+
+         0          0          0    A cell spacing rule is violated.
+           0          0          0    A spacing rule is violated in a row.
+           0          0          0    A spacing rule is violated between adjacent rows.
+           0          0          0    A cell violates vertical abutment rule.
+           0          0          0    A cell violates metal spacing rule.
+
+         0          0          0    A layer rule is violated.
+           0          0          0    A layer VTH rule is violated.
+           0          0          0    A layer OD rule is violated.
+           0          0          0    A layer OD max-width rule is violated.
+           0          0          0    A layer ALL_OD corner rule is violated.
+           0          0          0    A layer max-vertical-length rule is violated.
+           0          0          0    A layer TPO rule is violated.
+           0          0          0    Filler cell insertion cannot satisfy layer rules.
+
+         0          0          0    A cell is in the wrong region.
+           0          0          0    A cell is outside its hard bound.
+           0          0          0    A cell is in the wrong voltage area.
+           0          0          0    A cell violates an exclusive movebound.
+
+         0          0          0    Two cells violate cts margins.
+
+         0          0          0    Two cells violate coloring.
+
+
+check_legality for block design ibex_wrapper failed!
+
+check_legality failed.
+
+**************************
+
+0
+icc2_shell> set_attribute -objects [get_shapes PATH_19_1030] -name shape_use -value detail_route
+icc2_shell> check_legality
+
+************************
+
+running check_legality
+
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+        place.legalize.enable_prerouted_net_check: 1
+        place.legalize.num_tracks_for_access_check: 1
+        place.legalize.use_eol_spacing_for_access_check: 0
+        place.legalize.allow_touch_track_for_access_check: 1
+        place.legalize.reduce_conservatism_in_eol_check: 0
+        place.legalize.preroute_shape_merge_distance: 0.0
+        place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 2 shapes out of 4181 total shapes.
+Layer M2: cached 4 shapes out of 123891 total shapes.
+Layer M3: cached 16 shapes out of 97890 total shapes.
+Cached 4400 vias out of 178554 total vias.
+
+check_legality for block design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+Checking legality
+Checking cell legality:
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Sorting rows.
+Checking spacing rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Checking packing rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+Checking layer rule legality.
+0%....10%....20%....30%....40%....50%....60%....70%....80%....90%....100%
+
+****************************************
+  Report : Legality
+****************************************
+
+VIOLATIONS BY CATEGORY:
+   MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+         0          0          0  Two objects overlap.
+         0          0          0  A cell violates a pnet.
+         0          0          0  A cell is illegal at a site.
+         0          0          0  A cell is not aligned with a site.
+         0          0          0  A cell has an illegal orientation.
+         0          0          0  A cell spacing rule is violated.
+         0          0          0  A layer rule is violated.
+         0          0          0  A cell is in the wrong region.
+         0          0          0  Two cells violate cts margins.
+         0          0          0  Two cells violate coloring.
+
+         0          0          0  TOTAL
+
+TOTAL 0 Violations.
+
+VIOLATIONS BY SUBCATEGORY:
+     MOVABLE  APP-FIXED USER-FIXED  DESCRIPTION
+
+         0          0          0    Two objects overlap.
+           0          0          0    Two cells overlap.
+           0          0          0    Two cells have overlapping keepout margins.
+           0          0          0    A cell overlaps a blockage.
+           0          0          0    A cell keepout margin overlaps a blockage.
+
+         0          0          0    A cell violates a pnet.
+
+         0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates pin-track alignment rules.
+           0          0          0    A cell is illegal at a site.
+           0          0          0    A cell violates legal index rule.
+           0          0          0    A cell has the wrong variant for its location.
+
+         0          0          0    A cell is not aligned with a site.
+           0          0          0    A cell is not aligned with the base site.
+           0          0          0    A cell is not aligned with an overlaid site.
+
+         0          0          0    A cell has an illegal orientation.
+
+         0          0          0    A cell spacing rule is violated.
+           0          0          0    A spacing rule is violated in a row.
+           0          0          0    A spacing rule is violated between adjacent rows.
+           0          0          0    A cell violates vertical abutment rule.
+           0          0          0    A cell violates metal spacing rule.
+
+         0          0          0    A layer rule is violated.
+           0          0          0    A layer VTH rule is violated.
+           0          0          0    A layer OD rule is violated.
+           0          0          0    A layer OD max-width rule is violated.
+           0          0          0    A layer ALL_OD corner rule is violated.
+           0          0          0    A layer max-vertical-length rule is violated.
+           0          0          0    A layer TPO rule is violated.
+           0          0          0    Filler cell insertion cannot satisfy layer rules.
+
+         0          0          0    A cell is in the wrong region.
+           0          0          0    A cell is outside its hard bound.
+           0          0          0    A cell is in the wrong voltage area.
+           0          0          0    A cell violates an exclusive movebound.
+
+         0          0          0    Two cells violate cts margins.
+
+         0          0          0    Two cells violate coloring.
+
+
+check_legality for block design ibex_wrapper succeeded!
+
+
+check_legality succeeded.
+
+**************************
+
+1
+icc2_shell> set REPORT "./reports"
+./reports
+icc2_shell> ##############################
+icc2_shell> # CHECKS #
+icc2_shell> ##############################
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+icc2_shell> save_block
+Information: Saving block 'ibex_hvt:ibex_hvt_eco_1_0_DRCs.design'
+1
+icc2_shell> ####################################
+icc2_shell> # OUTPUTS #
+icc2_shell> ####################################
+icc2_shell> #write_def "$OUTPUT/ibex_wrapper.def"
+icc2_shell> write_sdc -scenario "Func_Slow" -output "$OUTPUT/ibex_wrapper_slow.sdc"
+Error: can't read "OUTPUT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> write_sdc -scenario "Func_Fast" -output "$OUTPUT/ibex_wrapper_fast.sdc"
+Error: can't read "OUTPUT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+Error: can't read "OUTPUT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> write_parasitics -output "$OUTPUT/ibex_wrapper"
+Error: can't read "OUTPUT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> set OUTPUT "./output"
+./output
+icc2_shell> ####################################
+icc2_shell> # OUTPUTS #
+icc2_shell> ####################################
+icc2_shell> #write_def "$OUTPUT/ibex_wrapper.def"
+icc2_shell> write_sdc -scenario "Func_Slow" -output "$OUTPUT/ibex_wrapper_slow.sdc"
+1
+icc2_shell> write_sdc -scenario "Func_Fast" -output "$OUTPUT/ibex_wrapper_fast.sdc"
+1
+icc2_shell> write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+1
+icc2_shell> write_parasitics -output "$OUTPUT/ibex_wrapper"
+Information: Design ibex_hvt_eco_1_0_DRCs has 26113 nets, 0 global routed, 26107 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: extract design ibex_wrapper
+Information: batch extract takes 0.00 seconds, elapse 0.00 seconds (NEX-015)
+NEX: write corner ID 0 parasitics to ./output/ibex_wrapper.tlup_max_-40.spef 
+spefName ./output/ibex_wrapper.tlup_max_-40.spef, corner name Slow 
+NEX: write corner ID 1 parasitics to ./output/ibex_wrapper.tlup_min_125.spef 
+spefName ./output/ibex_wrapper.tlup_min_125.spef, corner name Fast 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_eco_1_0_DRCs.design'. (TIM-125)
+icc2_shell> exit
+Maximum memory usage for this session: 712.90 MB
+CPU usage for this session:    204 seconds (  0.06 hours)
+Elapsed time for this session:   1125 seconds (  0.31 hours)
+Thank you for using IC Compiler II.
+

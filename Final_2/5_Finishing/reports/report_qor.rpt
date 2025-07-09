@@ -1,0 +1,106 @@
+****************************************
+Report : qor
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Wed Jul  9 00:38:48 2025
+****************************************
+
+
+Scenario           'Func_Fast'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                      9
+Critical Path Length:              1.66
+Critical Path Slack:               1.60
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'Func_Fast'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                     37
+Critical Path Length:              2.09
+Critical Path Slack:               2.73
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.00
+Total Hold Violation:             -0.07
+No. of Hold Violations:              96
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                     69
+Critical Path Length:              2.59
+Critical Path Slack:               0.73
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                    100
+Critical Path Length:              3.14
+Critical Path Slack:               1.64
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              2
+Hierarchical Port Count:            911
+Leaf Cell Count:                  25347
+Buf/Inv Cell Count:                9154
+Buf Cell Count:                    8322
+Inv Cell Count:                     832
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         23318
+Sequential Cell Count:             2029
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            10930.97
+Noncombinational Area:          2638.34
+Buf/Inv Area:                   4260.05
+Total Buffer Area:              4046.13
+Total Inverter Area:             213.92
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          13569.31
+Cell Area (netlist and physical only):        25534.08
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             26363
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

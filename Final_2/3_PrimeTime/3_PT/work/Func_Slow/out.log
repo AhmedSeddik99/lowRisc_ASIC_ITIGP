@@ -1,0 +1,233 @@
+source -echo /mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/pt_func_slow.tcl
+source "/mnt/hgfs/0_GP/Final_2/set_libs.tcl"
+set LIB "saed14hvt_ss0p72vm40c.db"
+set_app_var search_path $LIB_PATH
+set_app_var target_library $LIB
+set_app_var link_library $target_library
+set NETLIST "/mnt/hgfs/0_GP/Final_2/4_ECO/2_ECO/output/ibex_wrapper_rt.v"
+set CONSTRAINTS "/mnt/hgfs/0_GP/Final_2/4_ECO/2_ECO/output/ibex_wrapper_slow.sdc"
+set PARASITICS "/mnt/hgfs/0_GP/Final_2/4_ECO/2_ECO/output/ibex_wrapper.tlup_max_-40.spef"  
+set DONT_USE "/mnt/hgfs/0_GP/Final_2/0_Synthesis/constraints/dont_use_const_hendawi.tcl"
+read_db -library $LIB
+Loading db file '/mnt/hgfs/0_GP/PDK/saed14_pdk/SAED14nm_EDK_CORE_HVT_v_062020/stdcell_hvt/db_ccs/saed14hvt_ss0p72vm40c.db'
+read_verilog $NETLIST
+link_design -keep_sub_designs "ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0"
+Loading verilog file '/mnt/hgfs/0_GP/Final_2/4_ECO/2_ECO/output/ibex_wrapper_rt.v'
+Warning: -keep_sub_design option of link_design will be made obsolete and removed from future releases of PrimeTime starting with the 2017.12 release. (PT-007)
+Linking design ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0...
+Information: 894 (96.96%) library cells are unused in library saed14hvt_ss0p72vm40c..... (LNK-045)
+Information: total 894 library cells are unused (LNK-046)
+Design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0' was successfully linked.
+Information: There are 5529 leaf cells, ports, hiers and 5476 nets in the design (LNK-047)
+link_design -keep_sub_designs "ibex_register_file_ff_0_00000020_0_0_0_00000000"
+Warning: -keep_sub_design option of link_design will be made obsolete and removed from future releases of PrimeTime starting with the 2017.12 release. (PT-007)
+Unlinking design ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0...
+Warning: All timing information (backannotation, exceptions, etc.) is being removed from design 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0'. User-created annotations must be restored after relinking this design. (LNK-024)
+Linking design ibex_register_file_ff_0_00000020_0_0_0_00000000...
+Information: 901 (97.72%) library cells are unused in library saed14hvt_ss0p72vm40c..... (LNK-045)
+Information: total 901 library cells are unused (LNK-046)
+Design 'ibex_register_file_ff_0_00000020_0_0_0_00000000' was successfully linked.
+Information: There are 8635 leaf cells, ports, hiers and 8569 nets in the design (LNK-047)
+link_design -keep_sub_designs "ibex_wrapper"
+Warning: -keep_sub_design option of link_design will be made obsolete and removed from future releases of PrimeTime starting with the 2017.12 release. (PT-007)
+Unlinking design ibex_register_file_ff_0_00000020_0_0_0_00000000...
+Warning: All timing information (backannotation, exceptions, etc.) is being removed from design 'ibex_register_file_ff_0_00000020_0_0_0_00000000'. User-created annotations must be restored after relinking this design. (LNK-024)
+Linking design ibex_wrapper...
+Warning: Unable to resolve reference to 'ibex_register_file_ff_0_00000020_0_0_0_00000000' in 'ibex_wrapper'. (LNK-005)
+Warning: Unable to resolve reference to 'ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0' in 'ibex_wrapper'. (LNK-005)
+Information: Creating black box for ibex_top_inst/u_ibex_core/cs_registers_i/ibex_cs_registers_0_00000001_0_0_0_0_00000000_00000028_0_00000000_00000004_0_0_3_0... (LNK-043)
+Information: Creating black box for ibex_top_inst/gen_regfile_ff.register_file_i/ibex_register_file_ff_0_00000020_0_0_0_00000000... (LNK-043)
+Removed 2145 unconnected cells and blackboxes.
+Information: 839 (91.00%) library cells are unused in library saed14hvt_ss0p72vm40c..... (LNK-045)
+Information: total 839 library cells are unused (LNK-046)
+Design 'ibex_wrapper' was successfully linked.
+Information: There are 12758 leaf cells, ports, hiers and 13265 nets in the design (LNK-047)
+#current_design "ibex_wrapper"
+read_sdc $CONSTRAINTS
+
+Reading SDC version 2.1...
+Warning: Converting a propagated clock 'clk_i' to an ideal clock. (UITE-305)
+Warning: Converting a propagated clock 'cluster_clock_gating' to an ideal clock. (UITE-305)
+read_parasitics $PARASITICS
+Information: Log for 'read_parasitics command' will be generated in 'parasitics_command.log'. (PARA-107)
+source $DONT_USE
+Information: Defining new variable 'FFLIB'. (CMD-041)
+Information: Defining new variable 'DONT_USE'. (CMD-041)
+Information: Defining new variable 'CONSTRAINTS'. (CMD-041)
+Information: Defining new variable 'LIB_PATH'. (CMD-041)
+Information: Defining new variable 'SSLIB'. (CMD-041)
+Information: Defining new variable 'NETLIST'. (CMD-041)
+Information: Defining new variable 'LIB'. (CMD-041)
+Information: Defining new variable 'TTLIB'. (CMD-041)
+Information: Defining new variable 'PARASITICS'. (CMD-041)
+1
+check_timing
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+Information: Inferring 1 clock-gating checks. (PTE-017)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_2) U_PTECO_HOLD_BUF89/A-->X (max positive_unate) [fall slew = 0.240257, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10562/A-->X (max positive_unate) [fall slew = 0.173176, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10208/A-->X (max positive_unate) [rise slew = 0.277416, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10347/A-->X (max positive_unate) [rise slew = 0.242023, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_2) U_PTECO_HOLD_BUF93/A-->X (max positive_unate) [rise slew = 0.225351, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_9230/A-->X (max positive_unate) [rise slew = 0.147433, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) U_PTECO_HOLD_BUF246/A-->X (max positive_unate) [rise slew = 0.268546, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) U_PTECO_HOLD_BUF239/A-->X (max positive_unate) [rise slew = 0.271791, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11568/A-->X (max positive_unate) [rise slew = 0.185064, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 80% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_4) U4645/A-->X (max positive_unate) [r/f slew = 0.000394477/0.000394167, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 80% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_4) U4678/A-->X (max positive_unate) [r/f slew = 4.8552e-05/4.85987e-05, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 80% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_4) U4645/A-->X (min positive_unate) [r/f slew = 0.000394477/0.000394167, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_3543/A-->X (max positive_unate) [rise slew = 0.182051, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 80% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_4) U4678/A-->X (min positive_unate) [r/f slew = 4.8552e-05/4.85987e-05, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_12206/A-->X (max positive_unate) [r/f slew = 0.23593/0.178583, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_S_2) CTS_copt_h_inst_9074/A-->X (max positive_unate) [rise slew = 0.255238, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_7659/A-->X (max positive_unate) [rise slew = 0.17966, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_7661/A-->X (max positive_unate) [rise slew = 0.17966, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_S_2) CTS_ropt_h_inst_12686/A-->X (max positive_unate) [fall slew = 0.196117, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8475/A-->X (max positive_unate) [fall slew = 0.191816, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8476/A-->X (max positive_unate) [fall slew = 0.191816, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8753/A-->X (max positive_unate) [rise slew = 0.194021, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8755/A-->X (max positive_unate) [rise slew = 0.194021, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8854/A-->X (max positive_unate) [rise slew = 0.205234, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_8856/A-->X (max positive_unate) [rise slew = 0.205234, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_ropt_h_inst_12687/A-->X (max positive_unate) [fall slew = 0.20893, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_11664/A-->X (max positive_unate) [fall slew = 0.196731, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9073/A-->X (max positive_unate) [rise slew = 0.255238, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9120/A-->X (max positive_unate) [rise slew = 0.191393, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9121/A-->X (max positive_unate) [rise slew = 0.191393, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11665/A-->X (max positive_unate) [fall slew = 0.196731, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9173/A-->X (max positive_unate) [rise slew = 0.274418, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9174/A-->X (max positive_unate) [rise slew = 0.274418, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_ropt_h_inst_12680/A-->X (max positive_unate) [rise slew = 0.202519, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9299/A-->X (max positive_unate) [fall slew = 0.240148, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9300/A-->X (max positive_unate) [fall slew = 0.240148, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_3) CTS_ropt_h_inst_12691/A-->X (max positive_unate) [rise slew = 0.20112, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9641/A-->X (max positive_unate) [rise slew = 0.175918, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9859/A-->X (max positive_unate) [rise slew = 0.175412, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_9861/A-->X (max positive_unate) [rise slew = 0.175412, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10128/A-->X (max positive_unate) [rise slew = 0.183769, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_ropt_h_inst_12677/A-->X (max positive_unate) [rise slew = 0.154819, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10206/A-->X (max positive_unate) [rise slew = 0.277416, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_11681/A-->X (max positive_unate) [fall slew = 0.213363, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10348/A-->X (max positive_unate) [rise slew = 0.242023, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10408/A-->X (max positive_unate) [fall slew = 0.203677, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10410/A-->X (max positive_unate) [rise slew = 0.268097, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10412/A-->X (max positive_unate) [rise slew = 0.268097, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10462/A-->X (max positive_unate) [rise slew = 0.250684, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10560/A-->X (max positive_unate) [fall slew = 0.173176, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10565/A-->X (max positive_unate) [rise slew = 0.147432, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10605/A-->X (max positive_unate) [rise slew = 0.229867, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_L4D100_2) CTS_copt_h_inst_10604/A-->X (max positive_unate) [rise slew = 0.229867, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10685/A-->X (max positive_unate) [r/f slew = 0.203673/0.169468, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10686/A-->X (max positive_unate) [r/f slew = 0.203673/0.169468, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11639/A-->X (max positive_unate) [r/f slew = 0.161548/0.549133, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11090/A-->X (max positive_unate) [r/f slew = 0.150547/0.15096, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11091/A-->X (max positive_unate) [r/f slew = 0.150547/0.15096, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11204/A-->X (max positive_unate) [r/f slew = 0.149862/0.174489, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) U_PTECO_HOLD_BUF256/A-->X (max positive_unate) [r/f slew = 0.149862/0.174489, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11357/A-->X (max positive_unate) [fall slew = 0.330408, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11359/A-->X (max positive_unate) [fall slew = 0.330408, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11378/A-->X (max positive_unate) [fall slew = 0.226762, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11377/A-->X (max positive_unate) [fall slew = 0.226681, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11358/A-->X (max positive_unate) [fall slew = 0.330408, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11567/A-->X (max positive_unate) [rise slew = 0.185064, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11479/A-->X (max positive_unate) [fall slew = 0.241536, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11439/A-->X (max positive_unate) [fall slew = 0.175819, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11657/A-->X (max positive_unate) [fall slew = 0.806764, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11478/A-->X (max positive_unate) [fall slew = 0.241641, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11638/A-->X (max positive_unate) [r/f slew = 0.161365/0.548322, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11707/A-->X (max positive_unate) [fall slew = 0.183824, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_ropt_h_inst_12684/A-->X (max positive_unate) [fall slew = 0.806359, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_12202/A-->X (max positive_unate) [r/f slew = 0.235833/0.17857, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_ropt_h_inst_12700/A-->X (max positive_unate) [r/f slew = 0.23568/0.178567, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_12260/A-->X (max positive_unate) [r/f slew = 0.234686/0.276176, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_12263/A-->X (max positive_unate) [r/f slew = 0.234686/0.276176, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11770/A-->X (min positive_unate) [fall slew = 0.261819, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_11765/A-->X (min positive_unate) [fall slew = 0.356535, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_INV_2) U4672/A-->X (max negative_unate) [rise slew = 0.172895, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10782/A-->X (max positive_unate) [rise slew = 0.230235, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11264/A-->X (min positive_unate) [fall slew = 0.168573, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11295/A-->X (max positive_unate) [rise slew = 1.51299, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10782/A-->X (min positive_unate) [fall slew = 0.239085, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11295/A-->X (min positive_unate) [fall slew = 0.318079, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_4124/A-->X (max positive_unate) [fall slew = 0.200069, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_4124/A-->X (min positive_unate) [fall slew = 0.463277, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_INV_2) U11141/A-->X (min negative_unate) [rise slew = 0.356535, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_INV_2) U11106/A-->X (min negative_unate) [rise slew = 0.261819, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_INV_2) U6496/A-->X (min negative_unate) [fall slew = 0.184319, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10492/A-->X (min positive_unate) [rise slew = 0.184319, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11343/A-->X (min positive_unate) [r/f slew = 0.196109/0.703524, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11511/A-->X (max positive_unate) [rise slew = 0.414356, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_12375/A-->X (min positive_unate) [r/f slew = 0.150821/0.332834, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11504/A-->X (min positive_unate) [r/f slew = 0.16759/0.478556, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_BUF_20) U_PTECO_HOLD_BUF55/A-->X (max positive_unate) [r/f slew = 0.149121/0.163609, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11754/A-->X (max positive_unate) [r/f slew = 0.150545/0.150256, lib_range = [0.003 0.133]/[0.003 0.133] (nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V1_2) CTS_copt_h_inst_12521/A-->X (min positive_unate) [fall slew = 0.195286, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_11754/A-->X (min positive_unate) [fall slew = 0.218415, lib_range = [0.003 0.133](nS)] (RC-011)
+Warning: An extrapolation exceeding 10% of the library characterization range has been detected. The delay calculation accuracy may be affected. for the cell timing arc, (saed14hvt_ss0p72vm40c/SAEDHVT14_DEL_R2V3_2) CTS_copt_h_inst_10931/A-->X (min positive_unate) [fall slew = 0.217038, lib_range = [0.003 0.133](nS)] (RC-011)
+Note - message 'RC-011' limit (100) exceeded.  Remainder will be suppressed.
+Note - message 'RC-011' limit (100) exceeded.  Remainder will be suppressed.
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Warning: There are 3 ports with parasitics but with no driving cell.
+
+Information: Checking 'unconstrained_endpoints'.
+Warning: There are 940 endpoints which are not constrained for maximum delay.
+
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+0
+update_timing
+1
+save_session /mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/session_0/[get_current_task_label]
+Saving environmental constraints.....
+Saving netlist information.....
+Saving miscellaneous application information.....
+Saving timing information.....
+Information: Saved session uses shared data located in /mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/session_0/common_data/b (SR-036)
+Saving variable information.....
+Information: Executed with 4 workers
+1
+report_qor
+1
+report_constraint -all_violators -max_transition -verbose
+1
+Information: Setting timing_save_pin_arrival_and_required to TRUE and updating timing. (PTE-076)
+Information: It is recommended that the variable timing_save_pin_arrival_and_required be set before the initial timing update for optimal performance of this command. (PTE-077)
+Information: Starting fix_eco_drc       at [ Tue Jul  8 11:43:53 2025 ] (memory usage:   1341.0 MB)
+
+Available buffers:
+
+Information: Loading library 'saed14hvt_ss0p72vm40c' data due to accessing lib cells not linked in the current design. (LNK-041)
+Information: Starting ECO timing update at [ Tue Jul  8 11:44:26 2025 ] (memory usage:   1366.6 MB)
+Information: Finished ECO timing update at [ Tue Jul  8 11:44:26 2025 ] (memory usage:   1366.6 MB)
+report_constraint -all_violators -max_capacitance -verbose
+1
+Information: Starting fix_eco_drc       at [ Tue Jul  8 11:44:27 2025 ] (memory usage:   1366.6 MB)
+
+Available buffers:
+
+report_qor
+1
+report_qor
+1
+save_session /mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/session_1/[get_current_task_label]
+Saving environmental constraints.....
+Saving netlist information.....
+Saving miscellaneous application information.....
+Saving timing information.....
+Information: Saved session uses shared data located in /mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/session_1/common_data/b (SR-036)
+Saving variable information.....
+Information: Executed with 4 workers
+1
+write_changes -format icc2tcl -output "changes_1_all_clean.tcl"
+Information: Writing change list file '/mnt/hgfs/0_GP/Final_2/3_PrimeTime/3_PT/work/Func_Slow/changes_1_all_clean.tcl'.
+1

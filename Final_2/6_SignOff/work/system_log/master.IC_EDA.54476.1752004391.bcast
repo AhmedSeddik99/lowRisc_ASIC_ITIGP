@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1752004391
+pid 54476
+log /mnt/hgfs/0_GP/Final_2/6_SignOff/work/system_log/master.IC_EDA.54476.log
+tcp 192.168.122.1:33186
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

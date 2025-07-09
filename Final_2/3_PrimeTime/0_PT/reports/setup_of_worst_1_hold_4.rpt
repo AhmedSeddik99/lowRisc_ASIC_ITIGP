@@ -1,0 +1,60 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : multi-scenario design
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 01:59:09 2025
+****************************************
+
+
+Start of Master/Slave Task Processing
+-------------------------------------
+Started    : Command execution in scenario 'Func_Slow'
+Started    : Command execution in scenario 'Func_Fast'
+Succeeded  : Command execution in scenario 'Func_Slow'
+Succeeded  : Command execution in scenario 'Func_Fast'
+-----------------------------------
+End of Master/Slave Task Processing
+
+
+  Startpoint: ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[16]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Endpoint: ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[17]
+               (rising edge-triggered flip-flop clocked by cluster_clock_gating)
+  Last common pin: CTS_cts_buf_27043088/X
+  Path Group: cluster_clock_gating
+  Path Type: max
+  Scenario: Func_Slow
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock cluster_clock_gating (rise edge)                  0.00       0.00
+  clock network delay (propagated)                        0.67       0.67
+  ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[16]/CK (SAEDHVT14_FSDPQ_V2LP_2)
+                                                          0.00       0.67 r
+  ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[16]/Q (SAEDHVT14_FSDPQ_V2LP_2) <-
+                                                          0.09 +     0.75 r
+  CTS_copt_h_inst_11721/X (SAEDHVT14_DEL_R2V3_2)          0.08 H     0.84 r
+  ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[17]/SI (SAEDHVT14_FSDPQ_V2LP_2)
+                                                          0.01       0.84 r
+  data arrival time                                                  0.84
+
+  clock cluster_clock_gating (rise edge)                  5.00       5.00
+  clock network delay (propagated)                        0.15       5.15
+  clock reconvergence pessimism                           0.52       5.67
+  clock uncertainty                                      -0.20       5.47
+  ibex_top_inst/u_ibex_core/if_stage_i/pc_id_o_reg[17]/CK (SAEDHVT14_FSDPQ_V2LP_2)
+                                                                     5.47 r
+  library setup time                                     -0.02       5.45
+  data required time                                                 5.45
+  ------------------------------------------------------------------------------
+  data required time                                                 5.45
+  data arrival time                                                 -0.84
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        4.61
+
+
+1

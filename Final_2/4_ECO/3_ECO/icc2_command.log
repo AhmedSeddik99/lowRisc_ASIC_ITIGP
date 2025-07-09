@@ -1,0 +1,693 @@
+#@ # 
+#@ # Running icc2_shell Version O-2018.06-SP1 for linux64 -- Jul 17, 2018
+#@ # Date:   Tue Jul  8 11:48:21 2025
+#@ # Run by: ICer@IC_EDA
+#@ 
+
+puts "#######################################"
+puts "############### ECO ###################"
+puts "#######################################"
+set PATH "../../2_PnR/ibex_hvt"
+# set the block name at the previous stage
+set PREV_BLOCK "ibex_hvt_eco_2"
+set BLOCK "ibex_hvt_eco_3"
+set LOG "./log"
+sh rm -rf $LOG
+sh mkdir -p $LOG
+set REPORT "./reports"
+sh rm -rf $REPORT
+sh mkdir $REPORT
+set OUTPUT "./output"
+sh rm -rf $OUTPUT
+sh mkdir -p $OUTPUT
+set CHANGES "../../3_PrimeTime/3_PT/work/Func_Fast/changes_3_all_clean.tcl"
+# open block design view
+open_block "$PATH:$PREV_BLOCK.design" > "$LOG/open_block.log"
+copy_block -from_block "$PREV_BLOCK" -to_block "$BLOCK" > "$LOG/copy_block.log"
+# guide the tool to change in the current block
+current_block $BLOCK > "$LOG/current_block.log"
+set_svf "$OUTPUT/ibex_wrapper_eco_3.svf" > "$LOG/svf.log"
+# Source changes file from PrimeTime
+source $CHANGES
+# PnR cells used in PrimeTime
+place_eco_cells -eco_changed_cells > "$LOG/place_eco_cells.log"
+connect_pg_net -net "VDD" [get_pins -hierarchical "*/VDD*"] >  "$LOG/connect_pg_net.log"
+connect_pg_net -net "GND" [get_pins -hierarchical "*/VSS*"] >> "$LOG/connect_pg_net.log"
+route_eco -reroute modified_nets_only > "$LOG/route_eco.log"
+# Read check_routes
+set file_read  [open "$LOG/route_eco.log" r]
+set data [split [read $file_read] "\n"]
+close $file_read
+# Check the number of DRCs
+foreach line $data {
+set cond [string match "*Total number of DRCs*" $line]
+if {$cond} {
+    puts $line
+    regexp {\d+} $line Val_1
+    puts $Val_1
+    break
+}
+}
+#################
+# If DRCs exist #
+#################
+if {$Val_1 > 0} {
+for {set i 0} {$i < 6} {incr i} {
+    save_block
+    route_detail -incremental true > "$LOG/route_detail_$i.log"
+    # Read check_routes
+    set file_read  [open "$LOG/route_detail_$i.log" r]
+    set data [split [read $file_read] "\n"]
+    close $file_read
+    # Check the number of DRCs
+    foreach line $data {
+set cond [string match "*Total number of DRCs*" $line]
+if {$cond} {
+    puts $line
+    regexp {\d+} $line Val_2
+    puts $Val_2
+}
+    }
+    if {$Val_2 == 0} {
+puts "DRCs clean."
+break
+    } elseif {$Val_2 > $Val_1} {
+puts "DRCs are increasing again. Block is forced to be closed to discard the latest route_detail."
+puts "Don't forget to set_svf -append."
+close_block -force
+    return
+    } else {
+puts "Another route_detail iteration..."
+set Val_1 $Val_2
+    }
+}
+}
+route_detail -incremental true > "$LOG/route_detail_1.log"
+route_detail -incremental true
+open_block "$PATH:$BLOCK.design"
+route_detail -incremental true > "$LOG/route_detail_1.log"
+route_detail -incremental true > "$LOG/route_detail_2.log"
+save_block
+route_detail -incremental true > "$LOG/route_detail_3.log"
+route_detail -incremental true > "$LOG/route_detail_4.log"
+route_detail -incremental true > "$LOG/route_detail_5.log"
+route_detail -incremental true > "$LOG/route_detail_6.log"
+route_detail -incremental true > "$LOG/route_detail_7.log"
+route_detail -incremental true > "$LOG/route_detail_8.log"
+route_detail -incremental true > "$LOG/route_detail_9.log"
+route_detail -incremental true > "$LOG/route_detail_10.log"
+close_block -force
+open_block "$PATH:$BLOCK.design"
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+link_block
+win_set_filter -visible -class cell -filter {hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-72}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region pin_blockage block_shielding topology_node topology_edge core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {cell_array hard_macro_margin hard_margin route_blockage_margin soft_margin}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-72}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region pin_blockage topology_node topology_edge edit_group shape via placement_blockage }
+check_routes
+check_lvs
+gui_show_error_data
+gui_set_error_browser_option -show_mode all
+gui_set_error_browser_option -view_mode zoom
+gui_set_error_browser_option -zoom_factor 1.000000
+gui_set_error_browser_option -grouping type
+gui_error_browser -show
+gui_open_error_data -name {zroute.err}
+gui_open_error_data -name {zroute.err}
+gui_set_current_errors -data_name {zroute.err} -group {Same net via-cut spacing}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPin -value true
+gui_set_current_errors -data_name {zroute.err} -group {Same net via-cut spacing} -sub_group {VIA1 (20)-VIA2 (22)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_set_select_class -visible {cell pin port bound routing_blockage shaping_blockage pg_region pin_blockage block_shielding topology_node topology_edge core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_select_class {cell pin port bound routing_blockage shaping_blockage pg_region pin_blockage topology_node topology_edge edit_group shape via placement_blockage }
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showWiringGrid -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_NWELL -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_LVTIMP -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_PO -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M1 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M1DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA1 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M2 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M2DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA2 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M3 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M3DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA3 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M4 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M4DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA4 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M5 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M5DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA5 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M6 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M6DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA6 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M7 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M7DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA7 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M8 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M8DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA8 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M9 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M9DMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIARDL -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_MRDL -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_DIFF -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_BJTDMY -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_CPO -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_CTM1 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_DIFF_15 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_DIFF_25 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_DIOD -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_DNW -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_ESD -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_FIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_HOTNWL -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_HVTIMP -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_IP -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_LOGO -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M1PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M2PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M3PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M4PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M5PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M6PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M7PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M8PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M9PIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_MRPIN -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_NIMP -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_PAD -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_PIMP -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM1 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM2 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM3 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM4 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM5 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM6 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM7 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM8 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RM9 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RMARK -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_RNW -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_SBLK -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA0 -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_prBoundary -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_UNASSIGNED -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA1 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M2 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA2 -value true
+win_set_filter -visible -class pin -filter {} -layer {0-4 7 9-72}
+win_set_filter -visible -class routing_blockage -layer {0-4 7 9-72}
+win_set_filter -visible -class shape -filter {} -layer {0-4 7 9-72}
+win_set_filter -visible -class via -filter {} -layer {0-4 7 9-72}
+win_set_filter -visible -class terminal -filter {}  -layer {0-4 7 9-72}
+win_set_filter -visible -class trackdef -filter {non_preferred} -layer {0-4 7 9-72}
+win_set_select_class -visible {cell pin port bound routing_blockage shaping_blockage pg_region pin_blockage block_shielding topology_node topology_edge core_area die_area edit_group shape via terminal fill_cell trackdef placement_blockage }
+win_set_filter -class pin -filter {} -layer {0-4 7 9-72}
+win_set_filter -class routing_blockage -layer {0-4 7 9-72}
+win_set_filter -class shape -filter {} -layer {0-4 7 9-72}
+win_set_filter -class via -filter {} -layer {0-4 7 9-72}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M3 -value true
+win_set_filter -visible -class pin -filter {} -layer {0-4 7 10-72}
+win_set_filter -visible -class routing_blockage -layer {0-4 7 10-72}
+win_set_filter -visible -class shape -filter {} -layer {0-4 7 10-72}
+win_set_filter -visible -class via -filter {} -layer {0-4 7 10-72}
+win_set_filter -visible -class terminal -filter {}  -layer {0-4 7 10-72}
+win_set_filter -visible -class trackdef -filter {non_preferred} -layer {0-4 7 10-72}
+win_set_filter -class pin -filter {} -layer {0-4 7 10-72}
+win_set_filter -class routing_blockage -layer {0-4 7 10-72}
+win_set_filter -class shape -filter {} -layer {0-4 7 10-72}
+win_set_filter -class via -filter {} -layer {0-4 7 10-72}
+win_select_objects -slct_targets global -at {101.757 119.723} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.722 119.708}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.722 119.708}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 2 -at_point {101.719 119.708}
+win_select_objects -slct_targets global -at {101.680 119.730} -radius 0.0002
+win_select_objects -slct_targets global -at {101.723 119.736} -radius 0.0002
+win_select_objects -slct_targets global -at {101.785 119.695} -radius 0.0002
+win_select_objects -slct_targets global -at {101.707 119.700} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.707 119.700} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.675 119.704} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.676 119.727} -radius 0.0002
+win_select_objects -slct_targets global -at {101.683 119.663} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.683 119.663} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.682 119.608} -scale 0.0002
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPinShapeLayer_M2 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPinShapeLayer_VIA2 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPinShapeLayer_M3 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_M1 -value true
+win_set_filter -visible -class pin -filter {} -layer {0-2 4 7 10-72}
+win_set_filter -visible -class routing_blockage -layer {0-2 4 7 10-72}
+win_set_filter -visible -class shape -filter {} -layer {0-2 4 7 10-72}
+win_set_filter -visible -class via -filter {} -layer {0-2 4 7 10-72}
+win_set_filter -visible -class terminal -filter {}  -layer {0-2 4 7 10-72}
+win_set_filter -visible -class trackdef -filter {non_preferred} -layer {0-2 4 7 10-72}
+win_set_filter -class pin -filter {} -layer {0-2 4 7 10-72}
+win_set_filter -class routing_blockage -layer {0-2 4 7 10-72}
+win_set_filter -class shape -filter {} -layer {0-2 4 7 10-72}
+win_set_filter -class via -filter {} -layer {0-2 4 7 10-72}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.616 119.716} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.616 119.716} -radius 0.0002
+undo
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.622 119.712}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.621 119.712}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 2 -at_point {101.620 119.742}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 2 -at_point {101.620 119.742}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.628 119.740}
+win_select_objects -slct_targets global -at {101.709 119.744} -radius 0.0003
+win_select_objects -slct_targets global -at {101.683 119.698} -radius 0.0003
+win_select_objects -slct_targets global -at {101.712 119.649} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.716 119.704} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.861 119.685} -scale 0.0003
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPinShapeLayer_M1 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showPinShapeLayer_VIA1 -value true
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.686 119.681} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.615 119.628} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.717 119.745} -radius 0.0003
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {101.685 119.751} -radius 0.0003
+win_select_objects -slct_targets global -at {101.687 119.749} -radius 0.0003 -index 1
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+undo
+win_select_objects -slct_targets global -at {101.716 119.647} -radius 0.0003
+win_select_objects -slct_targets global -at {101.717 119.648} -radius 0.0003 -index 1
+win_select_objects -slct_targets global -at {101.717 119.648} -radius 0.0003 -index 2
+win_select_objects -slct_targets global -at {101.717 119.648} -radius 0.0003 -index 3
+win_select_objects -slct_targets global -at {101.717 119.648} -radius 0.0003 -index 4
+win_select_objects -slct_targets global -at {101.717 119.648} -radius 0.0003
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {101.687 119.647} -radius 0.0003
+win_select_objects -slct_targets global -at {101.687 119.647} -radius 0.0003 -index 1
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {101.684 119.675} -radius 0.0003
+win_select_objects -slct_targets global -at {101.685 119.672} -radius 0.0003
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {101.862 119.727} -radius 0.0003
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {101.868 119.695} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.858 119.700} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+set_attribute -objects [get_vias VIA_S_29860] -name via_def -value [get_via_defs -library [current_lib] VIA12SQ_C]
+win_select_objects -slct_targets global -at {101.606 119.642} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.606 119.643} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.735 119.791} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {101.745 119.803} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.745 119.803} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+undo
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.864 119.698} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.864 119.698} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.714 119.709} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.755 119.813} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.755 119.813} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.754 119.800} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.754 119.800} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.676 119.799} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {101.681 119.732} -radius 0.0003 -index 1
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.674 119.687} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.675 119.790} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start CreateShapeTool
+gui_set_mouse_tool_option -tool CreateShapeTool -option {layer} -value {M1}
+gui_set_mouse_tool_option -tool CreateShapeTool -option {wireWidth} -value {0.034}
+gui_set_mouse_tool_option -tool CreateShapeTool -option {net} -value {net231}
+gui_set_mouse_tool_option -tool CreateShapeTool -option {layer} -value {M3}
+gui_set_mouse_tool_option -tool CreateShapeTool -option {layer} -value {M2}
+gui_set_mouse_tool_option -tool CreateShapeTool -option {autoLayer} -value {false}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.715 119.702} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.717 119.794} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+gui_set_mouse_tool_option -tool SELECT -option {Operation} -value {Replace}
+set_attribute -objects [get_shapes PATH_21_123919] -name shape_use -value detail_route
+check_routes
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+gui_set_current_errors -data_name {zroute.err} -group {Same net via-cut spacing} -sub_group {VIA1 (20)-VIA2 (22)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.310 147.323} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.310 147.323}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.310 147.322}
+gui_scroll -window [gui_get_current_window -types Layout -view] -vrel -0.25
+win_select_objects -slct_targets global -at {112.334 147.293} -radius 0.0003
+win_select_objects -slct_targets global -at {112.332 147.303} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.332 147.303} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.251 147.247} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {112.370 147.297} -radius 0.0003
+win_select_objects -slct_targets global -at {112.370 147.297} -radius 0.0003 -index 1
+win_select_objects -slct_targets global -at {112.370 147.303} -radius 0.0003 -index 2
+win_select_objects -slct_targets global -at {112.366 147.301} -radius 0.0003 -index 3
+win_select_objects -slct_targets global -at {112.366 147.301} -radius 0.0003 -index 4
+win_select_objects -slct_targets global -at {112.364 147.291} -radius 0.0003 -index 5
+win_select_objects -slct_targets global -at {112.362 147.314} -radius 0.0003 -index 6
+win_select_objects -slct_targets global -at {112.362 147.308} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.362 147.308} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.544 147.355} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {112.368 147.331} -radius 0.0003
+win_select_objects -slct_targets global -at {112.368 147.331} -radius 0.0003 -index 1
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.368 147.331} -radius 0.0003 -index 1
+win_select_objects -slct_targets global -at {112.368 147.331} -radius 0.0003 -index 2
+win_select_objects -slct_targets global -at {112.368 147.331} -radius 0.0003 -index 3
+win_select_objects -slct_targets global -at {112.363 147.325} -radius 0.0003 -index 4
+win_select_objects -slct_targets global -at {112.363 147.325} -radius 0.0003
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.420 147.312} -radius 0.0003
+win_select_objects -slct_targets global -at {112.421 147.345} -radius 0.0003
+remove_physical_objects
+win_select_objects -slct_targets global -at {112.421 147.345} -radius 0.0003 -index 1
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.417 147.255} -radius 0.0003
+win_select_objects -slct_targets global -at {112.417 147.255} -radius 0.0003 -index 1
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.566 147.367} -radius 0.0003
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {112.550 147.361} -radius 0.0003
+remove_physical_objects; change_selection [create_via -via_def VIA1_32BAR1_C -origin {112.5600 147.3600} -orientation R0 -shape_use detail_route -net {net410}]
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {112.560 147.362} -radius 0.0003 -index 1
+undo
+win_select_objects -slct_targets global -at {112.558 147.398} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.558 147.398} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.347 147.328} -scale 0.0003
+set_attribute -objects [get_vias VIA_S_23887] -name via_def -value [get_via_defs -library [current_lib] VIA12SQ_C]
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {112.311 147.343} -radius 0.0003
+win_select_objects -slct_targets global -at {112.246 147.241} -radius 0.0003
+win_select_objects -slct_targets global -at {112.264 147.234} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.264 147.234} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.352 147.229} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {112.334 147.152} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.332 147.309} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.332 147.258} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {112.295 147.346} -radius 0.0003
+check_routes
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {M1 (19)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {VIA1 (20)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.369 147.303}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.369 147.302}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.370 147.303}
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {M2 (21)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.673 119.805}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.673 119.804}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.674 119.805}
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {VIA1 (20)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.367 147.298}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.367 147.298}
+win_select_objects -slct_targets global -at {112.368 147.299} -radius 0.0002
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 2 -at_point {112.368 147.299}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.368 147.299} -scale 0.0001
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {112.368 147.303} -scale 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {112.368 147.293}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+check_routes
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {M2 (21)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {101.643 119.828} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.643 119.828}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {101.643 119.828}
+win_select_objects -slct_targets global -at {101.678 119.797} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.678 119.797} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {101.676 119.814} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+check_routes
+win_select_objects -slct_targets global -at {101.791 119.848} -radius 0.0003
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid} -sub_group {M1 (19)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {116.804 153.980} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {116.804 153.980}
+win_select_objects -slct_targets global -at {116.887 153.955} -radius 0.0003
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {116.849 153.894} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.849 153.894} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.841 153.846} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.849 153.932} -radius 0.0003
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {2}] -force
+win_select_objects -slct_targets global -at {116.879 153.955} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.879 153.955} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.881 153.898} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.855 153.874} -radius 0.0003
+gui_scroll -window [gui_get_current_window -types Layout -view] -vrel 0.25
+win_select_objects -slct_targets global -at {116.847 153.765} -radius 0.0003
+win_select_objects -slct_targets global -at {116.839 153.758} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.848 153.915} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.847 153.869} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.841 153.932} -radius 0.0003
+win_select_objects -slct_targets global -at {116.808 153.845} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.808 153.845} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.809 153.837} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.815 153.879} -radius 0.0003
+win_select_objects -slct_targets global -at {116.837 153.761} -radius 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.839 153.862} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.841 153.857} -scale 0.0003
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+check_routes
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {116.476 154.001}
+win_select_objects -slct_targets global -at {116.382 153.996} -radius 0.0004
+win_select_objects -slct_targets global -at {116.437 153.962} -radius 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.437 153.962} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.335 153.953} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.515 153.958} -radius 0.0004
+win_select_objects -slct_targets global -at {116.515 153.958} -radius 0.0004 -index 1
+win_select_objects -slct_targets global -at {116.515 153.958} -radius 0.0004 -index 2
+win_select_objects -slct_targets global -at {116.452 154.001} -radius 0.0004
+win_select_objects -slct_targets global -at {116.452 154.001} -radius 0.0004 -index 1
+win_select_objects -slct_targets global -at {116.452 154.001} -radius 0.0004 -index 2
+win_select_objects -slct_targets global -at {116.447 153.998} -radius 0.0004 -index 3
+win_select_objects -slct_targets global -at {116.447 154.002} -radius 0.0004 -index 4
+win_select_objects -slct_targets global -at {116.447 154.002} -radius 0.0004
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+win_select_objects -slct_targets global -at {116.453 153.926} -radius 0.0004
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+win_select_objects -slct_targets global -at {116.449 153.956} -radius 0.0004
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+win_select_objects -slct_targets global -at {116.348 153.963} -radius 0.0004
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {116.343 153.957} -radius 0.0004
+win_select_objects -slct_targets global -at {116.349 153.963} -radius 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.349 153.963} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.554 153.906} -scale 0.0004
+set_attribute -objects [get_vias VIA_S_122766] -name via_def -value [get_via_defs -library [current_lib] VIA12SQ_C]
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.518 153.905} -radius 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.518 153.905} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.495 153.910} -scale 0.0004
+gui_set_mouse_tool_option -tool MoveTool -option {dragAngle} -value {Orthogonal}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -abort
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start CreateShapeTool
+gui_set_mouse_tool_option -tool CreateShapeTool -option {net} -value {ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch}
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.624 153.956} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.493 153.961} -scale 0.0004
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+check_routes
+win_select_objects -slct_targets global -at {116.564 154.004} -radius 0.0004
+win_select_objects -slct_targets global -at {116.563 153.963} -radius 0.0004
+set_attribute -objects [get_shapes PATH_21_21315] -name shape_use -value detail_route
+gui_set_current_errors -data_name {zroute.err} -group {Diff net spacing}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_set_current_errors -data_name {zroute.err} -group {Diff net spacing} -sub_group {M1 (19)}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {1}] -force
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting viewLevel -value 1
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting viewLevel -value 2
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting viewLevel -value 3
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting viewLevel -value 4
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting viewLevel -value 5
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting deepSelect -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting expandCellHardMacro -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting expandCellCore -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting expandCellIO -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting expandFillInst -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting expandCellOthers -value true
+win_set_filter -start_level 0 -stop_level 5 -visible
+win_set_filter -expand_cell_types {std io hard_macro soft_macro other fill  }
+win_set_filter -start_level 0 -stop_level 5
+win_select_objects -slct_targets global -at {116.560 153.928} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {116.560 153.928}
+gui_scroll -window [gui_get_current_window -types Layout -view] -vrel -0.25
+win_select_objects -slct_targets global -at {116.514 153.893} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.514 153.893} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.421 153.892} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.499 153.966} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start StretchTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.476 153.963} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {116.419 153.961} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {116.508 153.926} -radius 0.0002
+check_routes
+check_lvs
+gui_set_current_errors -data_name {zroute.err} -group {Off-grid}
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {111.985 147.389} -radius 0.0001
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {111.985 147.389}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 0.5 -at_point {111.985 147.389}
+gui_zoom -window [gui_get_current_window -types Layout -view] -factor 2 -at_point {111.986 147.389}
+win_select_objects -slct_targets global -at {111.930 147.384} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.930 147.414} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.766 147.405} -scale 0.0002
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA3 -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showLayer_VIA3 -value false
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {111.937 147.390} -radius 0.0002
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {111.964 147.419} -radius 0.0002
+win_select_objects -slct_targets global -at {111.966 147.425} -radius 0.0002 -index 1
+win_select_objects -slct_targets global -at {111.965 147.395} -radius 0.0002
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002 -index 1
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002 -index 2
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002 -index 3
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002 -index 4
+win_select_objects -slct_targets global -at {111.966 147.424} -radius 0.0002
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {111.781 147.418} -radius 0.0002
+win_select_objects -slct_targets global -at {111.896 147.434} -radius 0.0002
+win_select_objects -slct_targets global -at {111.896 147.417} -radius 0.0002
+win_select_objects -slct_targets global -at {111.764 147.415} -radius 0.0002
+move_objects -rotate_by CW90 -group
+win_select_objects -slct_targets global -at {111.779 147.416} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.779 147.416} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.922 147.405} -scale 0.0002
+gui_set_mouse_tool_option -tool MoveTool -option {dragAngle} -value {Diagonal}
+set_attribute -objects [get_vias VIA_S_23852] -name via_def -value [get_via_defs -library [current_lib] VIA12SQ_C]
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {111.893 147.446} -radius 0.0002
+win_select_objects -slct_targets global -at {111.893 147.446} -radius 0.0002 -index 1
+win_select_objects -slct_targets global -at {111.894 147.447} -radius 0.0002 -index 2
+win_select_objects -slct_targets global -at {111.896 147.449} -radius 0.0002 -index 3
+win_select_objects -slct_targets global -at {111.896 147.449} -radius 0.0002 -index 4
+win_select_objects -slct_targets global -at {111.896 147.449} -radius 0.0002 -index 5
+win_select_objects -slct_targets global -at {111.888 147.446} -radius 0.0002
+win_select_objects -slct_targets global -at {111.888 147.446} -radius 0.0002 -index 1
+win_select_objects -slct_targets global -at {111.889 147.447} -radius 0.0002 -index 2
+win_select_objects -slct_targets global -at {111.899 147.446} -radius 0.0002 -index 3
+win_select_objects -slct_targets global -at {111.899 147.446} -radius 0.0002 -index 4
+win_select_objects -slct_targets global -at {111.895 147.446} -radius 0.0002 -index 5
+win_select_objects -slct_targets global -at {111.894 147.446} -radius 0.0002 -index 6
+win_select_objects -slct_targets global -at {111.893 147.445} -radius 0.0002
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+undo
+win_select_objects -slct_targets global -at {111.890 147.448} -radius 0.0002
+win_select_objects -slct_targets global -at {111.895 147.418} -radius 0.0002
+win_select_objects -slct_targets global -at {111.895 147.429} -radius 0.0002
+win_select_objects -slct_targets global -at {111.895 147.429} -radius 0.0002 -index 1
+win_select_objects -slct_targets global -at {111.895 147.423} -radius 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start MoveTool
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.895 147.423} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {111.803 147.418} -scale 0.0002
+gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+win_select_objects -slct_targets global -at {111.789 147.426} -radius 0.0002
+remove_physical_objects
+gui_set_selected_errors -replace [gui_get_errors -data_name {zroute.err} -id {0}] -force
+win_select_objects -slct_targets global -at {111.953 147.445} -radius 0.0002
+check_routes
+check_lvs
+win_select_objects -slct_targets global -at {111.961 147.456} -radius 0.0002
+check_legality
+set LOG "./log"
+set REPORT "./reports"
+set OUTPUT "./output"
+set_svf -off >> "$LOG/svf.log"
+##############################
+# CHECKS #
+##############################
+check_pg_drc > "$REPORT/check_pg_drc.log"
+report_utilization > "$REPORT/report_utilization.log"
+check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+check_routes > "$REPORT/check_routes.rpt"
+report_qor  > "$REPORT/report_qor.rpt"
+check_legality > "$REPORT/check_legality.rpt"
+check_lvs > "$REPORT/check_lvs.rpt"
+save_block
+####################################
+# OUTPUTS #
+####################################
+#write_def "$OUTPUT/ibex_wrapper.def"
+write_sdc -scenario "Func_Slow" -output "$OUTPUT/ibex_wrapper_slow.sdc"
+write_sdc -scenario "Func_Fast" -output "$OUTPUT/ibex_wrapper_fast.sdc"
+write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+write_parasitics -output "$OUTPUT/ibex_wrapper"
+exit

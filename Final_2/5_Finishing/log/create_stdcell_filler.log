@@ -1,0 +1,162 @@
+Using libraries: ibex_hvt saed14hvt
+Warning: In library ibex_hvt, no block views exist for block ibex_wrapper. (LNK-064)
+Visiting block ibex_hvt:ibex_hvt_finishing_2.design
+Design 'ibex_wrapper' was successfully linked.
+Effort 5
+INFO:: begin filler insertions...
+CHF::NPL_CHKQUERY_PNET checking turned off by default
+master SAEDHVT14_DCAP_ECO_12 has site unit
+master SAEDHVT14_DCAP_ECO_15 has site unit
+master SAEDHVT14_DCAP_ECO_18 has site unit
+master SAEDHVT14_DCAP_ECO_6 has site unit
+master SAEDHVT14_DCAP_ECO_9 has site unit
+master SAEDHVT14_DCAP_V4_16 has site unit
+master SAEDHVT14_DCAP_V4_32 has site unit
+master SAEDHVT14_DCAP_V4_5 has site unit
+master SAEDHVT14_DCAP_V4_64 has site unit
+master SAEDHVT14_DCAP_V4_8 has site unit
+master SAEDHVT14_DCAP_PV1ECO_12 has site unit
+master SAEDHVT14_DCAP_PV1ECO_15 has site unit
+master SAEDHVT14_DCAP_PV1ECO_18 has site unit
+master SAEDHVT14_DCAP_PV1ECO_6 has site unit
+master SAEDHVT14_DCAP_PV1ECO_9 has site unit
+master SAEDHVT14_DCAP_PV3_3 has site unit
+ Use site unit (740)
+Warning: filler ref cell SAEDHVT14_DCAP_ECO_12 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_ECO_15 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_ECO_18 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_ECO_6 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_ECO_9 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_V4_16 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_V4_32 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_V4_5 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_V4_64 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_V4_8 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV1ECO_12 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV1ECO_15 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV1ECO_18 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV1ECO_6 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV1ECO_9 not marked filler type. (CHF-011)
+Warning: filler ref cell SAEDHVT14_DCAP_PV3_3 not marked filler type. (CHF-011)
+Warning: filler ref cells not listed from laregst to smallest. Tool may not be able to fill all empty space. (CHF-008)
+INFO:: process regular filler master min-vth type: 
+Warning: Smallest filler provided is greater than specified in option place.rules.min_vt_filler_size (CHF-073)
+Warning: option -continue_on_error turned on automatically. (CHF-014)
+Begin building search trees for block ibex_hvt:ibex_hvt_finishing_2.design
+Done building search trees for block ibex_hvt:ibex_hvt_finishing_2.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 2 shapes out of 4185 total shapes.
+Layer M2: cached 1 shapes out of 123918 total shapes.
+Layer M3: cached 16 shapes out of 97926 total shapes.
+Cached 4400 vias out of 178575 total vias.
+CHF: loading design...
+... VT_P rule: 0.888000
+... VT_N rule: 0.888000
+... max group width rule: 0.888000
+CHF:: Loading blkInsts from NDM...
+CHF:: Building row/inst relations...
+INFO:: Use fillers in order(1000): SAEDHVT14_DCAP_ECO_12 (14 x 1), SAEDHVT14_DCAP_ECO_15 (17 x 1), SAEDHVT14_DCAP_ECO_18 (20 x 1), SAEDHVT14_DCAP_ECO_6 (8 x 1), SAEDHVT14_DCAP_ECO_9 (11 x 1), SAEDHVT14_DCAP_V4_16 (18 x 1), SAEDHVT14_DCAP_V4_32 (34 x 1), SAEDHVT14_DCAP_V4_5 (7 x 1), SAEDHVT14_DCAP_V4_64 (68 x 1), SAEDHVT14_DCAP_V4_8 (10 x 1), SAEDHVT14_DCAP_PV1ECO_12 (14 x 1), SAEDHVT14_DCAP_PV1ECO_15 (17 x 1), SAEDHVT14_DCAP_PV1ECO_18 (21 x 1), SAEDHVT14_DCAP_PV1ECO_6 (9 x 1), SAEDHVT14_DCAP_PV1ECO_9 (11 x 1), SAEDHVT14_DCAP_PV3_3 (8 x 1), 
+	10% complete ...
+	20% complete ...
+	30% complete ...
+	40% complete ...
+	50% complete ...
+	60% complete ...
+	70% complete ...
+	80% complete ...
+	90% complete ...
+Regular Filler Insertion Complete
+... 7857 of regular filler SAEDHVT14_DCAP_ECO_12 inserted
+... 0 of regular filler SAEDHVT14_DCAP_ECO_15 inserted
+... 0 of regular filler SAEDHVT14_DCAP_ECO_18 inserted
+... 4130 of regular filler SAEDHVT14_DCAP_ECO_6 inserted
+... 0 of regular filler SAEDHVT14_DCAP_ECO_9 inserted
+... 0 of regular filler SAEDHVT14_DCAP_V4_16 inserted
+... 0 of regular filler SAEDHVT14_DCAP_V4_32 inserted
+... 973 of regular filler SAEDHVT14_DCAP_V4_5 inserted
+... 0 of regular filler SAEDHVT14_DCAP_V4_64 inserted
+... 0 of regular filler SAEDHVT14_DCAP_V4_8 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV1ECO_12 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV1ECO_15 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV1ECO_18 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV1ECO_6 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV1ECO_9 inserted
+... 0 of regular filler SAEDHVT14_DCAP_PV3_3 inserted
+Effort 5
+INFO:: begin filler insertions...
+CHF::NPL_CHKQUERY_PNET checking turned off by default
+master SAEDHVT14_FILL_ECO_18 has site unit
+master SAEDHVT14_FILL_ECO_15 has site unit
+master SAEDHVT14_FILL_ECO_12 has site unit
+master SAEDHVT14_FILL_ECO_9 has site unit
+master SAEDHVT14_FILL_ECO_2 has site unit
+master SAEDHVT14_FILL_ECO_1 has site unit
+master SAEDHVT14_FILL_NNWIV1Y2_2 has site unit
+master SAEDHVT14_FILL_NNWIV1Y2_3 has site unit
+master SAEDHVT14_FILL_NNWIY2_2 has site unit
+master SAEDHVT14_FILL_NNWIY2_3 has site unit
+master SAEDHVT14_FILL_NNWSPACERY2_7 has site unit
+master SAEDHVT14_FILL_NNWVDDBRKY2_3 has site unit
+master SAEDHVT14_FILLP2 has site unit
+master SAEDHVT14_FILLP3 has site unit
+master SAEDHVT14_FILL_SPACER_7 has site unit
+master SAEDHVT14_FILL_Y2_3 has site unit
+ Use site unit (740)
+Warning: filler ref cells not listed from laregst to smallest. Tool may not be able to fill all empty space. (CHF-008)
+INFO:: process regular filler master min-vth type: 
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 2 shapes out of 4185 total shapes.
+Layer M2: cached 1 shapes out of 123918 total shapes.
+Layer M3: cached 16 shapes out of 97926 total shapes.
+Cached 4400 vias out of 178575 total vias.
+CHF: loading design...
+... VT_P rule: 0.888000
+... VT_N rule: 0.888000
+... max group width rule: 0.888000
+CHF:: Loading blkInsts from NDM...
+CHF:: Building row/inst relations...
+INFO:: Use fillers in order(1000): SAEDHVT14_FILL_ECO_18 (20 x 1), SAEDHVT14_FILL_ECO_15 (17 x 1), SAEDHVT14_FILL_ECO_12 (14 x 1), SAEDHVT14_FILL_ECO_9 (10 x 1), SAEDHVT14_FILL_ECO_2 (4 x 1), SAEDHVT14_FILL_ECO_1 (1 x 1), SAEDHVT14_FILL_NNWIV1Y2_2 (4 x 2), SAEDHVT14_FILL_NNWIV1Y2_3 (5 x 2), SAEDHVT14_FILL_NNWIY2_2 (4 x 2), SAEDHVT14_FILL_NNWIY2_3 (5 x 2), SAEDHVT14_FILL_NNWSPACERY2_7 (9 x 2), SAEDHVT14_FILL_NNWVDDBRKY2_3 (5 x 2), SAEDHVT14_FILLP2 (4 x 1), SAEDHVT14_FILLP3 (5 x 1), SAEDHVT14_FILL_SPACER_7 (9 x 2), SAEDHVT14_FILL_Y2_3 (5 x 2), 
+	10% complete ...
+	20% complete ...
+	30% complete ...
+	40% complete ...
+	50% complete ...
+	60% complete ...
+	70% complete ...
+	80% complete ...
+	90% complete ...
+Regular Filler Insertion Complete
+... 2551 of regular filler SAEDHVT14_FILL_ECO_18 inserted
+... 1091 of regular filler SAEDHVT14_FILL_ECO_15 inserted
+... 1750 of regular filler SAEDHVT14_FILL_ECO_12 inserted
+... 1578 of regular filler SAEDHVT14_FILL_ECO_9 inserted
+... 22160 of regular filler SAEDHVT14_FILL_ECO_2 inserted
+... 13320 of regular filler SAEDHVT14_FILL_ECO_1 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWIV1Y2_2 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWIV1Y2_3 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWIY2_2 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWIY2_3 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWSPACERY2_7 inserted
+... 0 of regular filler SAEDHVT14_FILL_NNWVDDBRKY2_3 inserted
+... 0 of regular filler SAEDHVT14_FILLP2 inserted
+... 0 of regular filler SAEDHVT14_FILLP3 inserted
+... 0 of regular filler SAEDHVT14_FILL_SPACER_7 inserted
+... 0 of regular filler SAEDHVT14_FILL_Y2_3 inserted

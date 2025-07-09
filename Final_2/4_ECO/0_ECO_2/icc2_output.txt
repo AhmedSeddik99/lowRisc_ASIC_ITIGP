@@ -1,0 +1,87 @@
+
+Loading user preference file /home/ICer/.synopsys_icc2_gui/preferences.tcl
+icc2_shell> 
+icc2_shell> start_gui
+icc2_shell> 
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14hvt', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library "ibex_hvt'. (NDM-102)
+icc2_shell> open_block /mnt/hgfs/0_GP/Final_2/2_PnR/ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design
+Information: User units loaded from library 'saed14hvt' (LNK-040)
+Opening block 'ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design' in edit mode
+Information: loading PG routing via master rules, patterns, strategies and strategy via rules.
+Begin building search trees for block ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design
+Done building search trees for block ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design (time 0s)
+icc2_shell> link_block
+Using libraries: ibex_hvt saed14hvt
+Warning: In library ibex_hvt, no block views exist for block ibex_wrapper. (LNK-064)
+Visiting block ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design
+Design 'ibex_wrapper' was successfully linked.
+1
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+Error: can't read "REPORT": no such variable
+        Use error_info for more info. (CMD-013)
+icc2_shell> set REPORT "./reports"
+./reports
+icc2_shell> check_pg_drc > "$REPORT/check_pg_drc.log"
+icc2_shell> report_utilization > "$REPORT/report_utilization.log"
+icc2_shell> check_pg_connectivity > "$REPORT/check_pg_connectivity.rpt"
+icc2_shell> check_pg_missing_vias > "$REPORT/check_missing_vias.rpt"
+icc2_shell> check_routes > "$REPORT/check_routes.rpt"
+icc2_shell> report_qor  > "$REPORT/report_qor.rpt"
+icc2_shell> check_legality > "$REPORT/check_legality.rpt"
+icc2_shell> check_lvs > "$REPORT/check_lvs.rpt"
+icc2_shell> set OUTPUT "./output"
+./output
+icc2_shell> write_sdc -scenario "Func_Slow" -output "$OUTPUT/ibex_wrapper_slow.sdc"
+1
+icc2_shell> write_sdc -scenario "Func_Fast" -output "$OUTPUT/ibex_wrapper_fast.sdc"
+1
+icc2_shell> write_verilog "$OUTPUT/ibex_wrapper_rt.v"
+1
+icc2_shell> write_parasitics -output "$OUTPUT/ibex_wrapper"
+Information: Design ibex_hvt_eco_0_2_0_DRCs_w_lvs has 26078 nets, 0 global routed, 26072 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+NEX: extract design ibex_wrapper
+Information: batch extract takes 0.00 seconds, elapse 0.00 seconds (NEX-015)
+NEX: write corner ID 0 parasitics to ./output/ibex_wrapper.tlup_max_-40.spef 
+spefName ./output/ibex_wrapper.tlup_max_-40.spef, corner name Slow 
+NEX: write corner ID 1 parasitics to ./output/ibex_wrapper.tlup_min_125.spef 
+spefName ./output/ibex_wrapper.tlup_min_125.spef, corner name Fast 
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_eco_0_2_0_DRCs_w_lvs.design'. (TIM-125)
+icc2_shell> gui_show_error_data
+icc2_shell> exit
+Maximum memory usage for this session: 582.76 MB
+CPU usage for this session:     53 seconds (  0.01 hours)
+Elapsed time for this session:    315 seconds (  0.09 hours)
+Thank you for using IC Compiler II.
+

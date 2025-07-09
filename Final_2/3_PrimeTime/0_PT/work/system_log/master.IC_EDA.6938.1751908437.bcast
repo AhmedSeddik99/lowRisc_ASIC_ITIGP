@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1751908437
+pid 6938
+log /mnt/hgfs/0_GP/Final_2/3_PrimeTime/0_PT/work/system_log/master.IC_EDA.6938.log
+tcp 192.168.122.1:39842
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

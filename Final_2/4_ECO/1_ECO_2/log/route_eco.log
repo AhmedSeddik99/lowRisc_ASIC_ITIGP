@@ -1,0 +1,1304 @@
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+[ECO: DbIn With Extraction] Elapsed real time: 0:00:04 
+[ECO: DbIn With Extraction] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: DbIn With Extraction] Stage (MB): Used  138  Alloctr  144  Proc   55 
+[ECO: DbIn With Extraction] Total (MB): Used  139  Alloctr  146  Proc 1529 
+[ECO: Analysis] Elapsed real time: 0:00:04 
+[ECO: Analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: Analysis] Stage (MB): Used  138  Alloctr  144  Proc   55 
+[ECO: Analysis] Total (MB): Used  139  Alloctr  146  Proc 1529 
+Num of eco nets = 26342
+Num of open eco nets = 113
+[ECO: Init] Elapsed real time: 0:00:04 
+[ECO: Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: Init] Stage (MB): Used  141  Alloctr  147  Proc   55 
+[ECO: Init] Total (MB): Used  142  Alloctr  148  Proc 1529 
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used  146  Alloctr  152  Proc 1533 
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 off                 
+global.placement_timing_driven_mode                     :	 false               
+global.timing_driven                                    :	 false               
+
+Begin global routing.
+Loading parastics information to the router ...
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+parastics information loaded to the router.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (-18.00,-18.00,178.00,178.00)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M2, dir Hor, min width = 0.03, min space = 0.03 pitch = 0.06
+layer M3, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M4, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.07
+layer M5, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M6, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M7, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M8, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M9, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer MRDL, dir Hor, min width = 2.00, min space = 2.00 pitch = 0.60
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    2  Alloctr    1  Proc    0 
+[End of Build Tech Data] Total (MB): Used  149  Alloctr  154  Proc 1572 
+Net statistics:
+Total number of nets     = 26342
+Number of nets to route  = 113
+Number of single or zero port nets = 233
+Number of nets with min-layer-mode soft = 26
+Number of nets with min-layer-mode soft-cost-medium = 26
+78 nets are partially connected,
+ of which 78 are detail routed and 0 are global routed.
+25996 nets are fully connected,
+ of which 25996 are detail routed and 0 are global routed.
+24 nets have non-default rule clk_2Xw_2Xs
+2 nets have non-default rule clk_2Xw_2Xs_ext_spacing
+36 nets have non-default rule default_rule_equivalent_ndr_double_spacing
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    8  Alloctr    8  Proc    0 
+[End of Build All Nets] Total (MB): Used  157  Alloctr  162  Proc 1572 
+Average gCell capacity  2.71	 on layer (1)	 M1
+Average gCell capacity  9.35	 on layer (2)	 M2
+Average gCell capacity  6.82	 on layer (3)	 M3
+Average gCell capacity  7.89	 on layer (4)	 M4
+Average gCell capacity  4.93	 on layer (5)	 M5
+Average gCell capacity  4.92	 on layer (6)	 M6
+Average gCell capacity  4.89	 on layer (7)	 M7
+Average gCell capacity  2.84	 on layer (8)	 M8
+Average gCell capacity  2.84	 on layer (9)	 M9
+Average gCell capacity  0.99	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.10	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.10	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 5.00	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 5.00	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 5.00	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1069290
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used   10  Alloctr   11  Proc    0 
+[End of Build Congestion map] Total (MB): Used  167  Alloctr  173  Proc 1572 
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used   21  Alloctr   21  Proc    0 
+[End of Build Data] Total (MB): Used  168  Alloctr  174  Proc 1572 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  168  Alloctr  174  Proc 1572 
+Information: Using 1 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  168  Alloctr  174  Proc 1572 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =   608 Max = 12 GRCs =   501 (0.23%)
+Initial. H routing: Overflow =   496 Max = 12 (GRCs =  2) GRCs =   275 (0.26%)
+Initial. V routing: Overflow =   112 Max =  5 (GRCs =  1) GRCs =   226 (0.21%)
+Initial. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =   483 Max = 12 (GRCs =  2) GRCs =   263 (0.25%)
+Initial. M3         Overflow =   101 Max =  5 (GRCs =  1) GRCs =   206 (0.19%)
+Initial. M4         Overflow =    12 Max =  3 (GRCs =  1) GRCs =    12 (0.01%)
+Initial. M5         Overflow =    10 Max =  1 (GRCs = 20) GRCs =    20 (0.02%)
+Initial. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 374.00
+Initial. Layer M1 wire length = 0.00
+Initial. Layer M2 wire length = 125.20
+Initial. Layer M3 wire length = 214.95
+Initial. Layer M4 wire length = 28.16
+Initial. Layer M5 wire length = 4.31
+Initial. Layer M6 wire length = 1.38
+Initial. Layer M7 wire length = 0.00
+Initial. Layer M8 wire length = 0.00
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 290
+Initial. Via VIA12SQ_C count = 124
+Initial. Via VIA23SQ_C count = 135
+Initial. Via VIA34SQ_C count = 21
+Initial. Via VIA45SQ count = 8
+Initial. Via VIA56SQ count = 1
+Initial. Via VIA67SQ_C count = 1
+Initial. Via VIA78SQ_C count = 0
+Initial. Via VIA89_C count = 0
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  168  Alloctr  174  Proc 1572 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   603 Max = 12 GRCs =   496 (0.23%)
+phase1. H routing: Overflow =   498 Max = 12 (GRCs =  2) GRCs =   275 (0.26%)
+phase1. V routing: Overflow =   104 Max =  4 (GRCs =  1) GRCs =   221 (0.21%)
+phase1. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =   482 Max = 12 (GRCs =  2) GRCs =   262 (0.25%)
+phase1. M3         Overflow =    94 Max =  4 (GRCs =  1) GRCs =   201 (0.19%)
+phase1. M4         Overflow =    16 Max =  4 (GRCs =  1) GRCs =    13 (0.01%)
+phase1. M5         Overflow =    10 Max =  1 (GRCs = 20) GRCs =    20 (0.02%)
+phase1. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 380.02
+phase1. Layer M1 wire length = 0.00
+phase1. Layer M2 wire length = 130.25
+phase1. Layer M3 wire length = 206.62
+phase1. Layer M4 wire length = 30.51
+phase1. Layer M5 wire length = 12.64
+phase1. Layer M6 wire length = 0.00
+phase1. Layer M7 wire length = 0.00
+phase1. Layer M8 wire length = 0.00
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 298
+phase1. Via VIA12SQ_C count = 124
+phase1. Via VIA23SQ_C count = 139
+phase1. Via VIA34SQ_C count = 21
+phase1. Via VIA45SQ count = 12
+phase1. Via VIA56SQ count = 1
+phase1. Via VIA67SQ_C count = 1
+phase1. Via VIA78SQ_C count = 0
+phase1. Via VIA89_C count = 0
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  168  Alloctr  174  Proc 1572 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =   597 Max = 12 GRCs =   495 (0.23%)
+phase2. H routing: Overflow =   495 Max = 12 (GRCs =  2) GRCs =   274 (0.26%)
+phase2. V routing: Overflow =   102 Max =  4 (GRCs =  1) GRCs =   221 (0.21%)
+phase2. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =   482 Max = 12 (GRCs =  2) GRCs =   262 (0.25%)
+phase2. M3         Overflow =    92 Max =  4 (GRCs =  1) GRCs =   201 (0.19%)
+phase2. M4         Overflow =    12 Max =  3 (GRCs =  1) GRCs =    12 (0.01%)
+phase2. M5         Overflow =    10 Max =  1 (GRCs = 20) GRCs =    20 (0.02%)
+phase2. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 380.98
+phase2. Layer M1 wire length = 0.00
+phase2. Layer M2 wire length = 131.25
+phase2. Layer M3 wire length = 207.20
+phase2. Layer M4 wire length = 30.51
+phase2. Layer M5 wire length = 12.03
+phase2. Layer M6 wire length = 0.00
+phase2. Layer M7 wire length = 0.00
+phase2. Layer M8 wire length = 0.00
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 296
+phase2. Via VIA12SQ_C count = 124
+phase2. Via VIA23SQ_C count = 139
+phase2. Via VIA34SQ_C count = 21
+phase2. Via VIA45SQ count = 10
+phase2. Via VIA56SQ count = 1
+phase2. Via VIA67SQ_C count = 1
+phase2. Via VIA78SQ_C count = 0
+phase2. Via VIA89_C count = 0
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+Warning: Net net230 has unused floating user-enter shapes. (ZRT-113)
+[End of Whole Chip Routing] Elapsed real time: 0:00:00 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Whole Chip Routing] Stage (MB): Used   21  Alloctr   21  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  168  Alloctr  174  Proc 1572 
+
+Information: Global Routing terminated early: true (ZRT-103)
+
+Congestion utilization per direction:
+Average vertical track utilization   = 11.83 %
+Peak    vertical track utilization   = 133.33 %
+Average horizontal track utilization = 10.72 %
+Peak    horizontal track utilization = 109.09 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used  -10  Alloctr   -9  Proc    0 
+[GR: Done] Total (MB): Used  159  Alloctr  166  Proc 1572 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:01 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:01
+[GR: Done] Stage (MB): Used   13  Alloctr   13  Proc   38 
+[GR: Done] Total (MB): Used  159  Alloctr  166  Proc 1572 
+Updating congestion ...
+Updating congestion ...
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:01 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc   38 
+[End of Global Routing] Total (MB): Used  146  Alloctr  152  Proc 1572 
+[ECO: GR] Elapsed real time: 0:00:05 
+[ECO: GR] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[ECO: GR] Stage (MB): Used  145  Alloctr  151  Proc   99 
+[ECO: GR] Total (MB): Used  146  Alloctr  152  Proc 1572 
+
+Start track assignment
+
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.track.*'
+
+Information: Using 1 threads for routing. (ZRT-444)
+Information: RC layer preference is turned on for this design. (ZRT-613)
+
+[Track Assign: Read routes] Elapsed real time: 0:00:00 
+[Track Assign: Read routes] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Read routes] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[Track Assign: Read routes] Total (MB): Used  145  Alloctr  151  Proc 1572 
+
+Start initial assignment
+Routed partition 1/10      
+Routed partition 2/10      
+Routed partition 3/10      
+Routed partition 4/10      
+Routed partition 5/10      
+Routed partition 6/10      
+Routed partition 7/10      
+Routed partition 8/10      
+Routed partition 9/10      
+Routed partition 10/10     
+
+Number of wires with overlap after iteration 0 = 280 of 532
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 0] Stage (MB): Used    3  Alloctr    3  Proc   37 
+[Track Assign: Iteration 0] Total (MB): Used  145  Alloctr  152  Proc 1610 
+
+Reroute to fix overlaps
+Routed partition 1/10      
+Routed partition 2/10      
+Routed partition 3/10      
+Routed partition 4/10      
+Routed partition 5/10      
+Routed partition 6/10      
+Routed partition 7/10      
+Routed partition 8/10      
+Routed partition 9/10      
+Routed partition 10/10     
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:00 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Iteration 1] Stage (MB): Used    3  Alloctr    3  Proc   37 
+[Track Assign: Iteration 1] Total (MB): Used  145  Alloctr  152  Proc 1610 
+
+Number of wires with overlap after iteration 1 = 172 of 432
+
+
+Wire length and via report:
+---------------------------
+Number of M1 wires: 21 		  : 0
+Number of M2 wires: 195 		 VIA12SQ_C: 134
+Number of M3 wires: 123 		 VIA23SQ_C: 187
+Number of M4 wires: 44 		 VIA34SQ_C: 67
+Number of M5 wires: 43 		 VIA45SQ: 52
+Number of M6 wires: 5 		 VIA56SQ: 11
+Number of M7 wires: 1 		 VIA67SQ_C: 1
+Number of M8 wires: 0 		 VIA78SQ_C: 0
+Number of M9 wires: 0 		 VIA89_C: 0
+Number of MRDL wires: 0 		 VIA9RDL: 0
+Total number of wires: 432 		 vias: 452
+
+Total M1 wire length: 1.8
+Total M2 wire length: 142.7
+Total M3 wire length: 105.2
+Total M4 wire length: 32.6
+Total M5 wire length: 114.0
+Total M6 wire length: 2.1
+Total M7 wire length: 0.1
+Total M8 wire length: 0.0
+Total M9 wire length: 0.0
+Total MRDL wire length: 0.0
+Total wire length: 398.5
+
+Longest M1 wire length: 0.2
+Longest M2 wire length: 8.7
+Longest M3 wire length: 6.9
+Longest M4 wire length: 9.3
+Longest M5 wire length: 13.0
+Longest M6 wire length: 0.7
+Longest M7 wire length: 0.1
+Longest M8 wire length: 0.0
+Longest M9 wire length: 0.0
+Longest MRDL wire length: 0.0
+
+
+[Track Assign: Done] Elapsed real time: 0:00:00 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc   37 
+[Track Assign: Done] Total (MB): Used  142  Alloctr  149  Proc 1610 
+[ECO: CDR] Elapsed real time: 0:00:05 
+[ECO: CDR] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[ECO: CDR] Stage (MB): Used  141  Alloctr  147  Proc  136 
+[ECO: CDR] Total (MB): Used  142  Alloctr  149  Proc 1610 
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.force_end_on_preferred_grid                      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned on for this design. (ZRT-613)
+
+Begin ECO DRC check ...
+
+Checked	1/81 Partitions, Violations =	0
+Checked	3/81 Partitions, Violations =	8
+Checked	6/81 Partitions, Violations =	147
+Checked	9/81 Partitions, Violations =	147
+Checked	12/81 Partitions, Violations =	147
+Checked	15/81 Partitions, Violations =	271
+Checked	18/81 Partitions, Violations =	271
+Checked	21/81 Partitions, Violations =	271
+Checked	24/81 Partitions, Violations =	603
+Checked	27/81 Partitions, Violations =	762
+Checked	30/81 Partitions, Violations =	762
+Checked	33/81 Partitions, Violations =	844
+Checked	36/81 Partitions, Violations =	849
+Checked	39/81 Partitions, Violations =	849
+Checked	42/81 Partitions, Violations =	908
+Checked	45/81 Partitions, Violations =	908
+Checked	48/81 Partitions, Violations =	908
+Checked	51/81 Partitions, Violations =	942
+Checked	54/81 Partitions, Violations =	942
+Checked	57/81 Partitions, Violations =	942
+Checked	60/81 Partitions, Violations =	989
+Checked	63/81 Partitions, Violations =	989
+Checked	66/81 Partitions, Violations =	989
+Checked	69/81 Partitions, Violations =	998
+Checked	72/81 Partitions, Violations =	998
+Checked	75/81 Partitions, Violations =	998
+Checked	78/81 Partitions, Violations =	998
+Checked	81/81 Partitions, Violations =	998
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	998
+
+[DRC CHECK] Elapsed real time: 0:00:07 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:07 total=0:00:07
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[DRC CHECK] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+Total Wire Length =                    310337 micron
+Total Number of Contacts =             173474
+Total Number of Wires =                208805
+Total Number of PtConns =              31193
+Total Number of Routed Wires =       208801
+Total Routed Wire Length =           288708 micron
+Total Number of Routed Contacts =       173474
+	Layer                 M1 :        666 micron
+	Layer                 M2 :     106027 micron
+	Layer                 M3 :     115070 micron
+	Layer                 M4 :      31035 micron
+	Layer                 M5 :      36107 micron
+	Layer                 M6 :      12666 micron
+	Layer                 M7 :       8677 micron
+	Layer                 M8 :         80 micron
+	Layer                 M9 :          8 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          4
+	Via       VIA78SQ_C(rot) :         15
+	Via         VIA78SQ(rot) :          3
+	Via            VIA67SQ_C :        611
+	Via       VIA67SQ_C(rot) :         44
+	Via              VIA67SQ :         21
+	Via         VIA67SQ(rot) :         10
+	Via            VIA56SQ_C :         24
+	Via       VIA56SQ_C(rot) :         88
+	Via              VIA56SQ :       1630
+	Via              VIA45SQ :       6209
+	Via         VIA45SQ(rot) :          2
+	Via            VIA34SQ_C :         54
+	Via       VIA34SQ_C(rot) :       8997
+	Via          VIA34BAR2_C :         24
+	Via              VIA34SQ :        285
+	Via         VIA34SQ(rot) :        822
+	Via          VIA3_34SQ_C :          7
+	Via     VIA3_34SQ_C(rot) :         63
+	Via            VIA3_34SQ :         34
+	Via       VIA3_34SQ(rot) :          3
+	Via            VIA23SQ_C :      87243
+	Via       VIA23SQ_C(rot) :          1
+	Via          VIA23BAR2_C :          1
+	Via              VIA23SQ :         18
+	Via         VIA23SQ(rot) :         10
+	Via          VIA2_33SQ_C :        516
+	Via          VIA23_3SQ_C :        425
+	Via        VIA2_33_3SQ_C :        161
+	Via            VIA12SQ_C :          5
+	Via       VIA12SQ_C(rot) :      64757
+	Via            VIA12LG_C :          1
+	Via              VIA12SQ :          6
+	Via         VIA12SQ(rot) :        321
+	Via     VIA1_32SQ_C(rot) :        741
+	Via     VIA12_3SQ_C(rot) :        120
+	Via   VIA1_32_3SQ_C(rot) :        198
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173474 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66149   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66149   vias)
+    Layer VIA2       =  0.00% (0      / 88375   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88375   vias)
+    Layer VIA3       =  0.00% (0      / 10289   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10289   vias)
+    Layer VIA4       =  0.00% (0      / 6211    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6211    vias)
+    Layer VIA5       =  0.00% (0      / 1742    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1742    vias)
+    Layer VIA6       =  0.00% (0      / 686     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (686     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173474 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66149   vias)
+    Layer VIA2       =  0.00% (0      / 88375   vias)
+    Layer VIA3       =  0.00% (0      / 10289   vias)
+    Layer VIA4       =  0.00% (0      / 6211    vias)
+    Layer VIA5       =  0.00% (0      / 1742    vias)
+    Layer VIA6       =  0.00% (0      / 686     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173474 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66149   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66149   vias)
+    Layer VIA2       =  0.00% (0      / 88375   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88375   vias)
+    Layer VIA3       =  0.00% (0      / 10289   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10289   vias)
+    Layer VIA4       =  0.00% (0      / 6211    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6211    vias)
+    Layer VIA5       =  0.00% (0      / 1742    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1742    vias)
+    Layer VIA6       =  0.00% (0      / 686     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (686     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+Total number of nets = 26342, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Start DR iteration 0: non-uniform partition
+Routed	1/65 Partitions, Violations =	886
+Routed	2/65 Partitions, Violations =	795
+Routed	3/65 Partitions, Violations =	770
+Routed	4/65 Partitions, Violations =	707
+Routed	5/65 Partitions, Violations =	689
+Routed	6/65 Partitions, Violations =	669
+Routed	7/65 Partitions, Violations =	656
+Routed	8/65 Partitions, Violations =	630
+Routed	9/65 Partitions, Violations =	582
+Routed	10/65 Partitions, Violations =	559
+Routed	11/65 Partitions, Violations =	511
+Routed	12/65 Partitions, Violations =	502
+Routed	13/65 Partitions, Violations =	483
+Routed	14/65 Partitions, Violations =	470
+Routed	15/65 Partitions, Violations =	458
+Routed	16/65 Partitions, Violations =	451
+Routed	17/65 Partitions, Violations =	441
+Routed	18/65 Partitions, Violations =	431
+Routed	19/65 Partitions, Violations =	422
+Routed	20/65 Partitions, Violations =	413
+Routed	21/65 Partitions, Violations =	397
+Routed	22/65 Partitions, Violations =	389
+Routed	23/65 Partitions, Violations =	383
+Routed	24/65 Partitions, Violations =	378
+Routed	25/65 Partitions, Violations =	338
+Routed	26/65 Partitions, Violations =	327
+Routed	27/65 Partitions, Violations =	304
+Routed	28/65 Partitions, Violations =	287
+Routed	29/65 Partitions, Violations =	274
+Routed	30/65 Partitions, Violations =	260
+Routed	31/65 Partitions, Violations =	741
+Routed	32/65 Partitions, Violations =	726
+Routed	33/65 Partitions, Violations =	704
+Routed	34/65 Partitions, Violations =	701
+Routed	35/65 Partitions, Violations =	700
+Routed	36/65 Partitions, Violations =	661
+Routed	37/65 Partitions, Violations =	656
+Routed	38/65 Partitions, Violations =	650
+Routed	39/65 Partitions, Violations =	643
+Routed	40/65 Partitions, Violations =	643
+Routed	41/65 Partitions, Violations =	625
+Routed	42/65 Partitions, Violations =	617
+Routed	43/65 Partitions, Violations =	607
+Routed	44/65 Partitions, Violations =	604
+Routed	45/65 Partitions, Violations =	600
+Routed	46/65 Partitions, Violations =	593
+Routed	47/65 Partitions, Violations =	590
+Routed	48/65 Partitions, Violations =	587
+Routed	49/65 Partitions, Violations =	587
+Routed	50/65 Partitions, Violations =	587
+Routed	51/65 Partitions, Violations =	585
+Routed	52/65 Partitions, Violations =	583
+Routed	53/65 Partitions, Violations =	581
+Routed	54/65 Partitions, Violations =	577
+Routed	55/65 Partitions, Violations =	575
+Routed	56/65 Partitions, Violations =	574
+Routed	57/65 Partitions, Violations =	573
+Routed	58/65 Partitions, Violations =	573
+Routed	59/65 Partitions, Violations =	572
+Routed	60/65 Partitions, Violations =	570
+Routed	61/65 Partitions, Violations =	569
+Routed	62/65 Partitions, Violations =	568
+Routed	63/65 Partitions, Violations =	567
+Routed	64/65 Partitions, Violations =	566
+Routed	65/65 Partitions, Violations =	562
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	562
+	Diff net spacing : 6
+	Diff net var rule spacing : 1
+	Diff net via-cut spacing : 1
+	Less than minimum area : 15
+	Less than NDR width : 481
+	Off-grid : 18
+	Same net spacing : 2
+	Same net via-cut spacing : 4
+	Short : 20
+	Internal-only types : 14
+
+[Iter 0] Elapsed real time: 0:00:10 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:09 total=0:00:10
+[Iter 0] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 0] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 0 with 65 parts
+
+Start DR iteration 1: non-uniform partition
+Routed	1/15 Partitions, Violations =	84
+Routed	2/15 Partitions, Violations =	53
+Routed	3/15 Partitions, Violations =	47
+Routed	4/15 Partitions, Violations =	47
+Routed	5/15 Partitions, Violations =	43
+Routed	6/15 Partitions, Violations =	41
+Routed	7/15 Partitions, Violations =	41
+Routed	8/15 Partitions, Violations =	39
+Routed	9/15 Partitions, Violations =	36
+Routed	10/15 Partitions, Violations =	33
+Routed	11/15 Partitions, Violations =	31
+Routed	12/15 Partitions, Violations =	33
+Routed	13/15 Partitions, Violations =	32
+Routed	14/15 Partitions, Violations =	31
+Routed	15/15 Partitions, Violations =	30
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	30
+	Less than minimum area : 3
+	Off-grid : 18
+	Same net spacing : 2
+	Same net via-cut spacing : 5
+	Short : 1
+	Internal-only types : 1
+
+[Iter 1] Elapsed real time: 0:00:11 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:10 total=0:00:11
+[Iter 1] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 1] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 1 with 15 parts
+
+Start DR iteration 2: non-uniform partition
+Routed	1/8 Partitions, Violations =	35
+Routed	2/8 Partitions, Violations =	35
+Routed	3/8 Partitions, Violations =	34
+Routed	4/8 Partitions, Violations =	31
+Routed	5/8 Partitions, Violations =	34
+Routed	6/8 Partitions, Violations =	31
+Routed	7/8 Partitions, Violations =	29
+Routed	8/8 Partitions, Violations =	37
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	37
+	Diff net spacing : 5
+	Diff net var rule spacing : 1
+	Less than minimum area : 8
+	Less than NDR width : 2
+	Off-grid : 12
+	Same net spacing : 2
+	Same net via-cut spacing : 3
+	Short : 3
+	Internal-only types : 1
+
+[Iter 2] Elapsed real time: 0:00:12 
+[Iter 2] Elapsed cpu  time: sys=0:00:00 usr=0:00:11 total=0:00:12
+[Iter 2] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 2] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 2 with 8 parts
+
+Start DR iteration 3: non-uniform partition
+Routed	1/8 Partitions, Violations =	35
+Routed	2/8 Partitions, Violations =	30
+Routed	3/8 Partitions, Violations =	21
+Routed	4/8 Partitions, Violations =	22
+Routed	5/8 Partitions, Violations =	17
+Routed	6/8 Partitions, Violations =	17
+Routed	7/8 Partitions, Violations =	15
+Routed	8/8 Partitions, Violations =	20
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	20
+	Less than minimum area : 1
+	Off-grid : 16
+	Same net via-cut spacing : 3
+
+[Iter 3] Elapsed real time: 0:00:13 
+[Iter 3] Elapsed cpu  time: sys=0:00:00 usr=0:00:12 total=0:00:13
+[Iter 3] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 3] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 3 with 8 parts
+
+Start DR iteration 4: non-uniform partition
+Routed	1/5 Partitions, Violations =	22
+Routed	2/5 Partitions, Violations =	25
+Routed	3/5 Partitions, Violations =	23
+Routed	4/5 Partitions, Violations =	23
+Routed	5/5 Partitions, Violations =	22
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	22
+	Diff net spacing : 4
+	Off-grid : 15
+	Same net via-cut spacing : 3
+
+[Iter 4] Elapsed real time: 0:00:14 
+[Iter 4] Elapsed cpu  time: sys=0:00:00 usr=0:00:13 total=0:00:14
+[Iter 4] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 4] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 4 with 5 parts
+
+Start DR iteration 5: non-uniform partition
+Routed	1/4 Partitions, Violations =	20
+Routed	2/4 Partitions, Violations =	16
+Routed	3/4 Partitions, Violations =	14
+Routed	4/4 Partitions, Violations =	14
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	14
+	Off-grid : 12
+	Same net via-cut spacing : 2
+
+[Iter 5] Elapsed real time: 0:00:15 
+[Iter 5] Elapsed cpu  time: sys=0:00:00 usr=0:00:14 total=0:00:14
+[Iter 5] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 5] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 5 with 4 parts
+
+Start DR iteration 6: non-uniform partition
+Routed	1/4 Partitions, Violations =	16
+Routed	2/4 Partitions, Violations =	84
+Routed	3/4 Partitions, Violations =	86
+Routed	4/4 Partitions, Violations =	86
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	86
+	Diff net spacing : 2
+	Diff net var rule spacing : 2
+	Less than NDR width : 62
+	Off-grid : 16
+	Same net via-cut spacing : 4
+
+[Iter 6] Elapsed real time: 0:00:15 
+[Iter 6] Elapsed cpu  time: sys=0:00:00 usr=0:00:15 total=0:00:15
+[Iter 6] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 6] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 6 with 4 parts
+
+Start DR iteration 7: non-uniform partition
+Routed	1/5 Partitions, Violations =	26
+Routed	2/5 Partitions, Violations =	20
+Routed	3/5 Partitions, Violations =	22
+Routed	4/5 Partitions, Violations =	23
+Routed	5/5 Partitions, Violations =	25
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	25
+	Diff net var rule spacing : 1
+	Off-grid : 19
+	Same net via-cut spacing : 4
+	Internal-only types : 1
+
+[Iter 7] Elapsed real time: 0:00:16 
+[Iter 7] Elapsed cpu  time: sys=0:00:00 usr=0:00:16 total=0:00:16
+[Iter 7] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 7] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 7 with 5 parts
+
+Start DR iteration 8: non-uniform partition
+Routed	1/5 Partitions, Violations =	25
+Routed	2/5 Partitions, Violations =	28
+Routed	3/5 Partitions, Violations =	30
+Routed	4/5 Partitions, Violations =	30
+Routed	5/5 Partitions, Violations =	28
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	28
+	Diff net var rule spacing : 1
+	Off-grid : 22
+	Same net via-cut spacing : 5
+
+[Iter 8] Elapsed real time: 0:00:18 
+[Iter 8] Elapsed cpu  time: sys=0:00:00 usr=0:00:17 total=0:00:18
+[Iter 8] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 8] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 8 with 5 parts
+
+Start DR iteration 9: non-uniform partition
+Routed	1/4 Partitions, Violations =	26
+Routed	2/4 Partitions, Violations =	24
+Routed	3/4 Partitions, Violations =	24
+Routed	4/4 Partitions, Violations =	26
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	26
+	Diff net var rule spacing : 1
+	Off-grid : 18
+	Same net via-cut spacing : 3
+	Internal-only types : 4
+
+[Iter 9] Elapsed real time: 0:00:19 
+[Iter 9] Elapsed cpu  time: sys=0:00:00 usr=0:00:18 total=0:00:18
+[Iter 9] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 9] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 9 with 4 parts
+
+Start DR iteration 10: non-uniform partition
+Routed	1/4 Partitions, Violations =	26
+Routed	2/4 Partitions, Violations =	22
+Routed	3/4 Partitions, Violations =	18
+Routed	4/4 Partitions, Violations =	21
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	21
+	Diff net spacing : 1
+	Diff net var rule spacing : 1
+	Less than NDR width : 1
+	Off-grid : 14
+	Same net via-cut spacing : 4
+
+[Iter 10] Elapsed real time: 0:00:20 
+[Iter 10] Elapsed cpu  time: sys=0:00:00 usr=0:00:19 total=0:00:20
+[Iter 10] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 10] Total (MB): Used  161  Alloctr  168  Proc 1610 
+
+End DR iteration 10 with 4 parts
+
+Stop DR since not converging
+
+Information: Detail Routing terminated early because DRCs were not converging: true (ZRT-312)
+
+Nets that have been changed:
+Net 1 = data_addr_o[31]
+Net 2 = net_PTECO_DRC_NET413
+Net 3 = net_PTECO_DRC_NET419
+Net 4 = data_addr_o[19]
+Net 5 = net_PTECO_DRC_NET426
+Net 6 = net_PTECO_DRC_NET424
+Net 7 = net_PTECO_DRC_NET428
+Net 8 = net_PTECO_DRC_NET412
+Net 9 = net_PTECO_DRC_NET422
+Net 10 = ropt_net_8808
+Net 11 = net_PTECO_DRC_NET425
+Net 12 = data_wdata_o[8]
+Net 13 = data_rdata_i[25]
+Net 14 = data_rdata_i[19]
+Net 15 = data_rdata_i[16]
+Net 16 = data_rdata_i[15]
+Net 17 = data_rdata_i[12]
+Net 18 = data_rdata_i[11]
+Net 19 = data_rdata_i[8]
+Net 20 = current_pc[4]
+Net 21 = next_pc[20]
+Net 22 = net_PTECO_HOLD_NET232
+Net 23 = aps_rename_118_
+Net 24 = net_PTECO_DRC_NET427
+Net 25 = ibex_top_inst/gen_regfile_ff.register_file_i/PLACE_HFSNET_7
+Net 26 = ibex_top_inst/u_ibex_core/id_stage_i/id_fsm_q
+Net 27 = n3841
+Net 28 = n3845
+Net 29 = n3846
+Net 30 = n3862
+Net 31 = n3869
+Net 32 = n3870
+Net 33 = n3878
+Net 34 = n3887
+Net 35 = n3938
+Net 36 = n4084
+Net 37 = n4103
+Net 38 = n4143
+Net 39 = n4149
+Net 40 = n4157
+Net 41 = n4171
+Net 42 = n4173
+Net 43 = n4174
+Net 44 = ibex_top_inst/core_clock_gate_i/gen_generic.u_impl_generic/en_latch
+Net 45 = PLACE_HFSNET_91
+Net 46 = n4327
+Net 47 = PLACE_HFSNET_60
+Net 48 = PLACE_HFSNET_88
+Net 49 = PLACE_HFSNET_73
+Net 50 = n4644
+Net 51 = n4654
+Net 52 = n4899
+Net 53 = n5073
+Net 54 = n5104
+Net 55 = n5112
+Net 56 = n5130
+Net 57 = n5131
+Net 58 = n5159
+Net 59 = n5164
+Net 60 = n5173
+Net 61 = n5182
+Net 62 = n5187
+Net 63 = n5225
+Net 64 = n5238
+Net 65 = n5247
+Net 66 = n5250
+Net 67 = n5251
+Net 68 = n5252
+Net 69 = n5260
+Net 70 = n5263
+Net 71 = n5281
+Net 72 = n5321
+Net 73 = n5328
+Net 74 = n5333
+Net 75 = n5337
+Net 76 = ctsbuf_net_21160
+Net 77 = n5415
+Net 78 = n5444
+Net 79 = n5446
+Net 80 = n5892
+Net 81 = n5922
+Net 82 = n6089
+Net 83 = n6176
+Net 84 = n6177
+Net 85 = ctsbuf_net_25164
+Net 86 = n6798
+Net 87 = n8438
+Net 88 = n8439
+Net 89 = n8441
+Net 90 = n8444
+Net 91 = n8445
+Net 92 = n8446
+Net 93 = n8491
+Net 94 = n8937
+Net 95 = n9017
+Net 96 = n9094
+Net 97 = n9282
+Net 98 = n9284
+Net 99 = ctsbuf_net_45184
+Net 100 = ctsbuf_net_46185
+.... and 271 other nets
+Total number of changed nets = 371 (out of 26342)
+
+[DR: Done] Elapsed real time: 0:00:20 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:19 total=0:00:20
+[DR: Done] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[DR: Done] Total (MB): Used  143  Alloctr  150  Proc 1610 
+[ECO: DR] Elapsed real time: 0:00:26 
+[ECO: DR] Elapsed cpu  time: sys=0:00:01 usr=0:00:24 total=0:00:25
+[ECO: DR] Stage (MB): Used  142  Alloctr  149  Proc  136 
+[ECO: DR] Total (MB): Used  143  Alloctr  150  Proc 1610 
+
+ECO Route finished with 0 open nets, of which 0 are frozen
+Information: Merged away 5 aligned/redundant DRCs. (ZRT-305)
+
+ECO Route finished with 16 violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	16
+	Diff net spacing : 1
+	Diff net var rule spacing : 1
+	Less than NDR width : 1
+	Off-grid : 9
+	Same net via-cut spacing : 4
+
+
+
+Total Wire Length =                    310405 micron
+Total Number of Contacts =             173455
+Total Number of Wires =                209001
+Total Number of PtConns =              31297
+Total Number of Routed Wires =       208996
+Total Routed Wire Length =           288710 micron
+Total Number of Routed Contacts =       173455
+	Layer                 M1 :        667 micron
+	Layer                 M2 :     106028 micron
+	Layer                 M3 :     115120 micron
+	Layer                 M4 :      31014 micron
+	Layer                 M5 :      36106 micron
+	Layer                 M6 :      12690 micron
+	Layer                 M7 :       8691 micron
+	Layer                 M8 :         80 micron
+	Layer                 M9 :          8 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          4
+	Via       VIA78SQ_C(rot) :         15
+	Via         VIA78SQ(rot) :          3
+	Via            VIA67SQ_C :        613
+	Via       VIA67SQ_C(rot) :         46
+	Via              VIA67SQ :         23
+	Via         VIA67SQ(rot) :         10
+	Via            VIA56SQ_C :         23
+	Via       VIA56SQ_C(rot) :         96
+	Via              VIA56SQ :       1633
+	Via              VIA45SQ :       6211
+	Via         VIA45SQ(rot) :          2
+	Via            VIA34SQ_C :         50
+	Via       VIA34SQ_C(rot) :       8976
+	Via          VIA34BAR2_C :         24
+	Via              VIA34SQ :        292
+	Via         VIA34SQ(rot) :        822
+	Via          VIA3_34SQ_C :          7
+	Via     VIA3_34SQ_C(rot) :         65
+	Via            VIA3_34SQ :         34
+	Via       VIA3_34SQ(rot) :          3
+	Via            VIA23SQ_C :      87193
+	Via       VIA23SQ_C(rot) :          1
+	Via          VIA23BAR2_C :          1
+	Via              VIA23SQ :         17
+	Via         VIA23SQ(rot) :         10
+	Via          VIA2_33SQ_C :        496
+	Via          VIA23_3SQ_C :        483
+	Via        VIA2_33_3SQ_C :        149
+	Via            VIA12SQ_C :          5
+	Via       VIA12SQ_C(rot) :      64757
+	Via            VIA12LG_C :          1
+	Via              VIA12SQ :          7
+	Via         VIA12SQ(rot) :        322
+	Via     VIA1_32SQ_C(rot) :        743
+	Via     VIA12_3SQ_C(rot) :        127
+	Via   VIA1_32_3SQ_C(rot) :        191
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+
+Total number of nets = 26342
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 16
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Total Wire Length =                    310405 micron
+Total Number of Contacts =             173455
+Total Number of Wires =                209001
+Total Number of PtConns =              31297
+Total Number of Routed Wires =       208996
+Total Routed Wire Length =           288710 micron
+Total Number of Routed Contacts =       173455
+	Layer                 M1 :        667 micron
+	Layer                 M2 :     106028 micron
+	Layer                 M3 :     115120 micron
+	Layer                 M4 :      31014 micron
+	Layer                 M5 :      36106 micron
+	Layer                 M6 :      12690 micron
+	Layer                 M7 :       8691 micron
+	Layer                 M8 :         80 micron
+	Layer                 M9 :          8 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          4
+	Via       VIA78SQ_C(rot) :         15
+	Via         VIA78SQ(rot) :          3
+	Via            VIA67SQ_C :        613
+	Via       VIA67SQ_C(rot) :         46
+	Via              VIA67SQ :         23
+	Via         VIA67SQ(rot) :         10
+	Via            VIA56SQ_C :         23
+	Via       VIA56SQ_C(rot) :         96
+	Via              VIA56SQ :       1633
+	Via              VIA45SQ :       6211
+	Via         VIA45SQ(rot) :          2
+	Via            VIA34SQ_C :         50
+	Via       VIA34SQ_C(rot) :       8976
+	Via          VIA34BAR2_C :         24
+	Via              VIA34SQ :        292
+	Via         VIA34SQ(rot) :        822
+	Via          VIA3_34SQ_C :          7
+	Via     VIA3_34SQ_C(rot) :         65
+	Via            VIA3_34SQ :         34
+	Via       VIA3_34SQ(rot) :          3
+	Via            VIA23SQ_C :      87193
+	Via       VIA23SQ_C(rot) :          1
+	Via          VIA23BAR2_C :          1
+	Via              VIA23SQ :         17
+	Via         VIA23SQ(rot) :         10
+	Via          VIA2_33SQ_C :        496
+	Via          VIA23_3SQ_C :        483
+	Via        VIA2_33_3SQ_C :        149
+	Via            VIA12SQ_C :          5
+	Via       VIA12SQ_C(rot) :      64757
+	Via            VIA12LG_C :          1
+	Via              VIA12SQ :          7
+	Via         VIA12SQ(rot) :        322
+	Via     VIA1_32SQ_C(rot) :        743
+	Via     VIA12_3SQ_C(rot) :        127
+	Via   VIA1_32_3SQ_C(rot) :        191
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173455 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66153   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66153   vias)
+    Layer VIA2       =  0.00% (0      / 88350   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88350   vias)
+    Layer VIA3       =  0.00% (0      / 10273   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10273   vias)
+    Layer VIA4       =  0.00% (0      / 6213    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6213    vias)
+    Layer VIA5       =  0.00% (0      / 1752    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1752    vias)
+    Layer VIA6       =  0.00% (0      / 692     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (692     vias)
+    Layer VIA7       =  0.00% (0      / 18      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (18      vias)
+    Layer VIA8       =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+...updated 371 nets
+[ECO: End] Elapsed real time: 0:00:26 
+[ECO: End] Elapsed cpu  time: sys=0:00:01 usr=0:00:25 total=0:00:26
+[ECO: End] Stage (MB): Used    0  Alloctr    0  Proc  136 
+[ECO: End] Total (MB): Used    0  Alloctr    1  Proc 1610 

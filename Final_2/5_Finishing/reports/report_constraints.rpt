@@ -1,0 +1,311 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -min_delay
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Wed Jul  9 00:38:48 2025
+****************************************
+
+   late_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[12]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.18 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/instr_rdata_alu_id_o_reg[29]/SI (SAEDHVT14_FSDPQ_V2_2)
+                                   0.17 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+R_15/SI (SAEDHVT14_FSDPQB_V2_2)    0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[8].rf_reg_q_reg[13]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[15].rf_reg_q_reg[8]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[2].rf_reg_q_reg[10]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[15]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.18 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mscratch_csr/rdata_q_reg[2]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_dscratch1_csr/rdata_q_reg[8]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.17           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[27]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[26].rf_reg_q_reg[26]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[10]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.18 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mstack_cause_csr/rdata_q_reg[3]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[28].rf_reg_q_reg[1]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mtval_csr/rdata_q_reg[3]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[9]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.17 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[14].rf_reg_q_reg[5]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[23].rf_reg_q_reg[0]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[13].rf_reg_q_reg[26]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[2].rf_reg_q_reg[6]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[21].rf_reg_q_reg[26]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mtvec_csr/rdata_q_reg[31]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[23].rf_reg_q_reg[13]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[2].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[5].rf_reg_q_reg[6]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[17]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.18 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/instr_addr_q_reg[26]/D (SAEDHVT14_FSDPQ_V2LP_2)
+                                   0.17 r         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[12].rf_reg_q_reg[7]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[61]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[12].rf_reg_q_reg[15]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[4].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[16].rf_reg_q_reg[21]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[21].rf_reg_q_reg[0]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[35]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[18].rf_reg_q_reg[20]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[2].rf_reg_q_reg[23]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[62]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[19].rf_reg_q_reg[1]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[21].rf_reg_q_reg[24]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[10].rf_reg_q_reg[17]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[8].rf_reg_q_reg[19]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[12].rf_reg_q_reg[17]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[9].rf_reg_q_reg[9]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[48]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[26].rf_reg_q_reg[19]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[19].rf_reg_q_reg[28]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[17].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/load_store_unit_i/rdata_q_reg[30]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[12].rf_reg_q_reg[0]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_dscratch1_csr/rdata_q_reg[28]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[14].rf_reg_q_reg[12]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[17].rf_reg_q_reg[29]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_dscratch0_csr/rdata_q_reg[7]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[24].rf_reg_q_reg[5]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_dscratch1_csr/rdata_q_reg[19]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[63]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[15].rf_reg_q_reg[11]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[32]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[17].rf_reg_q_reg[19]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[25].rf_reg_q_reg[7]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[1].rf_reg_q_reg[10]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[16].rf_reg_q_reg[31]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[6]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[15].rf_reg_q_reg[29]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_dscratch1_csr/rdata_q_reg[17]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[21].rf_reg_q_reg[18]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[26].rf_reg_q_reg[20]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mscratch_csr/rdata_q_reg[10]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.17           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[21]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[12].rf_reg_q_reg[1]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[29]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[31].rf_reg_q_reg[13]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[8]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[16].rf_reg_q_reg[25]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[20].rf_reg_q_reg[18]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[30].rf_reg_q_reg[13]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mepc_csr/rdata_q_reg[12]/D (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[2].rf_reg_q_reg[17]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[11].rf_reg_q_reg[15]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mstack_epc_csr/rdata_q_reg[12]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mstack_epc_csr/rdata_q_reg[7]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[19].rf_reg_q_reg[26]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.17 f         0.17           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/mcycle_counter_i/counter_q_reg[55]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/u_mscratch_csr/rdata_q_reg[16]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[6]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[25]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[22].rf_reg_q_reg[27]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[5].rf_reg_q_reg[27]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/u_ibex_core/cs_registers_i/minstret_counter_i/counter_q_reg[48]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[4].rf_reg_q_reg[18]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[7].rf_reg_q_reg[5]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[17].rf_reg_q_reg[8]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+ibex_top_inst/gen_regfile_ff.register_file_i/g_rf_flops[26].rf_reg_q_reg[8]/SI (SAEDHVT14_FSDPRBQ_V2LP_2)
+                                   0.18 f         0.18           0.00    -0.00   cluster_clock_gating
+                                                                                          Func_Fast
+
+1

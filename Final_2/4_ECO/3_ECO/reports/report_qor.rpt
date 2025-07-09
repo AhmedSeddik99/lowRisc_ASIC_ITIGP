@@ -1,0 +1,161 @@
+****************************************
+Report : qor
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 12:13:43 2025
+****************************************
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+************************************************************
+Information: Corner Fast: no PVT mismatches. (PVT-032)
+Information: Corner Slow: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'ibex_hvt:ibex_hvt_eco_3.design'. (TIM-125)
+Information: Design ibex_hvt_eco_3 has 26114 nets, 0 global routed, 26108 detail routed. (NEX-024)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+Information: The RC mode used is DR for design 'ibex_wrapper'. (NEX-022)
+---extraction options---
+Corner: Slow
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: Fast
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: ibex_hvt_eco_3 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 26108 nets are successfully extracted. (NEX-028)
+Information: Design Average RC for design ibex_hvt_eco_3  (NEX-011)
+Information: r = 2.182077 ohm/um, via_r = 1.042294 ohm/cut, c = 0.138516 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 2.555150 ohm/um, via_r = 0.640755 ohm/cut, c = 0.139517 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: The parasitics of virtually routed nets are automatically saved to RC Cache. (TIM-016)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 26112, routed nets = 26108, across physical hierarchy nets = 0, parasitics cached nets = 26112, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+
+Scenario           'Func_Fast'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                      9
+Critical Path Length:              1.66
+Critical Path Slack:               1.60
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'Func_Fast'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                     37
+Critical Path Length:              2.09
+Critical Path Slack:               2.73
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.00
+Total Hold Violation:             -0.07
+No. of Hold Violations:              97
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'clk_i'
+----------------------------------------
+Levels of Logic:                     69
+Critical Path Length:              2.59
+Critical Path Slack:               0.73
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'Func_Slow'
+Timing Path Group  'cluster_clock_gating'
+----------------------------------------
+Levels of Logic:                    100
+Critical Path Length:              3.14
+Critical Path Slack:               1.64
+Critical Path Clk Period:          5.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              2
+Hierarchical Port Count:            911
+Leaf Cell Count:                  25347
+Buf/Inv Cell Count:                9154
+Buf Cell Count:                    8322
+Inv Cell Count:                     832
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         23318
+Sequential Cell Count:             2029
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:            10930.97
+Noncombinational Area:          2638.34
+Buf/Inv Area:                   4260.05
+Total Buffer Area:              4046.13
+Total Inverter Area:             213.92
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                          13569.31
+Cell Area (netlist and physical only):        14711.63
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             26363
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1

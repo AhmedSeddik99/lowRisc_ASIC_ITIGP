@@ -1,0 +1,2467 @@
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+[ECO: DbIn With Extraction] Elapsed real time: 0:00:04 
+[ECO: DbIn With Extraction] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: DbIn With Extraction] Stage (MB): Used  138  Alloctr  144  Proc   44 
+[ECO: DbIn With Extraction] Total (MB): Used  139  Alloctr  145  Proc 1528 
+[ECO: Analysis] Elapsed real time: 0:00:04 
+[ECO: Analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: Analysis] Stage (MB): Used  138  Alloctr  144  Proc   44 
+[ECO: Analysis] Total (MB): Used  139  Alloctr  145  Proc 1528 
+Num of eco nets = 26307
+Num of open eco nets = 1155
+[ECO: Init] Elapsed real time: 0:00:04 
+[ECO: Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:04
+[ECO: Init] Stage (MB): Used  140  Alloctr  147  Proc   44 
+[ECO: Init] Total (MB): Used  141  Alloctr  148  Proc 1528 
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used  146  Alloctr  152  Proc 1532 
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 off                 
+global.placement_timing_driven_mode                     :	 false               
+global.timing_driven                                    :	 false               
+
+Begin global routing.
+Loading parastics information to the router ...
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M1' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M2' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M3' parameter 'SMIN' = 0.040 does not match 0.026 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'WMIN' = 0.030 does not match 0.060 of technology file (NEX-007)
+Warning: Parasitic Tech Library layer 'M8' parameter 'SMIN' = 0.060 does not match 0.040 of technology file (NEX-007)
+parastics information loaded to the router.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (-18.00,-18.00,178.00,178.00)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M2, dir Hor, min width = 0.03, min space = 0.03 pitch = 0.06
+layer M3, dir Ver, min width = 0.03, min space = 0.03 pitch = 0.07
+layer M4, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.07
+layer M5, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M6, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M7, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M8, dir Hor, min width = 0.06, min space = 0.04 pitch = 0.12
+layer M9, dir Ver, min width = 0.06, min space = 0.04 pitch = 0.12
+layer MRDL, dir Hor, min width = 2.00, min space = 2.00 pitch = 0.60
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    2  Alloctr    1  Proc    0 
+[End of Build Tech Data] Total (MB): Used  149  Alloctr  154  Proc 1571 
+Net statistics:
+Total number of nets     = 26307
+Number of nets to route  = 1155
+Number of nets with min-layer-mode soft = 4
+Number of nets with min-layer-mode soft-cost-medium = 4
+750 nets are partially connected,
+ of which 750 are detail routed and 0 are global routed.
+4 nets have non-default rule clk_2Xw_2Xs
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    5  Alloctr    5  Proc    0 
+[End of Build All Nets] Total (MB): Used  154  Alloctr  159  Proc 1571 
+Average gCell capacity  2.71	 on layer (1)	 M1
+Average gCell capacity  9.36	 on layer (2)	 M2
+Average gCell capacity  6.97	 on layer (3)	 M3
+Average gCell capacity  8.01	 on layer (4)	 M4
+Average gCell capacity  4.94	 on layer (5)	 M5
+Average gCell capacity  4.93	 on layer (6)	 M6
+Average gCell capacity  4.89	 on layer (7)	 M7
+Average gCell capacity  2.84	 on layer (8)	 M8
+Average gCell capacity  2.84	 on layer (9)	 M9
+Average gCell capacity  0.99	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.10	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.10	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 5.00	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 5.00	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 5.00	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1069290
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used   10  Alloctr   11  Proc    0 
+[End of Build Congestion map] Total (MB): Used  164  Alloctr  170  Proc 1571 
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used   18  Alloctr   17  Proc    0 
+[End of Build Data] Total (MB): Used  164  Alloctr  170  Proc 1571 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  164  Alloctr  170  Proc 1571 
+Information: Using 1 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:00 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Initial Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Initial Routing] Total (MB): Used  164  Alloctr  170  Proc 1571 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =    14 Max = 4 GRCs =    25 (0.01%)
+Initial. H routing: Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+Initial. V routing: Overflow =     8 Max = 3 (GRCs =  1) GRCs =    21 (0.02%)
+Initial. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+Initial. M3         Overflow =     8 Max = 3 (GRCs =  1) GRCs =    21 (0.02%)
+Initial. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+Initial. Total Wire Length = 5642.18
+Initial. Layer M1 wire length = 0.55
+Initial. Layer M2 wire length = 2594.81
+Initial. Layer M3 wire length = 2875.89
+Initial. Layer M4 wire length = 116.98
+Initial. Layer M5 wire length = 41.90
+Initial. Layer M6 wire length = 12.04
+Initial. Layer M7 wire length = 0.00
+Initial. Layer M8 wire length = 0.00
+Initial. Layer M9 wire length = 0.00
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 3019
+Initial. Via VIA12SQ_C count = 1091
+Initial. Via VIA23SQ_C count = 1778
+Initial. Via VIA34SQ_C count = 84
+Initial. Via VIA45SQ count = 50
+Initial. Via VIA56SQ count = 15
+Initial. Via VIA67SQ_C count = 1
+Initial. Via VIA78SQ_C count = 0
+Initial. Via VIA89_C count = 0
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:00 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  164  Alloctr  170  Proc 1571 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =    10 Max = 4 GRCs =    18 (0.01%)
+phase1. H routing: Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+phase1. V routing: Overflow =     5 Max = 3 (GRCs =  1) GRCs =    14 (0.01%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+phase1. M3         Overflow =     5 Max = 3 (GRCs =  1) GRCs =    14 (0.01%)
+phase1. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase1. Total Wire Length = 5648.16
+phase1. Layer M1 wire length = 0.55
+phase1. Layer M2 wire length = 2601.54
+phase1. Layer M3 wire length = 2876.35
+phase1. Layer M4 wire length = 116.48
+phase1. Layer M5 wire length = 41.20
+phase1. Layer M6 wire length = 12.04
+phase1. Layer M7 wire length = 0.00
+phase1. Layer M8 wire length = 0.00
+phase1. Layer M9 wire length = 0.00
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 3019
+phase1. Via VIA12SQ_C count = 1091
+phase1. Via VIA23SQ_C count = 1778
+phase1. Via VIA34SQ_C count = 84
+phase1. Via VIA45SQ count = 50
+phase1. Via VIA56SQ count = 15
+phase1. Via VIA67SQ_C count = 1
+phase1. Via VIA78SQ_C count = 0
+phase1. Via VIA89_C count = 0
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:00 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  164  Alloctr  170  Proc 1571 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    10 Max = 4 GRCs =    18 (0.01%)
+phase2. H routing: Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+phase2. V routing: Overflow =     5 Max = 3 (GRCs =  1) GRCs =    14 (0.01%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     5 Max = 4 (GRCs =  1) GRCs =     4 (0.00%)
+phase2. M3         Overflow =     5 Max = 3 (GRCs =  1) GRCs =    14 (0.01%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+phase2. Total Wire Length = 5648.16
+phase2. Layer M1 wire length = 0.55
+phase2. Layer M2 wire length = 2601.54
+phase2. Layer M3 wire length = 2876.35
+phase2. Layer M4 wire length = 126.12
+phase2. Layer M5 wire length = 41.20
+phase2. Layer M6 wire length = 2.40
+phase2. Layer M7 wire length = 0.00
+phase2. Layer M8 wire length = 0.00
+phase2. Layer M9 wire length = 0.00
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 3019
+phase2. Via VIA12SQ_C count = 1091
+phase2. Via VIA23SQ_C count = 1778
+phase2. Via VIA34SQ_C count = 88
+phase2. Via VIA45SQ count = 48
+phase2. Via VIA56SQ count = 13
+phase2. Via VIA67SQ_C count = 1
+phase2. Via VIA78SQ_C count = 0
+phase2. Via VIA89_C count = 0
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:01 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:01
+[End of Whole Chip Routing] Stage (MB): Used   18  Alloctr   17  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  164  Alloctr  170  Proc 1571 
+
+Information: Global Routing terminated early: true (ZRT-103)
+
+Congestion utilization per direction:
+Average vertical track utilization   =  1.13 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization =  0.86 %
+Peak    horizontal track utilization = 59.09 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used   -9  Alloctr   -8  Proc    0 
+[GR: Done] Total (MB): Used  156  Alloctr  163  Proc 1571 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:01 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:01
+[GR: Done] Stage (MB): Used   10  Alloctr   10  Proc   38 
+[GR: Done] Total (MB): Used  156  Alloctr  163  Proc 1571 
+Updating congestion ...
+Updating congestion ...
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:01 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Global Routing] Stage (MB): Used    0  Alloctr    0  Proc   38 
+[End of Global Routing] Total (MB): Used  146  Alloctr  152  Proc 1571 
+[ECO: GR] Elapsed real time: 0:00:05 
+[ECO: GR] Elapsed cpu  time: sys=0:00:01 usr=0:00:04 total=0:00:05
+[ECO: GR] Stage (MB): Used  145  Alloctr  151  Proc   87 
+[ECO: GR] Total (MB): Used  146  Alloctr  152  Proc 1571 
+
+Start track assignment
+
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.track.*'
+
+Information: Using 1 threads for routing. (ZRT-444)
+Information: RC layer preference is turned on for this design. (ZRT-613)
+
+[Track Assign: Read routes] Elapsed real time: 0:00:00 
+[Track Assign: Read routes] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: Read routes] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[Track Assign: Read routes] Total (MB): Used  145  Alloctr  151  Proc 1571 
+
+Start initial assignment
+
+Assign Horizontal partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 0
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Number of wires with overlap after iteration 0 = 2624 of 5305
+
+
+[Track Assign: Iteration 0] Elapsed real time: 0:00:01 
+[Track Assign: Iteration 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Track Assign: Iteration 0] Stage (MB): Used    4  Alloctr    3  Proc   37 
+[Track Assign: Iteration 0] Total (MB): Used  146  Alloctr  152  Proc 1609 
+
+Reroute to fix overlaps
+
+Assign Horizontal partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+Assign Vertical partitions, iteration 1
+Routed partition 1/11      
+Routed partition 2/11      
+Routed partition 3/11      
+Routed partition 4/11      
+Routed partition 5/11      
+Routed partition 6/11      
+Routed partition 7/11      
+Routed partition 8/11      
+Routed partition 9/11      
+Routed partition 10/11     
+Routed partition 11/11     
+
+[Track Assign: Iteration 1] Elapsed real time: 0:00:02 
+[Track Assign: Iteration 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Track Assign: Iteration 1] Stage (MB): Used    4  Alloctr    3  Proc   37 
+[Track Assign: Iteration 1] Total (MB): Used  146  Alloctr  152  Proc 1609 
+
+Number of wires with overlap after iteration 1 = 1782 of 5042
+
+
+Wire length and via report:
+---------------------------
+Number of M1 wires: 154 		  : 0
+Number of M2 wires: 2423 		 VIA12SQ_C: 1181
+Number of M3 wires: 1567 		 VIA23SQ_C: 2686
+Number of M4 wires: 375 		 VIA34SQ_C: 718
+Number of M5 wires: 419 		 VIA45SQ: 662
+Number of M6 wires: 73 		 VIA56SQ: 135
+Number of M7 wires: 31 		 VIA67SQ_C: 61
+Number of M8 wires: 0 		 VIA78SQ_C: 0
+Number of M9 wires: 0 		 VIA89_C: 0
+Number of MRDL wires: 0 		 VIA9RDL: 0
+Total number of wires: 5042 		 vias: 5443
+
+Total M1 wire length: 16.7
+Total M2 wire length: 2761.1
+Total M3 wire length: 1586.2
+Total M4 wire length: 146.5
+Total M5 wire length: 1188.8
+Total M6 wire length: 42.3
+Total M7 wire length: 173.9
+Total M8 wire length: 0.0
+Total M9 wire length: 0.0
+Total MRDL wire length: 0.0
+Total wire length: 5915.7
+
+Longest M1 wire length: 0.7
+Longest M2 wire length: 19.9
+Longest M3 wire length: 23.5
+Longest M4 wire length: 12.1
+Longest M5 wire length: 41.6
+Longest M6 wire length: 6.1
+Longest M7 wire length: 34.2
+Longest M8 wire length: 0.0
+Longest M9 wire length: 0.0
+Longest MRDL wire length: 0.0
+
+
+[Track Assign: Done] Elapsed real time: 0:00:02 
+[Track Assign: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Track Assign: Done] Stage (MB): Used    0  Alloctr    0  Proc   37 
+[Track Assign: Done] Total (MB): Used  141  Alloctr  148  Proc 1609 
+[ECO: CDR] Elapsed real time: 0:00:08 
+[ECO: CDR] Elapsed cpu  time: sys=0:00:01 usr=0:00:07 total=0:00:08
+[ECO: CDR] Stage (MB): Used  140  Alloctr  147  Proc  125 
+[ECO: CDR] Total (MB): Used  141  Alloctr  148  Proc 1609 
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.force_end_on_preferred_grid                      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total number of nets = 26307, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+
+Switch to reduced partition bloat for speedup (DRC report is not accurate)
+Start DR iteration 0: uniform partition
+Routed	1/1089 Partitions, Violations =	0
+Routed	5/1089 Partitions, Violations =	0
+Routed	10/1089 Partitions, Violations =	0
+Routed	15/1089 Partitions, Violations =	1
+Routed	20/1089 Partitions, Violations =	3
+Routed	25/1089 Partitions, Violations =	5
+Routed	30/1089 Partitions, Violations =	5
+Routed	35/1089 Partitions, Violations =	23
+Routed	40/1089 Partitions, Violations =	22
+Routed	45/1089 Partitions, Violations =	19
+Routed	50/1089 Partitions, Violations =	21
+Routed	55/1089 Partitions, Violations =	25
+Routed	60/1089 Partitions, Violations =	54
+Routed	65/1089 Partitions, Violations =	54
+Routed	70/1089 Partitions, Violations =	49
+Routed	75/1089 Partitions, Violations =	71
+Routed	80/1089 Partitions, Violations =	81
+Routed	85/1089 Partitions, Violations =	85
+Routed	90/1089 Partitions, Violations =	74
+Routed	95/1089 Partitions, Violations =	107
+Routed	100/1089 Partitions, Violations =	132
+Routed	105/1089 Partitions, Violations =	137
+Routed	110/1089 Partitions, Violations =	134
+Routed	115/1089 Partitions, Violations =	164
+Routed	120/1089 Partitions, Violations =	164
+Routed	125/1089 Partitions, Violations =	192
+Routed	130/1089 Partitions, Violations =	220
+Routed	135/1089 Partitions, Violations =	220
+Routed	140/1089 Partitions, Violations =	240
+Routed	145/1089 Partitions, Violations =	295
+Routed	150/1089 Partitions, Violations =	305
+Routed	155/1089 Partitions, Violations =	305
+Routed	160/1089 Partitions, Violations =	323
+Routed	165/1089 Partitions, Violations =	345
+Routed	170/1089 Partitions, Violations =	345
+Routed	175/1089 Partitions, Violations =	345
+Routed	180/1089 Partitions, Violations =	335
+Routed	185/1089 Partitions, Violations =	335
+Routed	190/1089 Partitions, Violations =	341
+Routed	195/1089 Partitions, Violations =	342
+Routed	200/1089 Partitions, Violations =	366
+Routed	205/1089 Partitions, Violations =	365
+Routed	210/1089 Partitions, Violations =	366
+Routed	215/1089 Partitions, Violations =	373
+Routed	220/1089 Partitions, Violations =	398
+Routed	225/1089 Partitions, Violations =	396
+Routed	230/1089 Partitions, Violations =	396
+Routed	235/1089 Partitions, Violations =	396
+Routed	240/1089 Partitions, Violations =	406
+Routed	245/1089 Partitions, Violations =	409
+Routed	250/1089 Partitions, Violations =	409
+Routed	255/1089 Partitions, Violations =	409
+Routed	260/1089 Partitions, Violations =	433
+Routed	265/1089 Partitions, Violations =	434
+Routed	270/1089 Partitions, Violations =	442
+Routed	275/1089 Partitions, Violations =	442
+Routed	280/1089 Partitions, Violations =	448
+Routed	285/1089 Partitions, Violations =	465
+Routed	290/1089 Partitions, Violations =	464
+Routed	295/1089 Partitions, Violations =	464
+Routed	300/1089 Partitions, Violations =	464
+Routed	305/1089 Partitions, Violations =	503
+Routed	310/1089 Partitions, Violations =	567
+Routed	315/1089 Partitions, Violations =	567
+Routed	320/1089 Partitions, Violations =	567
+Routed	325/1089 Partitions, Violations =	567
+Routed	330/1089 Partitions, Violations =	580
+Routed	335/1089 Partitions, Violations =	584
+Routed	340/1089 Partitions, Violations =	588
+Routed	345/1089 Partitions, Violations =	588
+Routed	350/1089 Partitions, Violations =	588
+Routed	355/1089 Partitions, Violations =	601
+Routed	360/1089 Partitions, Violations =	626
+Routed	365/1089 Partitions, Violations =	649
+Routed	370/1089 Partitions, Violations =	649
+Routed	375/1089 Partitions, Violations =	649
+Routed	380/1089 Partitions, Violations =	649
+Routed	385/1089 Partitions, Violations =	642
+Routed	390/1089 Partitions, Violations =	652
+Routed	395/1089 Partitions, Violations =	652
+Routed	400/1089 Partitions, Violations =	652
+Routed	405/1089 Partitions, Violations =	652
+Routed	410/1089 Partitions, Violations =	650
+Routed	415/1089 Partitions, Violations =	638
+Routed	420/1089 Partitions, Violations =	670
+Routed	425/1089 Partitions, Violations =	672
+Routed	430/1089 Partitions, Violations =	672
+Routed	435/1089 Partitions, Violations =	672
+Routed	440/1089 Partitions, Violations =	673
+Routed	445/1089 Partitions, Violations =	684
+Routed	450/1089 Partitions, Violations =	684
+Routed	455/1089 Partitions, Violations =	686
+Routed	460/1089 Partitions, Violations =	686
+Routed	465/1089 Partitions, Violations =	686
+Routed	470/1089 Partitions, Violations =	689
+Routed	475/1089 Partitions, Violations =	697
+Routed	480/1089 Partitions, Violations =	734
+Routed	485/1089 Partitions, Violations =	734
+Routed	490/1089 Partitions, Violations =	734
+Routed	495/1089 Partitions, Violations =	734
+Routed	500/1089 Partitions, Violations =	734
+Routed	505/1089 Partitions, Violations =	740
+Routed	510/1089 Partitions, Violations =	856
+Routed	515/1089 Partitions, Violations =	856
+Routed	520/1089 Partitions, Violations =	856
+Routed	525/1089 Partitions, Violations =	856
+Routed	530/1089 Partitions, Violations =	856
+Routed	535/1089 Partitions, Violations =	855
+Routed	540/1089 Partitions, Violations =	864
+Routed	545/1089 Partitions, Violations =	844
+Routed	550/1089 Partitions, Violations =	844
+Routed	555/1089 Partitions, Violations =	844
+Routed	560/1089 Partitions, Violations =	844
+Routed	565/1089 Partitions, Violations =	844
+Routed	570/1089 Partitions, Violations =	848
+Routed	575/1089 Partitions, Violations =	890
+Routed	580/1089 Partitions, Violations =	890
+Routed	585/1089 Partitions, Violations =	890
+Routed	590/1089 Partitions, Violations =	890
+Routed	595/1089 Partitions, Violations =	890
+Routed	600/1089 Partitions, Violations =	891
+Routed	605/1089 Partitions, Violations =	912
+Routed	610/1089 Partitions, Violations =	907
+Routed	615/1089 Partitions, Violations =	907
+Routed	620/1089 Partitions, Violations =	907
+Routed	625/1089 Partitions, Violations =	907
+Routed	630/1089 Partitions, Violations =	907
+Routed	635/1089 Partitions, Violations =	924
+Routed	640/1089 Partitions, Violations =	925
+Routed	645/1089 Partitions, Violations =	925
+Routed	650/1089 Partitions, Violations =	925
+Routed	655/1089 Partitions, Violations =	925
+Routed	660/1089 Partitions, Violations =	925
+Routed	665/1089 Partitions, Violations =	926
+Routed	670/1089 Partitions, Violations =	967
+Routed	675/1089 Partitions, Violations =	967
+Routed	680/1089 Partitions, Violations =	967
+Routed	686/1089 Partitions, Violations =	967
+Routed	690/1089 Partitions, Violations =	947
+Routed	695/1089 Partitions, Violations =	951
+Routed	700/1089 Partitions, Violations =	945
+Routed	705/1089 Partitions, Violations =	945
+Routed	710/1089 Partitions, Violations =	945
+Routed	715/1089 Partitions, Violations =	945
+Routed	720/1089 Partitions, Violations =	944
+Routed	725/1089 Partitions, Violations =	944
+Routed	730/1089 Partitions, Violations =	944
+Routed	735/1089 Partitions, Violations =	944
+Routed	741/1089 Partitions, Violations =	944
+Routed	745/1089 Partitions, Violations =	941
+Routed	750/1089 Partitions, Violations =	941
+Routed	755/1089 Partitions, Violations =	943
+Routed	760/1089 Partitions, Violations =	943
+Routed	767/1089 Partitions, Violations =	943
+Routed	770/1089 Partitions, Violations =	950
+Routed	775/1089 Partitions, Violations =	950
+Routed	780/1089 Partitions, Violations =	950
+Routed	785/1089 Partitions, Violations =	950
+Routed	792/1089 Partitions, Violations =	950
+Routed	795/1089 Partitions, Violations =	945
+Routed	800/1089 Partitions, Violations =	945
+Routed	805/1089 Partitions, Violations =	965
+Routed	810/1089 Partitions, Violations =	965
+Routed	816/1089 Partitions, Violations =	965
+Routed	820/1089 Partitions, Violations =	965
+Routed	825/1089 Partitions, Violations =	967
+Routed	830/1089 Partitions, Violations =	964
+Routed	835/1089 Partitions, Violations =	964
+Routed	840/1089 Partitions, Violations =	964
+Routed	845/1089 Partitions, Violations =	964
+Routed	850/1089 Partitions, Violations =	985
+Routed	855/1089 Partitions, Violations =	985
+Routed	860/1089 Partitions, Violations =	985
+Routed	865/1089 Partitions, Violations =	985
+Routed	870/1089 Partitions, Violations =	985
+Routed	875/1089 Partitions, Violations =	966
+Routed	880/1089 Partitions, Violations =	966
+Routed	885/1089 Partitions, Violations =	966
+Routed	890/1089 Partitions, Violations =	966
+Routed	895/1089 Partitions, Violations =	970
+Routed	900/1089 Partitions, Violations =	970
+Routed	905/1089 Partitions, Violations =	970
+Routed	910/1089 Partitions, Violations =	970
+Routed	915/1089 Partitions, Violations =	980
+Routed	920/1089 Partitions, Violations =	980
+Routed	925/1089 Partitions, Violations =	980
+Routed	930/1089 Partitions, Violations =	1021
+Routed	935/1089 Partitions, Violations =	1021
+Routed	940/1089 Partitions, Violations =	1021
+Routed	945/1089 Partitions, Violations =	1022
+Routed	950/1089 Partitions, Violations =	1016
+Routed	955/1089 Partitions, Violations =	1016
+Routed	960/1089 Partitions, Violations =	1016
+Routed	965/1089 Partitions, Violations =	1014
+Routed	970/1089 Partitions, Violations =	1014
+Routed	975/1089 Partitions, Violations =	1014
+Routed	980/1089 Partitions, Violations =	1017
+Routed	985/1089 Partitions, Violations =	1017
+Routed	990/1089 Partitions, Violations =	1017
+Routed	995/1089 Partitions, Violations =	1020
+Routed	1000/1089 Partitions, Violations =	1020
+Routed	1005/1089 Partitions, Violations =	1020
+Routed	1010/1089 Partitions, Violations =	1019
+Routed	1015/1089 Partitions, Violations =	1019
+Routed	1020/1089 Partitions, Violations =	1020
+Routed	1025/1089 Partitions, Violations =	1020
+Routed	1030/1089 Partitions, Violations =	1022
+Routed	1035/1089 Partitions, Violations =	1021
+Routed	1040/1089 Partitions, Violations =	1021
+Routed	1045/1089 Partitions, Violations =	1019
+Routed	1050/1089 Partitions, Violations =	1019
+Routed	1055/1089 Partitions, Violations =	1019
+Routed	1060/1089 Partitions, Violations =	1019
+Routed	1065/1089 Partitions, Violations =	1019
+Routed	1070/1089 Partitions, Violations =	1019
+Routed	1075/1089 Partitions, Violations =	1019
+Routed	1080/1089 Partitions, Violations =	1019
+Routed	1085/1089 Partitions, Violations =	1019
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	1019
+	Diff net spacing : 162
+	Diff net var rule spacing : 6
+	Diff net via-cut spacing : 13
+	Edge-line via spacing : 8
+	End of line enclosure : 5
+	Less than minimum area : 52
+	Less than NDR width : 15
+	Off-grid : 21
+	Same net spacing : 3
+	Same net via-cut spacing : 32
+	Short : 671
+	Internal-only types : 31
+
+[Iter 0] Elapsed real time: 0:00:30 
+[Iter 0] Elapsed cpu  time: sys=0:00:01 usr=0:00:28 total=0:00:30
+[Iter 0] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[Iter 0] Total (MB): Used  161  Alloctr  168  Proc 1609 
+
+End DR iteration 0 with 1089 parts
+
+Start DR iteration 1: non-uniform partition
+Routed	1/168 Partitions, Violations =	1006
+Routed	2/168 Partitions, Violations =	1006
+Routed	3/168 Partitions, Violations =	1005
+Routed	4/168 Partitions, Violations =	1005
+Routed	5/168 Partitions, Violations =	1000
+Routed	6/168 Partitions, Violations =	998
+Routed	7/168 Partitions, Violations =	1002
+Routed	8/168 Partitions, Violations =	1002
+Routed	9/168 Partitions, Violations =	1002
+Routed	10/168 Partitions, Violations =	999
+Routed	11/168 Partitions, Violations =	995
+Routed	12/168 Partitions, Violations =	980
+Routed	13/168 Partitions, Violations =	980
+Routed	14/168 Partitions, Violations =	979
+Routed	15/168 Partitions, Violations =	978
+Routed	16/168 Partitions, Violations =	978
+Routed	17/168 Partitions, Violations =	952
+Routed	18/168 Partitions, Violations =	950
+Routed	19/168 Partitions, Violations =	949
+Routed	20/168 Partitions, Violations =	950
+Routed	21/168 Partitions, Violations =	950
+Routed	22/168 Partitions, Violations =	950
+Routed	23/168 Partitions, Violations =	948
+Routed	24/168 Partitions, Violations =	948
+Routed	25/168 Partitions, Violations =	948
+Routed	26/168 Partitions, Violations =	948
+Routed	27/168 Partitions, Violations =	948
+Routed	28/168 Partitions, Violations =	944
+Routed	29/168 Partitions, Violations =	944
+Routed	30/168 Partitions, Violations =	944
+Routed	31/168 Partitions, Violations =	944
+Routed	32/168 Partitions, Violations =	944
+Routed	33/168 Partitions, Violations =	944
+Routed	34/168 Partitions, Violations =	934
+Routed	35/168 Partitions, Violations =	934
+Routed	36/168 Partitions, Violations =	934
+Routed	37/168 Partitions, Violations =	934
+Routed	38/168 Partitions, Violations =	932
+Routed	39/168 Partitions, Violations =	930
+Routed	40/168 Partitions, Violations =	929
+Routed	41/168 Partitions, Violations =	929
+Routed	42/168 Partitions, Violations =	928
+Routed	43/168 Partitions, Violations =	927
+Routed	44/168 Partitions, Violations =	932
+Routed	45/168 Partitions, Violations =	931
+Routed	46/168 Partitions, Violations =	932
+Routed	47/168 Partitions, Violations =	930
+Routed	48/168 Partitions, Violations =	931
+Routed	49/168 Partitions, Violations =	939
+Routed	50/168 Partitions, Violations =	939
+Routed	51/168 Partitions, Violations =	938
+Routed	52/168 Partitions, Violations =	937
+Routed	53/168 Partitions, Violations =	936
+Routed	54/168 Partitions, Violations =	913
+Routed	55/168 Partitions, Violations =	911
+Routed	56/168 Partitions, Violations =	910
+Routed	57/168 Partitions, Violations =	907
+Routed	58/168 Partitions, Violations =	906
+Routed	59/168 Partitions, Violations =	909
+Routed	60/168 Partitions, Violations =	909
+Routed	61/168 Partitions, Violations =	899
+Routed	62/168 Partitions, Violations =	900
+Routed	63/168 Partitions, Violations =	901
+Routed	64/168 Partitions, Violations =	901
+Routed	65/168 Partitions, Violations =	900
+Routed	66/168 Partitions, Violations =	901
+Routed	67/168 Partitions, Violations =	893
+Routed	68/168 Partitions, Violations =	893
+Routed	69/168 Partitions, Violations =	892
+Routed	70/168 Partitions, Violations =	888
+Routed	71/168 Partitions, Violations =	885
+Routed	72/168 Partitions, Violations =	883
+Routed	73/168 Partitions, Violations =	883
+Routed	74/168 Partitions, Violations =	881
+Routed	75/168 Partitions, Violations =	879
+Routed	76/168 Partitions, Violations =	879
+Routed	77/168 Partitions, Violations =	879
+Routed	78/168 Partitions, Violations =	879
+Routed	79/168 Partitions, Violations =	865
+Routed	80/168 Partitions, Violations =	865
+Routed	81/168 Partitions, Violations =	859
+Routed	82/168 Partitions, Violations =	859
+Routed	83/168 Partitions, Violations =	859
+Routed	84/168 Partitions, Violations =	859
+Routed	85/168 Partitions, Violations =	859
+Routed	86/168 Partitions, Violations =	859
+Routed	87/168 Partitions, Violations =	859
+Routed	88/168 Partitions, Violations =	859
+Routed	89/168 Partitions, Violations =	859
+Routed	90/168 Partitions, Violations =	856
+Routed	91/168 Partitions, Violations =	856
+Routed	92/168 Partitions, Violations =	856
+Routed	93/168 Partitions, Violations =	856
+Routed	94/168 Partitions, Violations =	856
+Routed	95/168 Partitions, Violations =	848
+Routed	96/168 Partitions, Violations =	842
+Routed	97/168 Partitions, Violations =	830
+Routed	98/168 Partitions, Violations =	825
+Routed	99/168 Partitions, Violations =	819
+Routed	100/168 Partitions, Violations =	819
+Routed	101/168 Partitions, Violations =	819
+Routed	102/168 Partitions, Violations =	821
+Routed	103/168 Partitions, Violations =	821
+Routed	104/168 Partitions, Violations =	819
+Routed	105/168 Partitions, Violations =	820
+Routed	106/168 Partitions, Violations =	820
+Routed	107/168 Partitions, Violations =	822
+Routed	108/168 Partitions, Violations =	822
+Routed	109/168 Partitions, Violations =	823
+Routed	110/168 Partitions, Violations =	821
+Routed	111/168 Partitions, Violations =	821
+Routed	112/168 Partitions, Violations =	821
+Routed	113/168 Partitions, Violations =	821
+Routed	114/168 Partitions, Violations =	821
+Routed	115/168 Partitions, Violations =	821
+Routed	116/168 Partitions, Violations =	818
+Routed	117/168 Partitions, Violations =	812
+Routed	118/168 Partitions, Violations =	805
+Routed	119/168 Partitions, Violations =	801
+Routed	120/168 Partitions, Violations =	795
+Routed	121/168 Partitions, Violations =	801
+Routed	122/168 Partitions, Violations =	796
+Routed	123/168 Partitions, Violations =	790
+Routed	124/168 Partitions, Violations =	786
+Routed	125/168 Partitions, Violations =	782
+Routed	126/168 Partitions, Violations =	778
+Routed	127/168 Partitions, Violations =	778
+Routed	128/168 Partitions, Violations =	778
+Routed	129/168 Partitions, Violations =	777
+Routed	130/168 Partitions, Violations =	774
+Routed	131/168 Partitions, Violations =	772
+Routed	132/168 Partitions, Violations =	770
+Routed	133/168 Partitions, Violations =	767
+Routed	134/168 Partitions, Violations =	765
+Routed	135/168 Partitions, Violations =	763
+Routed	136/168 Partitions, Violations =	766
+Routed	137/168 Partitions, Violations =	764
+Routed	138/168 Partitions, Violations =	761
+Routed	139/168 Partitions, Violations =	759
+Routed	140/168 Partitions, Violations =	756
+Routed	141/168 Partitions, Violations =	754
+Routed	142/168 Partitions, Violations =	754
+Routed	143/168 Partitions, Violations =	754
+Routed	144/168 Partitions, Violations =	753
+Routed	145/168 Partitions, Violations =	754
+Routed	146/168 Partitions, Violations =	753
+Routed	147/168 Partitions, Violations =	752
+Routed	148/168 Partitions, Violations =	752
+Routed	149/168 Partitions, Violations =	751
+Routed	150/168 Partitions, Violations =	752
+Routed	151/168 Partitions, Violations =	752
+Routed	152/168 Partitions, Violations =	751
+Routed	153/168 Partitions, Violations =	750
+Routed	154/168 Partitions, Violations =	749
+Routed	155/168 Partitions, Violations =	749
+Routed	156/168 Partitions, Violations =	749
+Routed	157/168 Partitions, Violations =	749
+Routed	158/168 Partitions, Violations =	748
+Routed	159/168 Partitions, Violations =	747
+Routed	160/168 Partitions, Violations =	745
+Routed	161/168 Partitions, Violations =	744
+Routed	162/168 Partitions, Violations =	743
+Routed	163/168 Partitions, Violations =	743
+Routed	164/168 Partitions, Violations =	742
+Routed	165/168 Partitions, Violations =	741
+Routed	166/168 Partitions, Violations =	742
+Routed	167/168 Partitions, Violations =	741
+Routed	168/168 Partitions, Violations =	740
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	740
+	Diff net spacing : 83
+	Diff net var rule spacing : 11
+	Diff net via-cut spacing : 14
+	End of line enclosure : 2
+	Less than minimum area : 15
+	Less than NDR width : 1
+	Off-grid : 14
+	Same net spacing : 1
+	Same net via-cut spacing : 30
+	Short : 545
+	Internal-only types : 24
+
+[Iter 1] Elapsed real time: 0:00:37 
+[Iter 1] Elapsed cpu  time: sys=0:00:01 usr=0:00:35 total=0:00:37
+[Iter 1] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 1] Total (MB): Used  161  Alloctr  168  Proc 1609 
+
+End DR iteration 1 with 168 parts
+
+Start DR iteration 2: non-uniform partition
+Routed	1/120 Partitions, Violations =	740
+Routed	2/120 Partitions, Violations =	740
+Routed	3/120 Partitions, Violations =	734
+Routed	4/120 Partitions, Violations =	734
+Routed	5/120 Partitions, Violations =	730
+Routed	6/120 Partitions, Violations =	733
+Routed	7/120 Partitions, Violations =	733
+Routed	8/120 Partitions, Violations =	733
+Routed	9/120 Partitions, Violations =	728
+Routed	10/120 Partitions, Violations =	725
+Routed	11/120 Partitions, Violations =	724
+Routed	12/120 Partitions, Violations =	720
+Routed	13/120 Partitions, Violations =	722
+Routed	14/120 Partitions, Violations =	712
+Routed	15/120 Partitions, Violations =	712
+Routed	16/120 Partitions, Violations =	712
+Routed	17/120 Partitions, Violations =	720
+Routed	18/120 Partitions, Violations =	718
+Routed	19/120 Partitions, Violations =	720
+Routed	20/120 Partitions, Violations =	719
+Routed	21/120 Partitions, Violations =	726
+Routed	22/120 Partitions, Violations =	725
+Routed	23/120 Partitions, Violations =	728
+Routed	24/120 Partitions, Violations =	726
+Routed	25/120 Partitions, Violations =	726
+Routed	26/120 Partitions, Violations =	726
+Routed	27/120 Partitions, Violations =	726
+Routed	28/120 Partitions, Violations =	726
+Routed	29/120 Partitions, Violations =	732
+Routed	30/120 Partitions, Violations =	731
+Routed	31/120 Partitions, Violations =	730
+Routed	32/120 Partitions, Violations =	730
+Routed	33/120 Partitions, Violations =	728
+Routed	34/120 Partitions, Violations =	727
+Routed	35/120 Partitions, Violations =	733
+Routed	36/120 Partitions, Violations =	734
+Routed	37/120 Partitions, Violations =	736
+Routed	38/120 Partitions, Violations =	736
+Routed	39/120 Partitions, Violations =	730
+Routed	40/120 Partitions, Violations =	729
+Routed	41/120 Partitions, Violations =	729
+Routed	42/120 Partitions, Violations =	756
+Routed	43/120 Partitions, Violations =	756
+Routed	44/120 Partitions, Violations =	752
+Routed	45/120 Partitions, Violations =	752
+Routed	46/120 Partitions, Violations =	744
+Routed	47/120 Partitions, Violations =	751
+Routed	48/120 Partitions, Violations =	749
+Routed	49/120 Partitions, Violations =	750
+Routed	50/120 Partitions, Violations =	750
+Routed	51/120 Partitions, Violations =	750
+Routed	52/120 Partitions, Violations =	746
+Routed	53/120 Partitions, Violations =	747
+Routed	54/120 Partitions, Violations =	747
+Routed	55/120 Partitions, Violations =	747
+Routed	56/120 Partitions, Violations =	746
+Routed	57/120 Partitions, Violations =	747
+Routed	58/120 Partitions, Violations =	747
+Routed	59/120 Partitions, Violations =	750
+Routed	60/120 Partitions, Violations =	750
+Routed	61/120 Partitions, Violations =	750
+Routed	62/120 Partitions, Violations =	750
+Routed	63/120 Partitions, Violations =	753
+Routed	64/120 Partitions, Violations =	753
+Routed	65/120 Partitions, Violations =	753
+Routed	66/120 Partitions, Violations =	753
+Routed	67/120 Partitions, Violations =	753
+Routed	68/120 Partitions, Violations =	753
+Routed	69/120 Partitions, Violations =	752
+Routed	70/120 Partitions, Violations =	752
+Routed	71/120 Partitions, Violations =	750
+Routed	72/120 Partitions, Violations =	750
+Routed	73/120 Partitions, Violations =	750
+Routed	74/120 Partitions, Violations =	741
+Routed	75/120 Partitions, Violations =	741
+Routed	76/120 Partitions, Violations =	741
+Routed	77/120 Partitions, Violations =	741
+Routed	78/120 Partitions, Violations =	741
+Routed	79/120 Partitions, Violations =	740
+Routed	80/120 Partitions, Violations =	740
+Routed	81/120 Partitions, Violations =	740
+Routed	82/120 Partitions, Violations =	746
+Routed	83/120 Partitions, Violations =	746
+Routed	84/120 Partitions, Violations =	747
+Routed	85/120 Partitions, Violations =	747
+Routed	86/120 Partitions, Violations =	748
+Routed	87/120 Partitions, Violations =	761
+Routed	88/120 Partitions, Violations =	761
+Routed	89/120 Partitions, Violations =	761
+Routed	90/120 Partitions, Violations =	761
+Routed	91/120 Partitions, Violations =	761
+Routed	92/120 Partitions, Violations =	761
+Routed	93/120 Partitions, Violations =	763
+Routed	94/120 Partitions, Violations =	763
+Routed	95/120 Partitions, Violations =	763
+Routed	96/120 Partitions, Violations =	766
+Routed	97/120 Partitions, Violations =	766
+Routed	98/120 Partitions, Violations =	766
+Routed	99/120 Partitions, Violations =	763
+Routed	100/120 Partitions, Violations =	768
+Routed	101/120 Partitions, Violations =	764
+Routed	102/120 Partitions, Violations =	752
+Routed	103/120 Partitions, Violations =	752
+Routed	104/120 Partitions, Violations =	750
+Routed	105/120 Partitions, Violations =	750
+Routed	106/120 Partitions, Violations =	869
+Routed	107/120 Partitions, Violations =	869
+Routed	108/120 Partitions, Violations =	867
+Routed	109/120 Partitions, Violations =	866
+Routed	110/120 Partitions, Violations =	871
+Routed	111/120 Partitions, Violations =	870
+Routed	112/120 Partitions, Violations =	870
+Routed	113/120 Partitions, Violations =	873
+Routed	114/120 Partitions, Violations =	872
+Routed	115/120 Partitions, Violations =	861
+Routed	116/120 Partitions, Violations =	867
+Routed	117/120 Partitions, Violations =	866
+Routed	118/120 Partitions, Violations =	864
+Routed	119/120 Partitions, Violations =	864
+Routed	120/120 Partitions, Violations =	863
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	863
+	Diff net spacing : 96
+	Diff net var rule spacing : 8
+	Diff net via-cut spacing : 9
+	End of line enclosure : 2
+	Less than minimum area : 12
+	Less than NDR width : 128
+	Off-grid : 18
+	Same net via-cut spacing : 29
+	Short : 542
+	Internal-only types : 19
+
+[Iter 2] Elapsed real time: 0:00:47 
+[Iter 2] Elapsed cpu  time: sys=0:00:01 usr=0:00:45 total=0:00:47
+[Iter 2] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 2] Total (MB): Used  161  Alloctr  168  Proc 1609 
+
+End DR iteration 2 with 120 parts
+
+Start DR iteration 3: non-uniform partition
+Routed	1/110 Partitions, Violations =	863
+Routed	2/110 Partitions, Violations =	737
+Routed	3/110 Partitions, Violations =	739
+Routed	4/110 Partitions, Violations =	739
+Routed	5/110 Partitions, Violations =	739
+Routed	6/110 Partitions, Violations =	739
+Routed	7/110 Partitions, Violations =	734
+Routed	8/110 Partitions, Violations =	756
+Routed	9/110 Partitions, Violations =	766
+Routed	10/110 Partitions, Violations =	766
+Routed	11/110 Partitions, Violations =	777
+Routed	12/110 Partitions, Violations =	782
+Routed	13/110 Partitions, Violations =	783
+Routed	14/110 Partitions, Violations =	782
+Routed	15/110 Partitions, Violations =	782
+Routed	16/110 Partitions, Violations =	779
+Routed	17/110 Partitions, Violations =	779
+Routed	18/110 Partitions, Violations =	779
+Routed	19/110 Partitions, Violations =	784
+Routed	20/110 Partitions, Violations =	778
+Routed	21/110 Partitions, Violations =	783
+Routed	22/110 Partitions, Violations =	783
+Routed	23/110 Partitions, Violations =	786
+Routed	24/110 Partitions, Violations =	791
+Routed	25/110 Partitions, Violations =	791
+Routed	26/110 Partitions, Violations =	789
+Routed	27/110 Partitions, Violations =	790
+Routed	28/110 Partitions, Violations =	790
+Routed	29/110 Partitions, Violations =	790
+Routed	30/110 Partitions, Violations =	810
+Routed	31/110 Partitions, Violations =	810
+Routed	32/110 Partitions, Violations =	810
+Routed	33/110 Partitions, Violations =	810
+Routed	34/110 Partitions, Violations =	807
+Routed	35/110 Partitions, Violations =	774
+Routed	36/110 Partitions, Violations =	774
+Routed	37/110 Partitions, Violations =	776
+Routed	38/110 Partitions, Violations =	780
+Routed	39/110 Partitions, Violations =	780
+Routed	40/110 Partitions, Violations =	781
+Routed	41/110 Partitions, Violations =	775
+Routed	42/110 Partitions, Violations =	778
+Routed	43/110 Partitions, Violations =	778
+Routed	44/110 Partitions, Violations =	778
+Routed	45/110 Partitions, Violations =	771
+Routed	46/110 Partitions, Violations =	770
+Routed	47/110 Partitions, Violations =	768
+Routed	48/110 Partitions, Violations =	768
+Routed	49/110 Partitions, Violations =	768
+Routed	50/110 Partitions, Violations =	769
+Routed	51/110 Partitions, Violations =	770
+Routed	52/110 Partitions, Violations =	770
+Routed	53/110 Partitions, Violations =	783
+Routed	54/110 Partitions, Violations =	785
+Routed	55/110 Partitions, Violations =	797
+Routed	56/110 Partitions, Violations =	797
+Routed	57/110 Partitions, Violations =	797
+Routed	58/110 Partitions, Violations =	801
+Routed	59/110 Partitions, Violations =	799
+Routed	60/110 Partitions, Violations =	802
+Routed	61/110 Partitions, Violations =	802
+Routed	62/110 Partitions, Violations =	805
+Routed	63/110 Partitions, Violations =	805
+Routed	64/110 Partitions, Violations =	806
+Routed	65/110 Partitions, Violations =	807
+Routed	66/110 Partitions, Violations =	812
+Routed	67/110 Partitions, Violations =	810
+Routed	68/110 Partitions, Violations =	810
+Routed	69/110 Partitions, Violations =	810
+Routed	70/110 Partitions, Violations =	810
+Routed	71/110 Partitions, Violations =	810
+Routed	72/110 Partitions, Violations =	810
+Routed	73/110 Partitions, Violations =	810
+Routed	74/110 Partitions, Violations =	810
+Routed	75/110 Partitions, Violations =	810
+Routed	76/110 Partitions, Violations =	810
+Routed	77/110 Partitions, Violations =	810
+Routed	78/110 Partitions, Violations =	810
+Routed	79/110 Partitions, Violations =	810
+Routed	80/110 Partitions, Violations =	810
+Routed	81/110 Partitions, Violations =	811
+Routed	82/110 Partitions, Violations =	805
+Routed	83/110 Partitions, Violations =	792
+Routed	84/110 Partitions, Violations =	792
+Routed	85/110 Partitions, Violations =	788
+Routed	86/110 Partitions, Violations =	789
+Routed	87/110 Partitions, Violations =	789
+Routed	88/110 Partitions, Violations =	789
+Routed	89/110 Partitions, Violations =	789
+Routed	90/110 Partitions, Violations =	789
+Routed	91/110 Partitions, Violations =	784
+Routed	92/110 Partitions, Violations =	784
+Routed	93/110 Partitions, Violations =	784
+Routed	94/110 Partitions, Violations =	784
+Routed	95/110 Partitions, Violations =	784
+Routed	96/110 Partitions, Violations =	779
+Routed	97/110 Partitions, Violations =	774
+Routed	98/110 Partitions, Violations =	775
+Routed	99/110 Partitions, Violations =	777
+Routed	100/110 Partitions, Violations =	781
+Routed	101/110 Partitions, Violations =	779
+Routed	102/110 Partitions, Violations =	779
+Routed	103/110 Partitions, Violations =	787
+Routed	104/110 Partitions, Violations =	790
+Routed	105/110 Partitions, Violations =	790
+Routed	106/110 Partitions, Violations =	789
+Routed	107/110 Partitions, Violations =	789
+Routed	108/110 Partitions, Violations =	790
+Routed	109/110 Partitions, Violations =	829
+Routed	110/110 Partitions, Violations =	795
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	795
+	Diff net spacing : 100
+	Diff net var rule spacing : 1
+	Diff net via-cut spacing : 12
+	End of line enclosure : 3
+	Less than minimum area : 26
+	Less than NDR width : 4
+	Off-grid : 13
+	Same net via-cut spacing : 33
+	Short : 560
+	Internal-only types : 43
+
+[Iter 3] Elapsed real time: 0:01:00 
+[Iter 3] Elapsed cpu  time: sys=0:00:02 usr=0:00:57 total=0:00:59
+[Iter 3] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 3] Total (MB): Used  162  Alloctr  168  Proc 1609 
+
+End DR iteration 3 with 110 parts
+
+Start DR iteration 4: non-uniform partition
+Routed	1/106 Partitions, Violations =	795
+Routed	2/106 Partitions, Violations =	799
+Routed	3/106 Partitions, Violations =	798
+Routed	4/106 Partitions, Violations =	798
+Routed	5/106 Partitions, Violations =	797
+Routed	6/106 Partitions, Violations =	808
+Routed	7/106 Partitions, Violations =	808
+Routed	8/106 Partitions, Violations =	801
+Routed	9/106 Partitions, Violations =	797
+Routed	10/106 Partitions, Violations =	791
+Routed	11/106 Partitions, Violations =	791
+Routed	12/106 Partitions, Violations =	791
+Routed	13/106 Partitions, Violations =	793
+Routed	14/106 Partitions, Violations =	783
+Routed	15/106 Partitions, Violations =	783
+Routed	16/106 Partitions, Violations =	777
+Routed	17/106 Partitions, Violations =	778
+Routed	18/106 Partitions, Violations =	779
+Routed	19/106 Partitions, Violations =	777
+Routed	20/106 Partitions, Violations =	769
+Routed	21/106 Partitions, Violations =	770
+Routed	22/106 Partitions, Violations =	769
+Routed	23/106 Partitions, Violations =	770
+Routed	24/106 Partitions, Violations =	781
+Routed	25/106 Partitions, Violations =	781
+Routed	26/106 Partitions, Violations =	781
+Routed	27/106 Partitions, Violations =	779
+Routed	28/106 Partitions, Violations =	782
+Routed	29/106 Partitions, Violations =	782
+Routed	30/106 Partitions, Violations =	779
+Routed	31/106 Partitions, Violations =	777
+Routed	32/106 Partitions, Violations =	776
+Routed	33/106 Partitions, Violations =	776
+Routed	34/106 Partitions, Violations =	761
+Routed	35/106 Partitions, Violations =	750
+Routed	36/106 Partitions, Violations =	749
+Routed	37/106 Partitions, Violations =	745
+Routed	38/106 Partitions, Violations =	745
+Routed	39/106 Partitions, Violations =	746
+Routed	40/106 Partitions, Violations =	747
+Routed	41/106 Partitions, Violations =	746
+Routed	42/106 Partitions, Violations =	750
+Routed	43/106 Partitions, Violations =	716
+Routed	44/106 Partitions, Violations =	720
+Routed	45/106 Partitions, Violations =	721
+Routed	46/106 Partitions, Violations =	722
+Routed	47/106 Partitions, Violations =	721
+Routed	48/106 Partitions, Violations =	720
+Routed	49/106 Partitions, Violations =	722
+Routed	50/106 Partitions, Violations =	726
+Routed	51/106 Partitions, Violations =	724
+Routed	52/106 Partitions, Violations =	724
+Routed	53/106 Partitions, Violations =	724
+Routed	54/106 Partitions, Violations =	725
+Routed	55/106 Partitions, Violations =	725
+Routed	56/106 Partitions, Violations =	730
+Routed	57/106 Partitions, Violations =	730
+Routed	58/106 Partitions, Violations =	731
+Routed	59/106 Partitions, Violations =	731
+Routed	60/106 Partitions, Violations =	731
+Routed	61/106 Partitions, Violations =	722
+Routed	62/106 Partitions, Violations =	722
+Routed	63/106 Partitions, Violations =	722
+Routed	64/106 Partitions, Violations =	722
+Routed	65/106 Partitions, Violations =	710
+Routed	66/106 Partitions, Violations =	710
+Routed	67/106 Partitions, Violations =	709
+Routed	68/106 Partitions, Violations =	709
+Routed	69/106 Partitions, Violations =	709
+Routed	70/106 Partitions, Violations =	709
+Routed	71/106 Partitions, Violations =	709
+Routed	72/106 Partitions, Violations =	708
+Routed	73/106 Partitions, Violations =	708
+Routed	74/106 Partitions, Violations =	708
+Routed	75/106 Partitions, Violations =	708
+Routed	76/106 Partitions, Violations =	708
+Routed	77/106 Partitions, Violations =	708
+Routed	78/106 Partitions, Violations =	714
+Routed	79/106 Partitions, Violations =	714
+Routed	80/106 Partitions, Violations =	714
+Routed	81/106 Partitions, Violations =	714
+Routed	82/106 Partitions, Violations =	714
+Routed	83/106 Partitions, Violations =	714
+Routed	84/106 Partitions, Violations =	714
+Routed	85/106 Partitions, Violations =	713
+Routed	86/106 Partitions, Violations =	713
+Routed	87/106 Partitions, Violations =	713
+Routed	88/106 Partitions, Violations =	713
+Routed	89/106 Partitions, Violations =	713
+Routed	90/106 Partitions, Violations =	713
+Routed	91/106 Partitions, Violations =	725
+Routed	92/106 Partitions, Violations =	718
+Routed	93/106 Partitions, Violations =	721
+Routed	94/106 Partitions, Violations =	720
+Routed	95/106 Partitions, Violations =	714
+Routed	96/106 Partitions, Violations =	712
+Routed	97/106 Partitions, Violations =	709
+Routed	98/106 Partitions, Violations =	709
+Routed	99/106 Partitions, Violations =	709
+Routed	100/106 Partitions, Violations =	708
+Routed	101/106 Partitions, Violations =	713
+Routed	102/106 Partitions, Violations =	714
+Routed	103/106 Partitions, Violations =	712
+Routed	104/106 Partitions, Violations =	717
+Routed	105/106 Partitions, Violations =	718
+Routed	106/106 Partitions, Violations =	713
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	713
+	Diff net spacing : 76
+	Diff net var rule spacing : 13
+	Diff net via-cut spacing : 12
+	Edge-line via spacing : 1
+	End of line enclosure : 2
+	Less than minimum area : 18
+	Less than NDR width : 8
+	Off-grid : 17
+	Same net spacing : 1
+	Same net via-cut spacing : 35
+	Short : 517
+	Internal-only types : 13
+
+[Iter 4] Elapsed real time: 0:01:14 
+[Iter 4] Elapsed cpu  time: sys=0:00:02 usr=0:01:11 total=0:01:14
+[Iter 4] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 4] Total (MB): Used  162  Alloctr  168  Proc 1609 
+
+End DR iteration 4 with 106 parts
+
+
+Switch back to normal partition bloat and recalculate DRC:
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked	1/81 Partitions, Violations =	713
+Checked	3/81 Partitions, Violations =	715
+Checked	6/81 Partitions, Violations =	715
+Checked	9/81 Partitions, Violations =	715
+Checked	12/81 Partitions, Violations =	713
+Checked	15/81 Partitions, Violations =	706
+Checked	18/81 Partitions, Violations =	705
+Checked	21/81 Partitions, Violations =	703
+Checked	24/81 Partitions, Violations =	700
+Checked	28/81 Partitions, Violations =	700
+Checked	30/81 Partitions, Violations =	700
+Checked	33/81 Partitions, Violations =	700
+Checked	36/81 Partitions, Violations =	700
+Checked	39/81 Partitions, Violations =	700
+Checked	42/81 Partitions, Violations =	700
+Checked	45/81 Partitions, Violations =	700
+Checked	48/81 Partitions, Violations =	700
+Checked	51/81 Partitions, Violations =	700
+Checked	54/81 Partitions, Violations =	700
+Checked	57/81 Partitions, Violations =	700
+Checked	60/81 Partitions, Violations =	696
+Checked	63/81 Partitions, Violations =	696
+Checked	66/81 Partitions, Violations =	696
+Checked	69/81 Partitions, Violations =	696
+Checked	72/81 Partitions, Violations =	696
+Checked	75/81 Partitions, Violations =	696
+Checked	78/81 Partitions, Violations =	696
+Checked	81/81 Partitions, Violations =	696
+[DRC CHECK] Elapsed real time: 0:01:18 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:02 usr=0:01:16 total=0:01:18
+[DRC CHECK] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[DRC CHECK] Total (MB): Used  162  Alloctr  168  Proc 1609 
+Start DR iteration 5: non-uniform partition
+Routed	1/101 Partitions, Violations =	696
+Routed	2/101 Partitions, Violations =	696
+Routed	3/101 Partitions, Violations =	696
+Routed	4/101 Partitions, Violations =	696
+Routed	5/101 Partitions, Violations =	697
+Routed	6/101 Partitions, Violations =	701
+Routed	7/101 Partitions, Violations =	701
+Routed	8/101 Partitions, Violations =	706
+Routed	9/101 Partitions, Violations =	706
+Routed	10/101 Partitions, Violations =	706
+Routed	11/101 Partitions, Violations =	694
+Routed	12/101 Partitions, Violations =	693
+Routed	13/101 Partitions, Violations =	692
+Routed	14/101 Partitions, Violations =	690
+Routed	15/101 Partitions, Violations =	689
+Routed	16/101 Partitions, Violations =	683
+Routed	17/101 Partitions, Violations =	674
+Routed	18/101 Partitions, Violations =	673
+Routed	19/101 Partitions, Violations =	672
+Routed	20/101 Partitions, Violations =	674
+Routed	21/101 Partitions, Violations =	680
+Routed	22/101 Partitions, Violations =	678
+Routed	23/101 Partitions, Violations =	675
+Routed	24/101 Partitions, Violations =	673
+Routed	25/101 Partitions, Violations =	673
+Routed	26/101 Partitions, Violations =	674
+Routed	27/101 Partitions, Violations =	674
+Routed	28/101 Partitions, Violations =	675
+Routed	29/101 Partitions, Violations =	675
+Routed	30/101 Partitions, Violations =	674
+Routed	31/101 Partitions, Violations =	674
+Routed	32/101 Partitions, Violations =	674
+Routed	33/101 Partitions, Violations =	674
+Routed	34/101 Partitions, Violations =	696
+Routed	35/101 Partitions, Violations =	697
+Routed	36/101 Partitions, Violations =	695
+Routed	37/101 Partitions, Violations =	695
+Routed	38/101 Partitions, Violations =	692
+Routed	39/101 Partitions, Violations =	698
+Routed	40/101 Partitions, Violations =	699
+Routed	41/101 Partitions, Violations =	697
+Routed	42/101 Partitions, Violations =	694
+Routed	43/101 Partitions, Violations =	688
+Routed	44/101 Partitions, Violations =	685
+Routed	45/101 Partitions, Violations =	686
+Routed	46/101 Partitions, Violations =	687
+Routed	47/101 Partitions, Violations =	694
+Routed	48/101 Partitions, Violations =	701
+Routed	49/101 Partitions, Violations =	698
+Routed	50/101 Partitions, Violations =	696
+Routed	51/101 Partitions, Violations =	694
+Routed	52/101 Partitions, Violations =	697
+Routed	53/101 Partitions, Violations =	695
+Routed	54/101 Partitions, Violations =	693
+Routed	55/101 Partitions, Violations =	689
+Routed	56/101 Partitions, Violations =	689
+Routed	57/101 Partitions, Violations =	689
+Routed	58/101 Partitions, Violations =	689
+Routed	59/101 Partitions, Violations =	690
+Routed	60/101 Partitions, Violations =	690
+Routed	61/101 Partitions, Violations =	690
+Routed	62/101 Partitions, Violations =	690
+Routed	63/101 Partitions, Violations =	690
+Routed	64/101 Partitions, Violations =	691
+Routed	65/101 Partitions, Violations =	691
+Routed	66/101 Partitions, Violations =	691
+Routed	67/101 Partitions, Violations =	691
+Routed	68/101 Partitions, Violations =	691
+Routed	69/101 Partitions, Violations =	691
+Routed	70/101 Partitions, Violations =	691
+Routed	71/101 Partitions, Violations =	691
+Routed	72/101 Partitions, Violations =	692
+Routed	73/101 Partitions, Violations =	692
+Routed	74/101 Partitions, Violations =	692
+Routed	75/101 Partitions, Violations =	692
+Routed	76/101 Partitions, Violations =	692
+Routed	77/101 Partitions, Violations =	698
+Routed	78/101 Partitions, Violations =	701
+Routed	79/101 Partitions, Violations =	702
+Routed	80/101 Partitions, Violations =	702
+Routed	81/101 Partitions, Violations =	702
+Routed	82/101 Partitions, Violations =	702
+Routed	83/101 Partitions, Violations =	702
+Routed	84/101 Partitions, Violations =	702
+Routed	85/101 Partitions, Violations =	702
+Routed	86/101 Partitions, Violations =	702
+Routed	87/101 Partitions, Violations =	702
+Routed	88/101 Partitions, Violations =	702
+Routed	89/101 Partitions, Violations =	695
+Routed	90/101 Partitions, Violations =	692
+Routed	91/101 Partitions, Violations =	691
+Routed	92/101 Partitions, Violations =	687
+Routed	93/101 Partitions, Violations =	688
+Routed	94/101 Partitions, Violations =	687
+Routed	95/101 Partitions, Violations =	686
+Routed	96/101 Partitions, Violations =	686
+Routed	97/101 Partitions, Violations =	694
+Routed	98/101 Partitions, Violations =	687
+Routed	99/101 Partitions, Violations =	687
+Routed	100/101 Partitions, Violations =	687
+Routed	101/101 Partitions, Violations =	684
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	684
+	Diff net spacing : 82
+	Diff net var rule spacing : 16
+	Diff net via-cut spacing : 10
+	Less than minimum area : 10
+	Less than NDR width : 4
+	Off-grid : 11
+	Same net via-cut spacing : 24
+	Short : 519
+	Internal-only types : 8
+
+[Iter 5] Elapsed real time: 0:01:35 
+[Iter 5] Elapsed cpu  time: sys=0:00:02 usr=0:01:32 total=0:01:35
+[Iter 5] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 5] Total (MB): Used  162  Alloctr  168  Proc 1609 
+
+End DR iteration 5 with 101 parts
+
+Start DR iteration 6: non-uniform partition
+Routed	1/96 Partitions, Violations =	684
+Routed	2/96 Partitions, Violations =	685
+Routed	3/96 Partitions, Violations =	693
+Routed	4/96 Partitions, Violations =	693
+Routed	5/96 Partitions, Violations =	683
+Routed	6/96 Partitions, Violations =	666
+Routed	7/96 Partitions, Violations =	665
+Routed	8/96 Partitions, Violations =	660
+Routed	9/96 Partitions, Violations =	660
+Routed	10/96 Partitions, Violations =	656
+Routed	11/96 Partitions, Violations =	672
+Routed	12/96 Partitions, Violations =	682
+Routed	13/96 Partitions, Violations =	688
+Routed	14/96 Partitions, Violations =	688
+Routed	15/96 Partitions, Violations =	688
+Routed	16/96 Partitions, Violations =	688
+Routed	17/96 Partitions, Violations =	690
+Routed	18/96 Partitions, Violations =	688
+Routed	19/96 Partitions, Violations =	689
+Routed	20/96 Partitions, Violations =	693
+Routed	21/96 Partitions, Violations =	699
+Routed	22/96 Partitions, Violations =	696
+Routed	23/96 Partitions, Violations =	701
+Routed	24/96 Partitions, Violations =	702
+Routed	25/96 Partitions, Violations =	703
+Routed	26/96 Partitions, Violations =	703
+Routed	27/96 Partitions, Violations =	703
+Routed	28/96 Partitions, Violations =	704
+Routed	29/96 Partitions, Violations =	704
+Routed	30/96 Partitions, Violations =	704
+Routed	31/96 Partitions, Violations =	704
+Routed	32/96 Partitions, Violations =	704
+Routed	33/96 Partitions, Violations =	704
+Routed	34/96 Partitions, Violations =	704
+Routed	35/96 Partitions, Violations =	702
+Routed	36/96 Partitions, Violations =	702
+Routed	37/96 Partitions, Violations =	703
+Routed	38/96 Partitions, Violations =	704
+Routed	39/96 Partitions, Violations =	698
+Routed	40/96 Partitions, Violations =	700
+Routed	41/96 Partitions, Violations =	713
+Routed	42/96 Partitions, Violations =	716
+Routed	43/96 Partitions, Violations =	715
+Routed	44/96 Partitions, Violations =	723
+Routed	45/96 Partitions, Violations =	720
+Routed	46/96 Partitions, Violations =	725
+Routed	47/96 Partitions, Violations =	734
+Routed	48/96 Partitions, Violations =	734
+Routed	49/96 Partitions, Violations =	739
+Routed	50/96 Partitions, Violations =	740
+Routed	51/96 Partitions, Violations =	739
+Routed	52/96 Partitions, Violations =	739
+Routed	53/96 Partitions, Violations =	739
+Routed	54/96 Partitions, Violations =	737
+Routed	55/96 Partitions, Violations =	728
+Routed	56/96 Partitions, Violations =	728
+Routed	57/96 Partitions, Violations =	728
+Routed	58/96 Partitions, Violations =	728
+Routed	59/96 Partitions, Violations =	725
+Routed	60/96 Partitions, Violations =	725
+Routed	61/96 Partitions, Violations =	725
+Routed	62/96 Partitions, Violations =	725
+Routed	63/96 Partitions, Violations =	725
+Routed	64/96 Partitions, Violations =	725
+Routed	65/96 Partitions, Violations =	725
+Routed	66/96 Partitions, Violations =	725
+Routed	67/96 Partitions, Violations =	725
+Routed	68/96 Partitions, Violations =	725
+Routed	69/96 Partitions, Violations =	725
+Routed	70/96 Partitions, Violations =	725
+Routed	71/96 Partitions, Violations =	725
+Routed	72/96 Partitions, Violations =	725
+Routed	73/96 Partitions, Violations =	725
+Routed	74/96 Partitions, Violations =	725
+Routed	75/96 Partitions, Violations =	730
+Routed	76/96 Partitions, Violations =	730
+Routed	77/96 Partitions, Violations =	723
+Routed	78/96 Partitions, Violations =	723
+Routed	79/96 Partitions, Violations =	723
+Routed	80/96 Partitions, Violations =	723
+Routed	81/96 Partitions, Violations =	723
+Routed	82/96 Partitions, Violations =	723
+Routed	83/96 Partitions, Violations =	723
+Routed	84/96 Partitions, Violations =	723
+Routed	85/96 Partitions, Violations =	723
+Routed	86/96 Partitions, Violations =	723
+Routed	87/96 Partitions, Violations =	725
+Routed	88/96 Partitions, Violations =	722
+Routed	89/96 Partitions, Violations =	716
+Routed	90/96 Partitions, Violations =	720
+Routed	91/96 Partitions, Violations =	720
+Routed	92/96 Partitions, Violations =	722
+Routed	93/96 Partitions, Violations =	721
+Routed	94/96 Partitions, Violations =	720
+Routed	95/96 Partitions, Violations =	722
+Routed	96/96 Partitions, Violations =	722
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	722
+	Diff net spacing : 87
+	Diff net var rule spacing : 5
+	Diff net via-cut spacing : 10
+	End of line enclosure : 2
+	Less than minimum area : 11
+	Less than NDR width : 2
+	Off-grid : 20
+	Same net spacing : 1
+	Same net via-cut spacing : 26
+	Short : 524
+	Internal-only types : 34
+
+[Iter 6] Elapsed real time: 0:01:53 
+[Iter 6] Elapsed cpu  time: sys=0:00:02 usr=0:01:50 total=0:01:53
+[Iter 6] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 6] Total (MB): Used  162  Alloctr  168  Proc 1609 
+
+End DR iteration 6 with 96 parts
+
+Start DR iteration 7: non-uniform partition
+Routed	1/100 Partitions, Violations =	722
+Routed	2/100 Partitions, Violations =	722
+Routed	3/100 Partitions, Violations =	722
+Routed	4/100 Partitions, Violations =	722
+Routed	5/100 Partitions, Violations =	722
+Routed	6/100 Partitions, Violations =	715
+Routed	7/100 Partitions, Violations =	714
+Routed	8/100 Partitions, Violations =	714
+Routed	9/100 Partitions, Violations =	712
+Routed	10/100 Partitions, Violations =	708
+Routed	11/100 Partitions, Violations =	713
+Routed	12/100 Partitions, Violations =	715
+Routed	13/100 Partitions, Violations =	715
+Routed	14/100 Partitions, Violations =	713
+Routed	15/100 Partitions, Violations =	710
+Routed	16/100 Partitions, Violations =	709
+Routed	17/100 Partitions, Violations =	712
+Routed	18/100 Partitions, Violations =	712
+Routed	19/100 Partitions, Violations =	712
+Routed	20/100 Partitions, Violations =	710
+Routed	21/100 Partitions, Violations =	711
+Routed	22/100 Partitions, Violations =	711
+Routed	23/100 Partitions, Violations =	711
+Routed	24/100 Partitions, Violations =	710
+Routed	25/100 Partitions, Violations =	710
+Routed	26/100 Partitions, Violations =	709
+Routed	27/100 Partitions, Violations =	713
+Routed	28/100 Partitions, Violations =	720
+Routed	29/100 Partitions, Violations =	720
+Routed	30/100 Partitions, Violations =	718
+Routed	31/100 Partitions, Violations =	718
+Routed	32/100 Partitions, Violations =	718
+Routed	33/100 Partitions, Violations =	720
+Routed	34/100 Partitions, Violations =	722
+Routed	35/100 Partitions, Violations =	730
+Routed	36/100 Partitions, Violations =	721
+Routed	37/100 Partitions, Violations =	718
+Routed	38/100 Partitions, Violations =	719
+Routed	39/100 Partitions, Violations =	715
+Routed	40/100 Partitions, Violations =	705
+Routed	41/100 Partitions, Violations =	702
+Routed	42/100 Partitions, Violations =	702
+Routed	43/100 Partitions, Violations =	698
+Routed	44/100 Partitions, Violations =	698
+Routed	45/100 Partitions, Violations =	690
+Routed	46/100 Partitions, Violations =	686
+Routed	47/100 Partitions, Violations =	684
+Routed	48/100 Partitions, Violations =	689
+Routed	49/100 Partitions, Violations =	679
+Routed	50/100 Partitions, Violations =	681
+Routed	51/100 Partitions, Violations =	680
+Routed	52/100 Partitions, Violations =	674
+Routed	53/100 Partitions, Violations =	674
+Routed	54/100 Partitions, Violations =	674
+Routed	55/100 Partitions, Violations =	674
+Routed	56/100 Partitions, Violations =	674
+Routed	57/100 Partitions, Violations =	674
+Routed	58/100 Partitions, Violations =	674
+Routed	59/100 Partitions, Violations =	674
+Routed	60/100 Partitions, Violations =	675
+Routed	61/100 Partitions, Violations =	676
+Routed	62/100 Partitions, Violations =	678
+Routed	63/100 Partitions, Violations =	680
+Routed	64/100 Partitions, Violations =	679
+Routed	65/100 Partitions, Violations =	679
+Routed	66/100 Partitions, Violations =	679
+Routed	67/100 Partitions, Violations =	684
+Routed	68/100 Partitions, Violations =	684
+Routed	69/100 Partitions, Violations =	684
+Routed	70/100 Partitions, Violations =	684
+Routed	71/100 Partitions, Violations =	684
+Routed	72/100 Partitions, Violations =	683
+Routed	73/100 Partitions, Violations =	683
+Routed	74/100 Partitions, Violations =	690
+Routed	75/100 Partitions, Violations =	690
+Routed	76/100 Partitions, Violations =	694
+Routed	77/100 Partitions, Violations =	684
+Routed	78/100 Partitions, Violations =	665
+Routed	79/100 Partitions, Violations =	665
+Routed	80/100 Partitions, Violations =	671
+Routed	81/100 Partitions, Violations =	670
+Routed	82/100 Partitions, Violations =	670
+Routed	83/100 Partitions, Violations =	685
+Routed	84/100 Partitions, Violations =	685
+Routed	85/100 Partitions, Violations =	685
+Routed	86/100 Partitions, Violations =	685
+Routed	87/100 Partitions, Violations =	686
+Routed	88/100 Partitions, Violations =	686
+Routed	89/100 Partitions, Violations =	686
+Routed	90/100 Partitions, Violations =	686
+Routed	91/100 Partitions, Violations =	676
+Routed	92/100 Partitions, Violations =	676
+Routed	93/100 Partitions, Violations =	676
+Routed	94/100 Partitions, Violations =	676
+Routed	95/100 Partitions, Violations =	674
+Routed	96/100 Partitions, Violations =	673
+Routed	97/100 Partitions, Violations =	673
+Routed	98/100 Partitions, Violations =	674
+Routed	99/100 Partitions, Violations =	675
+Routed	100/100 Partitions, Violations =	675
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	675
+	Diff net spacing : 82
+	Diff net var rule spacing : 3
+	Diff net via-cut spacing : 10
+	End of line enclosure : 2
+	Less than minimum area : 11
+	Less than NDR width : 4
+	Off-grid : 14
+	Same net via-cut spacing : 28
+	Short : 498
+	Internal-only types : 23
+
+[Iter 7] Elapsed real time: 0:02:16 
+[Iter 7] Elapsed cpu  time: sys=0:00:03 usr=0:02:12 total=0:02:16
+[Iter 7] Stage (MB): Used   20  Alloctr   19  Proc    0 
+[Iter 7] Total (MB): Used  162  Alloctr  168  Proc 1609 
+
+End DR iteration 7 with 100 parts
+
+Start DR iteration 8: non-uniform partition
+Routed	1/99 Partitions, Violations =	675
+Routed	2/99 Partitions, Violations =	680
+Routed	3/99 Partitions, Violations =	681
+Routed	4/99 Partitions, Violations =	681
+Routed	5/99 Partitions, Violations =	681
+Routed	6/99 Partitions, Violations =	680
+Routed	7/99 Partitions, Violations =	680
+Routed	8/99 Partitions, Violations =	678
+Routed	9/99 Partitions, Violations =	681
+Routed	10/99 Partitions, Violations =	694
+Routed	11/99 Partitions, Violations =	694
+Routed	12/99 Partitions, Violations =	694
+Routed	13/99 Partitions, Violations =	700
+Routed	14/99 Partitions, Violations =	698
+Routed	15/99 Partitions, Violations =	689
+Routed	16/99 Partitions, Violations =	690
+Routed	17/99 Partitions, Violations =	690
+Routed	18/99 Partitions, Violations =	691
+Routed	19/99 Partitions, Violations =	693
+Routed	20/99 Partitions, Violations =	693
+Routed	21/99 Partitions, Violations =	696
+Routed	22/99 Partitions, Violations =	695
+Routed	23/99 Partitions, Violations =	695
+Routed	24/99 Partitions, Violations =	694
+Routed	25/99 Partitions, Violations =	704
+Routed	26/99 Partitions, Violations =	701
+Routed	27/99 Partitions, Violations =	705
+Routed	28/99 Partitions, Violations =	707
+Routed	29/99 Partitions, Violations =	707
+Routed	30/99 Partitions, Violations =	704
+Routed	31/99 Partitions, Violations =	703
+Routed	32/99 Partitions, Violations =	703
+Routed	33/99 Partitions, Violations =	703
+Routed	34/99 Partitions, Violations =	695
+Routed	35/99 Partitions, Violations =	689
+Routed	36/99 Partitions, Violations =	688
+Routed	37/99 Partitions, Violations =	687
+Routed	38/99 Partitions, Violations =	692
+Routed	39/99 Partitions, Violations =	678
+Routed	40/99 Partitions, Violations =	681
+Routed	41/99 Partitions, Violations =	680
+Routed	42/99 Partitions, Violations =	685
+Routed	43/99 Partitions, Violations =	698
+Routed	44/99 Partitions, Violations =	697
+Routed	45/99 Partitions, Violations =	695
+Routed	46/99 Partitions, Violations =	701
+Routed	47/99 Partitions, Violations =	701
+Routed	48/99 Partitions, Violations =	704
+Routed	49/99 Partitions, Violations =	705
+Routed	50/99 Partitions, Violations =	682
+Routed	51/99 Partitions, Violations =	684
+Routed	52/99 Partitions, Violations =	681
+Routed	53/99 Partitions, Violations =	680
+Routed	54/99 Partitions, Violations =	680
+Routed	55/99 Partitions, Violations =	680
+Routed	56/99 Partitions, Violations =	684
+Routed	57/99 Partitions, Violations =	683
+Routed	58/99 Partitions, Violations =	683
+Routed	59/99 Partitions, Violations =	681
+Routed	60/99 Partitions, Violations =	681
+Routed	61/99 Partitions, Violations =	681
+Routed	62/99 Partitions, Violations =	681
+Routed	63/99 Partitions, Violations =	681
+Routed	64/99 Partitions, Violations =	681
+Routed	65/99 Partitions, Violations =	680
+Routed	66/99 Partitions, Violations =	680
+Routed	67/99 Partitions, Violations =	679
+Routed	68/99 Partitions, Violations =	682
+Routed	69/99 Partitions, Violations =	682
+Routed	70/99 Partitions, Violations =	687
+Routed	71/99 Partitions, Violations =	687
+Routed	72/99 Partitions, Violations =	686
+Routed	73/99 Partitions, Violations =	686
+Routed	74/99 Partitions, Violations =	684
+Routed	75/99 Partitions, Violations =	684
+Routed	76/99 Partitions, Violations =	691
+Routed	77/99 Partitions, Violations =	690
+Routed	78/99 Partitions, Violations =	690
+Routed	79/99 Partitions, Violations =	690
+Routed	80/99 Partitions, Violations =	691
+Routed	81/99 Partitions, Violations =	699
+Routed	82/99 Partitions, Violations =	699
+Routed	83/99 Partitions, Violations =	704
+Routed	84/99 Partitions, Violations =	704
+Routed	85/99 Partitions, Violations =	704
+Routed	86/99 Partitions, Violations =	704
+Routed	87/99 Partitions, Violations =	704
+Routed	88/99 Partitions, Violations =	746
+Routed	89/99 Partitions, Violations =	742
+Routed	90/99 Partitions, Violations =	745
+Routed	91/99 Partitions, Violations =	746
+Routed	92/99 Partitions, Violations =	746
+Routed	93/99 Partitions, Violations =	741
+Routed	94/99 Partitions, Violations =	729
+Routed	95/99 Partitions, Violations =	730
+Routed	96/99 Partitions, Violations =	730
+Routed	97/99 Partitions, Violations =	736
+Routed	98/99 Partitions, Violations =	737
+Routed	99/99 Partitions, Violations =	733
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	733
+	Diff net spacing : 63
+	Diff net var rule spacing : 7
+	Diff net via-cut spacing : 14
+	End of line enclosure : 3
+	Less than minimum area : 12
+	Less than NDR width : 44
+	Off-grid : 20
+	Same net spacing : 2
+	Same net via-cut spacing : 31
+	Short : 511
+	Internal-only types : 26
+
+[Iter 8] Elapsed real time: 0:02:38 
+[Iter 8] Elapsed cpu  time: sys=0:00:03 usr=0:02:34 total=0:02:37
+[Iter 8] Stage (MB): Used   20  Alloctr   19  Proc    4 
+[Iter 8] Total (MB): Used  162  Alloctr  168  Proc 1614 
+
+End DR iteration 8 with 99 parts
+
+Start DR iteration 9: non-uniform partition
+Routed	1/99 Partitions, Violations =	729
+Routed	2/99 Partitions, Violations =	729
+Routed	3/99 Partitions, Violations =	731
+Routed	4/99 Partitions, Violations =	728
+Routed	5/99 Partitions, Violations =	736
+Routed	6/99 Partitions, Violations =	738
+Routed	7/99 Partitions, Violations =	736
+Routed	8/99 Partitions, Violations =	736
+Routed	9/99 Partitions, Violations =	731
+Routed	10/99 Partitions, Violations =	742
+Routed	11/99 Partitions, Violations =	742
+Routed	12/99 Partitions, Violations =	736
+Routed	13/99 Partitions, Violations =	736
+Routed	14/99 Partitions, Violations =	725
+Routed	15/99 Partitions, Violations =	724
+Routed	16/99 Partitions, Violations =	722
+Routed	17/99 Partitions, Violations =	680
+Routed	18/99 Partitions, Violations =	687
+Routed	19/99 Partitions, Violations =	687
+Routed	20/99 Partitions, Violations =	686
+Routed	21/99 Partitions, Violations =	686
+Routed	22/99 Partitions, Violations =	685
+Routed	23/99 Partitions, Violations =	685
+Routed	24/99 Partitions, Violations =	685
+Routed	25/99 Partitions, Violations =	684
+Routed	26/99 Partitions, Violations =	684
+Routed	27/99 Partitions, Violations =	685
+Routed	28/99 Partitions, Violations =	685
+Routed	29/99 Partitions, Violations =	684
+Routed	30/99 Partitions, Violations =	680
+Routed	31/99 Partitions, Violations =	692
+Routed	32/99 Partitions, Violations =	692
+Routed	33/99 Partitions, Violations =	686
+Routed	34/99 Partitions, Violations =	686
+Routed	35/99 Partitions, Violations =	686
+Routed	36/99 Partitions, Violations =	686
+Routed	37/99 Partitions, Violations =	686
+Routed	38/99 Partitions, Violations =	686
+Routed	39/99 Partitions, Violations =	686
+Routed	40/99 Partitions, Violations =	680
+Routed	41/99 Partitions, Violations =	677
+Routed	42/99 Partitions, Violations =	673
+Routed	43/99 Partitions, Violations =	673
+Routed	44/99 Partitions, Violations =	673
+Routed	45/99 Partitions, Violations =	676
+Routed	46/99 Partitions, Violations =	677
+Routed	47/99 Partitions, Violations =	679
+Routed	48/99 Partitions, Violations =	680
+Routed	49/99 Partitions, Violations =	680
+Routed	50/99 Partitions, Violations =	680
+Routed	51/99 Partitions, Violations =	680
+Routed	52/99 Partitions, Violations =	686
+Routed	53/99 Partitions, Violations =	683
+Routed	54/99 Partitions, Violations =	683
+Routed	55/99 Partitions, Violations =	690
+Routed	56/99 Partitions, Violations =	690
+Routed	57/99 Partitions, Violations =	690
+Routed	58/99 Partitions, Violations =	690
+Routed	59/99 Partitions, Violations =	690
+Routed	60/99 Partitions, Violations =	690
+Routed	61/99 Partitions, Violations =	691
+Routed	62/99 Partitions, Violations =	692
+Routed	63/99 Partitions, Violations =	690
+Routed	64/99 Partitions, Violations =	690
+Routed	65/99 Partitions, Violations =	693
+Routed	66/99 Partitions, Violations =	693
+Routed	67/99 Partitions, Violations =	693
+Routed	68/99 Partitions, Violations =	692
+Routed	69/99 Partitions, Violations =	692
+Routed	70/99 Partitions, Violations =	692
+Routed	71/99 Partitions, Violations =	692
+Routed	72/99 Partitions, Violations =	692
+Routed	73/99 Partitions, Violations =	692
+Routed	74/99 Partitions, Violations =	692
+Routed	75/99 Partitions, Violations =	692
+Routed	76/99 Partitions, Violations =	692
+Routed	77/99 Partitions, Violations =	695
+Routed	78/99 Partitions, Violations =	705
+Routed	79/99 Partitions, Violations =	705
+Routed	80/99 Partitions, Violations =	705
+Routed	81/99 Partitions, Violations =	706
+Routed	82/99 Partitions, Violations =	701
+Routed	83/99 Partitions, Violations =	701
+Routed	84/99 Partitions, Violations =	701
+Routed	85/99 Partitions, Violations =	701
+Routed	86/99 Partitions, Violations =	701
+Routed	87/99 Partitions, Violations =	701
+Routed	88/99 Partitions, Violations =	698
+Routed	89/99 Partitions, Violations =	702
+Routed	90/99 Partitions, Violations =	707
+Routed	91/99 Partitions, Violations =	703
+Routed	92/99 Partitions, Violations =	727
+Routed	93/99 Partitions, Violations =	728
+Routed	94/99 Partitions, Violations =	728
+Routed	95/99 Partitions, Violations =	727
+Routed	96/99 Partitions, Violations =	726
+Routed	97/99 Partitions, Violations =	727
+Routed	98/99 Partitions, Violations =	727
+Routed	99/99 Partitions, Violations =	728
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	728
+	Diff net spacing : 85
+	Diff net var rule spacing : 2
+	Diff net via-cut spacing : 18
+	End of line enclosure : 3
+	Less than minimum area : 11
+	Less than minimum width : 1
+	Less than NDR width : 2
+	Off-grid : 19
+	Same net via-cut spacing : 36
+	Short : 496
+	Internal-only types : 55
+
+[Iter 9] Elapsed real time: 0:03:00 
+[Iter 9] Elapsed cpu  time: sys=0:00:03 usr=0:02:57 total=0:03:00
+[Iter 9] Stage (MB): Used   20  Alloctr   19  Proc    4 
+[Iter 9] Total (MB): Used  162  Alloctr  168  Proc 1614 
+
+End DR iteration 9 with 99 parts
+
+Start DR iteration 10: non-uniform partition
+Routed	1/91 Partitions, Violations =	728
+Routed	2/91 Partitions, Violations =	730
+Routed	3/91 Partitions, Violations =	730
+Routed	4/91 Partitions, Violations =	730
+Routed	5/91 Partitions, Violations =	729
+Routed	6/91 Partitions, Violations =	731
+Routed	7/91 Partitions, Violations =	731
+Routed	8/91 Partitions, Violations =	729
+Routed	9/91 Partitions, Violations =	729
+Routed	10/91 Partitions, Violations =	729
+Routed	11/91 Partitions, Violations =	727
+Routed	12/91 Partitions, Violations =	727
+Routed	13/91 Partitions, Violations =	725
+Routed	14/91 Partitions, Violations =	724
+Routed	15/91 Partitions, Violations =	723
+Routed	16/91 Partitions, Violations =	704
+Routed	17/91 Partitions, Violations =	694
+Routed	18/91 Partitions, Violations =	691
+Routed	19/91 Partitions, Violations =	685
+Routed	20/91 Partitions, Violations =	686
+Routed	21/91 Partitions, Violations =	686
+Routed	22/91 Partitions, Violations =	683
+Routed	23/91 Partitions, Violations =	683
+Routed	24/91 Partitions, Violations =	683
+Routed	25/91 Partitions, Violations =	682
+Routed	26/91 Partitions, Violations =	682
+Routed	27/91 Partitions, Violations =	682
+Routed	28/91 Partitions, Violations =	679
+Routed	29/91 Partitions, Violations =	679
+Routed	30/91 Partitions, Violations =	679
+Routed	31/91 Partitions, Violations =	675
+Routed	32/91 Partitions, Violations =	675
+Routed	33/91 Partitions, Violations =	675
+Routed	34/91 Partitions, Violations =	669
+Routed	35/91 Partitions, Violations =	669
+Routed	36/91 Partitions, Violations =	668
+Routed	37/91 Partitions, Violations =	672
+Routed	38/91 Partitions, Violations =	677
+Routed	39/91 Partitions, Violations =	685
+Routed	40/91 Partitions, Violations =	680
+Routed	41/91 Partitions, Violations =	680
+Routed	42/91 Partitions, Violations =	681
+Routed	43/91 Partitions, Violations =	682
+Routed	44/91 Partitions, Violations =	682
+Routed	45/91 Partitions, Violations =	680
+Routed	46/91 Partitions, Violations =	679
+Routed	47/91 Partitions, Violations =	679
+Routed	48/91 Partitions, Violations =	670
+Routed	49/91 Partitions, Violations =	672
+Routed	50/91 Partitions, Violations =	672
+Routed	51/91 Partitions, Violations =	672
+Routed	52/91 Partitions, Violations =	672
+Routed	53/91 Partitions, Violations =	674
+Routed	54/91 Partitions, Violations =	674
+Routed	55/91 Partitions, Violations =	674
+Routed	56/91 Partitions, Violations =	674
+Routed	57/91 Partitions, Violations =	674
+Routed	58/91 Partitions, Violations =	677
+Routed	59/91 Partitions, Violations =	677
+Routed	60/91 Partitions, Violations =	677
+Routed	61/91 Partitions, Violations =	675
+Routed	62/91 Partitions, Violations =	675
+Routed	63/91 Partitions, Violations =	679
+Routed	64/91 Partitions, Violations =	679
+Routed	65/91 Partitions, Violations =	679
+Routed	66/91 Partitions, Violations =	679
+Routed	67/91 Partitions, Violations =	679
+Routed	68/91 Partitions, Violations =	679
+Routed	69/91 Partitions, Violations =	679
+Routed	70/91 Partitions, Violations =	679
+Routed	71/91 Partitions, Violations =	679
+Routed	72/91 Partitions, Violations =	683
+Routed	73/91 Partitions, Violations =	685
+Routed	74/91 Partitions, Violations =	684
+Routed	75/91 Partitions, Violations =	685
+Routed	76/91 Partitions, Violations =	682
+Routed	77/91 Partitions, Violations =	682
+Routed	78/91 Partitions, Violations =	682
+Routed	79/91 Partitions, Violations =	683
+Routed	80/91 Partitions, Violations =	683
+Routed	81/91 Partitions, Violations =	686
+Routed	82/91 Partitions, Violations =	686
+Routed	83/91 Partitions, Violations =	684
+Routed	84/91 Partitions, Violations =	684
+Routed	85/91 Partitions, Violations =	681
+Routed	86/91 Partitions, Violations =	763
+Routed	87/91 Partitions, Violations =	760
+Routed	88/91 Partitions, Violations =	760
+Routed	89/91 Partitions, Violations =	761
+Routed	90/91 Partitions, Violations =	765
+Routed	91/91 Partitions, Violations =	765
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	765
+	Diff net spacing : 83
+	Diff net var rule spacing : 18
+	Diff net via-cut spacing : 8
+	Less than minimum area : 11
+	Less than NDR width : 87
+	Off-grid : 16
+	Same net via-cut spacing : 35
+	Short : 489
+	Internal-only types : 18
+
+[Iter 10] Elapsed real time: 0:03:24 
+[Iter 10] Elapsed cpu  time: sys=0:00:03 usr=0:03:20 total=0:03:24
+[Iter 10] Stage (MB): Used   20  Alloctr   19  Proc    7 
+[Iter 10] Total (MB): Used  162  Alloctr  168  Proc 1617 
+
+End DR iteration 10 with 91 parts
+
+Stop DR since not converging
+
+Information: Detail Routing terminated early because DRCs were not converging: true (ZRT-312)
+
+Begin revisit internal-only type DRCs ...
+
+Checked	1/6 Partitions, Violations =	757
+Checked	2/6 Partitions, Violations =	753
+Checked	3/6 Partitions, Violations =	751
+Checked	4/6 Partitions, Violations =	752
+Checked	5/6 Partitions, Violations =	751
+Checked	6/6 Partitions, Violations =	750
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	750
+
+[REVISIT DRC] Elapsed real time: 0:00:00 
+[REVISIT DRC] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[REVISIT DRC] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[REVISIT DRC] Total (MB): Used  162  Alloctr  168  Proc 1617 
+
+Nets that have been changed:
+Net 1 = net_PTECO_HOLD_NET1
+Net 2 = net_PTECO_DRC_NET413
+Net 3 = net_PTECO_DRC_NET408
+Net 4 = ropt_net_8809
+Net 5 = net_PTECO_DRC_NET419
+Net 6 = net_PTECO_DRC_NET421
+Net 7 = net_PTECO_DRC_NET414
+Net 8 = net_PTECO_DRC_NET417
+Net 9 = net_PTECO_DRC_NET407
+Net 10 = net_PTECO_DRC_NET410
+Net 11 = net_PTECO_DRC_NET418
+Net 12 = net_PTECO_DRC_NET411
+Net 13 = net_PTECO_DRC_NET416
+Net 14 = net_PTECO_DRC_NET424
+Net 15 = net_PTECO_DRC_NET420
+Net 16 = net_PTECO_DRC_NET412
+Net 17 = net_PTECO_DRC_NET422
+Net 18 = net_PTECO_DRC_NET423
+Net 19 = net_PTECO_DRC_NET415
+Net 20 = net_PTECO_DRC_NET425
+Net 21 = net_PTECO_HOLD_NET66
+Net 22 = net_PTECO_HOLD_NET82
+Net 23 = net_PTECO_HOLD_NET97
+Net 24 = net_PTECO_HOLD_NET49
+Net 25 = net_PTECO_HOLD_NET194
+Net 26 = net_PTECO_HOLD_NET80
+Net 27 = net_PTECO_HOLD_NET368
+Net 28 = net_PTECO_HOLD_NET61
+Net 29 = net405
+Net 30 = net_PTECO_HOLD_NET242
+Net 31 = net_PTECO_HOLD_NET188
+Net 32 = net_PTECO_HOLD_NET189
+Net 33 = net_PTECO_HOLD_NET193
+Net 34 = net_PTECO_HOLD_NET122
+Net 35 = net_PTECO_HOLD_NET101
+Net 36 = net_PTECO_HOLD_NET233
+Net 37 = net_PTECO_HOLD_NET102
+Net 38 = net_PTECO_HOLD_NET240
+Net 39 = aps_rename_110_
+Net 40 = net_PTECO_HOLD_NET195
+Net 41 = net_PTECO_HOLD_NET89
+Net 42 = net_PTECO_HOLD_NET375
+Net 43 = net_PTECO_HOLD_NET241
+Net 44 = net_PTECO_HOLD_NET232
+Net 45 = net_PTECO_HOLD_NET145
+Net 46 = net_PTECO_HOLD_NET236
+Net 47 = net_PTECO_HOLD_NET234
+Net 48 = last_data_addr[27]
+Net 49 = aps_rename_128_
+Net 50 = scan_en
+Net 51 = net_PTECO_DRC_NET409
+Net 52 = ibex_top_inst/u_ibex_core/perf_branch
+Net 53 = ibex_top_inst/u_ibex_core/instr_is_compressed_id
+Net 54 = ibex_top_inst/u_ibex_core/wb_stage_i/g_writeback_stage.rf_we_wb_q
+Net 55 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/valid_req_q
+Net 56 = ibex_top_inst/u_ibex_core/id_stage_i/controller_i/exc_req_d
+Net 57 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][25]
+Net 58 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][9]
+Net 59 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][6]
+Net 60 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][4]
+Net 61 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[2][3]
+Net 62 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][31]
+Net 63 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][22]
+Net 64 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][14]
+Net 65 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][13]
+Net 66 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[1][8]
+Net 67 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][30]
+Net 68 = ibex_top_inst/u_ibex_core/if_stage_i/gen_prefetch_buffer.prefetch_buffer_i/fifo_i/rdata_q[0][19]
+Net 69 = n3741
+Net 70 = n3805
+Net 71 = n3815
+Net 72 = n3816
+Net 73 = n3823
+Net 74 = n3825
+Net 75 = n3826
+Net 76 = n3830
+Net 77 = n3837
+Net 78 = n3840
+Net 79 = n3841
+Net 80 = n3842
+Net 81 = n3843
+Net 82 = n3844
+Net 83 = n3845
+Net 84 = n3846
+Net 85 = n3847
+Net 86 = n3850
+Net 87 = n3853
+Net 88 = n3855
+Net 89 = n3856
+Net 90 = n3867
+Net 91 = n3870
+Net 92 = n3873
+Net 93 = n3875
+Net 94 = n3909
+Net 95 = n3914
+Net 96 = n3950
+Net 97 = n3951
+Net 98 = n3953
+Net 99 = n3961
+Net 100 = n3970
+.... and 1055 other nets
+Total number of changed nets = 1155 (out of 26307)
+
+[DR: Done] Elapsed real time: 0:03:24 
+[DR: Done] Elapsed cpu  time: sys=0:00:03 usr=0:03:20 total=0:03:24
+[DR: Done] Stage (MB): Used    2  Alloctr    1  Proc    7 
+[DR: Done] Total (MB): Used  144  Alloctr  150  Proc 1617 
+[ECO: DR] Elapsed real time: 0:03:33 
+[ECO: DR] Elapsed cpu  time: sys=0:00:05 usr=0:03:27 total=0:03:32
+[ECO: DR] Stage (MB): Used  143  Alloctr  149  Proc  132 
+[ECO: DR] Total (MB): Used  144  Alloctr  150  Proc 1617 
+
+ECO Route finished with 0 open nets, of which 0 are frozen
+Information: Merged away 434 aligned/redundant DRCs. (ZRT-305)
+
+ECO Route finished with 316 violations
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	316
+	Diff net spacing : 38
+	Diff net var rule spacing : 6
+	Diff net via-cut spacing : 8
+	Less than minimum area : 10
+	Less than NDR width : 6
+	Off-grid : 14
+	Same net via-cut spacing : 35
+	Short : 199
+
+
+
+Total Wire Length =                    310236 micron
+Total Number of Contacts =             173156
+Total Number of Wires =                208375
+Total Number of PtConns =              31214
+Total Number of Routed Wires =       208375
+Total Routed Wire Length =           288533 micron
+Total Number of Routed Contacts =       173156
+	Layer                 M1 :        661 micron
+	Layer                 M2 :     105969 micron
+	Layer                 M3 :     115072 micron
+	Layer                 M4 :      31021 micron
+	Layer                 M5 :      36255 micron
+	Layer                 M6 :      12662 micron
+	Layer                 M7 :       8525 micron
+	Layer                 M8 :         70 micron
+	Layer                 M9 :          0 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          2
+	Via       VIA78SQ_C(rot) :         11
+	Via         VIA78SQ(rot) :          1
+	Via            VIA67SQ_C :        589
+	Via       VIA67SQ_C(rot) :         24
+	Via              VIA67SQ :          8
+	Via         VIA67SQ(rot) :          5
+	Via            VIA56SQ_C :         15
+	Via       VIA56SQ_C(rot) :         73
+	Via              VIA56SQ :       1599
+	Via              VIA45SQ :       6192
+	Via         VIA45SQ(rot) :          2
+	Via            VIA34SQ_C :          1
+	Via       VIA34SQ_C(rot) :       9029
+	Via          VIA34BAR2_C :         25
+	Via              VIA34SQ :        279
+	Via         VIA34SQ(rot) :        824
+	Via     VIA3_34SQ_C(rot) :         68
+	Via            VIA3_34SQ :         20
+	Via       VIA3_34SQ(rot) :          1
+	Via            VIA23SQ_C :      87581
+	Via       VIA23SQ_C(rot) :          1
+	Via          VIA23BAR2_C :          1
+	Via              VIA23SQ :         18
+	Via         VIA23SQ(rot) :          9
+	Via          VIA2_33SQ_C :        152
+	Via          VIA23_3SQ_C :        455
+	Via        VIA2_33_3SQ_C :         91
+	Via            VIA12SQ_C :          4
+	Via       VIA12SQ_C(rot) :      64907
+	Via            VIA12LG_C :          1
+	Via              VIA12SQ :          5
+	Via         VIA12SQ(rot) :        318
+	Via     VIA1_32SQ_C(rot) :        693
+	Via     VIA12_3SQ_C(rot) :        119
+	Via   VIA1_32_3SQ_C(rot) :         33
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+
+Total number of nets = 26307
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 316
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Total Wire Length =                    310236 micron
+Total Number of Contacts =             173156
+Total Number of Wires =                208375
+Total Number of PtConns =              31214
+Total Number of Routed Wires =       208375
+Total Routed Wire Length =           288533 micron
+Total Number of Routed Contacts =       173156
+	Layer                 M1 :        661 micron
+	Layer                 M2 :     105969 micron
+	Layer                 M3 :     115072 micron
+	Layer                 M4 :      31021 micron
+	Layer                 M5 :      36255 micron
+	Layer                 M6 :      12662 micron
+	Layer                 M7 :       8525 micron
+	Layer                 M8 :         70 micron
+	Layer                 M9 :          0 micron
+	Layer               MRDL :          0 micron
+	Via              VIA89_C :          2
+	Via       VIA78SQ_C(rot) :         11
+	Via         VIA78SQ(rot) :          1
+	Via            VIA67SQ_C :        589
+	Via       VIA67SQ_C(rot) :         24
+	Via              VIA67SQ :          8
+	Via         VIA67SQ(rot) :          5
+	Via            VIA56SQ_C :         15
+	Via       VIA56SQ_C(rot) :         73
+	Via              VIA56SQ :       1599
+	Via              VIA45SQ :       6192
+	Via         VIA45SQ(rot) :          2
+	Via            VIA34SQ_C :          1
+	Via       VIA34SQ_C(rot) :       9029
+	Via          VIA34BAR2_C :         25
+	Via              VIA34SQ :        279
+	Via         VIA34SQ(rot) :        824
+	Via     VIA3_34SQ_C(rot) :         68
+	Via            VIA3_34SQ :         20
+	Via       VIA3_34SQ(rot) :          1
+	Via            VIA23SQ_C :      87581
+	Via       VIA23SQ_C(rot) :          1
+	Via          VIA23BAR2_C :          1
+	Via              VIA23SQ :         18
+	Via         VIA23SQ(rot) :          9
+	Via          VIA2_33SQ_C :        152
+	Via          VIA23_3SQ_C :        455
+	Via        VIA2_33_3SQ_C :         91
+	Via            VIA12SQ_C :          4
+	Via       VIA12SQ_C(rot) :      64907
+	Via            VIA12LG_C :          1
+	Via              VIA12SQ :          5
+	Via         VIA12SQ(rot) :        318
+	Via     VIA1_32SQ_C(rot) :        693
+	Via     VIA12_3SQ_C(rot) :        119
+	Via   VIA1_32_3SQ_C(rot) :         33
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 173156 vias)
+ 
+    Layer VIA1       =  0.00% (0      / 66080   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (66080   vias)
+    Layer VIA2       =  0.00% (0      / 88308   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (88308   vias)
+    Layer VIA3       =  0.00% (0      / 10247   vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (10247   vias)
+    Layer VIA4       =  0.00% (0      / 6194    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6194    vias)
+    Layer VIA5       =  0.00% (0      / 1687    vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (1687    vias)
+    Layer VIA6       =  0.00% (0      / 626     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (626     vias)
+    Layer VIA7       =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VIA8       =  0.00% (0      / 2       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (2       vias)
+ 
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+...updated 1155 nets
+[ECO: End] Elapsed real time: 0:03:33 
+[ECO: End] Elapsed cpu  time: sys=0:00:05 usr=0:03:27 total=0:03:33
+[ECO: End] Stage (MB): Used    0  Alloctr    0  Proc  132 
+[ECO: End] Total (MB): Used    0  Alloctr    1  Proc 1617 

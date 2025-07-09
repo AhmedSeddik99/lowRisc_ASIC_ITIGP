@@ -1,0 +1,151 @@
+
+
+********  Initialize ECO Placement Network  ********
+
+Information: The current maximum fanout to ignore high fanout net connection of ECO cells is 100. (EPL-005)
+
+
+********  Computing Seed Location  ********
+
+
+
+********  Legalize ECO Cells  ********
+
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Begin building search trees for block ibex_hvt:ibex_hvt_eco_2.design
+Done building search trees for block ibex_hvt:ibex_hvt_eco_2.design (time 0s)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+	place.legalize.enable_prerouted_net_check: 1
+	place.legalize.num_tracks_for_access_check: 1
+	place.legalize.use_eol_spacing_for_access_check: 0
+	place.legalize.allow_touch_track_for_access_check: 1
+	place.legalize.reduce_conservatism_in_eol_check: 0
+	place.legalize.preroute_shape_merge_distance: 0.0
+	place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 2 shapes out of 4192 total shapes.
+Layer M2: cached 1 shapes out of 123890 total shapes.
+Layer M3: cached 16 shapes out of 97890 total shapes.
+Cached 4400 vias out of 178554 total vias.
+
+Legalizing Top Level Design ibex_wrapper ... 
+Warning: Library cell saed14hvt:SAEDHVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14hvt:SAEDHVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+
+
+****************************************
+  Report : Fillers
+  Site   : unit
+****************************************
+
+Filler widths available for different combinations of VT, OD and TPO:
+----------------------------------------------------------------------
+     VT1      VT2      OD1      OD2      TPO   WIDTHS
+                    height   height            sites
+----------------------------------------------------------------------
+  HVTIMP   HVTIMP     none     none     none   1 4 5 6 7 9 10 14 17 18 20 34 66
+----------------------------------------------------------------------
+Smallest non-OD filler width is 1 sites.
+----------------------------------------------------------------------
+
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     25534.1        27491        Yes DEFAULT_VA
+
+Warning: max_legality_failures=5000 ignored.
+	To use it, set limit_legality_checks to true.
+Warning: max_legality_check_range=500 ignored.
+	To use it, set limit_legality_checks to true.
+Optimizing attract points
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 11 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+    Done attract points (0 sec)
+Starting legalizer.
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 11 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+Warning: There is high fragmentation caused by many blockages or fixed cells.
+	The median subrow width (space between blockages) is 24 sites
+	and the median cell width is 11 sites. This makes it difficult for
+	the legalizer to pack in the cells and can result in high
+	displacements and long runtimes.
+Please look for the GIF files that are written out at the end of
+	legalization to see the impact of the fragmentation.
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Writing GIF plot to file './legalizer_debug_plots/ibex_hvt_eco_2_SITE_unit.001-0001-max_displacements.gif'.
+Writing GIF plot to file './legalizer_debug_plots/ibex_hvt_eco_2_SITE_unit.001-0002-colored_displacements.gif'.
+Legalization complete (1 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                  27491
+number of references:               114
+number of site rows:                266
+number of locations attempted:       11
+number of locations failed:           0  (0.0%)
+
+Legality of references at locations:
+0 references had failures.
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:           2 (20 total sites)
+avg row height over cells:        0.600 um
+rms cell displacement:            0.667 um ( 1.11 row height)
+rms weighted cell displacement:   0.667 um ( 1.11 row height)
+max cell displacement:            0.954 um ( 1.59 row height)
+avg cell displacement:            0.568 um ( 0.95 row height)
+avg weighted cell displacement:   0.568 um ( 0.95 row height)
+number of cells moved:                2
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 2 cells:
+Cell: U4645 (SAEDHVT14_BUF_4)
+  Input location: (62.799,48.4312)
+  Legal location: (62.234,49.2)
+  Displacement:   0.954 um ( 1.59 row height)
+Cell: U1 (SAEDHVT14_DEL_R2V2_2)
+  Input location: (84.138,58.453)
+  Legal location: (84.138,58.2)
+  Displacement:   0.253 um ( 0.42 row height)
+
+****************************************
+Report : ECO Legalize Displacement
+Design : ibex_hvt_eco_2
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 09:49:10 2025
+****************************************
+
+avg cell displacement:    0.604 um ( 1.01 row height)
+max cell displacement:    0.954 um ( 1.59 row height)
+std deviation:            0.351 um ( 0.58 row height)
+number of cell moved:         2 cells (out of 2 cells)
+
+2

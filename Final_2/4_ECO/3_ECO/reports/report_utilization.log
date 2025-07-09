@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : ibex_wrapper
+Version: O-2018.06-SP1
+Date   : Tue Jul  8 12:13:29 2025
+****************************************
+Utilization Ratio:			0.5300
+Utilization options:
+ - Area calculation based on:		site_row of block ibex_hvt_eco_3
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				25534.0848
+Total Capacity Area:			25534.0848
+Total Area of cells:			13533.2976
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.5300
+
+0.5300

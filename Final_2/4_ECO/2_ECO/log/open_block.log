@@ -1,0 +1,6 @@
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14hvt', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library "ibex_hvt'. (NDM-102)
+Information: User units loaded from library 'saed14hvt' (LNK-040)
+Opening block 'ibex_hvt:ibex_hvt_eco_1.design' in edit mode
+Information: loading PG routing via master rules, patterns, strategies and strategy via rules.
+{ibex_hvt:ibex_hvt_eco_1.design}

@@ -1,0 +1,186 @@
+Warning: Cell contains tie connections which are not connected to real PG. (ZRT-511)
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = M9
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: There is no constraint to limit maximum number of secondary power and ground (PG) pins in a cluster. (ZRT-536)
+Warning: Ignore 11 top cell ports with no pins. (ZRT-027)
+Info: number of net_type_blockage: 0 
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Warning: Standard cell pin SAEDHVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_FSDPQB_V2_2/QN has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR3B_2/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_DCAP_PV1ECO_15/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_DCAP_PV1ECO_18/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_DCAP_PV1ECO_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_DCAP_PV1ECO_9/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDHVT14_DCAP_PV3_3/VDD has no valid via regions. (ZRT-044)
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 false               
+detail.force_end_on_preferred_grid                      :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+[Start Removing Filler Cells] Elapsed real time: 0:00:00 
+[Start Removing Filler Cells] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Start Removing Filler Cells] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Start Removing Filler Cells] Total (MB): Used  155  Alloctr  159  Proc 1537 
+
+Begin Filler DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Partition 1, Fillers with Violations = 5
+Partition 2, Fillers with Violations = 28
+Partition 3, Fillers with Violations = 22
+Partition 4, Fillers with Violations = 26
+Partition 5, Fillers with Violations = 91
+Partition 6, Fillers with Violations = 28
+Partition 7, Fillers with Violations = 46
+Partition 8, Fillers with Violations = 8
+Partition 10, Fillers with Violations = 11
+Partition 11, Fillers with Violations = 108
+Partition 12, Fillers with Violations = 154
+Partition 13, Fillers with Violations = 166
+Partition 14, Fillers with Violations = 197
+Partition 15, Fillers with Violations = 294
+Partition 16, Fillers with Violations = 285
+Partition 17, Fillers with Violations = 73
+Partition 19, Fillers with Violations = 16
+Partition 20, Fillers with Violations = 97
+Partition 21, Fillers with Violations = 216
+Partition 22, Fillers with Violations = 220
+Partition 23, Fillers with Violations = 216
+Partition 24, Fillers with Violations = 267
+Partition 25, Fillers with Violations = 395
+Partition 26, Fillers with Violations = 94
+Partition 28, Fillers with Violations = 62
+Partition 29, Fillers with Violations = 205
+Partition 30, Fillers with Violations = 225
+Partition 31, Fillers with Violations = 203
+Partition 32, Fillers with Violations = 209
+Partition 33, Fillers with Violations = 353
+Partition 34, Fillers with Violations = 370
+Partition 35, Fillers with Violations = 91
+Partition 37, Fillers with Violations = 53
+Partition 38, Fillers with Violations = 215
+Partition 39, Fillers with Violations = 151
+Partition 40, Fillers with Violations = 195
+Partition 41, Fillers with Violations = 160
+Partition 42, Fillers with Violations = 346
+Partition 43, Fillers with Violations = 378
+Partition 44, Fillers with Violations = 119
+Partition 46, Fillers with Violations = 23
+Partition 47, Fillers with Violations = 192
+Partition 48, Fillers with Violations = 182
+Partition 49, Fillers with Violations = 245
+Partition 50, Fillers with Violations = 204
+Partition 51, Fillers with Violations = 321
+Partition 52, Fillers with Violations = 371
+Partition 53, Fillers with Violations = 98
+Partition 55, Fillers with Violations = 29
+Partition 56, Fillers with Violations = 221
+Partition 57, Fillers with Violations = 141
+Partition 58, Fillers with Violations = 225
+Partition 59, Fillers with Violations = 178
+Partition 60, Fillers with Violations = 331
+Partition 61, Fillers with Violations = 380
+Partition 62, Fillers with Violations = 91
+Partition 64, Fillers with Violations = 9
+Partition 65, Fillers with Violations = 40
+Partition 66, Fillers with Violations = 24
+Partition 67, Fillers with Violations = 57
+Partition 68, Fillers with Violations = 62
+Partition 69, Fillers with Violations = 98
+Partition 70, Fillers with Violations = 126
+Partition 71, Fillers with Violations = 37
+[End Removing Filler Cells] Elapsed real time: 0:00:05 
+[End Removing Filler Cells] Elapsed cpu  time: sys=0:00:00 usr=0:00:05 total=0:00:05
+[End Removing Filler Cells] Stage (MB): Used    0  Alloctr    0  Proc   73 
+[End Removing Filler Cells] Total (MB): Used  155  Alloctr  160  Proc 1610 
+Updating the database ...
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x42920y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x103600y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x186480y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x258260y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x292300y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x337440y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x358160y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x435120y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x469160y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_V4_5!x479520y0 due to Diff net spacing violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x495060y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x505420y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x634920y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x685980y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x703740y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x784400y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x827320y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x837680y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x857660y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_V4_5!x868020y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x879120y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x897620y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x907980y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x978280y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x988640y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x999000y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1157360y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x1242460y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1283900y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1294260y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1304620y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1437820y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1457060y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1485180y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1495540y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x1505900y0 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x123580y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x294520y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x448440y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x458800y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x488400y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x498760y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x651200y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x967180y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_V4_5!x1021940y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x1112220y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x1192880y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_V4_5!x1491840y6000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_6!x43660y12000 due to Short violation
+Delete xofiller!SAEDHVT14_DCAP_ECO_12!x415140y12000 due to Short violation
+Reporting for the first 50 deleted cells
+Deleted 10083 cell instances
